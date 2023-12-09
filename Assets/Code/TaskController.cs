@@ -1,12 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class TaskController : MonoBehaviour
 {
+    public static TaskController Instance;
+
     [SerializeField, Min(.0f)] private float _speed;
     private Transform TaskShowPlace;
     private Transform TaskHidePLace;
@@ -17,8 +15,10 @@ public class TaskController : MonoBehaviour
 
     public void Init(GameObject go)
     {
+        Instance = this;
         var holder = go.GetComponent<UIHolder>();
         Task = holder.Task;
+        text = Task.GetComponentInChildren<TMP_Text>();
         TaskShowPlace = holder.TaskShowPlace;
         TaskHidePLace = holder.TaskHidePLace;
         HideTask();

@@ -4,6 +4,7 @@ using System.Collections;
 
 public class TargetPointer : MonoBehaviour
 {
+	public static TargetPointer Instance;
 	public Transform Target; // цель
 	public RectTransform PointerUI; // объект Image UI
 	public Sprite PointerIcon; // иконка когда цель в поле видимости
@@ -15,6 +16,7 @@ public class TargetPointer : MonoBehaviour
 
 	public void Init(GameObject canvas)
 	{
+		Instance = this;
 		PointerUI = canvas.GetComponent<UIHolder>().Target.GetComponent<RectTransform>();
 		startPointerSize = PointerUI.sizeDelta;
 		mainCamera = Camera.main;		

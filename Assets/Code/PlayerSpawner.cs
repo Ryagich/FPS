@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerSpawner : MonoBehaviour
 {
+    [SerializeField] private UnityEvent<GameObject> _playerSpawned;
     public static PlayerSpawner Instance;
     public GameObject Player { get; private set; }
     [SerializeField] private Transform _parent;
@@ -17,5 +19,6 @@ public class PlayerSpawner : MonoBehaviour
     public void Spawn()
     {
         Player = Instantiate(_playerPref, _parent);
+        _playerSpawned?.Invoke(Player);
     }
 }

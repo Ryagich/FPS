@@ -483,9 +483,6 @@ namespace InfimaGames.LowPolyShooterPack
                 characterAnimator.GetLayerIndex("Layer Actions Arm Right"), 0.0f);
         }
 
-        /// <summary>
-        /// Play The Melee Animation.
-        /// </summary>
         private void PlayMelee()
         {
             //Start State.
@@ -1060,27 +1057,23 @@ namespace InfimaGames.LowPolyShooterPack
             }
         }
 
+        public bool CanPause = true;
+        
         public void OnLockCursor()
         {
+            if (!CanPause)
+                return;
             cursorLocked = !cursorLocked;
             UpdateCursorState();
         }
 
-        /// <summary>
-        /// Movement.
-        /// </summary>
         public void OnMove(InputAction.CallbackContext context)
         {
-            //Read.
             axisMovement = cursorLocked ? context.ReadValue<Vector2>() : default;
         }
 
-        /// <summary>
-        /// Look.
-        /// </summary>
         public void OnLook(InputAction.CallbackContext context)
         {
-            //Read.
             axisLook = cursorLocked ? context.ReadValue<Vector2>() : default;
 
             //Make sure that we have a weapon.

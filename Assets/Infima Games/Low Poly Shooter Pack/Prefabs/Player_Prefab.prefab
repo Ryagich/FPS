@@ -1128,6 +1128,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 058ad0f0e88b6054990c6e98008ae4ea, type: 3}
   holdToRun: 1
   holdToAim: 1
+  CanPause: 1
 --- !u!114 &8163229473432397683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1169,6 +1170,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8489771820482445308}
         m_TargetAssemblyTypeName: TaskController, Assembly-CSharp
+        m_MethodName: Init
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063577494769319563}
+        m_TargetAssemblyTypeName: SubsController, Assembly-CSharp
         m_MethodName: Init
         m_Mode: 0
         m_Arguments:
