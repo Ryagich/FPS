@@ -105,7 +105,7 @@ namespace InfimaGames.LowPolyShooterPack
         /// </summary>
         private IEnumerator FadeLoadingScreen(float targetValue, float duration)
         {
-            float startValue = canvasGroup.alpha;
+            var startValue = canvasGroup.alpha;
             float time = 0;
 
             while (time < duration)

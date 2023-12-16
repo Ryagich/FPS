@@ -43,7 +43,7 @@ namespace YG
 #if UNITY_EDITOR
         private static void SendEditor(string eventName, string eventParams)
         {
-            InfoYG infoYG = ConfigYG.GetInfoYG();
+            var infoYG = ConfigYG.GetInfoYG();
 
             if (infoYG.metricaEnable && infoYG.debug)
             {

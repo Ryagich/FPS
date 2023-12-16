@@ -41,10 +41,10 @@ public class TargetPointer : MonoBehaviour
 		}
 		PointerUI.gameObject.SetActive(true);
 
-		Vector3 realPos = mainCamera.WorldToScreenPoint(Target.position); // получениее экранных координат объекта
-		Rect rect = new Rect(0, 0, Screen.width, Screen.height);
+		var realPos = mainCamera.WorldToScreenPoint(Target.position); // получениее экранных координат объекта
+		var rect = new Rect(0, 0, Screen.width, Screen.height);
 
-		Vector3 outPos = realPos;
+		var outPos = realPos;
 		float direction = 1;
 
 		PointerUI.GetComponent<Image>().sprite = OutOfScreenIcon;
@@ -67,11 +67,11 @@ public class TargetPointer : MonoBehaviour
 			}
 		}
 		// ограничиваем позицию областью экрана
-		float offset = PointerUI.sizeDelta.x / 2;
+		var offset = PointerUI.sizeDelta.x / 2;
 		outPos.x = Mathf.Clamp(outPos.x, offset, Screen.width - offset);
 		outPos.y = Mathf.Clamp(outPos.y, offset, Screen.height - offset);
 
-		Vector3 pos = realPos - outPos; // направление к цели из PointerUI 
+		var pos = realPos - outPos; // направление к цели из PointerUI 
 
 		RotatePointer(direction * pos);
 
@@ -80,14 +80,14 @@ public class TargetPointer : MonoBehaviour
 	}
 	private bool IsBehind(Vector3 point) // true если point сзади камеры
 	{		
-		Vector3 forward = mainCamera.transform.TransformDirection(Vector3.forward);
-		Vector3 toOther = point - mainCamera.transform.position;
+		var forward = mainCamera.transform.TransformDirection(Vector3.forward);
+		var toOther = point - mainCamera.transform.position;
 		if (Vector3.Dot(forward, toOther) < 0) return true;
 		return false;
 	}
 	private void RotatePointer(Vector2 direction) // поворачивает PointerUI в направление direction
 	{		
-		float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+		var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 		PointerUI.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 	}
 }

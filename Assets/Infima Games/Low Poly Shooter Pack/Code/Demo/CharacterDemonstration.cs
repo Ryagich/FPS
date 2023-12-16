@@ -63,7 +63,7 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
             
             //Spawn new magazine.
-            GameObject spawnedMagazine = Instantiate(prefabMagazine, magazineTransform.position,
+            var spawnedMagazine = Instantiate(prefabMagazine, magazineTransform.position,
                 magazineTransform.rotation);
             //Update shared materials. This makes the materials match.
             spawnedMagazine.GetComponent<MeshRenderer>().sharedMaterials =

@@ -71,15 +71,15 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
 
             //Grab the RecoilData value we need.
-            RecoilData recoilData = animationDataBehaviour.GetRecoilData(motionType);
+            var recoilData = animationDataBehaviour.GetRecoilData(motionType);
             //If there's no RecoilData assigned, then there's no reason to bother with this either, nothing will work.
             if (recoilData == null)
                 return;
             
             //Get shotsFired.
-            int shotsFired = characterBehaviour.GetShotsFired();
+            var shotsFired = characterBehaviour.GetShotsFired();
             //Get the recoilDataMultiplier value from the actual recoilData object.
-            float recoilDataMultiplier = recoilData.StandingStateMultiplier;
+            var recoilDataMultiplier = recoilData.StandingStateMultiplier;
             
             //Recoil Location.
             Vector3 recoilLocation = default;

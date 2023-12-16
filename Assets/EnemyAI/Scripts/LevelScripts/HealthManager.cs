@@ -22,7 +22,8 @@ public class HealthManager : MonoBehaviour
 		}
 	}
 
-	[HideInInspector] public bool dead = false;          // Is this entity dead?
+	//[HideInInspector] 
+	public bool dead = false;          // Is this entity dead?
 
 	// This is the mandatory function that receives damage from shots.
 	// You may remove the 'virtual' keyword before coding the content.

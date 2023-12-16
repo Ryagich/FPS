@@ -115,41 +115,41 @@ namespace InfimaGames.LowPolyShooterPack
         /// <param name="weightRotation">Rotation Weight.</param>
         private void ComputeOnce(IReadOnlyList<Transform> hierarchy, Transform target, float weightPosition = 1.0f, float weightRotation = 1.0f)
         {
-            Vector3 targetOffsetPosition = Vector3.zero;
-            Quaternion targetOffsetRotation = Quaternion.identity;
+            var targetOffsetPosition = Vector3.zero;
+            var targetOffsetRotation = Quaternion.identity;
             
             if (maintainTargetPositionOffset)
                 targetOffsetPosition = hierarchy[2].position - target.position;
             if (maintainTargetRotationOffset)
                 targetOffsetRotation = Quaternion.Inverse(target.rotation) * hierarchy[2].rotation;
             
-            Vector3 aPosition = hierarchy[0].position;
-            Vector3 bPosition = hierarchy[1].position;
-            Vector3 cPosition = hierarchy[2].position;
-            Vector3 targetPos = target.position;
-            Quaternion targetRot = target.rotation;
-            Vector3 tPosition = Vector3.Lerp(cPosition, targetPos + targetOffsetPosition, weightPosition);
-            Quaternion tRotation = Quaternion.Lerp(hierarchy[2].rotation, targetRot * targetOffsetRotation, weightRotation);
-            bool hasHint = hint != null && weightHint > 0f;
+            var aPosition = hierarchy[0].position;
+            var bPosition = hierarchy[1].position;
+            var cPosition = hierarchy[2].position;
+            var targetPos = target.position;
+            var targetRot = target.rotation;
+            var tPosition = Vector3.Lerp(cPosition, targetPos + targetOffsetPosition, weightPosition);
+            var tRotation = Quaternion.Lerp(hierarchy[2].rotation, targetRot * targetOffsetRotation, weightRotation);
+            var hasHint = hint != null && weightHint > 0f;
 
-            Vector3 ab = bPosition - aPosition;
-            Vector3 bc = cPosition - bPosition;
-            Vector3 ac = cPosition - aPosition;
-            Vector3 at = tPosition - aPosition;
+            var ab = bPosition - aPosition;
+            var bc = cPosition - bPosition;
+            var ac = cPosition - aPosition;
+            var at = tPosition - aPosition;
 
-            float abLen = ab.magnitude;
-            float bcLen = bc.magnitude;
-            float acLen = ac.magnitude;
-            float atLen = at.magnitude;
+            var abLen = ab.magnitude;
+            var bcLen = bc.magnitude;
+            var acLen = ac.magnitude;
+            var atLen = at.magnitude;
 
-            float oldAbcAngle = TriangleAngle(acLen, abLen, bcLen);
-            float newAbcAngle = TriangleAngle(atLen, abLen, bcLen);
+            var oldAbcAngle = TriangleAngle(acLen, abLen, bcLen);
+            var newAbcAngle = TriangleAngle(atLen, abLen, bcLen);
 
             // Bend normal strategy is to take whatever has been provided in the animation
             // stream to minimize configuration changes, however if this is collinear
             // try computing a bend normal given the desired target position.
             // If this also fails, try resolving axis using hint if provided.
-            Vector3 axis = Vector3.Cross(ab, bc);
+            var axis = Vector3.Cross(ab, bc);
             if (axis.sqrMagnitude < kSqrEpsilon)
             {
                 axis = hasHint ? Vector3.Cross(hint.position - aPosition, bc) : Vector3.zero;
@@ -162,10 +162,10 @@ namespace InfimaGames.LowPolyShooterPack
             }
             axis = Vector3.Normalize(axis);
 
-            float a = 0.5f * (oldAbcAngle - newAbcAngle);
-            float sin = Mathf.Sin(a);
-            float cos = Mathf.Cos(a);
-            Quaternion deltaR = new Quaternion(axis.x * sin, axis.y * sin, axis.z * sin, cos);
+            var a = 0.5f * (oldAbcAngle - newAbcAngle);
+            var sin = Mathf.Sin(a);
+            var cos = Mathf.Cos(a);
+            var deltaR = new Quaternion(axis.x * sin, axis.y * sin, axis.z * sin, cos);
             hierarchy[1].rotation = deltaR * hierarchy[1].rotation;
 
             cPosition = hierarchy[2].position;
@@ -174,7 +174,7 @@ namespace InfimaGames.LowPolyShooterPack
 
             if (hasHint)
             {
-                float acSqrMag = ac.sqrMagnitude;
+                var acSqrMag = ac.sqrMagnitude;
                 if (acSqrMag > 0f)
                 {
                     bPosition = hierarchy[1].position;
@@ -182,15 +182,15 @@ namespace InfimaGames.LowPolyShooterPack
                     ab = bPosition - aPosition;
                     ac = cPosition - aPosition;
 
-                    Vector3 acNorm = ac / Mathf.Sqrt(acSqrMag);
-                    Vector3 ah = hint.position - aPosition;
-                    Vector3 abProj = ab - acNorm * Vector3.Dot(ab, acNorm);
-                    Vector3 ahProj = ah - acNorm * Vector3.Dot(ah, acNorm);
+                    var acNorm = ac / Mathf.Sqrt(acSqrMag);
+                    var ah = hint.position - aPosition;
+                    var abProj = ab - acNorm * Vector3.Dot(ab, acNorm);
+                    var ahProj = ah - acNorm * Vector3.Dot(ah, acNorm);
 
-                    float maxReach = abLen + bcLen;
+                    var maxReach = abLen + bcLen;
                     if (abProj.sqrMagnitude > (maxReach * maxReach * 0.001f) && ahProj.sqrMagnitude > 0f)
                     {
-                        Quaternion hintR = Quaternion.FromToRotation(abProj, ahProj);
+                        var hintR = Quaternion.FromToRotation(abProj, ahProj);
                         hintR.x *= weightHint;
                         hintR.y *= weightHint;
                         hintR.z *= weightHint;
@@ -205,7 +205,7 @@ namespace InfimaGames.LowPolyShooterPack
         
         private static float TriangleAngle(float aLen, float aLen1, float aLen2)
         {
-            float c = Mathf.Clamp((aLen1 * aLen1 + aLen2 * aLen2 - aLen * aLen) / (aLen1 * aLen2) / 2.0f, -1.0f, 1.0f);
+            var c = Mathf.Clamp((aLen1 * aLen1 + aLen2 * aLen2 - aLen * aLen) / (aLen1 * aLen2) / 2.0f, -1.0f, 1.0f);
             return Mathf.Acos(c);
         }
         

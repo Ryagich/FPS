@@ -27,10 +27,13 @@ public class PatrolAction : Action
 		// No patrol waypoints, stand idle.
 		if (controller.patrolWayPoints.Count == 0)
 			return;
+		if (!controller.nav || !controller.nav.isOnNavMesh)
+			return;
 		// Set navigation parameters.
 		controller.focusSight = false;
 		controller.nav.speed = controller.generalStats.patrolSpeed;
 		// Reached waypoint, wait for a moment before keep patrolling.
+		
 		if (controller.nav.remainingDistance <= controller.nav.stoppingDistance && !controller.nav.pathPending)
 		{
 			controller.variables.patrolTimer += Time.deltaTime;

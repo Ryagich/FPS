@@ -78,19 +78,20 @@ public class AttackAction : Action
 	private void CastShot(StateController controller)
 	{
 		// Get shot imprecision vector.
-		Vector3 imprecision = Random.Range(-controller.classStats.shotErrorRate, controller.classStats.shotErrorRate)
-			* controller.transform.right;
+		var imprecision = Random.Range(-controller.classStats.shotErrorRate, controller.classStats.shotErrorRate)
+		                  * controller.transform.right;
 
 		imprecision += Random.Range(-controller.classStats.shotErrorRate, controller.classStats.shotErrorRate)
 			* controller.transform.up;
 		// Get shot desired direction.
-		Vector3 shotDirection = controller.personalTarget - controller.enemyAnimation.gunMuzzle.position;
+		var shotDirection = controller.personalTarget - controller.enemyAnimation.gunMuzzle.position;
 		// Cast shot.
-		Ray ray = new Ray(controller.enemyAnimation.gunMuzzle.position, shotDirection.normalized + imprecision);
-		if (Physics.Raycast(ray, out RaycastHit hit, controller.viewRadius, controller.generalStats.shotMask.value))
+		var ray = new Ray(controller.enemyAnimation.gunMuzzle.position, shotDirection.normalized + imprecision);
+		if (Physics.Raycast(ray, out var hit, controller.viewRadius, controller.generalStats.shotMask.value))
 		{
 			// Hit something organic? Consider all layers in target mask as organic.
-			bool isOrganic = ((1 << hit.transform.root.gameObject.layer) & controller.generalStats.targetMask) != 0;
+			var isOrganic = !((hit.transform.gameObject.layer & controller.generalStats.targetMask) > 0);
+			//var isOrganic = ((1 << hit.transform.root.gameObject.layer) & controller.generalStats.targetMask) != 0;
 			DoShot(controller, ray.direction, hit.point, hit.normal, isOrganic, hit.transform);
 		}
 		else
@@ -104,34 +105,40 @@ public class AttackAction : Action
 		Vector3 hitNormal = default, bool organic = false, Transform target = null)
 	{
 		// Draw muzzle flash.
-		GameObject muzzleFlash = Object.Instantiate<GameObject>(controller.classStats.muzzleFlash, controller.enemyAnimation.gunMuzzle);
+		var muzzleFlash = Instantiate(controller.classStats.muzzleFlash, controller.enemyAnimation.gunMuzzle);
 		muzzleFlash.transform.localPosition = Vector3.zero;
 		muzzleFlash.transform.localEulerAngles = Vector3.back * 90f;
 		controller.StartCoroutine(this.DestroyFlash(muzzleFlash));
 
 		// Draw shot tracer and smoke.
-		GameObject shotTracer = Object.Instantiate<GameObject>(controller.classStats.shot, controller.enemyAnimation.gunMuzzle);
+		var shotTracer = Instantiate(controller.classStats.shot, controller.enemyAnimation.gunMuzzle);
 		// Padding to start shot tracer
-		Vector3 origin = controller.enemyAnimation.gunMuzzle.position - controller.enemyAnimation.gunMuzzle.right * 0.5f;
+		var origin = controller.enemyAnimation.gunMuzzle.position - controller.enemyAnimation.gunMuzzle.right * 0.5f;
 		shotTracer.transform.position = origin;
 		shotTracer.transform.rotation = Quaternion.LookRotation(direction);
 
 		// Draw bullet hole and sparks, if target is not organic.
 		if(target && !organic)
 		{
-			GameObject bulletHole = Instantiate(controller.classStats.bulletHole);
+			var bulletHole = Instantiate(controller.classStats.bulletHole);
 			bulletHole.transform.rotation = Quaternion.FromToRotation(Vector3.up, hitNormal);
 			bulletHole.transform.position = hitPoint + 0.01f * hitNormal;
-			GameObject instantSparks = Object.Instantiate<GameObject>(controller.classStats.sparks);
+			var instantSparks = Instantiate(controller.classStats.sparks);
 			instantSparks.transform.position = hitPoint;
 		}
 		// The object hit is organic, call take damage function.
 		else if(target && organic)
 		{
-			HealthManager targetHealth = target.GetComponent<HealthManager>();
+			var targetHealth = target.GetComponentInParent<HealthManager>();
 			if(targetHealth)
 			{
 				targetHealth.TakeDamage(hitPoint, direction, controller.classStats.bulletDamage, target.GetComponent<Collider>(), controller.gameObject);
+			}
+
+			var stats = target.GetComponentInParent<StatsController>();
+			if (stats)
+			{
+				stats.TakeDamage(controller.classStats.bulletDamage);
 			}
 		}
 		// Play shot audio clip at shot position.

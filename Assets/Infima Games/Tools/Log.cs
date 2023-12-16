@@ -12,7 +12,7 @@ namespace InfimaGames.LowPolyShooterPack
             if (toPrint == null)
                 toPrint = "Null";
 
-            string message = "Wtf happened: " + toPrint;
+            var message = "Wtf happened: " + toPrint;
             Internal_Log(message, LogType.Log);
         }
 
@@ -23,7 +23,7 @@ namespace InfimaGames.LowPolyShooterPack
             if (warning == null)
                 warning = "Null";
 
-            string message = "You have been warned that: " + warning;
+            var message = "You have been warned that: " + warning;
             Internal_Log("You have been warned that: " + warning, LogType.Warning);
         }
 
@@ -34,7 +34,7 @@ namespace InfimaGames.LowPolyShooterPack
             if (toKill == null)
                 toKill = "Null";
 
-            string message = "You have been warned that: " + toKill;
+            var message = "You have been warned that: " + toKill;
             Internal_Log(message, LogType.Error);
         }
 

@@ -18,8 +18,8 @@ public class FindCoverAction : Action
 		controller.enemyAnimation.AbortPendingAim();
 		controller.enemyAnimation.anim.SetBool("Crouch", false);
 		// Get the best cover spot, considering current NPCs and target positions.
-		ArrayList nextCoverData = controller.coverLookup.GetBestCoverSpot(controller);
-		Vector3 potentialCover = (Vector3)nextCoverData[1];
+		var nextCoverData = controller.coverLookup.GetBestCoverSpot(controller);
+		var potentialCover = (Vector3)nextCoverData[1];
 		// No cover spot.
 		if (Vector3.Equals(potentialCover, Vector3.positiveInfinity))
 		{

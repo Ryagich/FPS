@@ -12,9 +12,9 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
 
             //Loop.
-            for (int i = enumerable.Count() - 1; i >= 0; i--)
+            for (var i = enumerable.Count() - 1; i >= 0; i--)
             {
-                T item = enumerable.ElementAt(i);
+                var item = enumerable.ElementAt(i);
                 action.Invoke(item);
             }
         }
@@ -25,9 +25,9 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
 
             //Loop.
-            for (int i = enumerable.Count() - 1; i >= 0; i--)
+            for (var i = enumerable.Count() - 1; i >= 0; i--)
             {
-                T item = enumerable.ElementAt(i);
+                var item = enumerable.ElementAt(i);
                 action.Invoke(item, i);
             }
         }
@@ -38,9 +38,9 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
 
             //Loop.
-            for (int i = enumerable.Count() - 1; i >= 0; i--)
+            for (var i = enumerable.Count() - 1; i >= 0; i--)
             {
-                T item = enumerable.ElementAt(i);
+                var item = enumerable.ElementAt(i);
                 action.Invoke(item, i, enumerable);
             }
         }
@@ -51,9 +51,9 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
 
             //Loop.
-            for (int i = enumerable.Count() - 1; i >= 0; i--)
+            for (var i = enumerable.Count() - 1; i >= 0; i--)
             {
-                KeyValuePair<T1, T2> item = enumerable.ElementAt(i);
+                var item = enumerable.ElementAt(i);
                 action.Invoke(item.Key, item.Value);
             }
         }

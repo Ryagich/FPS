@@ -83,43 +83,59 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			}
 
 			//Explosion force
-			Vector3 explosionPos = transform.position;
+			var explosionPos = transform.position;
 			//Use overlapshere to check for nearby colliders
-			Collider[] colliders = Physics.OverlapSphere(explosionPos, radius);
-			foreach (Collider hit in colliders)
+			var colliders = Physics.OverlapSphere(explosionPos, radius);
+			foreach (var с in colliders)
 			{
 				//Ignore the player character.
-				if (hit.CompareTag("Player"))
+				if (с.CompareTag("Player"))
 					continue;
 
-				Rigidbody rb = hit.GetComponent<Rigidbody>();
+				var rb = с.GetComponent<Rigidbody>();
 
 				//Add force to nearby rigidbodies
 				if (rb != null)
 					rb.AddExplosionForce(power * 5, explosionPos, radius, 3.0F);
 
 				//If the explosion hits "Target" tag and isHit is false
-				if (hit.GetComponent<Collider>().tag == "Target"
-				    && hit.gameObject.GetComponent<TargetScript>().isHit == false)
+				if (с.GetComponent<Collider>().tag == "Target"
+				    && с.gameObject.GetComponent<TargetScript>().isHit == false)
 				{
 					//Toggle "isHit" on target object
-					hit.gameObject.GetComponent<TargetScript>().isHit = true;
+					с.gameObject.GetComponent<TargetScript>().isHit = true;
 				}
 
 				//If the explosion hits "ExplosiveBarrel" tag
-				if (hit.GetComponent<Collider>().tag == "ExplosiveBarrel")
+				if (с.GetComponent<Collider>().tag == "ExplosiveBarrel")
 				{
 					//Toggle "explode" on explosive barrel object
-					hit.gameObject.GetComponent<ExplosiveBarrelScript>().explode = true;
+					с.gameObject.GetComponent<ExplosiveBarrelScript>().explode = true;
 				}
 
 				//If the explosion hits "GasTank" tag
-				if (hit.GetComponent<Collider>().tag == "GasTank")
+				if (с.GetComponent<Collider>().tag == "GasTank")
 				{
 					//Toggle "isHit" on gas tank object
-					hit.gameObject.GetComponent<GasTankScript>().isHit = true;
+					с.gameObject.GetComponent<GasTankScript>().isHit = true;
 					//Reduce explosion timer on gas tank object to make it explode faster
-					hit.gameObject.GetComponent<GasTankScript>().explosionTimer = 0.05f;
+					с.gameObject.GetComponent<GasTankScript>().explosionTimer = 0.05f;
+				}
+				//TODO: Костыль
+				var stats = с.GetComponent<StatsController>();
+				if (stats)
+				{
+					var damage = 150 * ((radius - Vector3.Distance(с.transform.position, explosionPos)) / radius);
+					stats.TakeDamage(damage);
+				}
+
+				if (LayerMask.NameToLayer("Enemy") == с.gameObject.layer)
+				{
+					var damage = 80 * ((radius - Vector3.Distance(с.transform.position, explosionPos)) / radius);
+					с.SendMessageUpwards("HitCallback",
+						new HealthManager.DamageInfo(transform.position,
+							transform.forward, damage,
+							с, TargetPointer.Instance.gameObject));
 				}
 			}
 

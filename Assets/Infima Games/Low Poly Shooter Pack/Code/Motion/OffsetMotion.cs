@@ -71,17 +71,17 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
             }
             
-            FeelPreset feelPreset = feelManager.Preset;
+            var feelPreset = feelManager.Preset;
             if (feelPreset == null)
                 return;
             
             //Get Feel.
-            Feel feel = feelPreset.GetFeel(motionType);
+            var feel = feelPreset.GetFeel(motionType);
             if (feel == null)
                 return;
 
             //Try to get the equipped weapon. With the current asset setup, this should always return the correct thing.
-            WeaponBehaviour weaponBehaviour = inventoryBehaviour.GetEquipped();
+            var weaponBehaviour = inventoryBehaviour.GetEquipped();
             if (weaponBehaviour == null)
                 return;
             
@@ -91,17 +91,17 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
 
             //Get the WeaponAttachmentManager component, which we will need to offset things even more.
-            WeaponAttachmentManagerBehaviour weaponAttachmentManagerBehaviour = weaponBehaviour.GetAttachmentManager();
+            var weaponAttachmentManagerBehaviour = weaponBehaviour.GetAttachmentManager();
             if (weaponAttachmentManagerBehaviour == null)
                 return;
 
             //Get the equipped scope.
-            ScopeBehaviour scopeBehaviour = weaponAttachmentManagerBehaviour.GetEquippedScope();
+            var scopeBehaviour = weaponAttachmentManagerBehaviour.GetEquippedScope();
             if (scopeBehaviour == null)
                 return;
 
             //Grab the ItemOffsets.
-            ItemOffsets itemOffsets = itemAnimationDataBehaviour.GetItemOffsets();
+            var itemOffsets = itemAnimationDataBehaviour.GetItemOffsets();
             if (itemOffsets == null)
                 return;
 
@@ -162,7 +162,7 @@ namespace InfimaGames.LowPolyShooterPack
             }
 
             //This animation value is used to determine when to not use offsets.
-            float alphaActionOffset = characterAnimator.GetFloat(AHashes.AlphaActionOffset);
+            var alphaActionOffset = characterAnimator.GetFloat(AHashes.AlphaActionOffset);
             
             //Add Action Values. These values are applied while throwing a grenade, and while meleeing.
             location += itemOffsets.ActionLocation * alphaActionOffset;

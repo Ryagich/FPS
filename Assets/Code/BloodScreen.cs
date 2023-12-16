@@ -1,7 +1,4 @@
-using System;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class BloodScreen : MonoBehaviour
@@ -17,6 +14,7 @@ public class BloodScreen : MonoBehaviour
     private Image bloodScreen;
     private BeatingHeart heart;
     private float t;
+    private bool isBleeding = true;
 
     public void Init(Image screen, Stat stat, StatFiller filler, BeatingHeart heart)
     {
@@ -26,14 +24,25 @@ public class BloodScreen : MonoBehaviour
         this.heart = heart;
     }
 
+    public void StartBleeding()
+    {
+        isBleeding = true;
+    }
+    
+    public void StopBleeding()
+    {
+        bloodScreen.transform.localScale = Vector3.one * _beatSize;
+        isBleeding = false;
+    }
+
     private void FixedUpdate()
     {
-        if (!bloodScreen)
+        if (!bloodScreen || !isBleeding)
             return;
         t += (heart.bpm * m / 60) * Time.fixedDeltaTime * Mathf.PI * 2;
         var normalized = (Mathf.Pow(Mathf.Sin(t), _sharpness) + 1) * 0.5f;
         var scale = _defSize + (_beatSize - _defSize) * normalized;
         bloodScreen.transform.localScale = Vector3.one * scale;
-        bloodScreen.gameObject.SetActive(filler.Current / stat.Max  <= _hidePercent);
+        bloodScreen.gameObject.SetActive(filler.Current / stat.Max <= _hidePercent);
     }
 }

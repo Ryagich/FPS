@@ -114,21 +114,21 @@ namespace InfimaGames
             }
 
             //Multiply by speed to make the spring faster.
-            float deltaTime = Time.deltaTime * settings.speed;
+            var deltaTime = Time.deltaTime * settings.speed;
 
-            float c = settings.damping;
-            float m = settings.mass;
-            float k = settings.stiffness;
+            var c = settings.damping;
+            var m = settings.mass;
+            var k = settings.stiffness;
 
-            Vector3 x = currentValue;
-            Vector3 v = currentVelocity;
-            Vector3 a = currentAcceleration;
+            var x = currentValue;
+            var v = currentVelocity;
+            var a = currentAcceleration;
 
-            float _stepSize = deltaTime > stepSize ? stepSize : deltaTime - 0.001f;
-            float steps = Mathf.Ceil(deltaTime / _stepSize);
+            var _stepSize = deltaTime > stepSize ? stepSize : deltaTime - 0.001f;
+            var steps = Mathf.Ceil(deltaTime / _stepSize);
             for (var i = 0; i < steps; i++)
             {
-                float dt = Math.Abs(i - (steps - 1)) < 0.01f ? deltaTime - i * _stepSize : _stepSize;
+                var dt = Math.Abs(i - (steps - 1)) < 0.01f ? deltaTime - i * _stepSize : _stepSize;
 
                 x += v * dt + a * (dt * dt * 0.5f);
                 // springForce = -k * (x - endValue)

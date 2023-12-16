@@ -72,7 +72,7 @@ namespace InfimaGames.LowPolyShooterPack
             }
             
             //Get Feel.
-            Feel feel = feelManager.Preset.GetFeel(motionType);
+            var feel = feelManager.Preset.GetFeel(motionType);
             if (feel == null)
             {
                 //ReferenceError.
@@ -95,7 +95,7 @@ namespace InfimaGames.LowPolyShooterPack
             playedCurves = feel.GetState(characterAnimator).LandingCurves;
 
             //Time where we evaluate the landing curves.
-            float evaluateTime = Time.time - landingTime;
+            var evaluateTime = Time.time - landingTime;
                 
             //Evaluate Location Curves.
             location += playedCurves.LocationCurves.EvaluateCurves(evaluateTime);

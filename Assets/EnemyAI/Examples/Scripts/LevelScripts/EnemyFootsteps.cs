@@ -22,7 +22,7 @@ public class EnemyFootsteps : MonoBehaviour
 
 	void Update()
 	{
-		float factor = 0.15f;
+		var factor = 0.15f;
 
 		if (anim.velocity.magnitude > 1.4f)
 		{
@@ -46,7 +46,7 @@ public class EnemyFootsteps : MonoBehaviour
 
 	void PlayFootStep()
 	{
-		int oldIndex = index;
+		var oldIndex = index;
 		while (oldIndex == index)
 		{
 			index = Random.Range(0, stepClips.Length);

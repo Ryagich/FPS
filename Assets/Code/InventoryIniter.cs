@@ -27,7 +27,7 @@ public class InventoryIniter : MonoBehaviour
         var weapons = _inventory.InitWeapons();
         var index = 0;
 
-        for (int i = 0; i < YandexGame.savesData.ChosenWeapons.Length; i++)
+        for (var i = 0; i < YandexGame.savesData.ChosenWeapons.Length; i++)
         for (var j = 0; j < YandexGame.savesData.ChosenWeapons[i].Length; j++)
         {
             if (!YandexGame.savesData.ChosenWeapons[i][j])

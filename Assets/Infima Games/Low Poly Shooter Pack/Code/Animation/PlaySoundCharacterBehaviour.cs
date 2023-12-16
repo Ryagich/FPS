@@ -90,7 +90,7 @@ namespace InfimaGames.LowPolyShooterPack
             #region Select Correct Clip To Play
 
             //Switch.
-            AudioClip clip = soundType switch
+            var clip = soundType switch
             {
                 //Grenade Throw.
                 SoundType.GrenadeThrow => playerCharacter.GetAudioClipsGrenadeThrow().GetRandom(),

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 using EnemyAI;
 
 // The decision to see the target. Sense of sight.
@@ -11,32 +12,45 @@ public class LookDecision : Decision
 		// Reset sight status on loop before checking.
 		controller.targetInSight = false;
 		// Check sight.
-		return CheckTargetsInRadius(controller, controller.viewRadius, MyHandleTargets);
+		var targetsToCheck = GetTargetsInRadius(controller, controller.viewRadius);
+		var bestTarget = GetBestTarget(controller, targetsToCheck);
+		if (!bestTarget)
+			return false;
+		// Set current target parameters.
+		controller.targetInSight = true;
+		controller.LastTarget = bestTarget;
+		//controller.personalTarget = controller.GetClosestTarget().position;
+		controller.personalTarget = bestTarget.position;
+		return true;
 	}
 
 	// The delegate for results of overlapping targets in look decision.
-	private bool MyHandleTargets(StateController controller, bool hasTargets, Collider[] targetsInViewRadius)
+	private static Transform GetBestTarget(StateController controller, Transform[] targetsInViewRadius)
 	{
-		// Is there any sight on view radius?
-		if(hasTargets)
+		var controllerTransform = controller.transform;
+		var filtered = targetsInViewRadius
+			.Where(target =>
 		{
-			Vector3 target = targetsInViewRadius[0].transform.position;
 			// Check if target is in field of view.
-			Vector3 dirToTarget = target - controller.transform.position;
+			var dirToTarget = target.position - controllerTransform.position;
 			//var dirToTarget = Vector3.Distance(target, controller.transform.position);
-			bool inFOVCondition = (Vector3.Angle(controller.transform.forward, dirToTarget) < controller.viewAngle / 2);
+			var inFOVCondition = (Vector3.Angle(controllerTransform.forward, dirToTarget) < controller.viewAngle / 2);
 			// Is target in FOV and NPC have a clear sight?
-			if (inFOVCondition && !controller.BlockedSight())
+			
+			return inFOVCondition && !controller.BlockedSight(target);
+		})
+			.ToArray();
+		var min = float.MaxValue;
+		Transform closest = null;
+		foreach (var target in filtered)
+		{
+			var dis = controller.DistanceTo(target);
+			if (dis < min)
 			{
-				// Set current target parameters.
-				controller.targetInSight = true;
-				//controller.personalTarget = controller.GetClosestTarget().position;
-				controller.personalTarget = targetsInViewRadius[0].transform.position;
-
-				return true;
+				min = dis;
+				closest = target;
 			}
 		}
-		// No target on sight.
-		return false;
+		return closest;
 	}
 }

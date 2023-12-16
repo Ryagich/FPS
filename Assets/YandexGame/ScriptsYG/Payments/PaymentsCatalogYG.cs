@@ -11,15 +11,15 @@ namespace YG
         [SerializeField]
         private bool spawnPurchases = true;
 
-        [SerializeField, ConditionallyVisible(nameof(spawnPurchases)), Tooltip("Ðîäèòåëüñêèé îáúåêò äëÿ ñïàâíà â í¸ì ïîêóïîê")]
+        [SerializeField, ConditionallyVisible(nameof(spawnPurchases)), Tooltip("Ð Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ð¹ Ð¾Ð±ÑŠÐµÐºÑ‚ Ð´Ð»Ñ ÑÐ¿Ð°Ð²Ð½Ð° Ð² Ð½Ñ‘Ð¼ Ð¿Ð¾ÐºÑƒÐ¿Ð¾Ðº")]
         private Transform rootSpawnPurchases;
-        [SerializeField, ConditionallyVisible(nameof(spawnPurchases)), Tooltip("Ïðåôàá ïîêóïêè (îáúåêò ñî êîìïîíåíòîì PurchaseYG)")]
+        [SerializeField, ConditionallyVisible(nameof(spawnPurchases)), Tooltip("ÐŸÑ€ÐµÑ„Ð°Ð± Ð¿Ð¾ÐºÑƒÐ¿ÐºÐ¸ (Ð¾Ð±ÑŠÐµÐºÑ‚ ÑÐ¾ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð¾Ð¼ PurchaseYG)")]
         private GameObject purchasePrefab;
         public enum UpdateListMethod { OnEnable, Start, DoNotUpdate };
-        [Tooltip("Êîãäà ñëåäóåò îáíîâëÿòü ñïèñîê ïîêóïîê?\nStart - Îáíîâëÿòü â ìåòîäå Start.\nOnEnable - Îáíîâëÿòü ïðè êàæäîé àêòèâàöèè îáúåêòà (â ìåòîäå OnEnable)\nDoNotUpdate - Íå îáíîâëÿòü.")]
+        [Tooltip("ÐšÐ¾Ð³Ð´Ð° ÑÐ»ÐµÐ´ÑƒÐµÑ‚ Ð¾Ð±Ð½Ð¾Ð²Ð»ÑÑ‚ÑŒ ÑÐ¿Ð¸ÑÐ¾Ðº Ð¿Ð¾ÐºÑƒÐ¿Ð¾Ðº?\nStart - ÐžÐ±Ð½Ð¾Ð²Ð»ÑÑ‚ÑŒ Ð² Ð¼ÐµÑ‚Ð¾Ð´Ðµ Start.\nOnEnable - ÐžÐ±Ð½Ð¾Ð²Ð»ÑÑ‚ÑŒ Ð¿Ñ€Ð¸ ÐºÐ°Ð¶Ð´Ð¾Ð¹ Ð°ÐºÑ‚Ð¸Ð²Ð°Ñ†Ð¸Ð¸ Ð¾Ð±ÑŠÐµÐºÑ‚Ð° (Ð² Ð¼ÐµÑ‚Ð¾Ð´Ðµ OnEnable)\nDoNotUpdate - ÐÐµ Ð¾Ð±Ð½Ð¾Ð²Ð»ÑÑ‚ÑŒ.")]
         public UpdateListMethod updateListMethod;
 
-        [SerializeField, Tooltip("Ñïèñîê ïîêóïîê (PurchaseYG)")]
+        [SerializeField, Tooltip("Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¿Ð¾ÐºÑƒÐ¿Ð¾Ðº (PurchaseYG)")]
         public PurchaseYG[] purchases = new PurchaseYG[0];
 
         public Action onUpdatePurchasesList;
@@ -64,8 +64,8 @@ namespace YG
 
         private void DestroyPurchasesList()
         {
-            int childCount = rootSpawnPurchases.childCount;
-            for (int i = childCount - 1; i >= 0; i--)
+            var childCount = rootSpawnPurchases.childCount;
+            for (var i = childCount - 1; i >= 0; i--)
             {
                 Destroy(rootSpawnPurchases.GetChild(i).gameObject);
             }
@@ -74,9 +74,9 @@ namespace YG
         private void SpawnPurchasesList()
         {
             purchases = new PurchaseYG[YandexGame.purchases.Length];
-            for (int i = 0; i < YandexGame.purchases.Length; i++)
+            for (var i = 0; i < YandexGame.purchases.Length; i++)
             {
-                GameObject purchaseObj = Instantiate(purchasePrefab, rootSpawnPurchases);
+                var purchaseObj = Instantiate(purchasePrefab, rootSpawnPurchases);
 
                 purchases[i] = purchaseObj.GetComponent<PurchaseYG>();
                 purchases[i].data = YandexGame.purchases[i];
@@ -86,9 +86,9 @@ namespace YG
 
         private void SetDataPurchasesListByID()
         {
-            for (int i = 0; i < purchases.Length; i++)
+            for (var i = 0; i < purchases.Length; i++)
             {
-                Purchase purchase = YandexGame.PurchaseByID(purchases[i].data.id);
+                var purchase = YandexGame.PurchaseByID(purchases[i].data.id);
                 if (purchase != null)
                 {
                     purchases[i].data = purchase;

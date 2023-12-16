@@ -99,7 +99,7 @@ namespace YG
 
             void ActivityMomoObjects(MonoBehaviour[] objects, bool activity)
             {
-                for (int i = 0; i < objects.Length; i++)
+                for (var i = 0; i < objects.Length; i++)
                 {
                     objects[i].enabled = activity;
                 }

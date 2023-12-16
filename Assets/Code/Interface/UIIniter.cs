@@ -7,6 +7,7 @@ using UnityEngine;
 public class UIIniter : MonoBehaviour
 {
     [SerializeField, Min(.0f)] private float _fillSpeed = 2f;
+    [SerializeField, Min(.0f)] private float _fillLerpSpeed = 0.5f;
 
     public void Init(GameObject canvas)
     {
@@ -22,11 +23,11 @@ public class UIIniter : MonoBehaviour
         bh.HP.fillAmount = sc.Hp.Value / sc.Hp.Max;
         bh.Armor.fillAmount = sc.Armor.Value / sc.Armor.Max;
 
-        var hpFiller = new StatFiller(bh.HP, sc.Hp, this, _fillSpeed);
-        var armorFiller = new StatFiller(bh.Armor, sc.Armor, this, _fillSpeed);
+        var hpFiller = new StatFiller(bh.HP, sc.Hp, this, _fillSpeed, _fillLerpSpeed);
+        var armorFiller = new StatFiller(bh.Armor, sc.Armor, this, _fillSpeed, _fillLerpSpeed);
 
         heart.Init(bh.Heart, sc.Hp, hpFiller);
-        blood.Init(bh.BloodScreen, sc.Hp, hpFiller,heart);
+        blood.Init(bh.BloodScreen, sc.Hp, hpFiller, heart);
         hpColor.Init(hpFiller, bh.HP);
         hpColor.ChangeColor(sc.Hp.Value / sc.Hp.Max);
     }

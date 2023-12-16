@@ -122,7 +122,7 @@ namespace InfimaGames.LowPolyShooterPack
         private bool holdingButtonRun;
         private bool holdingButtonFire;
         private bool tutorialTextVisible;
-        private bool cursorLocked;
+        public bool cursorLocked;
         private int shotsFired;
 
         #endregion
@@ -208,7 +208,7 @@ namespace InfimaGames.LowPolyShooterPack
             runningAlpha = Mathf.Lerp(runningAlpha, running ? 1.0f : 0.0f, Time.deltaTime * runningInterpolationSpeed);
 
             //Running Field Of View Multiplier.
-            float runningFieldOfView = Mathf.Lerp(1.0f, fieldOfViewRunningMultiplier, runningAlpha);
+            var runningFieldOfView = Mathf.Lerp(1.0f, fieldOfViewRunningMultiplier, runningAlpha);
 
             //Interpolate the world camera's field of view based on whether we are aiming or not.
             cameraWorld.fieldOfView =
@@ -283,11 +283,11 @@ namespace InfimaGames.LowPolyShooterPack
             #endregion
 
             //Leaning. Affects how much the character should apply of the leaning additive animation.
-            float leaningValue = Mathf.Clamp01(axisMovement.y);
+            var leaningValue = Mathf.Clamp01(axisMovement.y);
             characterAnimator.SetFloat(AHashes.LeaningForward, leaningValue, 0.5f, Time.deltaTime);
 
             //Movement Value. This value affects absolute movement. Aiming movement uses this, as opposed to per-axis movement.
-            float movementValue = Mathf.Clamp01(Mathf.Abs(axisMovement.x) + Mathf.Abs(axisMovement.y));
+            var movementValue = Mathf.Clamp01(Mathf.Abs(axisMovement.x) + Mathf.Abs(axisMovement.y));
             characterAnimator.SetFloat(AHashes.Movement, movementValue, dampTimeLocomotion, Time.deltaTime);
 
             //Aiming Speed Multiplier.
@@ -372,14 +372,14 @@ namespace InfimaGames.LowPolyShooterPack
         private void PlayReloadAnimation()
         {
             var i = inventory as Inventory;
-            
+
             if (!i.CheckAmmo(equippedWeapon.GetComponent<Weapon>().AmmoType))
                 return;
 
             #region Animation
 
             //Get the name of the animation state to play, which depends on weapon settings, and ammunition!
-            string stateName = equippedWeapon.HasCycledReload()
+            var stateName = equippedWeapon.HasCycledReload()
                 ? "Reload Open"
                 : (equippedWeapon.HasAmmunition() ? "Reload" : "Reload Empty");
 
@@ -463,11 +463,6 @@ namespace InfimaGames.LowPolyShooterPack
             characterAnimator.CrossFade("Fire Empty", 0.05f, layerOverlay, 0);
         }
 
-        private void UpdateCursorState()
-        {
-            Cursor.visible = !cursorLocked;
-            Cursor.lockState = cursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
-        }
 
         private void PlayGrenadeThrow()
         {
@@ -1026,14 +1021,14 @@ namespace InfimaGames.LowPolyShooterPack
                 case { phase: InputActionPhase.Performed }:
                     //Get the index increment direction for our inventory using the scroll wheel direction. If we're not
                     //actually using one, then just increment by one.
-                    float scrollValue = context.valueType.IsEquivalentTo(typeof(Vector2))
+                    var scrollValue = context.valueType.IsEquivalentTo(typeof(Vector2))
                         ? Mathf.Sign(context.ReadValue<Vector2>().y)
                         : 1.0f;
 
                     //Get the next index to switch to.
-                    int indexNext = scrollValue > 0 ? inventory.GetNextIndex() : inventory.GetLastIndex();
+                    var indexNext = scrollValue > 0 ? inventory.GetNextIndex() : inventory.GetLastIndex();
                     //Get the current weapon's index.
-                    int indexCurrent = inventory.GetEquippedIndex();
+                    var indexCurrent = inventory.GetEquippedIndex();
 
                     //Make sure we're allowed to change, and also that we're not using the same index, otherwise weird things happen!
                     if (CanChangeWeapon() && (indexCurrent != indexNext))
@@ -1042,8 +1037,18 @@ namespace InfimaGames.LowPolyShooterPack
             }
         }
 
+        private void UpdateCursorState()
+        {
+            Cursor.visible = !cursorLocked;
+            Cursor.lockState = cursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
+            if (Cursor.lockState == CursorLockMode.Locked)
+                Time.timeScale = 1;
+        }
+
         public void OnLockCursor(InputAction.CallbackContext context)
         {
+            if (!CanPause)
+                return;
             //Switch.
             switch (context)
             {
@@ -1058,7 +1063,7 @@ namespace InfimaGames.LowPolyShooterPack
         }
 
         public bool CanPause = true;
-        
+
         public void OnLockCursor()
         {
             if (!CanPause)
@@ -1147,9 +1152,9 @@ namespace InfimaGames.LowPolyShooterPack
                 grenadeCount--;
 
             //Get Camera Transform.
-            Transform cTransform = cameraWorld.transform;
+            var cTransform = cameraWorld.transform;
             //Calculate the throwing location.
-            Vector3 position = cTransform.position;
+            var position = cTransform.position;
             position += cTransform.forward * grenadeSpawnOffset;
             //Throw.
             Instantiate(grenadePrefab, position, cTransform.rotation);

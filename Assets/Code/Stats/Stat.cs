@@ -15,7 +15,7 @@ public class Stat
         Value = value;
     }
 
-    public void ChangeValue(float value)
+    public void AddValue(float value)
     {
         Value = Mathf.Clamp(Value + value, Min, Max);
         ValueChanged?.Invoke();

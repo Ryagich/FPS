@@ -1,4 +1,5 @@
 ﻿using InfimaGames.LowPolyShooterPack.Legacy;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -40,7 +41,8 @@ namespace InfimaGames.LowPolyShooterPack
         [Tooltip("Amount of shots this weapon can shoot in a minute. It determines how fast the weapon shoots.")]
         [SerializeField]
         private int roundsPerMinutes = 200;
-         [SerializeField] private float _damage = 40f;
+
+        [SerializeField] private float _damage = 40f;
 
         [Title(label: "Reloading")]
         [Tooltip("Determines if this weapon reloads in cycles, meaning that it inserts one bullet at a time, or not.")]
@@ -110,16 +112,14 @@ namespace InfimaGames.LowPolyShooterPack
 
         #endregion
 
-        #region FIELDS
-
         private Animator animator;
         private WeaponAttachmentManagerBehaviour attachmentManager;
-        [HideInInspector]public int ammunitionCurrent;
+        [HideInInspector] public int ammunitionCurrent;
 
         #region Attachment Behaviours
 
         private ScopeBehaviour scopeBehaviour;
-        private MagazineBehaviour magazineBehaviour;
+        public MagazineBehaviour magazineBehaviour { get; private set; }
         private MuzzleBehaviour muzzleBehaviour;
         private LaserBehaviour laserBehaviour;
         private GripBehaviour gripBehaviour;
@@ -129,8 +129,6 @@ namespace InfimaGames.LowPolyShooterPack
         private IGameModeService gameModeService;
         private CharacterBehaviour characterBehaviour;
         private Transform playerCamera;
-
-        #endregion
 
         #region UNITY
 
@@ -146,7 +144,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         private bool inited = false;
 
-        private void Init()
+        public void Init()
         {
             if (inited)
                 return;
@@ -274,15 +272,16 @@ namespace InfimaGames.LowPolyShooterPack
             for (var i = 0; i < shotCount; i++)
             {
                 //Determine a random spread value using all of our multipliers.
-                Vector3 spreadValue = Random.insideUnitSphere * (spread * spreadMultiplier);
+                var spreadValue = Random.insideUnitSphere * (spread * spreadMultiplier);
                 //Remove the forward spread component, since locally this would go inside the object we're shooting!
                 spreadValue.z = 0;
                 spreadValue = playerCamera.TransformDirection(spreadValue);
-
-                GameObject projectile = Instantiate(prefabProjectile, playerCamera.position,
+                
+                var projectile = Instantiate(prefabProjectile, playerCamera.position,
                     Quaternion.Euler(playerCamera.eulerAngles + spreadValue));
                 projectile.GetComponent<Projectile>().SetDamage(_damage);
                 //Add velocity to the projectile.
+                Debug.Log(projectile.transform.forward * projectileImpulse);
                 projectile.GetComponent<Rigidbody>().velocity = projectile.transform.forward * projectileImpulse;
             }
         }

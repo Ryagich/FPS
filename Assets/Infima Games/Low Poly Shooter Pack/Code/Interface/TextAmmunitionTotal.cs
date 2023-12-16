@@ -17,7 +17,7 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             var inventory = inventoryBehaviour as Inventory;
             var current = inventory.GetCurrentAmmo();
             float total = inventory.GetCurrentMaxAmmo();
-            float colorAlpha = current / total;
+            var colorAlpha = current / total;
             
             textMesh.color = Color.Lerp(emptyColor, Color.white, colorAlpha);   
 

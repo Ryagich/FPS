@@ -8,7 +8,7 @@ public class ReachedPointDecision : Decision
 	// The decide function, called on Update() (State controller - current state - transition - decision).
 	public override bool Decide(StateController controller)
 	{
-		if (controller.nav.remainingDistance <= controller.nav.stoppingDistance && !controller.nav.pathPending)
+		if (controller.nav && controller.nav.isOnNavMesh && controller.nav.remainingDistance <= controller.nav.stoppingDistance && !controller.nav.pathPending)
 		{
 			return true;
 		}

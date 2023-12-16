@@ -30,8 +30,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         public void LookRotation(Transform character, Transform camera)
         {
-            float yRot = Input.GetAxis("Mouse X") * XSensitivity;
-            float xRot = Input.GetAxis("Mouse Y") * YSensitivity;
+            var yRot = Input.GetAxis("Mouse X") * XSensitivity;
+            var xRot = Input.GetAxis("Mouse Y") * YSensitivity;
 
             m_CharacterTargetRot *= Quaternion.Euler (0f, yRot, 0f);
             m_CameraTargetRot *= Quaternion.Euler (-xRot, 0f, 0f);
@@ -102,7 +102,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             q.z /= q.w;
             q.w = 1.0f;
 
-            float angleX = 2.0f * Mathf.Rad2Deg * Mathf.Atan (q.x);
+            var angleX = 2.0f * Mathf.Rad2Deg * Mathf.Atan (q.x);
 
             angleX = Mathf.Clamp (angleX, MinimumX, MaximumX);
 

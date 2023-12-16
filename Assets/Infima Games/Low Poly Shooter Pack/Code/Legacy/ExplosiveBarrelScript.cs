@@ -57,10 +57,10 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
     		             transform.rotation); 
     
     		//Explosion force
-    		Vector3 explosionPos = transform.position;
-    		Collider[] colliders = Physics.OverlapSphere(explosionPos, explosionRadius);
-    		foreach (Collider hit in colliders) {
-    			Rigidbody rb = hit.GetComponent<Rigidbody> ();
+    		var explosionPos = transform.position;
+    		var colliders = Physics.OverlapSphere(explosionPos, explosionRadius);
+    		foreach (var hit in colliders) {
+    			var rb = hit.GetComponent<Rigidbody> ();
     			
     			//Add force to nearby rigidbodies
     			if (rb != null)

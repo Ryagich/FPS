@@ -29,14 +29,14 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			setRandomPos(0.1f);
 			RandomLerpPos(0.2f);
 
-			float noise = Mathf.PerlinNoise(random, Time.time);
+			var noise = Mathf.PerlinNoise(random, Time.time);
 			GetComponent<Light>().intensity = Mathf.Lerp
 				(minIntensity, maxIntensity, noise);
 		}
 
 		private void RandomLerpPos(float speed)
 		{
-			Vector3 newPos = Vector3.Lerp
+			var newPos = Vector3.Lerp
 				(transform.position, randomPos, Time.deltaTime * speed);
 			transform.position = newPos;
 		}

@@ -5401,10 +5401,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Name
+  m_text: FPS_4
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 789ee531d579d5345bf51ebc991ad775, type: 2}
-  m_sharedMaterial: {fileID: 8819435902531883247, guid: 789ee531d579d5345bf51ebc991ad775,
+  m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
+  m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5429,8 +5429,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 56
+  m_fontSizeBase: 56
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5615,8 +5615,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 52822dc6e80b18c4b84fa37fb0a9018f, type: 2}
-  m_sharedMaterial: {fileID: -5066701443530399222, guid: 52822dc6e80b18c4b84fa37fb0a9018f,
+  m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
+  m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5892,6 +5892,7 @@ GameObject:
   - component: {fileID: 5965040679945168709}
   - component: {fileID: 5965040679945168714}
   - component: {fileID: 5965040679945168708}
+  - component: {fileID: 7182678049201209910}
   m_Layer: 5
   m_Name: Canvas Animated
   m_TagString: Untagged
@@ -5991,6 +5992,18 @@ Animation:
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
+--- !u!114 &7182678049201209910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5965040679945168711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a88af6cca60a7c429c4fb679a7e1215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5965040680208419700
 GameObject:
   m_ObjectHideFlags: 0
@@ -6002,6 +6015,7 @@ GameObject:
   - component: {fileID: 5965040680208419707}
   - component: {fileID: 5965040680208419706}
   - component: {fileID: 711473243129425611}
+  - component: {fileID: 7880664336885570501}
   m_Layer: 0
   m_Name: MyGameMenu
   m_TagString: Untagged
@@ -6055,6 +6069,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _continueButton: {fileID: 209782544497997507}
+--- !u!114 &7880664336885570501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5965040680208419700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d74442e70dc039468edcf133aa56857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6000061924019611026
 GameObject:
   m_ObjectHideFlags: 0
@@ -8600,6 +8626,18 @@ MonoBehaviour:
       - m_Target: {fileID: 3890062669462244031}
         m_TargetAssemblyTypeName: ButtonExitToMenu, Assembly-CSharp
         m_MethodName: LoadMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7880664336885570501}
+        m_TargetAssemblyTypeName: PauseController, Assembly-CSharp
+        m_MethodName: UnPause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

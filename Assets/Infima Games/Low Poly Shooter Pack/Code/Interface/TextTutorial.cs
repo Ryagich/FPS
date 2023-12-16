@@ -44,7 +44,7 @@ namespace InfimaGames.LowPolyShooterPack.Interface
         protected override void Tick()
         {
             //Get whether we should be showing the tutorial text, or not.
-            bool isVisible = characterBehaviour.IsTutorialTextVisible();
+            var isVisible = characterBehaviour.IsTutorialTextVisible();
             //Hide the prompt if the tutorial is visible.
             prompt.enabled = !isVisible;
             //Show the tutorial if needed.

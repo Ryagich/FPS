@@ -61,7 +61,7 @@ namespace InfimaGames.LowPolyShooterPack
             }
             
             //Grab a reference to the currently equipped weapon.
-            WeaponBehaviour weaponBehaviour = inventoryBehaviour.GetEquipped();
+            var weaponBehaviour = inventoryBehaviour.GetEquipped();
             if (weaponBehaviour == null)
                 return;
 
@@ -71,9 +71,9 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
             
             //Get current aiming value.
-            bool aiming = animator.GetBool(AHashes.Aim);
+            var aiming = animator.GetBool(AHashes.Aim);
             //Get the current running value.
-            bool running = animator.GetBool(AHashes.Running);
+            var running = animator.GetBool(AHashes.Running);
             
             //If the character just started aiming.
             if (aiming && !wasAiming)

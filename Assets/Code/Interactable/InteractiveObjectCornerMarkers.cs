@@ -19,8 +19,8 @@ public class InteractiveObjectCornerMarkers : MonoBehaviour
     protected void Start()
     {
         // Allocate transform array
-        int boxCount = 0;
-        for (int i = 0; i < _boxColliders.Length; ++i)
+        var boxCount = 0;
+        for (var i = 0; i < _boxColliders.Length; ++i)
         {
             if (_boxColliders[i] != null)
                 ++boxCount;
@@ -29,15 +29,15 @@ public class InteractiveObjectCornerMarkers : MonoBehaviour
         corners = new Transform[boxCount * 8];
 
         // Iterate through & add corners
-        int itr = 0;
-        for (int i = 0; i < _boxColliders.Length; ++i)
+        var itr = 0;
+        for (var i = 0; i < _boxColliders.Length; ++i)
         {
             var box = _boxColliders[i];
             if (box == null)
                 continue;
 
-            int startIndex = itr * 8;
-            for (int j = 0; j < 8; ++j)
+            var startIndex = itr * 8;
+            for (var j = 0; j < 8; ++j)
             {
                 corners[startIndex + j] = Instantiate(_cornerObject).transform;
                 corners[startIndex + j].SetParent(box.transform, false);
@@ -118,14 +118,14 @@ public class InteractiveObjectCornerMarkers : MonoBehaviour
     [Button("Show")]
     public void Show()
     {
-        for (int i = 0; i < corners.Length; ++i)
+        for (var i = 0; i < corners.Length; ++i)
             corners[i].gameObject.SetActive(true);
     }
 
     [Button("Hide")]
     public void Hide()
     {
-        for (int i = 0; i < corners.Length; ++i)
+        for (var i = 0; i < corners.Length; ++i)
             corners[i].gameObject.SetActive(false);
     }
 }

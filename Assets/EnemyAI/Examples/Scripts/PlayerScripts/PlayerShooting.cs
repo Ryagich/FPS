@@ -30,7 +30,7 @@ public class PlayerShooting : MonoBehaviour
 		laserLine = GetComponent<LineRenderer>();
 		gunAudio = GetComponent<AudioSource>();
 		canShot = true;
-		float waitTime = 60f / RPM;
+		var waitTime = 60f / RPM;
 		halfShotDuration = new WaitForSeconds(waitTime/2);
 	}
 
@@ -52,7 +52,7 @@ public class PlayerShooting : MonoBehaviour
 		StartCoroutine(ShotEffect());
 		laserLine.SetPosition(0, drawShotOrigin.position);
 		Physics.SyncTransforms();
-		if (Physics.Raycast(shotOrigin.position, shotOrigin.forward, out RaycastHit hit, weaponRange, shotMask))
+		if (Physics.Raycast(shotOrigin.position, shotOrigin.forward, out var hit, weaponRange, shotMask))
 		{
 			laserLine.SetPosition(1, hit.point);
 

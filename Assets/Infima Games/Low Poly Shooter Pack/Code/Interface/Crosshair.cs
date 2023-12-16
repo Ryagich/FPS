@@ -156,12 +156,12 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             }
 
             //Get the shotsFired value from the character.
-            int shotsFired = characterBehaviour.GetShotsFired();
+            var shotsFired = characterBehaviour.GetShotsFired();
 
             //Scale of the character's movement. We use this to scale the crosshair while moving around.
-            float movementScale = characterBehaviour.GetInputMovement().sqrMagnitude * movementScaleAddition;
+            var movementScale = characterBehaviour.GetInputMovement().sqrMagnitude * movementScaleAddition;
             //Size Target. This is the value that we're going to be interpolating to this frame.
-            float sizeDeltaTarget = defaultScale + spreadIncrease.Evaluate(shotsFired);
+            var sizeDeltaTarget = defaultScale + spreadIncrease.Evaluate(shotsFired);
 
             //Crosshair Scale Target.
             var crosshairLocalScaleTarget = 1.0f;
@@ -178,7 +178,7 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             else
             {
                 //Falling Velocity. We add this to the crosshair's size to increase it while in the air.
-                float fallingVelocity = (movementBehaviour.GetVelocity().y >= 0 ? Mathf.Clamp01(Mathf.Abs(movementBehaviour.GetVelocity().y)) : 1) * jumpingScaleAddition;
+                var fallingVelocity = (movementBehaviour.GetVelocity().y >= 0 ? Mathf.Clamp01(Mathf.Abs(movementBehaviour.GetVelocity().y)) : 1) * jumpingScaleAddition;
                 //We add the crouching values, to reflect the crosshair's change when the character is crouched.
                 sizeDeltaTarget += characterBehaviour.IsCrouching() ? crouchingScaleAddition : 0.0f;
 
@@ -218,7 +218,7 @@ namespace InfimaGames.LowPolyShooterPack.Interface
                         crosshairLocalScaleTarget = dotVisibilityTarget = 1.0f;
 
                         //Check if the character is performing some disabling action.
-                        bool isPerformingDisablingAction =
+                        var isPerformingDisablingAction =
                             characterBehaviour.IsInspecting() || characterBehaviour.IsReloading() ||
                             characterBehaviour.IsMeleeing() || characterBehaviour.IsThrowingGrenade();
 

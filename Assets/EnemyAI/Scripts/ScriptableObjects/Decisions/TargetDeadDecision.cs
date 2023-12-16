@@ -8,19 +8,13 @@ public class TargetDeadDecision : Decision
     // The decide function, called on Update() (State controller - current state - transition - decision).
     public override bool Decide(StateController controller)
     {
-        try
-        {
-            //var hm = controller.GetClosestTarget().root.GetComponent<HealthManager>();
-            var hm = controller.LastTarget.GetComponentInParent<HealthManager>();
-            // Check dead condition on target health manager.
-            return hm && hm.dead;
-        }
-        catch (UnassignedReferenceException)
-        {
-            // Ensure the target has a health manager set.
-            Debug.LogError("Assign a health manager to" + controller.name);
-        }
+        //var hm = controller.GetClosestTarget().root.GetComponent<HealthManager>();
+        if (!controller.LastTarget)
+            return false;
+        var hm = controller.LastTarget.GetComponentInParent<HealthManager>();
+        var stats = controller.LastTarget.GetComponentInParent<StatsController>();
 
-        return false;
+        // Check dead condition on target health manager.
+        return hm && hm.dead || stats && stats.Hp.Value <= .0f;
     }
 }

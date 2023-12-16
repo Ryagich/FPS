@@ -100,7 +100,7 @@ namespace YG
             }
             else if (lb.technoName == nameLB)
             {
-                string noData = "...";
+                var noData = "...";
 
                 if (lb.entries == "no data")
                 {
@@ -124,7 +124,7 @@ namespace YG
                     if (lb.entries == "no data")
                     {
                         players = new LBPlayerDataYG[1];
-                        GameObject playerObj = Instantiate(playerDataPrefab, rootSpawnPlayersData);
+                        var playerObj = Instantiate(playerDataPrefab, rootSpawnPlayersData);
 
                         players[0] = playerObj.GetComponent<LBPlayerDataYG>();
                         players[0].data.name = noData;
@@ -147,8 +147,8 @@ namespace YG
 
         private void DestroyPurchasesList()
         {
-            int childCount = rootSpawnPlayersData.childCount;
-            for (int i = childCount - 1; i >= 0; i--)
+            var childCount = rootSpawnPlayersData.childCount;
+            for (var i = childCount - 1; i >= 0; i--)
             {
                 Destroy(rootSpawnPlayersData.GetChild(i).gameObject);
             }
@@ -157,13 +157,13 @@ namespace YG
         private void SpawnPlayersList(LBData lb)
         {
             players = new LBPlayerDataYG[lb.players.Length];
-            for (int i = 0; i < players.Length; i++)
+            for (var i = 0; i < players.Length; i++)
             {
-                GameObject playerObj = Instantiate(playerDataPrefab, rootSpawnPlayersData);
+                var playerObj = Instantiate(playerDataPrefab, rootSpawnPlayersData);
 
                 players[i] = playerObj.GetComponent<LBPlayerDataYG>();
 
-                int rank = lb.players[i].rank;
+                var rank = lb.players[i].rank;
 
                 players[i].data.name = LBMethods.AnonimName(lb.players[i].name);
                 players[i].data.rank = rank.ToString();
@@ -188,7 +188,7 @@ namespace YG
 
                 if (timeTypeConvert)
                 {
-                    string timeScore = TimeTypeConvert(lb.players[i].score);
+                    var timeScore = TimeTypeConvert(lb.players[i].score);
                     players[i].data.score = timeScore;
                 }
                 else

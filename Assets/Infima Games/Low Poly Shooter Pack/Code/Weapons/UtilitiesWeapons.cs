@@ -26,7 +26,7 @@ namespace InfimaGames.LowPolyShooterPack
                 return null;
                 
             //Activate.
-            T behaviour = array[index];
+            var behaviour = array[index];
             if(behaviour != null)
                 behaviour.gameObject.SetActive(true);
 

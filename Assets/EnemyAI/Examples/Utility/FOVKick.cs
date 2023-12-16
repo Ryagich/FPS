@@ -48,7 +48,7 @@ namespace UnityStandardAssets.Utility
 
         public IEnumerator FOVKickUp()
         {
-            float t = Mathf.Abs((Camera.fieldOfView - originalFov)/FOVIncrease);
+            var t = Mathf.Abs((Camera.fieldOfView - originalFov)/FOVIncrease);
             while (t < TimeToIncrease)
             {
                 Camera.fieldOfView = originalFov + (IncreaseCurve.Evaluate(t/TimeToIncrease)*FOVIncrease);
@@ -60,7 +60,7 @@ namespace UnityStandardAssets.Utility
 
         public IEnumerator FOVKickDown()
         {
-            float t = Mathf.Abs((Camera.fieldOfView - originalFov)/FOVIncrease);
+            var t = Mathf.Abs((Camera.fieldOfView - originalFov)/FOVIncrease);
             while (t > 0)
             {
                 Camera.fieldOfView = originalFov + (IncreaseCurve.Evaluate(t/TimeToDecrease)*FOVIncrease);

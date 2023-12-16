@@ -4,15 +4,11 @@ namespace InfimaGames.LowPolyShooterPack
 {
     public class Inventory : InventoryBehaviour
     {
-        #region FIELDS
-
         public WeaponBehaviour[] weapons;
         [SerializeField] private Character _character;
 
         private WeaponBehaviour equipped;
         private int equippedIndex = -1;
-
-        #endregion
 
         [field: SerializeField] public int[] AmmunitionMax { get; private set; } = { 120, 180, 150, 90, 21, 10, 3 };
         [field: SerializeField] public int[] Ammunition { get; private set; } = { 120, 180, 150, 90, 21, 10, 3 };
@@ -25,20 +21,31 @@ namespace InfimaGames.LowPolyShooterPack
 
         public void FillAmmo()
         {
-            for (int i = 0; i < Ammunition.Length; i++)
+            for (var i = 0; i < Ammunition.Length; i++)
                 Ammunition[i] = AmmunitionMax[i];
+        }
+
+        public void SetMaxAmmoInWeapons()
+        {
+            foreach (var weaponBehaviour in weapons)
+            {
+                var weapon = weaponBehaviour as Weapon;
+                if (weapon.magazineBehaviour)
+                    weapon.ammunitionCurrent = weapon.GetAmmunitionTotal();
+            }
         }
 
         public int TryTakeAmmo(Ammo type, int value)
         {
             var i = (int)type;
             var need = AmmunitionMax[i] - Ammunition[i];
-            
+
             if (need >= value)
             {
                 Ammunition[i] += value;
                 return value;
             }
+
             Ammunition[i] = AmmunitionMax[i];
             return need;
         }
@@ -121,7 +128,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         public override void Init(int equippedAtStart = 0)
         {
-            foreach (WeaponBehaviour weapon in weapons)
+            foreach (var weapon in weapons)
                 weapon.gameObject.SetActive(false);
             Equip(equippedAtStart);
         }
@@ -155,7 +162,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         public override int GetLastIndex()
         {
-            int newIndex = equippedIndex - 1;
+            var newIndex = equippedIndex - 1;
             if (newIndex < 0)
                 newIndex = weapons.Length - 1;
             return newIndex;
@@ -163,7 +170,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         public override int GetNextIndex()
         {
-            int newIndex = equippedIndex + 1;
+            var newIndex = equippedIndex + 1;
             if (newIndex > weapons.Length - 1)
                 newIndex = 0;
             return newIndex;

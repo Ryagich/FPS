@@ -9,7 +9,6 @@ public class LevelPanel : MonoBehaviour
     [SerializeField] private Image _image;
     [SerializeField] private TMP_Text _label;
     [SerializeField] private TMP_Text _description;
-    [SerializeField] private Button _button;
     
     public void Init(Sprite sprite, string label, string description)
     {

@@ -13,14 +13,14 @@ public class CursorTrack : MonoBehaviour
     void Update()
 	{
 		// Create a ray from the mouse cursor on screen in the direction of the camera.
-		Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+		var camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 		gun.position = camRay.origin;
 
 		// Perform the raycast and if it hits something on the floor layer...
-		if (Physics.Raycast(camRay, out RaycastHit hit, camRayLength))
+		if (Physics.Raycast(camRay, out var hit, camRayLength))
 		{
 			// Create a vector from the player to the point on the floor the raycast from the mouse hit.
-			Vector3 playerToMouse = hit.point - camRay.origin;
+			var playerToMouse = hit.point - camRay.origin;
 
 			gun.rotation = Quaternion.LookRotation(playerToMouse);
 		}

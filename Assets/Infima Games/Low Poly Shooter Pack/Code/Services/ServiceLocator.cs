@@ -27,7 +27,7 @@ namespace InfimaGames.LowPolyShooterPack
         /// <returns>The service instance.</returns>
         public T Get<T>() where T : IGameService
         {
-            string key = typeof(T).Name;
+            var key = typeof(T).Name;
             if (!services.ContainsKey(key))
             {
                 Log.kill($"{key} not registered with {GetType().Name}");
@@ -44,7 +44,7 @@ namespace InfimaGames.LowPolyShooterPack
         /// <param name="service">Service instance.</param>
         public void Register<T>(T service) where T : IGameService
         {
-            string key = typeof(T).Name;
+            var key = typeof(T).Name;
             if (services.ContainsKey(key))
             {
                 Log.kill($"Attempted to register service of type {key} which is already registered with the {GetType().Name}.");
@@ -61,7 +61,7 @@ namespace InfimaGames.LowPolyShooterPack
         /// <typeparam name="T">Service type.</typeparam>
         public void Unregister<T>() where T : IGameService
         {
-            string key = typeof(T).Name;
+            var key = typeof(T).Name;
             if (!services.ContainsKey(key))
             {
                 Log.kill($"Attempted to unregister service of type {key} which is not registered with the {GetType().Name}.");

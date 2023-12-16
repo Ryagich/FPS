@@ -9,7 +9,7 @@ namespace YG.Utils.Lang
     {
         public static bool[] LangArr(InfoYG inf)
         {
-            bool[] b = new bool[27];
+            var b = new bool[27];
 
             b[0] = inf.languages.ru;
             b[1] = inf.languages.en;
@@ -174,7 +174,7 @@ namespace YG.Utils.Lang
 
         public static string UnauthorizedTextTranslate(InfoYG inf)
         {
-            string lang = YandexGame.EnvironmentData.language;
+            var lang = YandexGame.EnvironmentData.language;
             if (inf.LocalizationEnable)
                 lang = YandexGame.savesData.language;
 
@@ -278,7 +278,7 @@ namespace YG.Utils.Lang
 
         public static string IsHiddenTextTranslate(InfoYG inf)
         {
-            string lang = YandexGame.EnvironmentData.language;
+            var lang = YandexGame.EnvironmentData.language;
             if (inf.LocalizationEnable)
                 lang = YandexGame.savesData.language;
 

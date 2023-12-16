@@ -228,20 +228,20 @@ namespace YG
         public static void SaveEditor()
         {
             Message("Save Editor");
-            string path = Application.dataPath + PATH_SAVES_EDITOR;
-            string directory = Path.GetDirectoryName(path);
+            var path = Application.dataPath + PATH_SAVES_EDITOR;
+            var directory = Path.GetDirectoryName(path);
 
             if (!Directory.Exists(directory))
                 Directory.CreateDirectory(directory);
 
-            bool fileExits = false;
+            var fileExits = false;
             if (File.Exists(path))
                 fileExits = true;
 
 #if YG_NEWTONSOFT_FOR_SAVES
             string json = JsonConvert.SerializeObject(savesData, Formatting.Indented);
 #else
-            string json = JsonUtility.ToJson(savesData, true);
+            var json = JsonUtility.ToJson(savesData, true);
 #endif
             File.WriteAllText(path, json);
 
@@ -256,11 +256,11 @@ namespace YG
         {
             Message("Load Editor");
 
-            string path = Application.dataPath + PATH_SAVES_EDITOR;
+            var path = Application.dataPath + PATH_SAVES_EDITOR;
 
             if (File.Exists(path))
             {
-                string json = File.ReadAllText(path);
+                var json = File.ReadAllText(path);
 #if YG_NEWTONSOFT_FOR_SAVES
                 savesData = JsonConvert.DeserializeObject<SavesYG>(json);
 #else
@@ -418,8 +418,8 @@ namespace YG
 #if !UNITY_EDITOR
             InitSDK_Internal(_photoSize, infoYG.scopes);
 #else
-            string auth = "resolved";
-            string name = Instance.infoYG.playerInfoSimulation.name;
+            var auth = "resolved";
+            var name = Instance.infoYG.playerInfoSimulation.name;
 
             if (!Instance.infoYG.playerInfoSimulation.authorized)
             {
@@ -432,7 +432,7 @@ namespace YG
                     name = "anonymous";
             }
 
-            JsonAuth playerDataSimulation = new JsonAuth()
+            var playerDataSimulation = new JsonAuth()
             {
                 playerAuth = auth,
                 playerName = name,
@@ -440,7 +440,7 @@ namespace YG
                 playerPhoto = Instance.infoYG.playerInfoSimulation.photo
             };
 
-            string json = JsonUtility.ToJson(playerDataSimulation);
+            var json = JsonUtility.ToJson(playerDataSimulation);
             SetInitializationSDK(json);
 #endif
         }
@@ -538,16 +538,16 @@ namespace YG
 #if UNITY_EDITOR
         void CloseFullAdInEditor()
         {
-            GameObject errMessage = new GameObject { name = "TestFullAd" };
+            var errMessage = new GameObject { name = "TestFullAd" };
             DontDestroyOnLoad(errMessage);
 
-            Canvas canvas = errMessage.AddComponent<Canvas>();
+            var canvas = errMessage.AddComponent<Canvas>();
             canvas.sortingOrder = 32767;
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
             errMessage.AddComponent<GraphicRaycaster>();
             errMessage.AddComponent<RawImage>().color = new Color(0, 1, 0, 0.5f);
 
-            Insides.CallingAnEvent call = errMessage.AddComponent(typeof(Insides.CallingAnEvent)) as Insides.CallingAnEvent;
+            var call = errMessage.AddComponent(typeof(Insides.CallingAnEvent)) as Insides.CallingAnEvent;
             call.StartCoroutine(call.CallingAd(infoYG.durationOfAdSimulation));
         }
 #endif
@@ -577,17 +577,17 @@ namespace YG
 #if UNITY_EDITOR
         void CloseVideoInEditor(int id)
         {
-            GameObject errMessage = new GameObject { name = "TestVideoAd" };
+            var errMessage = new GameObject { name = "TestVideoAd" };
             DontDestroyOnLoad(errMessage);
 
-            Canvas canvas = errMessage.AddComponent<Canvas>();
+            var canvas = errMessage.AddComponent<Canvas>();
             canvas.sortingOrder = 32767;
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
             errMessage.AddComponent<GraphicRaycaster>();
             errMessage.AddComponent<RawImage>().color = new Color(0, 0, 1, 0.5f);
             DontDestroyOnLoad(errMessage);
 
-            Insides.CallingAnEvent call = errMessage.AddComponent(typeof(Insides.CallingAnEvent)) as Insides.CallingAnEvent;
+            var call = errMessage.AddComponent(typeof(Insides.CallingAnEvent)) as Insides.CallingAnEvent;
             call.StartCoroutine(call.CallingAd(infoYG.durationOfAdSimulation, id));
         }
 #endif
@@ -602,7 +602,7 @@ namespace YG
 #if !UNITY_EDITOR
             LanguageRequestInternal();
 #else
-            string langSimulate = Instance.infoYG.playerInfoSimulation.language;
+            var langSimulate = Instance.infoYG.playerInfoSimulation.language;
             if (langSimulate != null && langSimulate != "")
             {
                 EnvironmentData.language = langSimulate;
@@ -704,7 +704,7 @@ namespace YG
             if (_leaderboardEnable)
             {
                 int result;
-                int indexComma = secondsScore.ToString().IndexOf(",");
+                var indexComma = secondsScore.ToString().IndexOf(",");
 
                 if (secondsScore < 1)
                 {
@@ -717,9 +717,9 @@ namespace YG
                 }
                 else
                 {
-                    string rec = secondsScore.ToString();
-                    string sec = rec.Remove(indexComma);
-                    string milSec = rec.Remove(0, indexComma + 1);
+                    var rec = secondsScore.ToString();
+                    var sec = rec.Remove(indexComma);
+                    var milSec = rec.Remove(0, indexComma + 1);
                     if (milSec.Length > 3) milSec = milSec.Remove(3);
                     else if (milSec.Length == 2) milSec += "0";
                     else if (milSec.Length == 1) milSec += "00";
@@ -742,7 +742,7 @@ namespace YG
         {
             void NoData()
             {
-                LBData lb = new LBData()
+                var lb = new LBData()
                 {
                     technoName = nameLB,
                     entries = "no data",
@@ -766,9 +766,9 @@ namespace YG
 
             if (_leaderboardEnable)
             {
-                int indexLB = -1;
-                LBData[] lb = Instance.infoYG.leaderboardSimulation;
-                for (int i = 0; i < lb.Length; i++)
+                var indexLB = -1;
+                var lb = Instance.infoYG.leaderboardSimulation;
+                for (var i = 0; i < lb.Length; i++)
                 {
                     if (nameLB == lb[i].technoName)
                     {
@@ -824,7 +824,7 @@ namespace YG
 
         public static Purchase PurchaseByID(string ID)
         {
-            for (int i = 0; i < purchases.Length; i++)
+            for (var i = 0; i < purchases.Length; i++)
             {
                 if (purchases[i].id == ID)
                 {
@@ -1057,10 +1057,10 @@ namespace YG
         enum DataState { Exist, NotExist, Broken };
         public void SetLoadSaves(string data)
         {
-            DataState cloudDataState = DataState.Exist;
-            DataState localDataState = DataState.Exist;
-            SavesYG cloudData = new SavesYG();
-            SavesYG localData = new SavesYG();
+            var cloudDataState = DataState.Exist;
+            var localDataState = DataState.Exist;
+            var cloudData = new SavesYG();
+            var localData = new SavesYG();
 
             if (data != "noData")
             {
@@ -1186,7 +1186,7 @@ namespace YG
         #region Language
         public void SetLanguage(string language)
         {
-            string lang = "en";
+            var lang = "en";
 
             switch (language)
             {
@@ -1355,9 +1355,9 @@ namespace YG
 
         public void LeaderboardEntries(string data)
         {
-            JsonLB jsonLB = JsonUtility.FromJson<JsonLB>(data);
+            var jsonLB = JsonUtility.FromJson<JsonLB>(data);
 
-            LBData lbData = new LBData()
+            var lbData = new LBData()
             {
                 technoName = jsonLB.technoName,
                 isDefault = jsonLB.isDefault,
@@ -1369,7 +1369,7 @@ namespace YG
                 thisPlayer = null
             };
 
-            for (int i = 0; i < jsonLB.names.Length; i++)
+            for (var i = 0; i < jsonLB.names.Length; i++)
             {
                 lbData.players[i] = new LBPlayerData();
                 lbData.players[i].name = jsonLB.names[i];
@@ -1393,7 +1393,7 @@ namespace YG
 
         public void InitializedLB()
         {
-            LBData lb = new LBData()
+            var lb = new LBData()
             {
                 entries = "initialized"
             };
@@ -1450,7 +1450,7 @@ namespace YG
         {
             EnvironmentData.reviewCanShow = false;
 
-            bool sent = feedbackSent == "true" ? true : false;
+            var sent = feedbackSent == "true" ? true : false;
             ReviewSentEvent?.Invoke(sent);
             if (sent) ReviewDo?.Invoke();
         }

@@ -24,7 +24,7 @@ public class TakeCoverAction : Action
 	// Rotate the NPC to face the target.
 	private void Rotating(StateController controller)
 	{
-		Quaternion targetRotation = Quaternion.LookRotation(controller.personalTarget - controller.transform.position);
+		var targetRotation = Quaternion.LookRotation(controller.personalTarget - controller.transform.position);
 		if(Quaternion.Angle(controller.transform.rotation, targetRotation) > 5f)
 			controller.transform.rotation = Quaternion.Slerp(controller.transform.rotation, targetRotation, 10f * Time.deltaTime);
 	}

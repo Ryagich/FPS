@@ -38,7 +38,7 @@ namespace InfimaGames.LowPolyShooterPack
         private void Start()
         {
             //Get current material name from the mesh.
-            string sharedMaterialName = mesh.sharedMaterial.name;
+            var sharedMaterialName = mesh.sharedMaterial.name;
             //Output current material name to the UI text.
             materialText.text = sharedMaterialName;
         }

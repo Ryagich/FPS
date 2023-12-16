@@ -21,7 +21,7 @@ public class CameraFollow : MonoBehaviour
 	void FixedUpdate()
 	{
 		// Create a postion the camera is aiming for based on the offset from the target.
-		Vector3 targetCamPos = target.position + offset;
+		var targetCamPos = target.position + offset;
 
 		if(!zMove)
 		{

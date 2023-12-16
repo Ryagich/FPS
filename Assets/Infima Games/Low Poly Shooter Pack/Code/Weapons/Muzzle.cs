@@ -76,7 +76,7 @@ namespace InfimaGames.LowPolyShooterPack
             if(prefabFlashParticles != null)
             {
                 //Instantiate Particles.
-                GameObject spawnedParticlesPrefab = Instantiate(prefabFlashParticles, socket);
+                var spawnedParticlesPrefab = Instantiate(prefabFlashParticles, socket);
                 //Reset the position.
                 spawnedParticlesPrefab.transform.localPosition = default;
                 //Reset the rotation.
@@ -90,7 +90,7 @@ namespace InfimaGames.LowPolyShooterPack
             if (prefabFlashLight)
             {
                 //Instantiate.
-                GameObject spawnedFlashLightPrefab = Instantiate(prefabFlashLight, socket);
+                var spawnedFlashLightPrefab = Instantiate(prefabFlashLight, socket);
                 //Reset the position.
                 spawnedFlashLightPrefab.transform.localPosition = flashLightOffset;
                 //Reset the rotation.

@@ -26,8 +26,8 @@ public class PlayerMovement : MonoBehaviour
 	void FixedUpdate()
 	{
 		// Store the input axes.
-		float h = Input.GetAxisRaw("Horizontal");
-		float v = Input.GetAxisRaw("Vertical");
+		var h = Input.GetAxisRaw("Horizontal");
+		var v = Input.GetAxisRaw("Vertical");
 
 		// Move the player around the scene.
 		Move(h, v);
@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
 	void Turning()
 	{
 		// Create a ray from the mouse cursor on screen in the direction of the camera.
-		Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+		var camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
 		// Create a RaycastHit variable to store information about what was hit by the ray.
 		RaycastHit hit;
@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
 				return;
 
 			// Create a vector from the player to the point on the floor the raycast from the mouse hit.
-			Vector3 playerToMouse = hit.point - gun.Find("muzzle").position;
+			var playerToMouse = hit.point - gun.Find("muzzle").position;
 
 			gun.localRotation = Quaternion.LookRotation(playerToMouse);
 			gun.localRotation = Quaternion.Euler(gun.localRotation.eulerAngles.x, 0, 0);
@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 			playerToMouse.y = 0f;
 
 			// Create a quaternion (rotation) based on looking down the vector from the player to the mouse.
-			Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
+			var newRotation = Quaternion.LookRotation(playerToMouse);
 
 			// Set the player's rotation to this new rotation.
 			playerRigidbody.MoveRotation(newRotation);

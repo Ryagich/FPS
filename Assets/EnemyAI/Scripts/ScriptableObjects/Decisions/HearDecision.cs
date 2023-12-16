@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using EnemyAI;
-
+using System.Linq;
+    
 // The decision to hear an evidence. Sense of hearing.
 [CreateAssetMenu(menuName = "Enemy AI/Decisions/Hear")]
 public class HearDecision : Decision
@@ -16,42 +17,33 @@ public class HearDecision : Decision
             controller.variables.hearAlert = false;
             return true;
         }
+        
+        var targetsToCheck = GetTargetsInRadius(controller, controller.perceptionRadius);
+        var bestTarget = GetBestTarget(controller, targetsToCheck);
 
+        if (!bestTarget)
+            return false;
+        controller.LastTarget = bestTarget;
+        controller.personalTarget = bestTarget.position;
+        // controller.targetInSight = true;
         // Check if something was heard by the NPC.
-        return CheckTargetsInRadius(controller, controller.perceptionRadius, MyHandleTargets);
-    }
-
-    // The decision on enable function, triggered once after a FSM state transition.
-    public override void OnEnableDecision(StateController controller)
-    {
-        lastPos = currentPos = Vector3.positiveInfinity;
+        return true;
     }
 
     // The delegate for results of overlapping targets in hear decision.
-    private bool MyHandleTargets(StateController controller, bool hasTargets, Collider[] targetsInHearRadius)
+    private static Transform GetBestTarget(StateController controller, Transform[] targetsInHearRadius)
     {
-        // Is there any evidence noticed?
-        if (hasTargets)
+        var min = float.MaxValue;
+        Transform closest = null;
+        foreach (var target in targetsInHearRadius)
         {
-            // Grab current evidence position.
-            currentPos = targetsInHearRadius[0].transform.position;
-            // Evidence is already on track, check if it has moved.
-            if (!Equals(lastPos, Vector3.positiveInfinity))
+            var dis = controller.DistanceTo(target);
+            if (dis < min)
             {
-                // The hear sense is only triggered if the evidence is in movement.
-                if (!Equals(lastPos, currentPos))
-                {
-                    controller.LastTarget = targetsInHearRadius[0].transform;
-                    controller.personalTarget = currentPos;
-                    return true;
-                }
+                min = dis;
+                closest = target;
             }
-
-            // Set evidence position for next game loop.
-            lastPos = currentPos;
         }
-
-        // No moving evidence was noticed.
-        return false;
+        return closest;
     }
 }

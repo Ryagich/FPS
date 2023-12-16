@@ -38,7 +38,7 @@ namespace InfimaGames.LowPolyShooterPack
         private void Update()
         {
             //Fetch the current Animation clip information for the base layer
-            AnimatorClipInfo[] currentClipInfo = cachedAnimator.GetCurrentAnimatorClipInfo(0);
+            var currentClipInfo = cachedAnimator.GetCurrentAnimatorClipInfo(0);
             //Output the current Animation name to UI text
             currentAnimationText.text = currentClipInfo[0].clip.name;
         }

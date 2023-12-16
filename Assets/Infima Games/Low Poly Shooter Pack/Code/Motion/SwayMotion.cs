@@ -72,17 +72,17 @@ namespace InfimaGames.LowPolyShooterPack
             }
             
             //Get the looking input.
-            Vector2 inputLook = Vector2.ClampMagnitude(characterBehaviour.GetInputLook(), 1);
+            var inputLook = Vector2.ClampMagnitude(characterBehaviour.GetInputLook(), 1);
             //Get the movement input.
-            Vector2 movement = Vector2.ClampMagnitude(characterBehaviour.GetInputMovement(), 1);
+            var movement = Vector2.ClampMagnitude(characterBehaviour.GetInputMovement(), 1);
 
             //Get FeelPreset.
-            FeelPreset feelPreset = feelManager.Preset;
+            var feelPreset = feelManager.Preset;
             if (feelPreset == null)
                 return;
             
             //Get Feel.
-            Feel feel = feelPreset.GetFeel(motionType);
+            var feel = feelPreset.GetFeel(motionType);
             if (feel == null)
                 return;
             
@@ -90,10 +90,10 @@ namespace InfimaGames.LowPolyShooterPack
             feelState = feel.GetState(characterAnimator);
 
             //Grab ScopeBehaviour.
-            ScopeBehaviour scopeBehaviour = inventoryBehaviour.GetEquipped().GetAttachmentManager().GetEquippedScope();
+            var scopeBehaviour = inventoryBehaviour.GetEquipped().GetAttachmentManager().GetEquippedScope();
 
             //SwayData.
-            SwayData swayData = feelState.SwayData;
+            var swayData = feelState.SwayData;
             if (swayData == null)
                 return;
             

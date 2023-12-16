@@ -47,7 +47,7 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             if (updateColor)
             {
                 //Calculate Color Alpha. Helpful to make the text color change based on grenade count.
-                float colorAlpha = (current / total) * emptySpeed;
+                var colorAlpha = (current / total) * emptySpeed;
                 //Lerp Color. This makes sure that the text color changes based on grenade count.
                 textMesh.color = Color.Lerp(emptyColor, Color.white, colorAlpha);   
             }

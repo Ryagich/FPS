@@ -27,13 +27,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         #region GETTERS
 
-        /// <summary>
-        /// Ammunition Total.
-        /// </summary>
         public override int GetAmmunitionTotal() => ammunitionTotal;
-        /// <summary>
-        /// Sprite.
-        /// </summary>
         public override Sprite GetSprite() => sprite;
 
         #endregion

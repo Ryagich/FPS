@@ -128,7 +128,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.1
+  m_Time: 0.2
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -194,7 +194,7 @@ TrailRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
+  m_MinVertexDistance: 0.2
   m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
@@ -213,8 +213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyAfter: 5
   destroyOnImpact: 1
-  minDestroyTime: 0.01
-  maxDestroyTime: 0.05
+  minDestroyTime: 0.05
+  maxDestroyTime: 0.1
   _mask:
     serializedVersion: 2
     m_Bits: 131072

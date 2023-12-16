@@ -33,26 +33,23 @@ namespace InfimaGames.LowPolyShooterPack.Interface
         
         #region METHODS
         
-        /// <summary>
-        /// Tick.
-        /// </summary>
         protected override void Tick()
         {
-            //Base.
             base.Tick();
 
-            //Check References.
             if (canvasGroup == null)
             {
-                //ReferenceError.
                 Log.ReferenceError(this, gameObject);
                 
-                //Return.
                 return;
             }
-
+            if (!(characterBehaviour as Character).CanPause)
+                return;
+            canvasGroup.alpha = Mathf.Lerp(canvasGroup.alpha,
+                characterBehaviour.IsCursorLocked() ? 1.0f : cursorUnlockedAlpha, 
+                Time.deltaTime * interpolationSpeed);
             //Update Alpha.
-            canvasGroup.alpha = Mathf.Lerp(canvasGroup.alpha, characterBehaviour.IsCursorLocked() ? 1.0f : cursorUnlockedAlpha, Time.deltaTime * interpolationSpeed);
+           // canvasGroup.alpha = Mathf.Lerp(canvasGroup.alpha, characterBehaviour.IsCursorLocked() ? 1.0f : cursorUnlockedAlpha, Time.deltaTime * interpolationSpeed);
         }
         
         #endregion

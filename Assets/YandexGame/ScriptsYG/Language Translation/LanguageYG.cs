@@ -59,7 +59,7 @@ namespace YG
 
         public InfoYG GetInfoYG() // For editor
         {
-            YandexGame yg = (YandexGame)GameObject.FindObjectOfType<YandexGame>();
+            var yg = (YandexGame)GameObject.FindObjectOfType<YandexGame>();
 
             if (yg)
             {
@@ -68,7 +68,7 @@ namespace YG
             else
             {
 #if UNITY_EDITOR
-                InfoYG infoYGFromConfig = Insides.ConfigYG.GetInfoYG();
+                var infoYGFromConfig = Insides.ConfigYG.GetInfoYG();
                 return infoYGFromConfig;
 #else
                 return null;
@@ -89,7 +89,7 @@ namespace YG
             if (!infoYG.LocalizationEnable)
                 return;
 
-            for (int i = 0; i < languages.Length; i++)
+            for (var i = 0; i < languages.Length; i++)
             {
                 if (lang == LangMethods.LangName(i))
                 {
@@ -211,7 +211,7 @@ namespace YG
         {
             get
             {
-                string[] s = new string[27];
+                var s = new string[27];
 
                 s[0] = ru;
                 s[1] = en;
@@ -282,7 +282,7 @@ namespace YG
 
         public void SetLang(int index, string text)
         {
-            string[] str = languages;
+            var str = languages;
             str[index] = text;
 
             languages = str;
@@ -356,12 +356,12 @@ namespace YG
             countLang = 0;
             processTranslateLabel = "processing... 0/" + countLangAvailable;
 
-            for (int i = 0; i < languages.Length; i++)
+            for (var i = 0; i < languages.Length; i++)
             {
                 if (LangMethods.LangArr(infoYG)[i] && (languages[i] == null || languages[i] == ""))
                 {
-                    bool complete = false;
-                    string translate = TranslateGoogle(LangMethods.LangName(i));
+                    var complete = false;
+                    var translate = TranslateGoogle(LangMethods.LangName(i));
 
                     if (translate == null)
                         yield return null;
@@ -391,11 +391,11 @@ namespace YG
             countLang = 0;
             processTranslateLabel = "processing... 0/" + countLangAvailable;
 
-            for (int i = 0; i < languages.Length; i++)
+            for (var i = 0; i < languages.Length; i++)
             {
                 if (LangMethods.LangArr(infoYG)[i] && (languages[i] == null || languages[i] == ""))
                 {
-                    string translate = TranslateGoogle(LangMethods.LangName(i));
+                    var translate = TranslateGoogle(LangMethods.LangName(i));
 
                     if (translate == null)
                         return;

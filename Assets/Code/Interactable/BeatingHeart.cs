@@ -15,6 +15,7 @@ public class BeatingHeart : MonoBehaviour
     private float t;
     private StatFiller filler;
     private Stat stat;
+    private bool isBeating = true;
 
     public void Init(Image heart, Stat stat, StatFiller filler)
     {
@@ -22,10 +23,21 @@ public class BeatingHeart : MonoBehaviour
         this.stat = stat;
         this.filler = filler;
     }
-
+    
+    public void StartBeating()
+    {
+        isBeating = true;
+    }
+    
+    public void StopBeating()
+    {
+        heart.transform.localScale = Vector3.one * _defSize;
+        isBeating = false;
+    }
+    
     private void FixedUpdate()
     {
-        if (!heart)
+        if (!heart || !isBeating)
             return;
         var d = 1 - (filler.Current / stat.Max); // 0 - 1
         bpm = _min + (_max - _min) * d;

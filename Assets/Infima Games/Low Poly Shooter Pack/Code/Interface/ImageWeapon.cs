@@ -19,8 +19,8 @@ namespace InfimaGames.LowPolyShooterPack.Interface
 
         protected override void Tick()
         {
-            Color toAssign = imageColor;
-            foreach (Image image in GetComponents<Image>())
+            var toAssign = imageColor;
+            foreach (var image in GetComponents<Image>())
                 image.color = toAssign;
 
             attachmentManagerBehaviour = equippedWeaponBehaviour.GetAttachmentManager();

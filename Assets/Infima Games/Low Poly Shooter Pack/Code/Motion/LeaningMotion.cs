@@ -74,7 +74,7 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
 
             //Try to get the LeaningData.
-            LeaningData leaningData = animationDataBehaviour.GetLeaningData();
+            var leaningData = animationDataBehaviour.GetLeaningData();
             if (leaningData == null)
                 return;
             
@@ -92,7 +92,7 @@ namespace InfimaGames.LowPolyShooterPack
             }
 
             //Grab the leaning value from the character's Animator.
-            float leaning = characterAnimator.GetFloat(AHashes.LeaningInput);
+            var leaning = characterAnimator.GetFloat(AHashes.LeaningInput);
             
             //Update Location.
             springLocation.UpdateEndValue(leaningCurves.LocationCurves.EvaluateCurves(leaning) * leaningCurves.LocationMultiplier);

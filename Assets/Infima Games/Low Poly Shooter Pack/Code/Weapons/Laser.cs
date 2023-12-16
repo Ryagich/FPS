@@ -103,10 +103,10 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
         
             //Target Scale. We'll use the default value if we don't hit anything with our raycast.
-            float targetScale = beamMaxDistance;
+            var targetScale = beamMaxDistance;
             
             //Raycast forward from the beam starting point.
-            if (Physics.Raycast(new Ray(laserTransform.position, beamParent.forward), out RaycastHit hit, beamMaxDistance))
+            if (Physics.Raycast(new Ray(laserTransform.position, beamParent.forward), out var hit, beamMaxDistance))
                 targetScale = hit.distance * 5.0f;
             
             //Scale to reach the hit location.

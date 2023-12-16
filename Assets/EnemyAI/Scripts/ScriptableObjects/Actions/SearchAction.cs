@@ -8,6 +8,8 @@ public class SearchAction : Action
 	// The act function, called on Update() (State controller - current state - action).
 	public override void Act(StateController controller)
 	{
+		if (!controller.nav || !controller.nav.isOnNavMesh)
+			return;
 		if (Equals(controller.personalTarget, Vector3.positiveInfinity))
 			controller.nav.destination = controller.transform.position;
 		else

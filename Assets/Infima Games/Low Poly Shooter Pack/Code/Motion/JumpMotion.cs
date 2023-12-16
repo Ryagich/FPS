@@ -68,7 +68,7 @@ namespace InfimaGames.LowPolyShooterPack
             }
             
             //Get Feel.
-            Feel feel = feelManager.Preset.GetFeel(motionType);
+            var feel = feelManager.Preset.GetFeel(motionType);
             if (feel == null)
             {
                 //ReferenceError.
@@ -84,13 +84,13 @@ namespace InfimaGames.LowPolyShooterPack
             Vector3 rotation = default;
 
             //Current FeelState.
-            FeelState state = feel.GetState(characterAnimator);
+            var state = feel.GetState(characterAnimator);
             
             //Check Grounded.
             if (!movementBehaviour.IsGrounded())
             {
                 //Calculate Air Time.
-                float airTime = Time.time - movementBehaviour.GetLastJumpTime();
+                var airTime = Time.time - movementBehaviour.GetLastJumpTime();
 
                 //Check if the air time was caused by a jump.
                 if (movementBehaviour.IsJumping())
@@ -99,7 +99,7 @@ namespace InfimaGames.LowPolyShooterPack
                     var maxCurveLength = 0.0f;
 
                     //Jumping Curves.
-                    ACurves jumpingCurves = state.JumpingCurves;
+                    var jumpingCurves = state.JumpingCurves;
                 
                     //Loop Jumping Location Curves.
                     jumpingCurves.LocationCurves.ForEach(curve =>

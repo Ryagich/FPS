@@ -39,8 +39,8 @@ namespace EnemyAI
 				decayTimer += Time.deltaTime;
 				if (decayTimer >= 0.5f * decayDuration)
 				{
-					float from = decayTimer - (0.5f * decayDuration);
-					float to = 0.5f * decayDuration;
+					var from = decayTimer - (0.5f * decayDuration);
+					var to = 0.5f * decayDuration;
 					// Lerp HUD colors to transparent.
 					hud.color = Color.Lerp(originalColor, noAlphaColor, from / to);
 					bar.color = Color.Lerp(originalColor, noAlphaColor, from / to);

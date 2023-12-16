@@ -7,6 +7,7 @@ public class MoverForTime : MonoBehaviour
 {
     public UnityEvent StartedMoved;
     public UnityEvent EndedMove;
+    
     public bool IsMoving { get; private set; } = false;
 
     [SerializeField, Min(.0f)] private float _time = 1f;
@@ -22,12 +23,13 @@ public class MoverForTime : MonoBehaviour
         StartedMoved?.Invoke();
         IsMoving = true;
         var distance = Vector3.Distance(transform.position, target.position);
-        while (distance > _offset)
+        while (Vector3.Distance(transform.position, target.position) > _offset)
         {
             transform.position = Vector3.MoveTowards(transform.position,
                 target.position,
                 distance / _time * Time.fixedDeltaTime);
             yield return new WaitForFixedUpdate();
+            Debug.Log("двигаемся");
         }
 
         IsMoving = false;

@@ -39,7 +39,7 @@ namespace InfimaGames.LowPolyShooterPack.Interface
 
             if (updateColor)
             {
-                float colorAlpha = (current / total) * emptySpeed;
+                var colorAlpha = (current / total) * emptySpeed;
                 textMesh.color = Color.Lerp(emptyColor, Color.white, colorAlpha);   
             }
         }

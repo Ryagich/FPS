@@ -31,9 +31,9 @@ public class AlertManagement : MonoBehaviour
             return;
 
         // Grab nearby objects to trigger alert.
-        Collider[] targetsInViewRadius = Physics.OverlapSphere(origin, alertRadius, alertMask);
+        var targetsInViewRadius = Physics.OverlapSphere(origin, alertRadius, alertMask);
 
-        foreach (Collider obj in targetsInViewRadius)
+        foreach (var obj in targetsInViewRadius)
         {
             //if (controller.MyColliders.Contains(obj))
                // continue;

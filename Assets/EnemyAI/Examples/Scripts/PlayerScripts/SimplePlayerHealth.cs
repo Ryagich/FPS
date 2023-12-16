@@ -32,7 +32,7 @@ public class SimplePlayerHealth : HealthManager
 	{
 		if (health > 0f)
 		{
-			GUIStyle textStyle = new GUIStyle
+			var textStyle = new GUIStyle
 			{
 				fontSize = 50
 			};

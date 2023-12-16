@@ -78,7 +78,7 @@ namespace YG
         IEnumerator SwapPlayerPhoto(string url)
         {
 #if UNITY_2020_1_OR_NEWER
-            using (UnityWebRequest webRequest = UnityWebRequestTexture.GetTexture(url))
+            using (var webRequest = UnityWebRequestTexture.GetTexture(url))
             {
                 yield return webRequest.SendWebRequest();
 
@@ -90,7 +90,7 @@ namespace YG
                 }
                 else
                 {
-                    DownloadHandlerTexture handlerTexture = webRequest.downloadHandler as DownloadHandlerTexture;
+                    var handlerTexture = webRequest.downloadHandler as DownloadHandlerTexture;
 
                     if (rawImage)
                     {

@@ -4,7 +4,6 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Serialization;
-using UnityEngine.UIElements;
 
 namespace EnemyAI
 {
@@ -44,7 +43,7 @@ namespace EnemyAI
         [HideInInspector] public int maximumBurst = 7; // The maximum burst size on a round.
 
         [HideInInspector]
-        public float blindEngageTime = 30f; // Time to keep targeting last seen position after target leaves sight.
+        public float blindEngageTime = 0f; // Time to keep targeting last seen position after target leaves sight.
 
         [HideInInspector] public bool targetInSight; // Is target on sight?
         [HideInInspector] public bool focusSight; // Will focus on sight position?
@@ -77,14 +76,23 @@ namespace EnemyAI
 
         public void AddTarget(Transform newTarget)
         {
-            Targets.Add(newTarget);
+            var t = newTarget.GetComponent<TargetHolder>().Target;
+            if (!Targets.Contains(t))
+                Targets.Add(t);
+        }
+
+        public void RemoveTarget(Transform oldTarget)
+        {
+            var t = oldTarget.GetComponent<TargetHolder>().Target;
+            if (Targets.Contains(t))
+                Targets.Remove(t);
         }
 
         // Get and Set current cover spot.
         public Vector3 CoverSpot
         {
-            get { return coverSpot[this.GetHashCode()]; }
-            set { coverSpot[this.GetHashCode()] = value; }
+            get => coverSpot[GetHashCode()];
+            set => coverSpot[GetHashCode()] = value;
         }
 
         // Get and Set for strafing and aiming states.
@@ -134,7 +142,7 @@ namespace EnemyAI
             // Near sense radius is half of perception radius.
             nearRadius = perceptionRadius / 2;
             // Get/create Game Controller.
-            GameObject gameController = GameObject.FindGameObjectWithTag("GameController");
+            var gameController = GameObject.FindGameObjectWithTag("GameController");
             if (gameController == null)
             {
                 gameController = new GameObject("GameController")
@@ -157,6 +165,8 @@ namespace EnemyAI
         {
             // Trigger initial state enable function.
             currentState.OnEnableActions(this);
+            //if (Targets.Count >0)
+             //   Targets = Targets.Select(t => t.GetComponent<TargetHolder>().Target).ToList();
         }
 
         void Update()
@@ -203,58 +213,20 @@ namespace EnemyAI
         // This is the message receiver for alert events triggered by nearby objects (ex.: other NPC alert about a noise).
         public void AlertCallback(Vector3 target)
         {
-            if (!LastTarget.GetComponentInParent<HealthManager>().dead)
+            if (!LastTarget.GetComponentInParent<HealthManager>().dead
+                || LastTarget.GetComponentInParent<StatsController>())
             {
                 variables.hearAlert = true;
                 personalTarget = target;
             }
         }
 
-        public Transform GetClosestTarget()
-        {
-            var Min = float.MaxValue;
-            var t = Targets[0];
-            foreach (var target in Targets)
-            {
-                var d = Vector3.Distance(target.position, transform.position);
-                if (d < Min)
-                {
-                    Min = d;
-                    t = target;
-                }
-            }
-
-            return t;
-        }
-        // В таргетах лежат враги или перс, смотрим живы ли они
-        // возвращаем Null если таргеты пустые или нет ничего живого
-        // Если нашли подходящую цель возвращаем точку куда будем целить
-        public Transform GetClosestAliveTargetInRadius(float radius)
-        {
-            var Min = float.MaxValue;
-            Transform t = null;
-            foreach (var target in Targets)
-            {
-                var hm = target.GetComponent<HealthManager>();
-                if (!hm || hm.dead)
-                    continue;
-                var nt = target.GetComponent<TargetHolder>().Target;
-                var d = Vector3.Distance(nt.position, transform.position);
-                if (d < radius && d < Min)
-                {
-                    Min = d;
-                    t = nt;
-                }
-            }
-
-            return t;
-        }
-
         public Transform LastTarget;
+
         // Verify if the spot is near any spot used by other NPCs. Default comparison distance is 1.
         public bool IsNearOtherSpot(Vector3 spot, float margin = 1f)
         {
-            foreach (KeyValuePair<int, Vector3> usedSpot in coverSpot)
+            foreach (var usedSpot in coverSpot)
             {
                 if (usedSpot.Key != gameObject.GetHashCode() && Vector3.Distance(spot, usedSpot.Value) <= margin)
                     return true;
@@ -264,34 +236,26 @@ namespace EnemyAI
         }
 
         // The common cast to target test, used by decisions that is based on NPC senses.
-        public bool BlockedSight()
+        public bool BlockedSight(Transform target)
         {
             // The test was already performed on that game loop iteration?
             if (!checkedOnLoop)
             {
                 checkedOnLoop = true;
-                Vector3 target = default;
-                try
-                {
-                    target = LastTarget.position;
-                }
-                catch (UnassignedReferenceException)
-                {
-                    // Ensure the NPC has an aim target set.
-//                    Debug.LogError("Assign an aim target to " + transform.name);
-                }
 
                 // Get cast to target parameters.
-                Vector3 castOrigin = transform.position + Vector3.up * generalStats.aboveCoverHeight;
-                Vector3 dirToTarget = target - castOrigin;
+                var castOrigin = transform.position + Vector3.up * generalStats.aboveCoverHeight;
+                var dirToTarget = target.position - castOrigin;
 
                 // Hit anything other than target? Uses cover and obstacle masks.
                 blockedSight =
-                    Physics.Raycast(castOrigin, dirToTarget, out RaycastHit hit, dirToTarget.magnitude,
+                    Physics.Raycast(castOrigin, dirToTarget, out var hit, dirToTarget.magnitude,
                         generalStats.coverMask | generalStats.obstacleMask);
             }
 
             return blockedSight;
         }
+
+        public float DistanceTo(Transform t) => Vector3.Distance(transform.position, t.position);
     }
 }

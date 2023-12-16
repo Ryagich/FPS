@@ -101,7 +101,7 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
             
             camera.gameObject.SetActive(true);
-            Material[] materials = meshRenderer.materials;
+            var materials = meshRenderer.materials;
             materials[materialIndex] = materialDefault;
             meshRenderer.materials = materials;
         }
@@ -113,7 +113,7 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
             
             camera.gameObject.SetActive(false);
-            Material[] materials = meshRenderer.materials;
+            var materials = meshRenderer.materials;
             materials[materialIndex] = materialHidden;
             meshRenderer.materials = materials;
         }

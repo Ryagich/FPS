@@ -51,7 +51,7 @@ public class LightGunShooterGameManagement : MonoBehaviour
 
 	void EnableLevelEnemies()
 	{
-		foreach(StateController enemy in GameObject.FindObjectsOfType<StateController>())
+		foreach(var enemy in GameObject.FindObjectsOfType<StateController>())
 		{
 			if (enemy.name.Contains("enemy (" + currentLevel))
 				enemy.enabled = true;
@@ -62,7 +62,7 @@ public class LightGunShooterGameManagement : MonoBehaviour
 	{
 		if (engaging)
 		{
-			foreach (StateController enemy in GameObject.FindObjectsOfType<StateController>())
+			foreach (var enemy in GameObject.FindObjectsOfType<StateController>())
 			{
 				if (enemy.enabled)
 				{

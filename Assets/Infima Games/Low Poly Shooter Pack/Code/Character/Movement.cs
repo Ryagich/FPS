@@ -220,12 +220,12 @@ namespace InfimaGames.LowPolyShooterPack
                 velocity.y = 0.0f;
 
             //We need a rigidbody to push the object we just hit.
-            Rigidbody hitRigidbody = hit.rigidbody;
+            var hitRigidbody = hit.rigidbody;
             if (hitRigidbody == null)
                 return;
             
             //AddForce.
-            Vector3 force = (hit.moveDirection + Vector3.up * 0.35f) * velocity.magnitude * rigidbodyPushForce;
+            var force = (hit.moveDirection + Vector3.up * 0.35f) * velocity.magnitude * rigidbodyPushForce;
             hitRigidbody.AddForceAtPosition(force, hit.point);
         }
         
@@ -295,7 +295,7 @@ namespace InfimaGames.LowPolyShooterPack
             }
 
             //Velocity Applied.
-            Vector3 applied = velocity * Time.deltaTime;
+            var applied = velocity * Time.deltaTime;
             //Stick To Ground Force. Helps with making the character walk down slopes without floating.
             if (controller.isGrounded && !jumping)
                 applied.y = -stickToGroundForce;
@@ -331,7 +331,7 @@ namespace InfimaGames.LowPolyShooterPack
                 return true;
 
             //Overlap check location.
-            Vector3 sphereLocation = transform.position + Vector3.up * standingHeight;
+            var sphereLocation = transform.position + Vector3.up * standingHeight;
             //Check for any overlaps.
             return (Physics.OverlapSphere(sphereLocation, controller.radius, crouchOverlapsMask).Length == 0);
         }

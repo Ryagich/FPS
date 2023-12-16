@@ -68,12 +68,12 @@ namespace YG.Utils.LB
         {
             if (score < 1000) return "00:00";
 
-            string result = score.ToString();
-            string milSec = decimalSize == 0 ? "" : "." + result.Remove(0, result.Length - decimalSize);
+            var result = score.ToString();
+            var milSec = decimalSize == 0 ? "" : "." + result.Remove(0, result.Length - decimalSize);
 
-            int secReal = int.Parse(result.Remove(result.Length - 3));
-            int min = (int)(secReal / 60.0f);
-            int sec = secReal - min * 60;
+            var secReal = int.Parse(result.Remove(result.Length - 3));
+            var min = (int)(secReal / 60.0f);
+            var sec = secReal - min * 60;
 
             string minStr;
             if (min.ToString().Length == 1) minStr = "0" + min.ToString();

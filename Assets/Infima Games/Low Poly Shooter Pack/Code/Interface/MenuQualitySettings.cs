@@ -12,43 +12,49 @@ namespace InfimaGames.LowPolyShooterPack.Interface
     public class MenuQualitySettings : Element
     {
         #region FIELDS SERIALIZED
-        [Title(label: "Settings")]
-        [Tooltip("Canvas to play animations on.")]
-        [SerializeField]
+
+        [Title(label: "Settings")] [Tooltip("Canvas to play animations on.")] [SerializeField]
         private GameObject animatedCanvas;
-        [Tooltip("Animation played when showing this menu.")]
-        [SerializeField]
+
+        [Tooltip("Animation played when showing this menu.")] [SerializeField]
         private AnimationClip animationShow;
-        [Tooltip("Animation played when hiding this menu.")]
-        [SerializeField]
+
+        [Tooltip("Animation played when hiding this menu.")] [SerializeField]
         private AnimationClip animationHide;
+
         #endregion
-        
+
         #region FIELDS
+
         private Animation animationComponent;
         private bool menuIsEnabled;
         private PostProcessVolume postProcessingVolume;
         private PostProcessVolume postProcessingVolumeScope;
         private DepthOfField depthOfField;
+
         #endregion
 
         #region UNITY
+
         private void Start()
         {
             animatedCanvas.GetComponent<CanvasGroup>().alpha = 0;
             animationComponent = animatedCanvas.GetComponent<Animation>();
 
             postProcessingVolume = GameObject.Find("Post Processing Volume")?.GetComponent<PostProcessVolume>();
-            postProcessingVolumeScope = GameObject.Find("Post Processing Volume Scope")?.GetComponent<PostProcessVolume>();
-            
-            if(postProcessingVolume != null)
+            postProcessingVolumeScope =
+                GameObject.Find("Post Processing Volume Scope")?.GetComponent<PostProcessVolume>();
+
+            if (postProcessingVolume != null)
                 postProcessingVolume.profile.TryGetSettings(out depthOfField);
         }
 
         protected override void Tick()
         {
+            if (!(characterBehaviour as Character).CanPause)
+                return;
             //Switch. Fades in or out the menu based on the cursor's state.
-            bool cursorLocked = characterBehaviour.IsCursorLocked();
+            var cursorLocked = characterBehaviour.IsCursorLocked();
             switch (cursorLocked)
             {
                 case true when menuIsEnabled:
@@ -59,9 +65,11 @@ namespace InfimaGames.LowPolyShooterPack.Interface
                     break;
             }
         }
+
         #endregion
 
         #region METHODS
+
         private void Show()
         {
             menuIsEnabled = true;
@@ -69,9 +77,10 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             animationComponent.clip = animationShow;
             animationComponent.Play();
 
-            if(depthOfField != null)
+            if (depthOfField != null)
                 depthOfField.active = true;
         }
+
         public void Hide()
         {
             menuIsEnabled = false;
@@ -79,15 +88,15 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             animationComponent.clip = animationHide;
             animationComponent.Play();
 
-            if(depthOfField != null)
+            if (depthOfField != null)
                 depthOfField.active = false;
         }
 
         private void SetPostProcessingState(bool value = true)
         {
-            if(postProcessingVolume != null)
+            if (postProcessingVolume != null)
                 postProcessingVolume.enabled = value;
-            if(postProcessingVolumeScope != null)
+            if (postProcessingVolumeScope != null)
                 postProcessingVolumeScope.enabled = value;
         }
 
@@ -96,6 +105,7 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             QualitySettings.SetQualityLevel(0);
             SetPostProcessingState(false);
         }
+
         public void SetQualityLow()
         {
             QualitySettings.SetQualityLevel(1);
@@ -107,16 +117,19 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             QualitySettings.SetQualityLevel(2);
             SetPostProcessingState();
         }
+
         public void SetQualityHigh()
         {
             QualitySettings.SetQualityLevel(3);
             SetPostProcessingState();
         }
+
         public void SetQualityVeryHigh()
         {
             QualitySettings.SetQualityLevel(4);
             SetPostProcessingState();
         }
+
         public void SetQualityUltra()
         {
             QualitySettings.SetQualityLevel(5);
@@ -125,19 +138,22 @@ namespace InfimaGames.LowPolyShooterPack.Interface
 
         public void Restart()
         {
-            string sceneToLoad = SceneManager.GetActiveScene().path;
-            
-            #if UNITY_EDITOR
-            UnityEditor.SceneManagement.EditorSceneManager.LoadSceneAsyncInPlayMode(sceneToLoad, new LoadSceneParameters(LoadSceneMode.Single));
-            #else
+            var sceneToLoad = SceneManager.GetActiveScene().path;
+
+#if UNITY_EDITOR
+            UnityEditor.SceneManagement.EditorSceneManager.LoadSceneAsyncInPlayMode(sceneToLoad,
+                new LoadSceneParameters(LoadSceneMode.Single));
+#else
             //Load the scene.
             SceneManager.LoadSceneAsync(sceneToLoad, new LoadSceneParameters(LoadSceneMode.Single));
-            #endif
+#endif
         }
+
         public void Quit()
         {
             Application.Quit();
         }
+
         #endregion
     }
 }

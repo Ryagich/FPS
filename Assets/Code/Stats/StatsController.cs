@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class StatsController : MonoBehaviour
 {
+    public static event Action Died; 
     public float NeedHealth => Hp.Max - Hp.Value;
     public float NeedArmor => Armor.Max - Armor.Value;
     public bool IsInit { get; private set; } = false;
@@ -35,12 +36,12 @@ public class StatsController : MonoBehaviour
     
     public void TakeHealth(float value)
     {
-        Hp.ChangeValue(value);
+        Hp.AddValue(value);
     }
     
     public void TakeArmor(float value)
     {
-        Armor.ChangeValue(value);
+        Armor.AddValue(value);
     }
     
     public void TakeDamage(float value)
@@ -51,13 +52,18 @@ public class StatsController : MonoBehaviour
             var ld = ad - Armor.Value;
             var hd = value * (1 - _ratio) + ld;
 
-            Armor.ChangeValue(ad);
-            Hp.ChangeValue(-hd);
+            Armor.AddValue(-ad);
+            Hp.AddValue(-hd);
         }
         else
         {
-            Armor.ChangeValue(-ad);
-            Hp.ChangeValue(-value * (1 - _ratio));
+            Armor.AddValue(-ad);
+            Hp.AddValue(-value * (1 - _ratio));
+        }
+
+        if (Hp.Value <= 0)
+        {
+            Died?.Invoke();
         }
     }
 }

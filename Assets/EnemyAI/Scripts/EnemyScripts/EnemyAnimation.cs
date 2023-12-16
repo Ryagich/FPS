@@ -32,7 +32,7 @@ namespace EnemyAI
 			// Get avatar bones for rotation reference.
 			hips = anim.GetBoneTransform(HumanBodyBones.Hips);
 			spine = anim.GetBoneTransform(HumanBodyBones.Spine);
-			Transform root = hips.parent;
+			var root = hips.parent;
 
 			// Correctly set the hip and root bones.
 			if (spine.parent != hips)
@@ -58,7 +58,7 @@ namespace EnemyAI
 					break;
 			}
 			// Set ragdoll rigidbodies as kinematic while NPC is alive.
-			foreach (Rigidbody member in GetComponentsInChildren<Rigidbody>())
+			foreach (var member in GetComponentsInChildren<Rigidbody>())
 			{
 				member.isKinematic = true;
 			}
@@ -87,14 +87,14 @@ namespace EnemyAI
 			if (controller.Aiming)
 			{
 				// Calculate desired rotation.
-				Quaternion targetRotation = Quaternion.LookRotation(controller.personalTarget - spine.position);
+				var targetRotation = Quaternion.LookRotation(controller.personalTarget - spine.position);
 				// Apply parent bones initial rotation offsets until the hips bone
 				targetRotation *= Quaternion.Euler(initialRootRotation);
 				targetRotation *= Quaternion.Euler(initialHipsRotation);
 				// Apply extra rotation offsets (depends on the NPC avatar).
 				targetRotation *= Quaternion.Euler(controller.classStats.aimOffset);
 				// Calculate rotation for the frame.
-				Quaternion frameRotation = Quaternion.Slerp(lastRotation, targetRotation, timeCountAim);
+				var frameRotation = Quaternion.Slerp(lastRotation, targetRotation, timeCountAim);
 
 				// Simulate a simple bone constraint on upper body rotation.
 				// Is the projected frame rotation less than 60 degrees relative to the hips?
@@ -120,8 +120,8 @@ namespace EnemyAI
 					timeCountAim = 0;
 				}
 				// Measure remain angle gap to desired aim orientation.
-				Vector3 target = controller.personalTarget - gunMuzzle.position;
-				Vector3 fwd = -gunMuzzle.right;
+				var target = controller.personalTarget - gunMuzzle.position;
+				var fwd = -gunMuzzle.right;
 				currentAimAngleGap = Vector3.Angle(target, fwd);
 
 				timeCountGuard = 0;
@@ -153,7 +153,7 @@ namespace EnemyAI
 			// Target is on sight, focus orientation on him.
 			if (controller.focusSight)
 			{
-				Vector3 dest = (controller.personalTarget - transform.position);
+				var dest = (controller.personalTarget - transform.position);
 				dest.y = 0;
 				angle = Vector3.SignedAngle(transform.forward, dest, transform.up);
 
@@ -161,7 +161,7 @@ namespace EnemyAI
 				if (controller.Strafing)
 				{
 					dest = dest.normalized;
-					Quaternion targetStrafeRotation = Quaternion.LookRotation(dest);
+					var targetStrafeRotation = Quaternion.LookRotation(dest);
 					transform.rotation = Quaternion.Lerp(transform.rotation, targetStrafeRotation, turnSpeed * Time.time);
 				}
 			}
@@ -186,7 +186,7 @@ namespace EnemyAI
 				}
 			}
 			// Strafe direction.
-			Vector3 direction = nav.desiredVelocity;
+			var direction = nav.desiredVelocity;
 			direction.y = 0.0f;
 			direction = direction.normalized;
 			direction = Quaternion.Inverse(transform.rotation) * direction;

@@ -69,7 +69,7 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             if (interactorBehaviour != null && interactorBehaviour.CanInteract())
             {
                 //Get Interactable.
-                Interactable interactable = interactorBehaviour.GetInteractable();
+                var interactable = interactorBehaviour.GetInteractable();
                 if (interactable != null)
                 {
                     //Show.
