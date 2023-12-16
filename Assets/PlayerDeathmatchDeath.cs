@@ -6,7 +6,6 @@ public class PlayerDeathmatchDeath : MonoBehaviour
 {
     private Transform deadScreen;
     private Character character;
-    private ComponentsDisabledAtDeath toDisabler;
     private StatsController stats;
     private CharacterDisabler disabler;
     
@@ -16,7 +15,6 @@ public class PlayerDeathmatchDeath : MonoBehaviour
             character = GetComponent<Character>();
 
         disabler = GetComponent<CharacterDisabler>();
-        toDisabler = GetComponent<ComponentsDisabledAtDeath>();
         stats = GetComponent<StatsController>();
         
         StatsController.Died += Disable;
@@ -35,7 +33,7 @@ public class PlayerDeathmatchDeath : MonoBehaviour
     private void Respawn()
     {
         disabler.Activate();
-        toDisabler.Active();
+       character.GetCameraDepth().enabled = true;
         deadScreen.gameObject.SetActive(false);
         stats.Hp.AddValue(stats.Hp.Max);
         
@@ -54,7 +52,7 @@ public class PlayerDeathmatchDeath : MonoBehaviour
     public void Disable()
     {
         disabler.Disable();
-        toDisabler.Disable();
+        character.GetCameraDepth().enabled = false;
         deadScreen.gameObject.SetActive(true);
         
         EnemyController.Instance.RemoveCharacter();

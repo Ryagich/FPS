@@ -126,9 +126,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
         
         private IEnumerator DestroyAfter()
         {
-            //Wait for set amount of time
             yield return new WaitForSeconds(destroyAfter);
-            //Destroy bullet object
             Destroy(gameObject);
         }
     }

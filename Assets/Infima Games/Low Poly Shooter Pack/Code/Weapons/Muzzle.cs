@@ -109,16 +109,12 @@ namespace InfimaGames.LowPolyShooterPack
 
         public override void Effect()
         {
-            //Try to play the fire particles from the muzzle!
             if(particles != null)
                 particles.Emit(flashParticlesCount);
 
-            //Make sure that we have a light to flash!
             if (flashLight != null)
             {
-                //Enable the light.
                 flashLight.enabled = true;
-                //Disable the light after a few seconds.
                 StartCoroutine(nameof(DisableLight));
             }
         }

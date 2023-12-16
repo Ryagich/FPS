@@ -4,9 +4,6 @@ using UnityEngine;
 
 namespace InfimaGames.LowPolyShooterPack
 {
-    /// <summary>
-    /// Muzzle Abstract Class.
-    /// </summary>
     public abstract class MuzzleBehaviour : MonoBehaviour
     {
         #region GETTERS
@@ -45,13 +42,6 @@ namespace InfimaGames.LowPolyShooterPack
 
         #endregion
 
-        #region METHODS
-
-        /// <summary>
-        /// Plays all of the muzzle effects.
-        /// </summary>
         public abstract void Effect(); 
-
-        #endregion
     }
 }

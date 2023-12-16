@@ -247,41 +247,30 @@ namespace InfimaGames.LowPolyShooterPack
 
         public override void Fire(float spreadMultiplier = 1.0f)
         {
-            //We need a muzzle in order to fire this weapon!
             if (muzzleBehaviour == null)
                 return;
 
-            //Make sure that we have a camera cached, otherwise we don't really have the ability to perform traces.
             if (playerCamera == null)
                 return;
 
-            //Play the firing animation.
             const string stateName = "Fire";
             animator.Play(stateName, 0, 0.0f);
-            //Reduce ammunition! We just shot, so we need to get rid of one!
             ammunitionCurrent = Mathf.Clamp(ammunitionCurrent - 1, 0, magazineBehaviour.GetAmmunitionTotal());
 
-            //Set the slide back if we just ran out of ammunition.
             if (ammunitionCurrent == 0)
                 SetSlideBack(1);
 
-            //Play all muzzle effects.
             muzzleBehaviour.Effect();
 
-            //Spawn as many projectiles as we need.
             for (var i = 0; i < shotCount; i++)
             {
-                //Determine a random spread value using all of our multipliers.
                 var spreadValue = Random.insideUnitSphere * (spread * spreadMultiplier);
-                //Remove the forward spread component, since locally this would go inside the object we're shooting!
                 spreadValue.z = 0;
                 spreadValue = playerCamera.TransformDirection(spreadValue);
                 
                 var projectile = Instantiate(prefabProjectile, playerCamera.position,
                     Quaternion.Euler(playerCamera.eulerAngles + spreadValue));
                 projectile.GetComponent<Projectile>().SetDamage(_damage);
-                //Add velocity to the projectile.
-                Debug.Log(projectile.transform.forward * projectileImpulse);
                 projectile.GetComponent<Rigidbody>().velocity = projectile.transform.forward * projectileImpulse;
             }
         }
