@@ -31,6 +31,11 @@ public class SoundSetting : MonoBehaviour
                 slider.value = YandexGame.savesData.UIVolume;
                 break;
             }
+            case SoundType.Effects:
+            {
+                slider.value = YandexGame.savesData.EffectsVolume;
+                break;
+            }
         }
 
         UpdateVolume();
@@ -54,6 +59,13 @@ public class SoundSetting : MonoBehaviour
                     YandexGame.savesData.UIVolume);
                 break;
             }
+            case SoundType.Effects:
+            {
+                YandexGame.savesData.EffectsVolume = slider.value;
+                _mixer.SetFloat("Effects_Volume",
+                    YandexGame.savesData.UIVolume);
+                break;
+            }
         }
 
         YandexGame.SaveProgress();
@@ -65,4 +77,5 @@ public enum SoundType
 {
     Master = 0,
     UI = 1,
+    Effects,
 }
