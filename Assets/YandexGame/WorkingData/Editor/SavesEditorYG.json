@@ -1,13 +1,14 @@
 {
-    "idSave": 195,
+    "idSave": 303,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
     "Money": 8078,
-    "SceneIndex": 3,
+    "SceneIndex": 2,
     "DeatmatchType": 0,
     "SensitivityX": 1.25,
     "SensitivityY": 1.25,
-    "MasterVolume": -80.0,
-    "UIVolume": -80.0
+    "MasterVolume": 0.0,
+    "UIVolume": -20.0,
+    "EffectsVolume": 20.0
 }

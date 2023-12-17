@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
@@ -14,7 +15,8 @@ namespace InfimaGames.LowPolyShooterPack
     [RequireComponent(typeof(CharacterKinematics))]
     public sealed class Character : CharacterBehaviour
     {
-        #region FIELDS SERIALIZED
+        [field: SerializeField]public AudioSource EffectsSource { get; private set; }
+        [field: SerializeField] public AudioMixerGroup EffectsGroup { get; private set; }
 
         [Title(label: "References")] [Tooltip("The character's LowerWeapon component.")] [SerializeField]
         private LowerWeapon lowerWeapon;
@@ -89,8 +91,6 @@ namespace InfimaGames.LowPolyShooterPack
         [Tooltip("If true, the aiming input has to be held to be active.")] [SerializeField]
         private bool holdToAim = true;
 
-        #endregion
-
         #region FIELDS
 
         private bool aiming;
@@ -129,21 +129,22 @@ namespace InfimaGames.LowPolyShooterPack
 
         #region UNITY
 
+        public static Character Instance;
+        
         protected override void Awake()
         {
-            #region Lock Cursor
-
+            Instance = this;
             cursorLocked = true;
             UpdateCursorState();
-
-            #endregion
 
             movementBehaviour = GetComponent<MovementBehaviour>();
         }
 
+        public void FillGrenades() => grenadeCount = grenadeTotal;
+
         protected override void Start()
         {
-            grenadeCount = grenadeTotal;
+            FillGrenades();
 
             //Hide knife. We do this so we don't see a giant knife stabbing through the character's hands all the time!
             if (knife != null)
@@ -331,9 +332,6 @@ namespace InfimaGames.LowPolyShooterPack
             characterAnimator.SetBool(AHashes.Crouching, movementBehaviour.IsCrouching());
         }
 
-        /// <summary>
-        /// Plays the inspect animation.
-        /// </summary>
         private void Inspect()
         {
             //State.
@@ -342,29 +340,19 @@ namespace InfimaGames.LowPolyShooterPack
             characterAnimator.CrossFade("Inspect", 0.0f, layerActions, 0);
         }
 
-        /// <summary>
-        /// Fires the character's weapon.
-        /// </summary>
         private void Fire()
         {
-            //Increase shots fired. We use this value to increase the spread, and also to apply recoil, so
-            //it is very important that we keep it up to date.
             shotsFired++;
 
-            //Save the shot time, so we can calculate the fire rate correctly.
             lastShotTime = Time.time;
-            //Fire the weapon! Make sure that we also pass the scope's spread multiplier if we're aiming.
             equippedWeapon.Fire(aiming ? equippedWeaponScope.GetMultiplierSpread() : 1.0f);
 
-            //Play firing animation.
             const string stateName = "Fire";
             characterAnimator.CrossFade(stateName, 0.05f, layerOverlay, 0);
 
-            //Play bolt actioning animation if needed, and if we have ammunition. We don't play this for the last shot.
             if (equippedWeapon.IsBoltAction() && equippedWeapon.HasAmmunition())
                 UpdateBolt(true);
 
-            //Automatically reload the weapon if we need to. This is very helpful for things like grenade launchers or rocket launchers.
             if (!equippedWeapon.HasAmmunition() && equippedWeapon.GetAutomaticallyReloadOnEmpty())
                 StartCoroutine(nameof(TryReloadAutomatic));
         }
@@ -395,70 +383,45 @@ namespace InfimaGames.LowPolyShooterPack
             equippedWeapon.Reload();
         }
 
-        /// <summary>
-        /// Plays The Reload Animation After A Delay. Helpful to reload automatically after running out of ammunition.
-        /// </summary>
         private IEnumerator TryReloadAutomatic()
         {
-            //Yield.
             yield return new WaitForSeconds(equippedWeapon.GetAutomaticallyReloadOnEmptyDelay());
 
-            //Play Reload Animation.
             PlayReloadAnimation();
         }
 
         public IEnumerator Equip(int index = 0)
         {
-            //Only if we're not holstered, holster. If we are already, we don't need to wait.
             if (!holstered)
             {
-                //Holster.
                 SetHolstered(holstering = true);
-                //Wait.
                 yield return new WaitUntil(() => holstering == false);
             }
 
-            //Unholster. We do this just in case we were holstered.
             SetHolstered(false);
-            //Play Unholster Animation.
             characterAnimator.Play("Unholster", layerHolster, 0);
 
-            //Equip The New Weapon.
             inventory.Equip(index);
-            //Refresh.
             RefreshWeaponSetup();
         }
 
         public void RefreshWeaponSetup()
         {
-            //Make sure we have a weapon. We don't want errors!
-
             if ((equippedWeapon = inventory.GetEquipped()) == null)
             {
                 Debug.LogError(equippedWeapon);
                 return;
             }
-
-            //Update Animator Controller. We do this to update all animations to a specific weapon's set.
             characterAnimator.runtimeAnimatorController = equippedWeapon.GetAnimatorController();
-
-            //Get the attachment manager so we can use it to get all the attachments!
             weaponAttachmentManager = equippedWeapon.GetAttachmentManager();
             if (weaponAttachmentManager == null)
                 return;
-
-            //Get equipped scope. We need this one for its settings!
             equippedWeaponScope = weaponAttachmentManager.GetEquippedScope();
-            //Get equipped magazine. We need this one for its settings!
             equippedWeaponMagazine = weaponAttachmentManager.GetEquippedMagazine();
         }
 
         private void FireEmpty()
         {
-            /*
-             * Save Time. Even though we're not actually firing, we still need this for the fire rate between
-             * empty shots.
-             */
             lastShotTime = Time.time;
             characterAnimator.CrossFade("Fire Empty", 0.05f, layerOverlay, 0);
         }
@@ -466,14 +429,9 @@ namespace InfimaGames.LowPolyShooterPack
 
         private void PlayGrenadeThrow()
         {
-            //Start State.
             throwingGrenade = true;
-
-            //Play Normal.
             characterAnimator.CrossFade("Grenade Throw", 0.15f,
                 characterAnimator.GetLayerIndex("Layer Actions Arm Left"), 0.0f);
-
-            //Play Additive.
             characterAnimator.CrossFade("Grenade Throw", 0.05f,
                 characterAnimator.GetLayerIndex("Layer Actions Arm Right"), 0.0f);
         }

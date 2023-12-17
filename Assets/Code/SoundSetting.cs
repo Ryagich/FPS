@@ -63,7 +63,7 @@ public class SoundSetting : MonoBehaviour
             {
                 YandexGame.savesData.EffectsVolume = slider.value;
                 _mixer.SetFloat("Effects_Volume",
-                    YandexGame.savesData.UIVolume);
+                    YandexGame.savesData.EffectsVolume);
                 break;
             }
         }

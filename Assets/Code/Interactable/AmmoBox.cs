@@ -7,5 +7,7 @@ public class AmmoBox : MonoBehaviour
     {
         var inventory = hero.GetComponent<InventoryIniter>()._inventory;
         inventory.FillAmmo();
+        var character = hero.GetComponent<Character>();
+        character.FillGrenades();
     }
 }

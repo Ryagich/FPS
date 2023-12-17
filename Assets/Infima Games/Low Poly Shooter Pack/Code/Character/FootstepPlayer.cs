@@ -47,9 +47,6 @@ namespace InfimaGames.LowPolyShooterPack
         
         #region UNITY
         
-        /// <summary>
-        /// Awake.
-        /// </summary>
         private void Awake()
         {
             //Make sure we have an Audio Source assigned.
@@ -61,31 +58,21 @@ namespace InfimaGames.LowPolyShooterPack
             }
         }
 
-        /// <summary>
-        /// Update.
-        /// </summary>
         private void Update()
         {
-            //Check for missing references.
             if (characterAnimator == null || movementBehaviour == null || audioSource == null)
             {
-                //Reference Error.
                 Log.ReferenceError(this, gameObject);
                 
-                //Return.
                 return;
             }
             
-            //Check if we're moving on the ground. We don't need footsteps in the air.
             if (movementBehaviour.IsGrounded() && movementBehaviour.GetVelocity().sqrMagnitude > minVelocityMagnitude)
             {
-                //Select the correct audio clip to play.
                 audioSource.clip = characterAnimator.GetBool(AHashes.Running) ? audioClipRunning : audioClipWalking;
-                //Play it!
                 if (!audioSource.isPlaying)
                     audioSource.Play();
             }
-            //Pause it if we're doing something like flying, or not moving!
             else if (audioSource.isPlaying)
                 audioSource.Pause();
         }
