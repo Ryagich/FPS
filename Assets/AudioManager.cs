@@ -71,8 +71,6 @@ public class AudioManager : MonoBehaviour
 
     private void RemoveSource(AudioSource source)
     {
-        Debug.Log("Remove");
-
         _sounds.Remove(source);
         Destroy(source.gameObject);
     }

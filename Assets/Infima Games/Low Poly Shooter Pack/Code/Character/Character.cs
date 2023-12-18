@@ -121,6 +121,7 @@ namespace InfimaGames.LowPolyShooterPack
         private bool tutorialTextVisible;
         public bool cursorLocked;
         private int shotsFired;
+        private bool canSwitchWeaponState = false;
 
         #endregion
 
@@ -157,38 +158,35 @@ namespace InfimaGames.LowPolyShooterPack
 
         protected override void Update()
         {
-            //Match Aim.
             aiming = holdingButtonAim && CanAim();
-            //Match Run.
             running = holdingButtonRun && CanRun();
-
-            //Check if we're aiming.
             switch (aiming)
             {
-                //Just Started.
                 case true when !wasAiming:
                     equippedWeaponScope.OnAim();
                     break;
-                //Just Stopped.
                 case false when wasAiming:
                     equippedWeaponScope.OnAimStop();
                     break;
             }
 
-            //Holding the firing button.
+            if (Time.timeScale == 0)
+            {
+                canSwitchWeaponState = true;
+                OnTryFire(new InputAction.CallbackContext());
+            }
+            else 
+                canSwitchWeaponState = false;
+
             if (holdingButtonFire)
             {
-                //Check.
                 if (CanPlayAnimationFire() && equippedWeapon.HasAmmunition() && equippedWeapon.IsAutomatic())
                 {
-                    //Has fire rate passed.
                     if (Time.time - lastShotTime > 60.0f / equippedWeapon.GetRateOfFire())
                         Fire();
                 }
                 else
                 {
-                    //Reset fired shots, so recoil/spread does not just stay at max when we've run out
-                    //of ammo already!
                     shotsFired = 0;
                 }
             }
@@ -718,29 +716,25 @@ namespace InfimaGames.LowPolyShooterPack
 
         public void OnTryFire(InputAction.CallbackContext context)
         {
-            if (!cursorLocked)
-                return;
+            if (!cursorLocked && !canSwitchWeaponState)
+               return;
+            Debug.Log(context);
 
             switch (context)
             {
                 case { phase: InputActionPhase.Started }:
                     holdingButtonFire = true;
-
-                    //Restart the shots.
                     shotsFired = 0;
                     break;
-                //Performed.
+                
                 case { phase: InputActionPhase.Performed }:
-                    //Ignore if we're not allowed to actually fire.
                     if (!CanPlayAnimationFire())
                         break;
-
                     if (equippedWeapon.HasAmmunition())
                     {
                         if (equippedWeapon.IsAutomatic())
                         {
                             shotsFired = 0;
-
                             break;
                         }
 
@@ -749,11 +743,10 @@ namespace InfimaGames.LowPolyShooterPack
                     }
                     else
                         FireEmpty();
-
                     break;
+                
                 case { phase: InputActionPhase.Canceled }:
                     holdingButtonFire = false;
-
                     shotsFired = 0;
                     break;
             }
