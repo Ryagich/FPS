@@ -142,7 +142,9 @@ public class AttackAction : Action
 			}
 		}
 		// Play shot audio clip at shot position.
-		AudioSource.PlayClipAtPoint(controller.classStats.shotSound, controller.enemyAnimation.gunMuzzle.position, 2f);
+		AudioManager.Instance.PlaySound(controller.classStats.shotSound,AudioSourceType.Weapon,
+			controller.enemyAnimation.gunMuzzle);
+		//AudioSource.PlayClipAtPoint(controller.classStats.shotSound, controller.enemyAnimation.gunMuzzle.position, 2f);
 	}
 	// Function to destroy the muzzle flash.
 	public IEnumerator DestroyFlash(GameObject flash)

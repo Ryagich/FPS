@@ -1,7 +1,5 @@
 ﻿using InfimaGames.LowPolyShooterPack.Legacy;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace InfimaGames.LowPolyShooterPack
 {
@@ -106,7 +104,7 @@ namespace InfimaGames.LowPolyShooterPack
         [SerializeField]
         private AudioClip audioClipFireEmpty;
 
-        [Tooltip("")] [SerializeField] private AudioClip audioClipBoltAction;
+        [SerializeField] private AudioClip audioClipBoltAction;
         [field: SerializeField] public DropWeapon DropWeapon { get; private set; }
         [field: SerializeField] public Ammo AmmoType { get; private set; }
 
@@ -238,11 +236,15 @@ namespace InfimaGames.LowPolyShooterPack
             animator.SetBool(boolName, true);
 
             //Try Play Reload Sound.
-            ServiceLocator.Current.Get<IAudioManagerService>().PlayOneShot(
-                HasAmmunition() ? audioClipReload : audioClipReloadEmpty, new AudioSettings(1.0f, 0.0f, false));
+            AudioManager.Instance.PlaySound
+            (HasAmmunition() ? audioClipReload : audioClipReloadEmpty, AudioSourceType.Player);
 
             //Play Reload Animation.
-            animator.Play(cycledReload ? "Reload Open" : (HasAmmunition() ? "Reload" : "Reload Empty"), 0, 0.0f);
+            animator.Play(cycledReload
+                ? "Reload Open"
+                : (HasAmmunition()
+                    ? "Reload"
+                    : "Reload Empty"), 0, 0.0f);
         }
 
         public override void Fire(float spreadMultiplier = 1.0f)
@@ -267,7 +269,7 @@ namespace InfimaGames.LowPolyShooterPack
                 var spreadValue = Random.insideUnitSphere * (spread * spreadMultiplier);
                 spreadValue.z = 0;
                 spreadValue = playerCamera.TransformDirection(spreadValue);
-                
+
                 var projectile = Instantiate(prefabProjectile, playerCamera.position,
                     Quaternion.Euler(playerCamera.eulerAngles + spreadValue));
                 projectile.GetComponent<Projectile>().SetDamage(_damage);

@@ -25,13 +25,14 @@ namespace InfimaGames.LowPolyShooterPack
 
             //Create an object for the sound manager, and add the component!
             var soundManagerObject = new GameObject("Sound Manager");
-            var soundManagerService = soundManagerObject.AddComponent<AudioManagerService>();
+           //var soundManagerService = soundManagerObject.AddComponent<AudioManagerService>();
             
             //Make sure that we never destroy our SoundManager. We need it in other scenes too!
             Object.DontDestroyOnLoad(soundManagerObject);
             
             //Register the sound manager service!
-            ServiceLocator.Current.Register<IAudioManagerService>(soundManagerService);
+            //ServiceLocator.Current
+            //    .Register<IAudioManagerService>(soundManagerService);
 
             #endregion
         }

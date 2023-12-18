@@ -70,8 +70,13 @@ namespace InfimaGames.LowPolyShooterPack
             Reapply();
             
             //Plays a little sound now that we're toggling this laser!
-            if(toggleClip != null)
-                ServiceLocator.Current.Get<IAudioManagerService>().PlayOneShot(toggleClip, toggleAudioSettings);
+            if (toggleClip != null)
+            {
+                AudioManager.Instance.PlaySound(toggleClip, AudioSourceType.Player);
+                //,toggleAudioSettings);
+            }
+              //  ServiceLocator.Current.Get<IAudioManagerService>()
+               //     .PlayOneShot(toggleClip, toggleAudioSettings);
         }
         public override void Reapply()
         {

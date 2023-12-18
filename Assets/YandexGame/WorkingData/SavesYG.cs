@@ -278,9 +278,13 @@
         //Setings
         public float SensitivityX = 1.25f;
         public float SensitivityY = 1.25f;
+        //Audio
         public float MasterVolume = 20f;
         public float UIVolume = -30f;
         public float EffectsVolume = -30f;
+        public float StepsVolume = -30f;
+        public float ShootingVolume = -30f;
+
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
 

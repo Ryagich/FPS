@@ -1,7 +1,7 @@
 ﻿using System;
-using UnityEngine;
 using System.Collections;
-using UnityEngine.Audio;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
@@ -15,9 +15,6 @@ namespace InfimaGames.LowPolyShooterPack
     [RequireComponent(typeof(CharacterKinematics))]
     public sealed class Character : CharacterBehaviour
     {
-        [field: SerializeField]public AudioSource EffectsSource { get; private set; }
-        [field: SerializeField] public AudioMixerGroup EffectsGroup { get; private set; }
-
         [Title(label: "References")] [Tooltip("The character's LowerWeapon component.")] [SerializeField]
         private LowerWeapon lowerWeapon;
 
@@ -130,7 +127,7 @@ namespace InfimaGames.LowPolyShooterPack
         #region UNITY
 
         public static Character Instance;
-        
+
         protected override void Awake()
         {
             Instance = this;
@@ -412,6 +409,7 @@ namespace InfimaGames.LowPolyShooterPack
                 Debug.LogError(equippedWeapon);
                 return;
             }
+
             characterAnimator.runtimeAnimatorController = equippedWeapon.GetAnimatorController();
             weaponAttachmentManager = equippedWeapon.GetAttachmentManager();
             if (weaponAttachmentManager == null)
@@ -459,9 +457,6 @@ namespace InfimaGames.LowPolyShooterPack
             characterAnimator.SetBool(AHashes.Bolt, bolting = value);
         }
 
-        /// <summary>
-        /// Updates the "Holstered" variable, along with the Character's Animator value.
-        /// </summary>
         private void SetHolstered(bool value = true)
         {
             //Update value.
@@ -1000,7 +995,11 @@ namespace InfimaGames.LowPolyShooterPack
             Cursor.visible = !cursorLocked;
             Cursor.lockState = cursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
             if (Cursor.lockState == CursorLockMode.Locked)
+            {
                 Time.timeScale = 1;
+                if (AudioManager.Instance)
+                    AudioManager.Instance.UnPause();
+            }
         }
 
         public void OnLockCursor(InputAction.CallbackContext context)
@@ -1051,9 +1050,6 @@ namespace InfimaGames.LowPolyShooterPack
             axisLook *= aiming ? equippedWeaponScope.GetMultiplierMouseSensitivity() : 1.0f;
         }
 
-        /// <summary>
-        /// Called in order to update the tutorial text value.
-        /// </summary>
         public void OnUpdateTutorial(InputAction.CallbackContext context)
         {
             //Switch.
@@ -1072,19 +1068,12 @@ namespace InfimaGames.LowPolyShooterPack
 
         #region ANIMATION EVENTS
 
-        /// <summary>
-        /// EjectCasing.
-        /// </summary>
         public override void EjectCasing()
         {
-            //Notify the weapon.
             if (equippedWeapon != null)
                 equippedWeapon.EjectCasing();
         }
 
-        /// <summary>
-        /// FillAmmunition.
-        /// </summary>
         public override void FillAmmunition(int amount)
         {
             //Notify the weapon to fill the ammunition by the amount.
@@ -1118,9 +1107,6 @@ namespace InfimaGames.LowPolyShooterPack
             Instantiate(grenadePrefab, position, cTransform.rotation);
         }
 
-        /// <summary>
-        /// SetActiveMagazine.
-        /// </summary>
         public override void SetActiveMagazine(int active)
         {
             //Set magazine gameObject active.

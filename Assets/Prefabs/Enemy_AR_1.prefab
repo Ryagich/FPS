@@ -1954,6 +1954,7 @@ GameObject:
   - component: {fileID: 4697446129122812663}
   - component: {fileID: 5996379779217508931}
   - component: {fileID: 2217046483455932004}
+  - component: {fileID: 4296724668386808750}
   m_Layer: 17
   m_Name: Enemy_AR_1
   m_TagString: Enemy
@@ -2200,6 +2201,23 @@ MonoBehaviour:
       - {fileID: 5505348560908431610}
       - {fileID: 2958556000014088075}
       - {fileID: 6493177149546251360}
+--- !u!114 &4296724668386808750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3770309115186941890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b5534f6c9af1a4284190199c716aca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepClips:
+  - {fileID: 8300000, guid: 73c89954384d4dd46a83c233d2487198, type: 3}
+  - {fileID: 8300000, guid: 3dbd7bd5334b45048aaa279d8e8f234f, type: 3}
+  - {fileID: 8300000, guid: 692b313d9c9e604429e0548f95c98a6b, type: 3}
+  - {fileID: 8300000, guid: 86fc7dc063193724a98a05823a220b59, type: 3}
 --- !u!1 &3817897559240946391
 GameObject:
   m_ObjectHideFlags: 0

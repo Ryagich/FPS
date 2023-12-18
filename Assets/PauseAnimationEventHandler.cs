@@ -7,5 +7,6 @@ public class PauseAnimationEventHandler : MonoBehaviour
     public void PauseShow()
     {
         Time.timeScale =0;
+        AudioManager.Instance.Pause();
     }
 }

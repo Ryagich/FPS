@@ -36,6 +36,16 @@ public class SoundSetting : MonoBehaviour
                 slider.value = YandexGame.savesData.EffectsVolume;
                 break;
             }
+            case SoundType.Weapon:
+            {
+                slider.value = YandexGame.savesData.ShootingVolume;
+                break;
+            }
+            case SoundType.Steps:
+            {
+                slider.value = YandexGame.savesData.StepsVolume;
+                break;
+            }
         }
 
         UpdateVolume();
@@ -48,22 +58,31 @@ public class SoundSetting : MonoBehaviour
             case SoundType.Master:
             {
                 YandexGame.savesData.MasterVolume = slider.value;
-                _mixer.SetFloat("Master_Volume",
-                    YandexGame.savesData.MasterVolume);
+                _mixer.SetFloat("Master_Volume", YandexGame.savesData.MasterVolume);
                 break;
             }
             case SoundType.UI:
             {
                 YandexGame.savesData.UIVolume = slider.value;
-                _mixer.SetFloat("UI_Volume",
-                    YandexGame.savesData.UIVolume);
+                _mixer.SetFloat("UI_Volume", YandexGame.savesData.UIVolume);
                 break;
             }
             case SoundType.Effects:
             {
                 YandexGame.savesData.EffectsVolume = slider.value;
-                _mixer.SetFloat("Effects_Volume",
-                    YandexGame.savesData.EffectsVolume);
+                _mixer.SetFloat("Effects_Volume", YandexGame.savesData.EffectsVolume);
+                break;
+            }
+            case SoundType.Weapon:
+            {
+                YandexGame.savesData.ShootingVolume = slider.value;
+                _mixer.SetFloat("Shooting_Volume", YandexGame.savesData.ShootingVolume);
+                break;
+            }
+            case SoundType.Steps:
+            {
+                YandexGame.savesData.StepsVolume = slider.value;
+                _mixer.SetFloat("Steps_Volume", YandexGame.savesData.StepsVolume);
                 break;
             }
         }
@@ -78,4 +97,6 @@ public enum SoundType
     Master = 0,
     UI = 1,
     Effects,
+    Weapon,
+    Steps,
 }
