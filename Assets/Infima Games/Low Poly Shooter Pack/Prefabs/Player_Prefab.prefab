@@ -1997,6 +1997,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e425e6f88b619734faa4fdaa3dd855e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 434113066}
+  bloodScreen: {fileID: -1736663397859153334}
+  movement: {fileID: 448958757}
+  heart: {fileID: 4027078435281450844}
 --- !u!143 &4818736797759305148
 CharacterController:
   m_ObjectHideFlags: 0

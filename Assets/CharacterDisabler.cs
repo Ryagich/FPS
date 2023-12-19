@@ -5,19 +5,10 @@ using UnityEngine;
 
 public class CharacterDisabler : MonoBehaviour
 {
-    private Transform deadScreen;
-    private Character character;
-    private BloodScreen bloodScreen;
-    private Movement movement;
-    private BeatingHeart heart;
-
-    private void Awake()
-    {
-        character = GetComponent<Character>();
-        bloodScreen = GetComponent<BloodScreen>();
-        movement = GetComponent<Movement>();
-        heart = GetComponent<BeatingHeart>();
-    }
+    [SerializeField]private Character character;
+    [SerializeField]private BloodScreen bloodScreen;
+    [SerializeField]private Movement movement;
+    [SerializeField]private BeatingHeart heart;
 
     public void Activate()
     {
@@ -34,6 +25,8 @@ public class CharacterDisabler : MonoBehaviour
         character.CanPause = false;
         OnLockCursor();
 
+        if (!movement)
+            movement = GetComponent<Movement>();
         movement.enabled = false;
         bloodScreen.StopBleeding();
         heart.StopBeating();

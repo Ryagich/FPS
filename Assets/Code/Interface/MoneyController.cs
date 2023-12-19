@@ -15,7 +15,14 @@ public class MoneyController : MonoBehaviour
     private void Awake()
     {
         Instanse = this;
-        UpdateText();
+        if (YandexGame.SDKEnabled)
+        {
+            UpdateText();
+        }
+        else
+        {
+            YandexGame.GetDataEvent += UpdateText;
+        }
     }
 
     public bool Check(int value)

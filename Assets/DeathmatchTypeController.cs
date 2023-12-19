@@ -72,7 +72,7 @@ public class DeathmatchTypeController : MonoBehaviour
         {
             kills += 1;
             TaskController.Instance.ShowTask(kills + "/" + 100);
-            if (kills >= 100)
+            if (kills >= 4)
             {
                 EndLevel();
             }

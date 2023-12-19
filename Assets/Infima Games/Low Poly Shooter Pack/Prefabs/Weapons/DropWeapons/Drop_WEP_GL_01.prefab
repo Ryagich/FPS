@@ -599,6 +599,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _manyInteract: 0
+  _simpleInteractable: 0
 --- !u!114 &489319342433380879
 MonoBehaviour:
   m_ObjectHideFlags: 0

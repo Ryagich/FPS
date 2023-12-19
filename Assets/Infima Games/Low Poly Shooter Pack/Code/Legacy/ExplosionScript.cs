@@ -13,9 +13,9 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
     
     	[Header("Audio")]
     	public AudioClip[] explosionSounds;
-    	public AudioSource audioSource;
     
-    	private void Start () {
+    	private void Start () 
+	    {
     		StartCoroutine (DestroyTimer ());
     		StartCoroutine (LightFlash ());
     
@@ -23,13 +23,15 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			    explosionSounds[Random.Range(0, explosionSounds.Length)],AudioSourceType.Player,transform);
     	}
     
-    	private IEnumerator LightFlash () {
+    	private IEnumerator LightFlash () 
+	    {
     		lightFlash.GetComponent<Light>().enabled = true;
     		yield return new WaitForSeconds (lightDuration);
     		lightFlash.GetComponent<Light>().enabled = false;
     	}
     
-    	private IEnumerator DestroyTimer () {
+    	private IEnumerator DestroyTimer () 
+	    {
     		yield return new WaitForSeconds (despawnTime);
     		Destroy (gameObject);
     	}

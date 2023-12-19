@@ -17,7 +17,7 @@ public class PlayerDeathmatchDeath : MonoBehaviour
         disabler = GetComponent<CharacterDisabler>();
         stats = GetComponent<StatsController>();
         
-        StatsController.Died += Disable;
+        stats.Died += Disable;
     }
 
     public void Init(GameObject go)

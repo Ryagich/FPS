@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class StatsController : MonoBehaviour
 {
-    public static event Action Died; 
+    public event Action Died; 
     public float NeedHealth => Hp.Max - Hp.Value;
     public float NeedArmor => Armor.Max - Armor.Value;
     public bool IsInit { get; private set; } = false;
