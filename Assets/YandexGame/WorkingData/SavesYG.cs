@@ -12,10 +12,10 @@
         // Ваши сохранения
         public int Money = 2000;
         public int SceneIndex;
-        
+
         // -1 - не дезматч; 0 - до 100 киллов; 1 - 5 мин; 2 - 10 мин;
         public int DeatmatchType = -1;
-        
+
         public bool[][] OpenedWeapons =
         {
             new[] { true, false, false, },
@@ -277,16 +277,27 @@
 
         //Setings
         public float SensitivityX = 1.25f;
+
         public float SensitivityY = 1.25f;
+
         //Audio
         public float MasterVolume = 20f;
         public float UIVolume = -30f;
         public float EffectsVolume = -30f;
         public float StepsVolume = -30f;
+
         public float ShootingVolume = -30f;
 
-
-        // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
+        public int UsesLaptops = 0;
+        // 0 - lvl, 1 - x,y,z
+        // 0 - x, 1 - y, 2 - z;
+        // -1000 - trash value
+        public float[][] levelsSpawnPlaces =
+        {
+            new[] { -1000f, -1000f, -1000f },
+            new[] { -1000f, -1000f, -1000f },
+            new[] { -1000f, -1000f, -1000f },
+        };
 
         // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()

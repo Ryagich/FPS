@@ -2,13 +2,13 @@ using InfimaGames.LowPolyShooterPack;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class PlayerDeathmatchDeath : MonoBehaviour
+public class PlayerDeath : MonoBehaviour
 {
     private Transform deadScreen;
     private Character character;
     private StatsController stats;
     private CharacterDisabler disabler;
-    
+
     private void Awake()
     {
         if (!character)
@@ -16,7 +16,6 @@ public class PlayerDeathmatchDeath : MonoBehaviour
 
         disabler = GetComponent<CharacterDisabler>();
         stats = GetComponent<StatsController>();
-        
         stats.Died += Disable;
     }
 
@@ -33,20 +32,20 @@ public class PlayerDeathmatchDeath : MonoBehaviour
     private void Respawn()
     {
         disabler.Activate();
-       character.GetCameraDepth().enabled = true;
+        character.GetCameraDepth().enabled = true;
         deadScreen.gameObject.SetActive(false);
         stats.Hp.AddValue(stats.Hp.Max);
+        stats.Armor.AddValue(stats.Armor.Max / 2);
         
         var inventory = character.GetInventory() as Inventory;
         inventory.FillAmmo();
         inventory.SetMaxAmmoInWeapons();
-        
+
         EnemyController.Instance.SetCharacter(gameObject);
-        
-        var places = PlayerSpawnPlaces.Instance.Places;
-        var randomPlace = places[Random.Range(0, places.Count)];
-        transform.position = randomPlace.position;
-        transform.rotation = randomPlace.rotation;
+
+        var place = SpawnPlaces.Instance.GetSpawnPlace();
+        transform.position = place.position;
+        transform.rotation = place.rotation;
     }
 
     public void Disable()
@@ -54,7 +53,7 @@ public class PlayerDeathmatchDeath : MonoBehaviour
         disabler.Disable();
         character.GetCameraDepth().enabled = false;
         deadScreen.gameObject.SetActive(true);
-        
+
         EnemyController.Instance.RemoveCharacter();
     }
 }

@@ -1,5 +1,4 @@
 using System;
-using TMPro;
 using UnityEngine;
 using YG;
 using System.Collections;
@@ -38,6 +37,8 @@ public class DeathmatchTypeController : MonoBehaviour
 
     private void EndLevel()
     {
+        Reward = callback.Money + Random.Range(200, 800);
+
         var type = YandexGame.savesData.DeatmatchType;
         if (type == 0)
             Reward += (int)(Reward / 1.4f);
@@ -45,7 +46,6 @@ public class DeathmatchTypeController : MonoBehaviour
             Reward += (int)(Reward / 1.2f);
         if (type == 2)
             Reward += (int)(Reward / 1.6f);
-        Reward = callback.Money + Random.Range(200, 800);
 
         holder.RewardedText.text = $"{_reward}: {Reward}$";
         holder.RewardedButton.onClick.AddListener(() => YandexGame.RewVideoShow(1));

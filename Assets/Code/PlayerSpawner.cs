@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class PlayerSpawner : MonoBehaviour
 {
-    [SerializeField] private UnityEvent<GameObject> _playerSpawned;
+    [SerializeField] public UnityEvent<GameObject> _playerSpawned;
     public static PlayerSpawner Instance;
     public GameObject Player { get; private set; }
     [SerializeField] private Transform _parent;

@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class TriggerZone : MonoBehaviour
 {
-    [SerializeField] private UnityEvent<GameObject> _entered;
+    [SerializeField] public UnityEvent<GameObject> _entered;
     
     private void OnTriggerEnter(Collider other)
     {
