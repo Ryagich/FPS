@@ -1672,6 +1672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 96765607}
   - component: {fileID: 96765608}
+  - component: {fileID: 96765609}
   m_Layer: 0
   m_Name: MissionsCreator
   m_TagString: Untagged
@@ -1721,6 +1722,22 @@ MonoBehaviour:
     SceneIndex: 4
     Description: First lvl
     screenshot: {fileID: 21300000, guid: 3b8d4033443be5e40ba0df23d2654c17, type: 3}
+  _disableColorActiveButton: {r: 0, g: 0, b: 0, a: 0}
+  _defDisableColor: {r: 0, g: 0, b: 0, a: 0}
+  _highlightColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &96765609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96765606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f282c46de26665d43ade657afebc3740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _disableHighlightColor: {r: 0.78431374, g: 0.78039217, b: 0.78039217, a: 0.39215687}
 --- !u!114 &100857307 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8277845269192840607, guid: c472be678311843468e98214f36dec77,
@@ -10566,6 +10583,9 @@ MonoBehaviour:
 
       DeathmatchDeathmatch'
     screenshot: {fileID: 21300000, guid: 3b8d4033443be5e40ba0df23d2654c17, type: 3}
+  _disableColorActiveButton: {r: 0, g: 0, b: 0, a: 0}
+  _defDisableColor: {r: 0, g: 0, b: 0, a: 0}
+  _highlightColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &864234373
 GameObject:
   m_ObjectHideFlags: 0

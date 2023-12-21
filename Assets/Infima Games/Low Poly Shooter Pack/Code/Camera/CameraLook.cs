@@ -46,19 +46,17 @@ namespace InfimaGames.LowPolyShooterPack
             rotationCamera = transform.localRotation;
 
 
-            {
-                if (YandexGame.SDKEnabled)
-                {
-                    SetSensitivity(YandexGame.savesData.SensitivityX,
-                                   YandexGame.savesData.SensitivityY);
-                }
-                else
-                {
-                    YandexGame.GetDataEvent += () =>
-                        SetSensitivity(YandexGame.savesData.SensitivityX,
-                                       YandexGame.savesData.SensitivityY);
-                }
-            }
+                //if (YandexGame.SDKEnabled)
+                // {
+                //     SetSensitivity(YandexGame.savesData.SensitivityX,
+                //         YandexGame.savesData.SensitivityY);
+                //  }
+                // else
+                //  {
+                //     YandexGame.GetDataEvent += () =>
+                //          SetSensitivity(YandexGame.savesData.SensitivityX,
+                //              YandexGame.savesData.SensitivityY);
+                //  }
         }
 
         public void SetSensitivity(float x, float y)
@@ -68,6 +66,8 @@ namespace InfimaGames.LowPolyShooterPack
 
         private void LateUpdate()
         {
+            SetSensitivity(YandexGame.savesData.SensitivityX,
+                YandexGame.savesData.SensitivityY);
             //Frame Input. The Input to add this frame!
             var frameInput = playerCharacter.IsCursorLocked() ? playerCharacter.GetInputLook() : default;
             //Sensitivity.
