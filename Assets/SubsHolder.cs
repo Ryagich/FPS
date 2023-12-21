@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SubsHolder : MonoBehaviour
 {
-    [TextAreaAttribute, SerializeField] private string _text;
+    [TextArea, SerializeField] private string _text;
     
     public void Write()
     {

@@ -3454,7 +3454,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: ce759f03167236840b492cbf37d9423b, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: d02dc657ed119e54d82aa715cb0d31c9, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &1433933163
 Transform:
@@ -3989,7 +3989,6 @@ MonoBehaviour:
   _respawnTime: 1
   _enemyCount: 2
   _isDeathmatch: 1
-  character: {fileID: 0}
 --- !u!1 &1720831759
 GameObject:
   m_ObjectHideFlags: 0

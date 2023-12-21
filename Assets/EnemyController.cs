@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using EnemyAI;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour
@@ -11,10 +12,13 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private List<Transform> _places;
     [SerializeField] private StateController _enemy;
     [SerializeField, Min(.0f)] private float _respawnTime = 3f;
-    [SerializeField, Min(0)] private int _enemyCount;
+
+    [FormerlySerializedAs("_maxenemyCount")] [FormerlySerializedAs("_enemyCount")] [SerializeField, Min(0)]
+    private int _maxEnemyCount;
+
     [SerializeField] private bool _isDeathmatch = true;
 
-    [SerializeField] private GameObject character;
+    private GameObject character;
     private bool characterIsAlive = true;
 
     private void Awake()
@@ -30,13 +34,14 @@ public class EnemyController : MonoBehaviour
                 if (enemy != otherEnemy)
                     enemy.AddTarget(otherEnemy.transform);
 
-        while (_enemies.Count != _enemyCount)
-        {
-            SpawnEnemy();
-        }
+        if (_enemies.Count < _maxEnemyCount)
+            while (_enemies.Count != _maxEnemyCount)
+            {
+                SpawnEnemy();
+            }
     }
 
-    public void SetCharacter()
+    private void SetCharacter()
     {
         characterIsAlive = true;
         foreach (var e in _enemies)
@@ -70,7 +75,7 @@ public class EnemyController : MonoBehaviour
 
         enemyHealth.Dead += () => StartCoroutine(Respawn());
         enemyHealth.Dead += () => _enemies.Remove(enemy);
-        
+
         if (_isDeathmatch)
             foreach (var otherEnemy in _enemies)
             {
@@ -90,6 +95,8 @@ public class EnemyController : MonoBehaviour
 
     public void SpawnEnemy()
     {
+        if (_places.Count <= 0)
+            return;
         var place = GetRandomPlace();
         SpawnEnemy(place);
     }

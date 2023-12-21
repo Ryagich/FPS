@@ -718,7 +718,6 @@ namespace InfimaGames.LowPolyShooterPack
         {
             if (!cursorLocked && !canSwitchWeaponState)
                return;
-            Debug.Log(context);
 
             switch (context)
             {
@@ -786,37 +785,26 @@ namespace InfimaGames.LowPolyShooterPack
 
         public void OnTryAiming(InputAction.CallbackContext context)
         {
-            //Block while the cursor is unlocked.
             if (!cursorLocked)
                 return;
 
-            //Switch.
             switch (context.phase)
             {
-                //Started.
                 case InputActionPhase.Started:
-                    //Started.
                     if (holdToAim)
                         holdingButtonAim = true;
                     break;
-                //Performed.
                 case InputActionPhase.Performed:
-                    //Performed.
                     if (!holdToAim)
                         holdingButtonAim = !holdingButtonAim;
                     break;
-                //Canceled.
                 case InputActionPhase.Canceled:
-                    //Canceled.
                     if (holdToAim)
                         holdingButtonAim = false;
                     break;
             }
         }
 
-        /// <summary>
-        /// Holster.
-        /// </summary>
         public void OnTryHolster(InputAction.CallbackContext context)
         {
             //Block while the cursor is unlocked.

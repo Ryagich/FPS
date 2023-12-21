@@ -1007,7 +1007,6 @@ GameObject:
   - component: {fileID: 7759249578341771996}
   - component: {fileID: 1803605476125580581}
   - component: {fileID: 8435120935727210385}
-  - component: {fileID: 7187869948156095639}
   - component: {fileID: -2759979225079892511}
   - component: {fileID: 7394901386026528467}
   - component: {fileID: 4818736797759305148}
@@ -1244,7 +1243,7 @@ MonoBehaviour:
   _canvasCompleteInstantiated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7187869948156095639}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DeathmatchTypeController, Assembly-CSharp
         m_MethodName: Init
         m_Mode: 0
@@ -1960,19 +1959,6 @@ MonoBehaviour:
   _maxCost: 40
   _callBack: {fileID: 4106992412920482964, guid: 7cd66f69242164c41bca49c935666152,
     type: 3}
---- !u!114 &7187869948156095639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2751027687307977091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfd452e4f237a734283dacef462c0db3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _reward: Reward
 --- !u!114 &-2759979225079892511
 MonoBehaviour:
   m_ObjectHideFlags: 0

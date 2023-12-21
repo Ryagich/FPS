@@ -54,6 +54,13 @@ public class SubsController : MonoBehaviour
         coroutine = StartCoroutine(Writing());
     }
 
+    public void HideNow()
+    {
+        if (coroutine !=null)
+            StopCoroutine(coroutine);
+        text.text = "";
+    }
+
     private IEnumerator Writing()
     {
         isWriting = true;

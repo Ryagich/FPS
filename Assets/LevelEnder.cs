@@ -3,27 +3,33 @@ using InfimaGames.LowPolyShooterPack;
 using InfimaGames.LowPolyShooterPack.Interface;
 using YG;
 
-public class PlotController : MonoBehaviour
+public class LevelEnder : MonoBehaviour
 {
     [SerializeField] private TriggerZone _zone;
     [SerializeField] private string _reward = "Reward";
     
     private CompleteUIHolder holder;
     private PauseController pause;
-    private int Reward = 0;
+    private Character character;
 
-    public void Awake()
+    private int Reward = 0;
+    
+    private void Awake()
     {
-        _zone._entered.AddListener(OnEnter);
+        _zone._entered.AddListener(Init);
     }
 
-    private void OnEnter(GameObject go)
+    private void Init(GameObject go)
     {
-        var character = go.GetComponent<Character>();
+       character = go.GetComponent<Character>();
+    }
+    
+    public void End()
+    {
         holder = character.GetComponent<CanvasSpawner>().Complete.GetComponent<CompleteUIHolder>();
         var callback = character.GetComponent<KillEnemyCallback>();
-        var disabler = GetComponent<CharacterDisabler>();
-        pause = GetComponent<PauseController>();
+        var disabler = character.GetComponent<CharacterDisabler>();
+        pause = character.GetComponent<PauseController>();
 
         Reward = callback.Money + Random.Range(200, 800);
         

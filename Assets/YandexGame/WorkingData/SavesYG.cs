@@ -281,7 +281,7 @@
         public float SensitivityY = 1.25f;
 
         //Audio
-        public float MasterVolume = 20f;
+        public float MasterVolume = -10f;
         public float UIVolume = -30f;
         public float EffectsVolume = -30f;
         public float StepsVolume = -30f;

@@ -32,4 +32,11 @@ public class PlayerPlotSpawnPlaces : MonoBehaviour, SpawnPlaces
 
         return _spawnPlace;
     }
+
+    public void ResetSaves()
+    {
+        YandexGame.savesData.levelsSpawnPlaces[_lvlIndex][0] = -1000;
+        YandexGame.savesData.levelsSpawnPlaces[_lvlIndex][1] = -1000;
+        YandexGame.savesData.levelsSpawnPlaces[_lvlIndex][2] = -1000;
+    }
 }

@@ -6,4 +6,9 @@ public class SubsControllerCaller : MonoBehaviour
     {
         SubsController.Instance.WriteText(str);
     }
+    
+    public void Hide()
+    {
+        SubsController.Instance.HideNow();
+    }
 }
