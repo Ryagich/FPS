@@ -10,12 +10,10 @@ public class EnemyController : MonoBehaviour
     public static EnemyController Instance;
     [SerializeField] private List<StateController> _enemies;
     [SerializeField] private List<Transform> _places;
+    [SerializeField] private List<Transform> _patrolPoints;
     [SerializeField] private StateController _enemy;
     [SerializeField, Min(.0f)] private float _respawnTime = 3f;
-
-    [FormerlySerializedAs("_maxenemyCount")] [FormerlySerializedAs("_enemyCount")] [SerializeField, Min(0)]
-    private int _maxEnemyCount;
-
+    [SerializeField, Min(0)] private int _maxEnemyCount;
     [SerializeField] private bool _isDeathmatch = true;
 
     private GameObject character;
@@ -89,10 +87,10 @@ public class EnemyController : MonoBehaviour
 
         _enemies.Add(enemy);
 
-        //Test
-        enemy.patrolWayPoints = new List<Transform> { GetRandomPlace(), GetRandomPlace() };
+        enemy.patrolWayPoints = new List<Transform> { GetRandomPatrolPoint(), GetRandomPatrolPoint() };
     }
-
+    
+    
     public void SpawnEnemy()
     {
         if (_places.Count <= 0)
@@ -106,7 +104,10 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(_respawnTime);
         SpawnEnemy();
     }
-
+    private Transform GetRandomPatrolPoint()
+    {
+        return _patrolPoints[Random.Range(0, _patrolPoints.Count)];
+    }
     private Transform GetRandomPlace()
     {
         return _places[Random.Range(0, _places.Count)];
