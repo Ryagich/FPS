@@ -41,11 +41,6 @@ namespace EnemyAI
 
             weapon = weapon.parent;
         }
-
-        public void TakeDamageFromExplossion(float damage, GameObject origin = null)
-        {
-            
-        }
         
         public override void TakeDamage(Vector3 location, Vector3 direction, float damage, Collider bodyPart,
             GameObject origin = null)
@@ -98,10 +93,12 @@ namespace EnemyAI
                     Destroy(mb);
             }
 
-            Destroy(this.GetComponent<NavMeshAgent>());
+            Destroy(GetComponent<NavMeshAgent>());
             RemoveAllForces();
             anim.enabled = false;
             Destroy(weapon.gameObject);
+            Destroy(gameObject,10);
+
             dead = true;
             
             Dead?.Invoke();
