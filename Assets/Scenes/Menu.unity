@@ -1713,14 +1713,10 @@ MonoBehaviour:
   _buttonPref: {fileID: 5810711897437736217, guid: 802c1726a85596543a7760aeeb62f60d,
     type: 3}
   _info:
-  - Label: Test_Test
+  - Label: lvl_1
     SceneIndex: 2
     Description: 'Description Description Description Description Description Description
       Description '
-    screenshot: {fileID: 21300000, guid: 3b8d4033443be5e40ba0df23d2654c17, type: 3}
-  - Label: lvl_1
-    SceneIndex: 4
-    Description: First lvl
     screenshot: {fileID: 21300000, guid: 3b8d4033443be5e40ba0df23d2654c17, type: 3}
   _disableColorActiveButton: {r: 0, g: 0, b: 0, a: 0}
   _defDisableColor: {r: 0, g: 0, b: 0, a: 0}
@@ -10574,7 +10570,7 @@ MonoBehaviour:
   _buttonPref: {fileID: 5810711897437736217, guid: 802c1726a85596543a7760aeeb62f60d,
     type: 3}
   _info:
-  - Label: Test_Deathmatch
+  - Label: Deathmatch_1
     SceneIndex: 3
     Description: 'Deathmatch Deathmatch Deathmatch Deathmatch
 
