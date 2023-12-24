@@ -214,7 +214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8029310}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Static_Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,6 +478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Village_Window_Shutter_04
       objectReference: {fileID: 0}
+    - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4712216629839546, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3000001
@@ -623,6 +627,10 @@ PrefabInstance:
     - target: {fileID: 1506508709725860, guid: cf779c571994abd4ba16027dd7f72c0a, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Shop_09_Destroyed_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1506508709725860, guid: cf779c571994abd4ba16027dd7f72c0a, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4516849289948330, guid: cf779c571994abd4ba16027dd7f72c0a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1056,6 +1064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrier_Base_Group_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1969216232979048, guid: a1b4e8a719a023141b004ab174989f10, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4159070846124820, guid: a1b4e8a719a023141b004ab174989f10, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42.52
@@ -1118,6 +1130,10 @@ PrefabInstance:
     - target: {fileID: 1513725690888738, guid: 9e606504d339dd1479add44bb8d3ee0d, type: 3}
       propertyPath: m_Name
       value: SM_Env_Ground_Square_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513725690888738, guid: 9e606504d339dd1479add44bb8d3ee0d, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4352204677136092, guid: 9e606504d339dd1479add44bb8d3ee0d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1527,6 +1543,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Wood_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1062743469909848, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478990387650076, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4385541088687108, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.265
@@ -1691,9 +1715,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8029310}
     m_Modifications:
+    - target: {fileID: 1181742800653232, guid: b707cd956b51d334382fc4982e03fa04, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 1562873041428890, guid: b707cd956b51d334382fc4982e03fa04, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Plastic_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562873041428890, guid: b707cd956b51d334382fc4982e03fa04, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4071297297184738, guid: b707cd956b51d334382fc4982e03fa04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1907,6 +1939,10 @@ PrefabInstance:
     - target: {fileID: 1954754894248480, guid: 379adba6564a4e044a122c5a88fc684c, type: 3}
       propertyPath: m_Name
       value: SM_Veh_Car_Small_Destroyed_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954754894248480, guid: 379adba6564a4e044a122c5a88fc684c, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4431111151617126, guid: 379adba6564a4e044a122c5a88fc684c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2265,6 +2301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Road_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1327110974329158, guid: 3575dc84568bdff46a9840b72e365cac, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4728318620889086, guid: 3575dc84568bdff46a9840b72e365cac, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.75
@@ -2516,6 +2556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Ground_Square_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1580883002787544, guid: de57b9d2d981d874baffd8345fa9e03e, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4308131712832156, guid: de57b9d2d981d874baffd8345fa9e03e, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.0554585
@@ -2699,6 +2743,10 @@ PrefabInstance:
     - target: {fileID: 1923996098445686, guid: 8f532b8e69df3ca4c9703ddfbbb7456c, type: 3}
       propertyPath: m_Name
       value: SM_Veh_SUV_Destroyed_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923996098445686, guid: 8f532b8e69df3ca4c9703ddfbbb7456c, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4436756356718442, guid: 8f532b8e69df3ca4c9703ddfbbb7456c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3228,6 +3276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Stack_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1651506808176312, guid: 7e6480ea848b6d244af5ec2ff3bc6e03, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4572491030229316, guid: 7e6480ea848b6d244af5ec2ff3bc6e03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.434757
@@ -3290,6 +3342,10 @@ PrefabInstance:
     - target: {fileID: 1532433655345526, guid: 18df43bcca4412e4daa5c74f49863fb3, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Shop_10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532433655345526, guid: 18df43bcca4412e4daa5c74f49863fb3, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4335215556054184, guid: 18df43bcca4412e4daa5c74f49863fb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3354,6 +3410,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Ammo_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1524254028136972, guid: 99c18b9ac82613d499c46b0aad4987e9, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769022788711588, guid: 99c18b9ac82613d499c46b0aad4987e9, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4197420077442452, guid: 99c18b9ac82613d499c46b0aad4987e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.68
@@ -3416,6 +3480,10 @@ PrefabInstance:
     - target: {fileID: 1953947631515658, guid: e927b4c822e05b1458cfdf087756b34a, type: 3}
       propertyPath: m_Name
       value: SM_Bld_GasStation_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953947631515658, guid: e927b4c822e05b1458cfdf087756b34a, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4292189472278764, guid: e927b4c822e05b1458cfdf087756b34a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3524,6 +3592,10 @@ PrefabInstance:
     - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4572086773112072, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3769,6 +3841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Veh_Tank_Russian_01_Destroyed
       objectReference: {fileID: 0}
+    - target: {fileID: 1008741787997902, guid: a97795abe9d8c9a4cb323cc46c9effb8, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4715653231601088, guid: a97795abe9d8c9a4cb323cc46c9effb8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.05
@@ -3871,6 +3947,10 @@ PrefabInstance:
     - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4572086773112072, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4077,6 +4157,10 @@ PrefabInstance:
     - target: {fileID: 1634476784521416, guid: 11b743d97dc28f74eaf63572945d01b7, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Barrel_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634476784521416, guid: 11b743d97dc28f74eaf63572945d01b7, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4572693969567838, guid: 11b743d97dc28f74eaf63572945d01b7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4317,6 +4401,10 @@ PrefabInstance:
     - target: {fileID: 1393188769443548, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Village_House_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1393188769443548, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4002272890746368, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4560,6 +4648,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Shop_10_Destroyed_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1743104561314824, guid: 6d9c74911fe846c40a7f36e03df10a9c, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4535787302243184, guid: 6d9c74911fe846c40a7f36e03df10a9c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 58.13
@@ -4622,6 +4714,10 @@ PrefabInstance:
     - target: {fileID: 1529112782174496, guid: 8c0bd200438b3894f8ab22f6e1170f00, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Shop_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1529112782174496, guid: 8c0bd200438b3894f8ab22f6e1170f00, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4245383394086552, guid: 8c0bd200438b3894f8ab22f6e1170f00, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4769,6 +4865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Shop_04
       objectReference: {fileID: 0}
+    - target: {fileID: 1529112782174496, guid: 8c0bd200438b3894f8ab22f6e1170f00, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4245383394086552, guid: 8c0bd200438b3894f8ab22f6e1170f00, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.21
@@ -4914,6 +5014,10 @@ PrefabInstance:
     - target: {fileID: 1674779952516064, guid: 17faa96b11b19294e89e20de1ddd1169, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674779952516064, guid: 17faa96b11b19294e89e20de1ddd1169, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4518466402016938, guid: 17faa96b11b19294e89e20de1ddd1169, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5307,6 +5411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Shop_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1844133174608190, guid: 2d882ac5afbda6f4496c2244d9939edf, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4344770308122100, guid: 2d882ac5afbda6f4496c2244d9939edf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 69.9
@@ -5369,6 +5477,10 @@ PrefabInstance:
     - target: {fileID: 1707082535131868, guid: 5812451e80b8c7044873eb25a113044e, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Shop_05_Destroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707082535131868, guid: 5812451e80b8c7044873eb25a113044e, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4176383997698878, guid: 5812451e80b8c7044873eb25a113044e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5693,9 +5805,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8029310}
     m_Modifications:
+    - target: {fileID: 1602145549702594, guid: 0d58c7648de067140adc2a3ce4c4933c, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 1791662585371198, guid: 0d58c7648de067140adc2a3ce4c4933c, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Desk_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791662585371198, guid: 0d58c7648de067140adc2a3ce4c4933c, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4829429101807060, guid: 0d58c7648de067140adc2a3ce4c4933c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5760,6 +5880,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Shop_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1490709463606608, guid: f2632153d4045c54e866c88170e8dd2f, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4346714815821218, guid: f2632153d4045c54e866c88170e8dd2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.21
@@ -5822,6 +5946,10 @@ PrefabInstance:
     - target: {fileID: 1419281279354316, guid: 107b8fa21f3850349aa940d0dc121a70, type: 3}
       propertyPath: m_Name
       value: SM_Env_Ground_Hill_Slope_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419281279354316, guid: 107b8fa21f3850349aa940d0dc121a70, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4513250793232330, guid: 107b8fa21f3850349aa940d0dc121a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -5893,6 +6021,10 @@ PrefabInstance:
     - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Village_Window_Shutter_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4712216629839546, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_LocalScale.x
@@ -6078,6 +6210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrier_Tall_Group_08
       objectReference: {fileID: 0}
+    - target: {fileID: 1009764413340182, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4946392333920212, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.16
@@ -6140,6 +6276,10 @@ PrefabInstance:
     - target: {fileID: 1010159222713074, guid: 6fdd7dd436272954d8dab33ca56543d5, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010159222713074, guid: 6fdd7dd436272954d8dab33ca56543d5, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4228655579079018, guid: 6fdd7dd436272954d8dab33ca56543d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6319,6 +6459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_05
       objectReference: {fileID: 0}
+    - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4572086773112072, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.683
@@ -6464,6 +6608,10 @@ PrefabInstance:
     - target: {fileID: 1597876942406768, guid: 73c8899f3737c294f9406f111f9afecd, type: 3}
       propertyPath: m_Name
       value: SM_Veh_Pickup_Small_Destroyed_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597876942406768, guid: 73c8899f3737c294f9406f111f9afecd, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4166722115817192, guid: 73c8899f3737c294f9406f111f9afecd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6643,6 +6791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Shop_01_Destroyed
       objectReference: {fileID: 0}
+    - target: {fileID: 1078920476252934, guid: 365e1c1c7d906f840a7890639c600385, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4788779858395590, guid: 365e1c1c7d906f840a7890639c600385, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.62
@@ -6705,6 +6857,10 @@ PrefabInstance:
     - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Village_Window_Shutter_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4712216629839546, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_LocalScale.x
@@ -6861,6 +7017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_03
       objectReference: {fileID: 0}
+    - target: {fileID: 1010159222713074, guid: 6fdd7dd436272954d8dab33ca56543d5, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4228655579079018, guid: 6fdd7dd436272954d8dab33ca56543d5, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.77207947
@@ -6931,6 +7091,10 @@ PrefabInstance:
     - target: {fileID: 1580883002787544, guid: de57b9d2d981d874baffd8345fa9e03e, type: 3}
       propertyPath: m_Name
       value: SM_Env_Ground_Square_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1580883002787544, guid: de57b9d2d981d874baffd8345fa9e03e, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4308131712832156, guid: de57b9d2d981d874baffd8345fa9e03e, type: 3}
       propertyPath: m_LocalScale.x
@@ -7161,6 +7325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Stack_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1858237717751132, guid: 2afe34de79c536f4581ad1cc1830acc2, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4463856335006448, guid: 2afe34de79c536f4581ad1cc1830acc2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.879671
@@ -7390,6 +7558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrel_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1349864573624120, guid: ba54beb700b94344ab75891796766cab, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4079267663868024, guid: ba54beb700b94344ab75891796766cab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.719625
@@ -7452,6 +7624,10 @@ PrefabInstance:
     - target: {fileID: 1498002208045360, guid: 0e36fddc0d953824499643edf34bc9e3, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Shop_04_Destroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498002208045360, guid: 0e36fddc0d953824499643edf34bc9e3, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4741608047660288, guid: 0e36fddc0d953824499643edf34bc9e3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7592,6 +7768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Shop_09_Destroyed_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1506508709725860, guid: cf779c571994abd4ba16027dd7f72c0a, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4516849289948330, guid: cf779c571994abd4ba16027dd7f72c0a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 66.68
@@ -7655,6 +7835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Village_Well_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1348256614571836, guid: b5e2f5a059f862f4096b73820f3349ae, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4249802213056932, guid: b5e2f5a059f862f4096b73820f3349ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.256596
@@ -7714,9 +7898,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8029310}
     m_Modifications:
+    - target: {fileID: 1053763225759034, guid: 35ff0b285f20a8c40ac44fdc7803268c, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 1858043379845480, guid: 35ff0b285f20a8c40ac44fdc7803268c, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Wood_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858043379845480, guid: 35ff0b285f20a8c40ac44fdc7803268c, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4047101244151454, guid: 35ff0b285f20a8c40ac44fdc7803268c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7938,6 +8130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Veh_Pickup_Technical_Destroyed_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1285776561639110, guid: 18442be4f1438604780592b83ac227dd, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4201274760470198, guid: 18442be4f1438604780592b83ac227dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 71.66
@@ -8001,6 +8197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Shop_11
       objectReference: {fileID: 0}
+    - target: {fileID: 1532433655345526, guid: 18df43bcca4412e4daa5c74f49863fb3, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4335215556054184, guid: 18df43bcca4412e4daa5c74f49863fb3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 38.38
@@ -8063,6 +8263,10 @@ PrefabInstance:
     - target: {fileID: 1531498891124984, guid: dbd922bd4395f7f40a60db9f60f60dc9, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Shop_07_Destroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531498891124984, guid: dbd922bd4395f7f40a60db9f60f60dc9, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4405397850034346, guid: dbd922bd4395f7f40a60db9f60f60dc9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8453,6 +8657,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Village_House_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1212445040820516, guid: 41a1ae3dc400b1245b0d58ae18c2fdc3, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4510580858398086, guid: 41a1ae3dc400b1245b0d58ae18c2fdc3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.27
@@ -8600,6 +8808,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Veh_Pickup_Technical_Destroyed_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1285776561639110, guid: 18442be4f1438604780592b83ac227dd, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4201274760470198, guid: 18442be4f1438604780592b83ac227dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.76
@@ -8700,6 +8912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_06
       objectReference: {fileID: 0}
+    - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4572086773112072, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.683
@@ -8762,6 +8978,10 @@ PrefabInstance:
     - target: {fileID: 1619999450751802, guid: ecf600911ecd2c2439de8c46e0ee296a, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Rubble_Pile_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619999450751802, guid: ecf600911ecd2c2439de8c46e0ee296a, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4068064416576880, guid: ecf600911ecd2c2439de8c46e0ee296a, type: 3}
       propertyPath: m_LocalScale.x
@@ -8841,6 +9061,10 @@ PrefabInstance:
     - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4572086773112072, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9026,6 +9250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Bed_Military_Frame_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1096374698501180, guid: 6b2c98776fb2d764880f71d1903521b1, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4141729395098272, guid: 6b2c98776fb2d764880f71d1903521b1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.03893
@@ -9088,6 +9316,10 @@ PrefabInstance:
     - target: {fileID: 1327110974329158, guid: 3575dc84568bdff46a9840b72e365cac, type: 3}
       propertyPath: m_Name
       value: SM_Env_Road_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327110974329158, guid: 3575dc84568bdff46a9840b72e365cac, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4728318620889086, guid: 3575dc84568bdff46a9840b72e365cac, type: 3}
       propertyPath: m_LocalScale.x
@@ -9682,6 +9914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrier_Tall_Group_09
       objectReference: {fileID: 0}
+    - target: {fileID: 1009764413340182, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4946392333920212, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.59
@@ -10038,6 +10274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Village_Window_Shutter_06
       objectReference: {fileID: 0}
+    - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4712216629839546, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2999998
@@ -10116,6 +10356,10 @@ PrefabInstance:
     - target: {fileID: 1080992292501092, guid: a2074a8e40b162f4ebdffa40ce4cc3a1, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Village_House_04_Destroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080992292501092, guid: a2074a8e40b162f4ebdffa40ce4cc3a1, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4548329182496100, guid: a2074a8e40b162f4ebdffa40ce4cc3a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10263,6 +10507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrier_Tall_Group_10
       objectReference: {fileID: 0}
+    - target: {fileID: 1009764413340182, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4946392333920212, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.55
@@ -10357,6 +10605,10 @@ PrefabInstance:
     - target: {fileID: 1422008425217990, guid: 313adb6ee9446b7408fbffeb9ad65259, type: 3}
       propertyPath: m_Name
       value: SM_Veh_Car_Medium_Destroyed_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422008425217990, guid: 313adb6ee9446b7408fbffeb9ad65259, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4339624925691166, guid: 313adb6ee9446b7408fbffeb9ad65259, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10504,6 +10756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_03
       objectReference: {fileID: 0}
+    - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4572086773112072, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.845
@@ -10641,6 +10897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Stack_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1858237717751132, guid: 2afe34de79c536f4581ad1cc1830acc2, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4463856335006448, guid: 2afe34de79c536f4581ad1cc1830acc2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.266
@@ -10703,6 +10963,10 @@ PrefabInstance:
     - target: {fileID: 1844133174608190, guid: 2d882ac5afbda6f4496c2244d9939edf, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Shop_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844133174608190, guid: 2d882ac5afbda6f4496c2244d9939edf, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4344770308122100, guid: 2d882ac5afbda6f4496c2244d9939edf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11563,6 +11827,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Wood_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1062743469909848, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478990387650076, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4385541088687108, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.234
@@ -11876,6 +12148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Village_Window_Shutter_05
       objectReference: {fileID: 0}
+    - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4712216629839546, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3
@@ -11954,6 +12230,10 @@ PrefabInstance:
     - target: {fileID: 1007636554241440, guid: 54f9a2280f20ae94a91465da3717ec18, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Village_House_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007636554241440, guid: 54f9a2280f20ae94a91465da3717ec18, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4862716145729032, guid: 54f9a2280f20ae94a91465da3717ec18, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12757,6 +13037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrier_Base_Group_05
       objectReference: {fileID: 0}
+    - target: {fileID: 1006704905753374, guid: aa4d92eb8537c774e87a303615d4e04c, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4876784131797292, guid: aa4d92eb8537c774e87a303615d4e04c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.79919
@@ -12987,6 +13271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Village_House_07
       objectReference: {fileID: 0}
+    - target: {fileID: 1285403714669026, guid: 3d0113002c3eca7408a942ec376b33f2, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4611881619520332, guid: 3d0113002c3eca7408a942ec376b33f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.83
@@ -13050,6 +13338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4572086773112072, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.8
@@ -13112,6 +13404,10 @@ PrefabInstance:
     - target: {fileID: 1779400909615630, guid: 7990730a4e8299f45802a66a795bc004, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Makeshift_Table_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779400909615630, guid: 7990730a4e8299f45802a66a795bc004, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4857549450806278, guid: 7990730a4e8299f45802a66a795bc004, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13249,6 +13545,10 @@ PrefabInstance:
     - target: {fileID: 1523267506957190, guid: a198ed07cf7b82f4b80c604b5f6dc8d8, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Village_House_Stairs_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523267506957190, guid: a198ed07cf7b82f4b80c604b5f6dc8d8, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4209198331120484, guid: a198ed07cf7b82f4b80c604b5f6dc8d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13529,6 +13829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrier_Tall_Group_04
       objectReference: {fileID: 0}
+    - target: {fileID: 1009764413340182, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4946392333920212, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.557
@@ -13671,9 +13975,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8029310}
     m_Modifications:
+    - target: {fileID: 1422868362170610, guid: 8fec0882e4c785142a753943e9d3c4a1, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 1680409240192426, guid: 8fec0882e4c785142a753943e9d3c4a1, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Wood_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680409240192426, guid: 8fec0882e4c785142a753943e9d3c4a1, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4221889356610708, guid: 8fec0882e4c785142a753943e9d3c4a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13738,6 +14050,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Veh_Helicopter_Transport_01_Destroyed
       objectReference: {fileID: 0}
+    - target: {fileID: 1817434102127620, guid: 42cc77aa802f24c4fa00255608d2216b, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4479071778595364, guid: 42cc77aa802f24c4fa00255608d2216b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.6
@@ -13801,6 +14117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Shop_09_Destroyed
       objectReference: {fileID: 0}
+    - target: {fileID: 1506508709725860, guid: cf779c571994abd4ba16027dd7f72c0a, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4516849289948330, guid: cf779c571994abd4ba16027dd7f72c0a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.29
@@ -13863,6 +14183,10 @@ PrefabInstance:
     - target: {fileID: 1329688688308920, guid: b0f851102dc8e7746a68c13c87d5957b, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Electronics_Shelf_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329688688308920, guid: b0f851102dc8e7746a68c13c87d5957b, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4988205113720992, guid: b0f851102dc8e7746a68c13c87d5957b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13931,6 +14255,10 @@ PrefabInstance:
     - target: {fileID: 1597876942406768, guid: 73c8899f3737c294f9406f111f9afecd, type: 3}
       propertyPath: m_Name
       value: SM_Veh_Pickup_Small_Destroyed_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597876942406768, guid: 73c8899f3737c294f9406f111f9afecd, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4166722115817192, guid: 73c8899f3737c294f9406f111f9afecd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14241,6 +14569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Veh_SUV_Destroyed_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1923996098445686, guid: 8f532b8e69df3ca4c9703ddfbbb7456c, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4436756356718442, guid: 8f532b8e69df3ca4c9703ddfbbb7456c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 72.85439
@@ -14387,6 +14719,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Village_House_06
       objectReference: {fileID: 0}
+    - target: {fileID: 1285403714669026, guid: 3d0113002c3eca7408a942ec376b33f2, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4611881619520332, guid: 3d0113002c3eca7408a942ec376b33f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 65.63
@@ -14450,6 +14786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Shop_10_Destroyed
       objectReference: {fileID: 0}
+    - target: {fileID: 1743104561314824, guid: 6d9c74911fe846c40a7f36e03df10a9c, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4535787302243184, guid: 6d9c74911fe846c40a7f36e03df10a9c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 67.85
@@ -14512,6 +14852,10 @@ PrefabInstance:
     - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Village_Window_Shutter_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4712216629839546, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_LocalScale.x
@@ -14742,6 +15086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrier_Tall_Group_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1009764413340182, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4946392333920212, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.07
@@ -14884,9 +15232,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8029310}
     m_Modifications:
+    - target: {fileID: 1053763225759034, guid: 35ff0b285f20a8c40ac44fdc7803268c, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 1858043379845480, guid: 35ff0b285f20a8c40ac44fdc7803268c, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Wood_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858043379845480, guid: 35ff0b285f20a8c40ac44fdc7803268c, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4047101244151454, guid: 35ff0b285f20a8c40ac44fdc7803268c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14981,6 +15337,10 @@ PrefabInstance:
     - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4572086773112072, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15128,6 +15488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Veh_Car_Small_Destroyed_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1954754894248480, guid: 379adba6564a4e044a122c5a88fc684c, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4431111151617126, guid: 379adba6564a4e044a122c5a88fc684c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.591508
@@ -15190,6 +15554,14 @@ PrefabInstance:
     - target: {fileID: 1062743469909848, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Wood_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062743469909848, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478990387650076, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4385541088687108, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15359,6 +15731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_04
       objectReference: {fileID: 0}
+    - target: {fileID: 1010159222713074, guid: 6fdd7dd436272954d8dab33ca56543d5, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4228655579079018, guid: 6fdd7dd436272954d8dab33ca56543d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.31224
@@ -15421,6 +15797,14 @@ PrefabInstance:
     - target: {fileID: 1062743469909848, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Wood_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062743469909848, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478990387650076, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4385541088687108, guid: adc6c7fc820eb2241846c705aa851e80, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15589,6 +15973,10 @@ PrefabInstance:
     - target: {fileID: 1850374535654858, guid: 5abc52526538b3342b6beceb54c8bd58, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Destroyed_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850374535654858, guid: 5abc52526538b3342b6beceb54c8bd58, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4752802238223526, guid: 5abc52526538b3342b6beceb54c8bd58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15788,6 +16176,10 @@ PrefabInstance:
     - target: {fileID: 1990829117491138, guid: 30cd7a42720a513448a5a4d283c5c26c, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Village_House_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1990829117491138, guid: 30cd7a42720a513448a5a4d283c5c26c, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4213003830673876, guid: 30cd7a42720a513448a5a4d283c5c26c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16092,6 +16484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Barrier_Tall_Group_05
       objectReference: {fileID: 0}
+    - target: {fileID: 1009764413340182, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4946392333920212, guid: ec66b9ef184954e46b830d864757f18e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 49
@@ -16395,6 +16791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Makeshift_Table_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1779400909615630, guid: 7990730a4e8299f45802a66a795bc004, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4857549450806278, guid: 7990730a4e8299f45802a66a795bc004, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.77096
@@ -16537,9 +16937,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8029310}
     m_Modifications:
+    - target: {fileID: 1181742800653232, guid: b707cd956b51d334382fc4982e03fa04, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 1562873041428890, guid: b707cd956b51d334382fc4982e03fa04, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Plastic_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562873041428890, guid: b707cd956b51d334382fc4982e03fa04, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4071297297184738, guid: b707cd956b51d334382fc4982e03fa04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16687,6 +17095,10 @@ PrefabInstance:
     - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Village_Window_Shutter_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4712216629839546, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_LocalScale.x
@@ -17215,6 +17627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Crate_Stack_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1651506808176312, guid: 7e6480ea848b6d244af5ec2ff3bc6e03, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4572491030229316, guid: 7e6480ea848b6d244af5ec2ff3bc6e03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.19649
@@ -17683,6 +18099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Village_Window_Shutter_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1854618380096390, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4712216629839546, guid: b4479c4f2ad87bf4d974e3ee56ec0b74, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3
@@ -17762,6 +18182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Village_House_08
       objectReference: {fileID: 0}
+    - target: {fileID: 1363074540339926, guid: 7da902e3bb66a4b47be2412c66054c48, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 4911803419690834, guid: 7da902e3bb66a4b47be2412c66054c48, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.51
@@ -17824,6 +18248,10 @@ PrefabInstance:
     - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Cube_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080448940659634, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
+      propertyPath: m_Layer
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4572086773112072, guid: 1e017c9a5eda9844e8624223d6c10650, type: 3}
       propertyPath: m_LocalPosition.x
