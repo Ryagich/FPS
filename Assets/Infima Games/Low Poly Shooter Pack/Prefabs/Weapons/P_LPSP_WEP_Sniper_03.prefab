@@ -406,14 +406,13 @@ MonoBehaviour:
   spread: 0.25
   projectileImpulse: 400
   roundsPerMinutes: 125
+  _damage: 80
   cycledReload: 0
   canReloadWhenFull: 0
   automaticReloadOnEmpty: 0
   automaticReloadOnEmptyDelay: 0.25
   socketEjection: {fileID: 4124774483503901198}
   canReloadAimed: 1
-  maxAmmo: 300
-  currentAmmo: 0
   prefabCasing: {fileID: 1492315059354262, guid: c638dfae3f3edf843b2614dae230a771,
     type: 3}
   prefabProjectile: {fileID: 1086664671600574, guid: 5953171a59c27394e9ad5cbb564affa8,
@@ -432,6 +431,8 @@ MonoBehaviour:
   audioClipBoltAction: {fileID: 0}
   <DropWeapon>k__BackingField: {fileID: 2996710138410153895, guid: 6add3fe37703e934f9d6bfc9bc6fb155,
     type: 3}
+  <AmmoType>k__BackingField: 0
+  ammunitionCurrent: 0
 --- !u!114 &9116845346348752071
 MonoBehaviour:
   m_ObjectHideFlags: 0

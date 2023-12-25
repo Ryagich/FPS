@@ -605,6 +605,7 @@ MonoBehaviour:
   spread: 0.5
   projectileImpulse: 400
   roundsPerMinutes: 125
+  _damage: 70
   cycledReload: 1
   canReloadWhenFull: 0
   automaticReloadOnEmpty: 0
