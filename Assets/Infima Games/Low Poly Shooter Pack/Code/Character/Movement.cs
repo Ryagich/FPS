@@ -300,22 +300,11 @@ namespace InfimaGames.LowPolyShooterPack
             if (controller.isGrounded && !jumping)
                 applied.y = -stickToGroundForce;
 
-            //Move.
             controller.Move(applied);
         }
 
-        /// <summary>
-        /// WasGrounded.
-        /// </summary>
         public override bool WasGrounded() => wasGrounded;
-        /// <summary>
-        /// IsJumping.
-        /// </summary>
         public override bool IsJumping() => jumping;
-
-        /// <summary>
-        /// Can Crouch.
-        /// </summary>
         public override bool CanCrouch(bool newCrouching)
         {
             //Always block crouching if we need to.

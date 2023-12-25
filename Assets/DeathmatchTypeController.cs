@@ -14,9 +14,10 @@ public class DeathmatchTypeController : MonoBehaviour
     private CharacterDisabler disabler;
     private PauseController pause;
     private Character character;
-    
+
     private int Reward = 0;
     private int kills = 0;
+    private bool isEnded = false;
 
     // -1 - не дезматч; 0 - до 100 киллов; 1 - 5 мин; 2 - 10 мин;
     public void Init(GameObject go)
@@ -25,8 +26,8 @@ public class DeathmatchTypeController : MonoBehaviour
         holder = go.GetComponent<CompleteUIHolder>();
         pause = GetComponent<PauseController>();
         disabler = GetComponent<CharacterDisabler>();
-        character= GetComponent<Character>();
-        
+        character = GetComponent<Character>();
+
         var type = YandexGame.savesData.DeatmatchType;
         if (type == -1)
             throw new ArgumentException();
@@ -47,6 +48,7 @@ public class DeathmatchTypeController : MonoBehaviour
             yield return new WaitForSeconds(delta);
             Time.timeScale = Mathf.Clamp(Time.timeScale - delta, 0, 1);
         }
+
         Reward = callback.Money + Random.Range(200, 800);
 
         var type = YandexGame.savesData.DeatmatchType;
@@ -66,7 +68,6 @@ public class DeathmatchTypeController : MonoBehaviour
         pause.Pause();
         disabler.Disable();
         holder.Complete.gameObject.SetActive(true);
-        
     }
 
     private void EndLevel()
@@ -82,14 +83,16 @@ public class DeathmatchTypeController : MonoBehaviour
         pause.Pause();
     }
 
+
     private void Set100Kills()
     {
         callback.Callback += () =>
         {
             kills += 1;
             TaskController.Instance.ShowTask(kills + "/" + 100);
-            if (kills >= 1)
+            if (kills >= 100 && !isEnded)
             {
+                isEnded = true;
                 EndLevel();
             }
         };

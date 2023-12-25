@@ -5,6 +5,8 @@ namespace InfimaGames.LowPolyShooterPack
 {
     public class Weapon : WeaponBehaviour
     {
+        [HideInInspector] public int ammunitionCurrent;
+
         #region FIELDS SERIALIZED
 
         [Title(label: "Settings")]
@@ -112,17 +114,14 @@ namespace InfimaGames.LowPolyShooterPack
 
         private Animator animator;
         private WeaponAttachmentManagerBehaviour attachmentManager;
-        [HideInInspector] public int ammunitionCurrent;
+        private bool inited = false;
 
-        #region Attachment Behaviours
 
         private ScopeBehaviour scopeBehaviour;
         public MagazineBehaviour magazineBehaviour { get; private set; }
         private MuzzleBehaviour muzzleBehaviour;
         private LaserBehaviour laserBehaviour;
         private GripBehaviour gripBehaviour;
-
-        #endregion
 
         private IGameModeService gameModeService;
         private CharacterBehaviour characterBehaviour;
@@ -140,7 +139,6 @@ namespace InfimaGames.LowPolyShooterPack
             playerCamera = characterBehaviour.GetCameraWorld().transform;
         }
 
-        private bool inited = false;
 
         public void Init()
         {
@@ -194,37 +192,7 @@ namespace InfimaGames.LowPolyShooterPack
             return 1.0f;
         }
 
-        public override Animator GetAnimator() => animator;
-        public override bool CanReloadAimed() => canReloadAimed;
-        public override Sprite GetSpriteBody() => spriteBody;
-        public override float GetMultiplierMovementSpeed() => multiplierMovementSpeed;
-        public override AudioClip GetAudioClipHolster() => audioClipHolster;
-        public override AudioClip GetAudioClipUnholster() => audioClipUnholster;
-        public override AudioClip GetAudioClipReload() => audioClipReload;
-        public override AudioClip GetAudioClipReloadEmpty() => audioClipReloadEmpty;
-        public override AudioClip GetAudioClipReloadOpen() => audioClipReloadOpen;
-        public override AudioClip GetAudioClipReloadInsert() => audioClipReloadInsert;
-        public override AudioClip GetAudioClipReloadClose() => audioClipReloadClose;
-        public override AudioClip GetAudioClipFireEmpty() => audioClipFireEmpty;
-        public override AudioClip GetAudioClipBoltAction() => audioClipBoltAction;
-        public override AudioClip GetAudioClipFire() => muzzleBehaviour.GetAudioClipFire();
-        public override int GetAmmunitionCurrent() => ammunitionCurrent;
-        public override int GetAmmunitionTotal() => magazineBehaviour.GetAmmunitionTotal();
-        public override bool HasCycledReload() => cycledReload;
-        public override bool IsAutomatic() => automatic;
-        public override bool IsBoltAction() => boltAction;
-        public override bool GetAutomaticallyReloadOnEmpty() => automaticReloadOnEmpty;
-        public override float GetAutomaticallyReloadOnEmptyDelay() => automaticReloadOnEmptyDelay;
-        public override bool CanReloadWhenFull() => canReloadWhenFull;
-        public override float GetRateOfFire() => roundsPerMinutes;
-        public override bool IsFull() => ammunitionCurrent == magazineBehaviour.GetAmmunitionTotal();
-        public override bool HasAmmunition() => ammunitionCurrent > 0;
-        public override RuntimeAnimatorController GetAnimatorController() => controller;
-        public override WeaponAttachmentManagerBehaviour GetAttachmentManager() => attachmentManager;
-
         #endregion
-
-        #region METHODS
 
         public override void Reload()
         {
@@ -237,7 +205,7 @@ namespace InfimaGames.LowPolyShooterPack
 
             //Try Play Reload Sound.
             AudioManager.Instance.PlaySound
-            (HasAmmunition() ? audioClipReload : audioClipReloadEmpty, AudioSourceType.Player);
+                (HasAmmunition() ? audioClipReload : audioClipReloadEmpty, AudioSourceType.Player);
 
             //Play Reload Animation.
             animator.Play(cycledReload
@@ -270,8 +238,10 @@ namespace InfimaGames.LowPolyShooterPack
                 spreadValue.z = 0;
                 spreadValue = playerCamera.TransformDirection(spreadValue);
 
-                var projectile = Instantiate(prefabProjectile, playerCamera.position,
-                    Quaternion.Euler(playerCamera.eulerAngles + spreadValue));
+                var a = Quaternion.Euler(playerCamera.eulerAngles + spreadValue);
+                var projectile = Instantiate(prefabProjectile, muzzleBehaviour.transform.position, a);
+                
+                Debug.Log(a);
                 projectile.GetComponent<Projectile>().SetDamage(_damage);
                 projectile.GetComponent<Rigidbody>().velocity = projectile.transform.forward * projectileImpulse;
             }
@@ -309,6 +279,32 @@ namespace InfimaGames.LowPolyShooterPack
                 Instantiate(prefabCasing, socketEjection.position, socketEjection.rotation);
         }
 
-        #endregion
+        public override Animator GetAnimator() => animator;
+        public override bool CanReloadAimed() => canReloadAimed;
+        public override Sprite GetSpriteBody() => spriteBody;
+        public override float GetMultiplierMovementSpeed() => multiplierMovementSpeed;
+        public override AudioClip GetAudioClipHolster() => audioClipHolster;
+        public override AudioClip GetAudioClipUnholster() => audioClipUnholster;
+        public override AudioClip GetAudioClipReload() => audioClipReload;
+        public override AudioClip GetAudioClipReloadEmpty() => audioClipReloadEmpty;
+        public override AudioClip GetAudioClipReloadOpen() => audioClipReloadOpen;
+        public override AudioClip GetAudioClipReloadInsert() => audioClipReloadInsert;
+        public override AudioClip GetAudioClipReloadClose() => audioClipReloadClose;
+        public override AudioClip GetAudioClipFireEmpty() => audioClipFireEmpty;
+        public override AudioClip GetAudioClipBoltAction() => audioClipBoltAction;
+        public override AudioClip GetAudioClipFire() => muzzleBehaviour.GetAudioClipFire();
+        public override int GetAmmunitionCurrent() => ammunitionCurrent;
+        public override int GetAmmunitionTotal() => magazineBehaviour.GetAmmunitionTotal();
+        public override bool HasCycledReload() => cycledReload;
+        public override bool IsAutomatic() => automatic;
+        public override bool IsBoltAction() => boltAction;
+        public override bool GetAutomaticallyReloadOnEmpty() => automaticReloadOnEmpty;
+        public override float GetAutomaticallyReloadOnEmptyDelay() => automaticReloadOnEmptyDelay;
+        public override bool CanReloadWhenFull() => canReloadWhenFull;
+        public override float GetRateOfFire() => roundsPerMinutes;
+        public override bool IsFull() => ammunitionCurrent == magazineBehaviour.GetAmmunitionTotal();
+        public override bool HasAmmunition() => ammunitionCurrent > 0;
+        public override RuntimeAnimatorController GetAnimatorController() => controller;
+        public override WeaponAttachmentManagerBehaviour GetAttachmentManager() => attachmentManager;
     }
 }
