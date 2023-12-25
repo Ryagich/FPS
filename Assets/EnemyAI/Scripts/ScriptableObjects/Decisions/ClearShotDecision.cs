@@ -10,12 +10,10 @@ public class ClearShotDecision : Decision
 	[Tooltip("The NPC near sense decision.")]
 	public FocusDecision targetNear;
 
-	// The decide function, called on Update() (State controller - current state - transition - decision).
 	public override bool Decide(StateController controller)
 	{
 		return targetNear.Decide(controller) || HaveClearShot(controller);
 	}
-	// Cast sphere for near obstacles, and line to personal target (not the aim target) for clean shot.
 	private bool HaveClearShot(StateController controller)
 	{
 		var shotOrigin = controller.transform.position + Vector3.up * (controller.generalStats.aboveCoverHeight + controller.nav.radius);
@@ -26,10 +24,8 @@ public class ClearShotDecision : Decision
 			controller.nearRadius, controller.generalStats.coverMask | controller.generalStats.obstacleMask);
 		if (!obscuredShot)
 		{
-			// No near obstacles, cast line to target position and check for clear shot.
 			obscuredShot = Physics.Raycast(shotOrigin, shotDirection, out hit, shotDirection.magnitude,
 				controller.generalStats.coverMask | controller.generalStats.obstacleMask);
-			// Hit something, is it the target? If true, shot is clear.
 			if (!controller.LastTarget)
 				return false;
 			if(obscuredShot)

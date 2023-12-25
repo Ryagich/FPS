@@ -17,12 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Deathmatch_1.unity
     guid: b8b73cc2846b49448a2ff76bf9832f21
-  - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: f75f05d26a211ec4693a5d4d54ac88da
-  - enabled: 1
-    path: Assets/Scenes/Deathmatch_test.unity
-    guid: 3b4f1f51acc52274f973e67dc993c882
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9eb07e2d669e9c94e9d7d3c782a916f7,
       type: 2}

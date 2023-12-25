@@ -43,21 +43,14 @@ public class FocusDecision : Decision
     // The decide function, called on Update() (State controller - current state - transition - decision).
     public override bool Decide(StateController controller)
     {
-        // If target is not near: felt a shot and sight to target is clear, can focus.
-        // If target is near, always check sense for target.
         var targets = GetTargetsInRadius(controller, radius);
         var bestTarget = GetBestTarget(controller, targets);
-
-        // || sense == Sense.NEAR 
-        // || !controller.variables.feelAlert
-
 
         if (!bestTarget|| !controller.variables.feelAlert)
             return false;
 
         if (invalidateCoverSpot)
             controller.CoverSpot = Vector3.positiveInfinity;
-        // Set current target parameters.
         controller.targetInSight = true;
         controller.LastTarget = bestTarget;
         controller.personalTarget = bestTarget.position;
