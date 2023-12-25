@@ -7470,7 +7470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _section: 2
-  Costs: c8000000e80300008b060000bc07000092090000300c0000
+  Costs: c8000000e80300008b060000bc07000092090000
   _parent: {fileID: 628233778}
   _sectionsMenu: {fileID: 1341846470}
   _arrows: {fileID: 1648689738}
@@ -39374,7 +39374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b98be20c5a5b543bf92b2c6181bd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <WeaponIndex>k__BackingField: 15
+  <WeaponIndex>k__BackingField: 14
 --- !u!4 &4786594896851523904
 Transform:
   m_ObjectHideFlags: 0
@@ -39598,7 +39598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b98be20c5a5b543bf92b2c6181bd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <WeaponIndex>k__BackingField: 14
+  <WeaponIndex>k__BackingField: 13
 --- !u!4 &4881632135599343148
 Transform:
   m_ObjectHideFlags: 0
@@ -40050,7 +40050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b98be20c5a5b543bf92b2c6181bd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <WeaponIndex>k__BackingField: 12
+  <WeaponIndex>k__BackingField: 11
 --- !u!1 &5136735829721204088
 GameObject:
   m_ObjectHideFlags: 0
@@ -45169,7 +45169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b98be20c5a5b543bf92b2c6181bd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <WeaponIndex>k__BackingField: 16
+  <WeaponIndex>k__BackingField: 15
 --- !u!1001 &7100543317386990995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48102,7 +48102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b98be20c5a5b543bf92b2c6181bd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <WeaponIndex>k__BackingField: 13
+  <WeaponIndex>k__BackingField: 12
 --- !u!1001 &8086562939542567429
 PrefabInstance:
   m_ObjectHideFlags: 0

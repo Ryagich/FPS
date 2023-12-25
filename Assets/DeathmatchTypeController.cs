@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using YG;
 using System.Collections;
+using InfimaGames.LowPolyShooterPack;
 using Random = UnityEngine.Random;
 
 public class DeathmatchTypeController : MonoBehaviour
@@ -12,7 +13,8 @@ public class DeathmatchTypeController : MonoBehaviour
     private CompleteUIHolder holder;
     private CharacterDisabler disabler;
     private PauseController pause;
-
+    private Character character;
+    
     private int Reward = 0;
     private int kills = 0;
 
@@ -23,7 +25,8 @@ public class DeathmatchTypeController : MonoBehaviour
         holder = go.GetComponent<CompleteUIHolder>();
         pause = GetComponent<PauseController>();
         disabler = GetComponent<CharacterDisabler>();
-
+        character= GetComponent<Character>();
+        
         var type = YandexGame.savesData.DeatmatchType;
         if (type == -1)
             throw new ArgumentException();
@@ -35,8 +38,15 @@ public class DeathmatchTypeController : MonoBehaviour
             Set10Min();
     }
 
-    private void EndLevel()
+    private IEnumerator HideTimeSpeed()
     {
+        character.CanPause = false;
+        var delta = Time.fixedDeltaTime;
+        while (Time.timeScale >= 0.05f)
+        {
+            yield return new WaitForSeconds(delta);
+            Time.timeScale = Mathf.Clamp(Time.timeScale - delta, 0, 1);
+        }
         Reward = callback.Money + Random.Range(200, 800);
 
         var type = YandexGame.savesData.DeatmatchType;
@@ -56,6 +66,12 @@ public class DeathmatchTypeController : MonoBehaviour
         pause.Pause();
         disabler.Disable();
         holder.Complete.gameObject.SetActive(true);
+        
+    }
+
+    private void EndLevel()
+    {
+        StartCoroutine(HideTimeSpeed());
     }
 
     private void OnShowRewardedAd(int _)
@@ -72,7 +88,7 @@ public class DeathmatchTypeController : MonoBehaviour
         {
             kills += 1;
             TaskController.Instance.ShowTask(kills + "/" + 100);
-            if (kills >= 100)
+            if (kills >= 1)
             {
                 EndLevel();
             }
