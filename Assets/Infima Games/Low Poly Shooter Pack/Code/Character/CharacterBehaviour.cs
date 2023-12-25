@@ -4,13 +4,12 @@ using UnityEngine;
 
 namespace InfimaGames.LowPolyShooterPack
 {
-    public abstract class CharacterBehaviour : MonoBehaviour
+    public abstract class CharacterBehaviour : MonoCache
     {
         #region UNITY
         protected virtual void Awake(){}
         protected virtual void Start(){}
-        protected virtual void Update(){}
-        protected virtual void LateUpdate(){}
+//        protected override void Run() { }
         #endregion
         
         #region GETTERS

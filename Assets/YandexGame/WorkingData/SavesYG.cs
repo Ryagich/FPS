@@ -20,7 +20,7 @@
         {
             new[] { true, false, false, },
             new[] { false, false, false, },
-            new[] { false, false, false, false, false, false, },
+            new[] { false, false, false, false, false, },
             new[] { true, false, false, false, },
             new[] { false, },
         };
@@ -29,7 +29,7 @@
         {
             new[] { true, false, false, },
             new[] { false, false, false, },
-            new[] { false, false, false, false, false, false, },
+            new[] { false, false, false, false, false, },
             new[] { true, false, false, false, },
             new[] { false, },
         };
@@ -162,17 +162,6 @@
                 //Grips
                 new[] { false, false, false, },
             },
-            new[]
-            {
-                //Scopes
-                new[] { false, false, false, false, false, false, false, false, },
-                //Muzzles
-                new[] { false, false, false, false, },
-                //Lasers
-                new[] { false, false, },
-                //Grips
-                new[] { false, false, false, },
-            },
             //Pistols
             new[]
             {
@@ -249,8 +238,6 @@
             new[]
                 { -1, 0, -1, -1, },
             //Submachine Guns
-            new[]
-                { -1, 0, -1, -1, },
             new[]
                 { -1, 0, -1, -1, },
             new[]

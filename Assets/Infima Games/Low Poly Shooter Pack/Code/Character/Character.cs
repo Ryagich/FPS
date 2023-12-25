@@ -155,8 +155,7 @@ namespace InfimaGames.LowPolyShooterPack
             //Cache a reference to the overlay layer's index.
             layerOverlay = characterAnimator.GetLayerIndex("Layer Overlay");
         }
-
-        protected override void Update()
+        protected override void Run()
         {
             aiming = holdingButtonAim && CanAim();
             running = holdingButtonRun && CanRun();
@@ -1094,18 +1093,11 @@ namespace InfimaGames.LowPolyShooterPack
             equippedWeaponMagazine.gameObject.SetActive(active != 0);
         }
 
-        /// <summary>
-        /// AnimationEndedBolt.
-        /// </summary>
         public override void AnimationEndedBolt()
         {
             //Update.
             UpdateBolt(false);
         }
-
-        /// <summary>
-        /// AnimationEndedReload.
-        /// </summary>
         public override void AnimationEndedReload()
         {
             //Stop reloading!

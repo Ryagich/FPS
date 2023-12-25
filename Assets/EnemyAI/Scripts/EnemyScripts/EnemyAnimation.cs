@@ -3,7 +3,7 @@
 namespace EnemyAI
 {
 	// EnemyAnimation controls all NPC script controlled animation parameters and post animation adjustments.
-	public class EnemyAnimation : MonoBehaviour
+	public class EnemyAnimation : MonoCache
 	{
 		[HideInInspector] public Animator anim;                  // Reference to the NPC Animator component.
 		[HideInInspector] public float currentAimAngleGap;       // Gap between current aim direction and on target aim direction
@@ -64,9 +64,8 @@ namespace EnemyAI
 			}
 		}
 
-		void Update()
+		protected override void Run()
 		{
-			// Check speed and orientation at each frame.
 			NavAnimSetup();
 		}
 

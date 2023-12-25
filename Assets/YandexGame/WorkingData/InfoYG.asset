@@ -32,7 +32,7 @@ MonoBehaviour:
   localSaveSync: 1
   saveCloudInterval: 5
   saveOnQuitGame: 0
-  leaderboardEnable: 1
+  leaderboardEnable: 0
   leaderboardSimulation:
   - technoName: advanced
     entries: 'Test LeaderBoard

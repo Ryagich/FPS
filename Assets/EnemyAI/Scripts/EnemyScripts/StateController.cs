@@ -7,8 +7,7 @@ using UnityEngine.Serialization;
 
 namespace EnemyAI
 {
-    // This class controls the NPC Finite State Machine (FSM).
-    public class StateController : MonoBehaviour
+    public class StateController : MonoCache
     {
         [Tooltip("NPC common stats.")] public GeneralStats generalStats;
         [Tooltip("NPC class specific stats.")] public ClassStats classStats;
@@ -130,7 +129,6 @@ namespace EnemyAI
         void Awake()
         {
             MyColliders = GetComponentsInChildren<Collider>().ToList();
-            // Setup the references.
             if (coverSpot == null)
                 coverSpot = new Dictionary<int, Vector3>();
             coverSpot[GetHashCode()] = Vector3.positiveInfinity;
@@ -151,49 +149,36 @@ namespace EnemyAI
                 };
             }
 
-            // Attach cover lookup component to Game Controller and/or get reference.
             coverLookup = gameController.GetComponent<CoverLookup>();
             if (coverLookup == null)
             {
                 coverLookup = gameController.AddComponent<CoverLookup>();
                 coverLookup.Setup(generalStats.coverMask);
             }
-            // Ensure the target has a health manager component to receive shots.
         }
 
         public void Start()
         {
-            // Trigger initial state enable function.
             currentState.OnEnableActions(this);
-            //if (Targets.Count >0)
-             //   Targets = Targets.Select(t => t.GetComponent<TargetHolder>().Target).ToList();
         }
-
-        void Update()
+        
+        protected override void Run()
         {
-            // Reset blocked sight test on current game loop iteration.
             checkedOnLoop = false;
-            // Do not execute FSM if AI is not active.
             if (!aiActive)
                 return;
-            // Execute current FSM state actions.
             currentState.DoActions(this);
-            // Check current FSM state transition conditions.
             currentState.CheckTransitions(this);
         }
 
-        // Change the current FSM state (called externally).
         public void TransitionToState(State nextState, Decision decision)
         {
             if (nextState != remainState)
             {
-                // DEBUG: show state transitions for NPC.
-                //Debug.Log(transform.name + " :" + decision.name + " : " + currentState.name + "->" + nextState.name);
                 currentState = nextState;
             }
         }
 
-        // DEBUG: Draw orb above NPC to indicate the current FSM state category (editor only).
         private void OnDrawGizmos()
         {
             if (currentState != null)
@@ -203,14 +188,12 @@ namespace EnemyAI
             }
         }
 
-        // End the reload action (called by animator controller).
         public void EndReloadWeapon()
         {
             reloading = false;
             bullets = magBullets;
         }
 
-        // This is the message receiver for alert events triggered by nearby objects (ex.: other NPC alert about a noise).
         public void AlertCallback(Vector3 target)
         {
             if (!LastTarget.GetComponentInParent<HealthManager>().dead
