@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/lvl_1.unity
     guid: 077abd1b6bbc3e340b61b80510bb9913
   - enabled: 1
+    path: Assets/Scenes/lvl_2.unity
+    guid: cf3d9bf74ff901d4f8eb68c1492dd92b
+  - enabled: 1
     path: Assets/Scenes/Deathmatch_1.unity
     guid: b8b73cc2846b49448a2ff76bf9832f21
   m_configObjects:

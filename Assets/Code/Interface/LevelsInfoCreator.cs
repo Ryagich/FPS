@@ -16,15 +16,8 @@ public class LevelsInfoCreator : MonoBehaviour
     [SerializeField] private Button _buttonPref;
     [SerializeField] private List<LevelInfo> _info = new();
     
-    [Header("Colors For Bindings Button")]
-    [SerializeField] private Color _disableColorActiveButton;
-    [SerializeField] private Color _defDisableColor;
-
-    [Header("Colors For Settings Button")]
-    [SerializeField] private Color _highlightColor;
-    
     private LevelPanel panel = null;
-    private bool isInited;
+    private bool inited;
     
     private void Awake()
     {
@@ -40,7 +33,7 @@ public class LevelsInfoCreator : MonoBehaviour
 
     private void Init()
     {
-        if (isInited)
+        if (inited)
             return;
         foreach (var i in _info)
         {
@@ -55,7 +48,7 @@ public class LevelsInfoCreator : MonoBehaviour
             
             Buttons.Add(b);
         }
-        isInited = true;
+        inited = true;
         Inited?.Invoke();
     }
     
