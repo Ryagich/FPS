@@ -31,6 +31,10 @@ public class PlayerDeath : MonoBehaviour
 
     private void Respawn()
     {
+        var place = SpawnPlaces.Instance.GetSpawnPlace();
+        transform.position = place.position;
+        transform.rotation = place.rotation;
+        
         disabler.Activate();
         character.GetCameraDepth().enabled = true;
         deadScreen.gameObject.SetActive(false);
@@ -42,10 +46,6 @@ public class PlayerDeath : MonoBehaviour
         inventory.SetMaxAmmoInWeapons();
 
         EnemyController.Instance.SetCharacter(gameObject);
-
-        var place = SpawnPlaces.Instance.GetSpawnPlace();
-        transform.position = place.position;
-        transform.rotation = place.rotation;
     }
 
     public void Disable()

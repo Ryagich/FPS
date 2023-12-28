@@ -166,11 +166,12 @@ namespace InfimaGames.LowPolyShooterPack
 
             if (Time.timeScale == 0)
             {
-                canSwitchWeaponState = true;
+                canSwitchWeaponState = false;
                 OnTryFire(new InputAction.CallbackContext());
+                holdingButtonFire = false;
             }
             else
-                canSwitchWeaponState = false;
+                canSwitchWeaponState = true;
 
             if (holdingButtonFire)
             {
@@ -704,7 +705,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         public void OnTryFire(InputAction.CallbackContext context)
         {
-            if (!cursorLocked && !canSwitchWeaponState)
+            if (!cursorLocked || !canSwitchWeaponState)
                 return;
             switch (context)
             {
@@ -795,129 +796,87 @@ namespace InfimaGames.LowPolyShooterPack
 
         public void OnTryHolster(InputAction.CallbackContext context)
         {
-            //Block while the cursor is unlocked.
             if (!cursorLocked)
                 return;
 
-            //Go back if we cannot even play the holster animation.
             if (!CanPlayAnimationHolster())
                 return;
 
-            //Switch.
             switch (context.phase)
             {
-                //Started. This is here so we unholster with a tap, instead of a hold.
                 case InputActionPhase.Started:
-                    //Only if holstered.
                     if (holstered)
                     {
-                        //Unholster.
                         SetHolstered(false);
-                        //Holstering.
                         holstering = true;
                     }
 
                     break;
-                //Performed.
                 case InputActionPhase.Performed:
-                    //Set.
                     SetHolstered(!holstered);
-                    //Holstering.
                     holstering = true;
                     break;
             }
         }
 
-        /// <summary>
-        /// Throw Grenade. 
-        /// </summary>
         public void OnTryThrowGrenade(InputAction.CallbackContext context)
         {
-            //Block while the cursor is unlocked.
             if (!cursorLocked)
                 return;
 
-            //Switch.
             switch (context.phase)
             {
-                //Performed.
                 case InputActionPhase.Performed:
-                    //Try Play.
                     if (CanPlayAnimationGrenadeThrow())
                         PlayGrenadeThrow();
                     break;
             }
         }
 
-        /// <summary>
-        /// Melee.
-        /// </summary>
         public void OnTryMelee(InputAction.CallbackContext context)
         {
-            //Block while the cursor is unlocked.
             if (!cursorLocked)
                 return;
 
-            //Switch.
             switch (context.phase)
             {
-                //Performed.
                 case InputActionPhase.Performed:
-                    //Try Play.
                     if (CanPlayAnimationMelee())
                         PlayMelee();
                     break;
             }
         }
 
-        /// <summary>
-        /// Run. 
-        /// </summary>
         public void OnTryRun(InputAction.CallbackContext context)
         {
-            //Block while the cursor is unlocked.
             if (!cursorLocked)
                 return;
 
-            //Switch.
             switch (context.phase)
             {
-                //Performed.
                 case InputActionPhase.Performed:
-                    //Use this if we're using run toggle.
                     if (!holdToRun)
                         holdingButtonRun = !holdingButtonRun;
                     break;
-                //Started.
                 case InputActionPhase.Started:
-                    //Start.
                     if (holdToRun)
                         holdingButtonRun = true;
                     break;
-                //Canceled.
                 case InputActionPhase.Canceled:
-                    //Stop.
                     if (holdToRun)
                         holdingButtonRun = false;
                     break;
             }
         }
 
-        /// <summary>
-        /// Jump. 
-        /// </summary>
         public void OnTryJump(InputAction.CallbackContext context)
         {
-            //Block while the cursor is unlocked.
             if (!cursorLocked)
                 return;
 
-            //Switch.
             switch (context.phase)
             {
-                //Performed.
                 case InputActionPhase.Performed:
-                    //Jump.
                     movementBehaviour.Jump();
                     break;
             }

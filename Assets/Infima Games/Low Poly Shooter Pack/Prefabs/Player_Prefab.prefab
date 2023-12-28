@@ -1073,6 +1073,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 058ad0f0e88b6054990c6e98008ae4ea, type: 3}
   holdToRun: 1
   holdToAim: 1
+  holdingButtonFire: 0
   cursorLocked: 0
   CanPause: 1
 --- !u!114 &8163229473432397683
@@ -1940,6 +1941,7 @@ MonoBehaviour:
   bloodScreen: {fileID: -1736663397859153334}
   movement: {fileID: 448958757}
   heart: {fileID: 4027078435281450844}
+  _pause: {fileID: -2759979225079892511}
 --- !u!143 &4818736797759305148
 CharacterController:
   m_ObjectHideFlags: 0
