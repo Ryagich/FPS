@@ -241,7 +241,6 @@ namespace InfimaGames.LowPolyShooterPack
                 var a = Quaternion.Euler(playerCamera.eulerAngles + spreadValue);
                 var projectile = Instantiate(prefabProjectile, muzzleBehaviour.transform.position, a);
                 
-                Debug.Log(a);
                 projectile.GetComponent<Projectile>().SetDamage(_damage);
                 projectile.GetComponent<Rigidbody>().velocity = projectile.transform.forward * projectileImpulse;
             }

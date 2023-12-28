@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
-using Vector3 = UnityEngine.Vector3;
 
 namespace InfimaGames.LowPolyShooterPack
 {
@@ -88,8 +86,6 @@ namespace InfimaGames.LowPolyShooterPack
         [Tooltip("If true, the aiming input has to be held to be active.")] [SerializeField]
         private bool holdToAim = true;
 
-        #region FIELDS
-
         private bool aiming;
         private bool wasAiming;
         private bool running;
@@ -117,13 +113,11 @@ namespace InfimaGames.LowPolyShooterPack
         private int grenadeCount;
         private bool holdingButtonAim;
         private bool holdingButtonRun;
-        private bool holdingButtonFire;
+        public bool holdingButtonFire;
         private bool tutorialTextVisible;
         public bool cursorLocked;
         private int shotsFired;
         private bool canSwitchWeaponState = false;
-
-        #endregion
 
         #region UNITY
 
@@ -155,6 +149,7 @@ namespace InfimaGames.LowPolyShooterPack
             //Cache a reference to the overlay layer's index.
             layerOverlay = characterAnimator.GetLayerIndex("Layer Overlay");
         }
+
         protected override void Run()
         {
             aiming = holdingButtonAim && CanAim();
@@ -174,12 +169,12 @@ namespace InfimaGames.LowPolyShooterPack
                 canSwitchWeaponState = true;
                 OnTryFire(new InputAction.CallbackContext());
             }
-            else 
+            else
                 canSwitchWeaponState = false;
 
             if (holdingButtonFire)
             {
-                if (CanPlayAnimationFire() && equippedWeapon.HasAmmunition() && equippedWeapon.IsAutomatic())
+                if (CanPlayAnimationFire() && equippedWeapon.HasAmmunition() && equippedWeapon.IsAutomatic() && cursorLocked)
                 {
                     if (Time.time - lastShotTime > 60.0f / equippedWeapon.GetRateOfFire())
                         Fire();
@@ -445,21 +440,15 @@ namespace InfimaGames.LowPolyShooterPack
                 characterAnimator.GetLayerIndex("Layer Actions Arm Right"), 0.0f);
         }
 
-        /// <summary>
-        /// Changes the value of bolting, and updates the animator.
-        /// </summary>
         private void UpdateBolt(bool value)
         {
-            //Update.
             characterAnimator.SetBool(AHashes.Bolt, bolting = value);
         }
 
         private void SetHolstered(bool value = true)
         {
-            //Update value.
             holstered = value;
 
-            //Update Animator.
             const string boolName = "Holstered";
             characterAnimator.SetBool(boolName, holstered);
         }
@@ -716,15 +705,14 @@ namespace InfimaGames.LowPolyShooterPack
         public void OnTryFire(InputAction.CallbackContext context)
         {
             if (!cursorLocked && !canSwitchWeaponState)
-               return;
-
+                return;
             switch (context)
             {
                 case { phase: InputActionPhase.Started }:
                     holdingButtonFire = true;
                     shotsFired = 0;
                     break;
-                
+
                 case { phase: InputActionPhase.Performed }:
                     if (!CanPlayAnimationFire())
                         break;
@@ -741,8 +729,9 @@ namespace InfimaGames.LowPolyShooterPack
                     }
                     else
                         FireEmpty();
+
                     break;
-                
+
                 case { phase: InputActionPhase.Canceled }:
                     holdingButtonFire = false;
                     shotsFired = 0;
@@ -934,23 +923,16 @@ namespace InfimaGames.LowPolyShooterPack
             }
         }
 
-        /// <summary>
-        /// Next Inventory Weapon.
-        /// </summary>
         public void OnTryInventoryNext(InputAction.CallbackContext context)
         {
-            //Block while the cursor is unlocked.
             if (!cursorLocked)
                 return;
 
-            //Null Check.
             if (inventory == null)
                 return;
 
-            //Switch.
             switch (context)
             {
-                //Performed.
                 case { phase: InputActionPhase.Performed }:
                     //Get the index increment direction for our inventory using the scroll wheel direction. If we're not
                     //actually using one, then just increment by one.
@@ -986,14 +968,10 @@ namespace InfimaGames.LowPolyShooterPack
         {
             if (!CanPause)
                 return;
-            //Switch.
             switch (context)
             {
-                //Performed.
                 case { phase: InputActionPhase.Performed }:
-                    //Toggle the cursor locked value.
                     cursorLocked = !cursorLocked;
-                    //Update the cursor's state.
                     UpdateCursorState();
                     break;
             }
@@ -1098,6 +1076,7 @@ namespace InfimaGames.LowPolyShooterPack
             //Update.
             UpdateBolt(false);
         }
+
         public override void AnimationEndedReload()
         {
             //Stop reloading!

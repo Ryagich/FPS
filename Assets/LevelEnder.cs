@@ -31,10 +31,11 @@ public class LevelEnder : MonoBehaviour
         StartCoroutine(HideTimeSpeed());
     }
 
-    public void OpenNextLevel(int index = 0)
+    public void OpenNextLevel(int index)
     {
-        if (YandexGame.savesData.OpenedLevels.Length <= index)
-            YandexGame.savesData.OpenedLevels[index] = true;
+        YandexGame.savesData.OpenedLevels[index] = true;
+        YandexGame.SaveProgress();
+        Debug.Log( YandexGame.savesData.OpenedLevels[index]);
     }
 
     private IEnumerator HideTimeSpeed()

@@ -1029,18 +1029,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SubsHolder, Assembly-CSharp
-        m_MethodName: Write
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &57926433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4674,7 +4662,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1682338789}
+      - m_Target: {fileID: 1894694617}
         m_TargetAssemblyTypeName: PlayerPlotSpawnPlaces, Assembly-CSharp
         m_MethodName: UpdateSpawnPlace
         m_Mode: 2
@@ -11709,9 +11697,8 @@ Transform:
   - {fileID: 1456797682}
   - {fileID: 1928354508}
   - {fileID: 1165676221}
-  - {fileID: 1894694616}
   - {fileID: 879933720}
-  - {fileID: 1682338788}
+  - {fileID: 1894694616}
   - {fileID: 923431020}
   - {fileID: 1818471496}
   - {fileID: 1560988545}
@@ -16648,7 +16635,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1682338789}
+      - m_Target: {fileID: 1894694617}
         m_TargetAssemblyTypeName: PlayerPlotSpawnPlaces, Assembly-CSharp
         m_MethodName: UpdateSpawnPlace
         m_Mode: 2
@@ -21714,52 +21701,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666727987}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1682338787
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1682338788}
-  - component: {fileID: 1682338789}
-  m_Layer: 0
-  m_Name: SpawnPlacesController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1682338788
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682338787}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 974300400}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1682338789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682338787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62f2cb6ae23975c4abcd91f8ec3a07c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _lvlIndex: 0
-  _spawnPlace: {fileID: 731673461}
 --- !u!1001 &1688640156
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using InfimaGames.LowPolyShooterPack;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CharacterDisabler : MonoBehaviour
 {
-    [SerializeField]private Character character;
-    [SerializeField]private BloodScreen bloodScreen;
-    [SerializeField]private Movement movement;
-    [SerializeField]private BeatingHeart heart;
+    [SerializeField] private Character character;
+    [SerializeField] private BloodScreen bloodScreen;
+    [SerializeField] private Movement movement;
+    [SerializeField] private BeatingHeart heart;
 
     public void Activate()
     {
         character.CanPause = true;
         OnLockCursor();
-        
+
         movement.enabled = true;
         bloodScreen.StartBleeding();
         heart.StartBeating();
@@ -23,8 +24,9 @@ public class CharacterDisabler : MonoBehaviour
     public void Disable()
     {
         character.CanPause = false;
-        OnLockCursor();
+        character.holdingButtonFire = false;
 
+        OnLockCursor();
         if (!movement)
             movement = GetComponent<Movement>();
         movement.enabled = false;
