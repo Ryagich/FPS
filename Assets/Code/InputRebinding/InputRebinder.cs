@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using YG;
 
 public class InputRebinder : MonoBehaviour, IPointerEnterHandler
 {
@@ -134,9 +135,156 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
 
     public void UpdateText()
     {
-        _text.text = InputControlPath.ToHumanReadableString(
+        var name = InputControlPath.ToHumanReadableString(
             GetCurrentBinding().effectivePath,
             InputControlPath.HumanReadableStringOptions.OmitDevice);
+        switch (YandexGame.EnvironmentData.language)
+        {
+            case "en":
+                switch (name)
+                {
+                    case "Left Shift":
+                        name = "L.Shift";
+                        break; 
+                    case "Right Shift":
+                        name = "R.Shift";
+                        break;
+                    case "Left Control":
+                        name = "L.Control";
+                        break;
+                    case "Right Control":
+                        name = "R.Control";
+                        break;
+                    case "Left Alt":
+                        name = "L.Alt";
+                        break;
+                    case "Right Alt":
+                        name = "R.Alt";
+                        break;
+                }
+                break;
+            case "ru":
+                switch (name)
+                {
+                    case "Space":
+                        name = "Пробел";
+                        break;
+                    case "Left Shift":
+                        name = "Л.Щифт";
+                        break; 
+                    case "Right Shift":
+                        name = "П.Шифт";
+                        break;
+                    case "Left Control":
+                        name = "Л.Контрол";
+                        break;
+                    case "Right Control":
+                        name = "П.Контрол";
+                        break;
+                    case "Caps Lock":
+                        name = "Капс";
+                        break;
+                    case "Left Alt":
+                        name = "Л.Алт";
+                        break;
+                    case "Right Alt":
+                        name = "П.Алт";
+                        break;
+                }
+                break;
+            case "tr":
+                switch (name)
+                {
+                    case "Space":
+                        name = "Uzay";
+                        break;
+                    case "Left Shift":
+                        name = "Sol Shift";
+                        break; 
+                    case "Right Shift":
+                        name = "Sağ Shift";
+                        break;
+                    case "Left Control":
+                        name = "Sol Kontrol";
+                        break;
+                    case "Right Control":
+                        name = "Sağ Kontrol";
+                        break;
+                    case "Caps Lock":
+                        name = "Caps Lock";
+                        break;
+                    case "Left Alt":
+                        name = "Sol Alt";
+                        break;
+                    case "Right Alt":
+                        name = "Sağ Alt";
+                        break;
+                }
+                break;
+            case "es":
+                switch (name)
+                {
+                    case "Space":
+                        name = "Espacio";
+                        break;
+                    case "Left Shift":
+                        name = "L.Shift";
+                        break; 
+                    case "Right Shift":
+                        name = "D.Shift";
+                        break;
+                    case "Left Control":
+                        name = "L.Control";
+                        break;
+                    case "Right Control":
+                        name = "D.Control";
+                        break;
+                    case "Caps Lock":
+                        name = "Caps Lock";
+                        break;
+                    case "Left Alt":
+                        name = "L.Alt";
+                        break;
+                    case "Right Alt":
+                        name = "D.Alt";
+                        break;
+                }
+                break;
+            case "de":
+                switch (name)
+                {
+                    case "Space":
+                        name = "Raum";
+                        break;
+                    case "Left Shift":
+                        name = "L.Shift";
+                        break; 
+                    case "Right Shift":
+                        name = "R.Shift";
+                        break;
+                    case "Left Control":
+                        name = "L.Control";
+                        break;
+                    case "Right Control":
+                        name = "R.Control";
+                        break;
+                    case "Caps Lock":
+                        name = "Caps Lock";
+                        break;
+                    case "Left Alt":
+                        name = "L.Alt";
+                        break;
+                    case "Right Alt":
+                        name = "R.Alt";
+                        break;
+                }
+                break;
+        }
+
+        _text.text = name;
+        // _text.text = InputControlPath.ToHumanReadableString(
+        //     GetCurrentBinding().effectivePath,
+        //     InputControlPath.HumanReadableStringOptions.OmitDevice);
     }
 
 

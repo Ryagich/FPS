@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Table_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: af837c3e273b47744a87c87c56c48773, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 5416505683968
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5659548823552
+    m_Localized: 'Weapons
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7213441986560
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7733594402816
+    m_Localized: Missions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8123618537472
+    m_Localized: Death Match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8369023070208
+    m_Localized: 'Back
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8562208518144
+    m_Localized: First Weapons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8664281100288
+    m_Localized: Second Weapons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9067324354560
+    m_Localized: ' Back'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9833988599808
+    m_Localized: Automatic Rifles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10159625973760
+    m_Localized: Sniper Rifles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10221462597632
+    m_Localized: Submachine Guns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10310960656384
+    m_Localized: 'Back
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10505714774016
+    m_Localized: Pistols
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10549427810304
+    m_Localized: Shotguns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10605430157312
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10753640083456
+    m_Localized: Sensitivity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10874457010176
+    m_Localized: Sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10950021591040
+    m_Localized: Bindings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10994107920384
+    m_Localized: 'Back
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11835355279360
+    m_Localized: 'mouse sensitivity Y '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11987562377216
+    m_Localized: Master Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12117493526528
+    m_Localized: "\rInterface Volume"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12198217101312
+    m_Localized: "\rEffects Volume"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12252466229248
+    m_Localized: "\rWeapoon Volume"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12346557050880
+    m_Localized: "\rSteps Volume"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12627734802432
+    m_Localized: Movement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12716628881408
+    m_Localized: Weapons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12812967849984
+    m_Localized: 'Interactable
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14252444594176
+    m_Localized: mouse sensitivity X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14876515086336
+    m_Localized: Scopes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14931171061760
+    m_Localized: Muzzles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14994345668608
+    m_Localized: Lasers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15046581530624
+    m_Localized: Grips
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15154584858624
+    m_Localized: 'Back
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15229285412864
+    m_Localized: "100 Kills\nReward x1.4 \n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15304501866496
+    m_Localized: '5 Minuts
+
+      Reward x1.2 '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15353101266944
+    m_Localized: '10 Minuts
+
+      Reward x1.6 '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15609339686912
+    m_Localized: Attachments
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15695792680960
+    m_Localized: 'Chose
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15789413740544
+    m_Localized: Chosen
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
