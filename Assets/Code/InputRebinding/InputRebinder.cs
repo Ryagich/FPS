@@ -54,7 +54,7 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
         if (_type == Type.Button)
         {
             rebindingOperation = inputAction.PerformInteractiveRebinding()
-                .WithControlsExcluding("Mouse")
+                // .WithControlsExcluding("Mouse")
                 .WithCancelingThrough("<Keyboard>/escape")
                 .OnMatchWaitForAnother(.1f)
                 .OnComplete(operation => RebindComplete())
@@ -143,6 +143,15 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
             case "en":
                 switch (name)
                 {
+                    case "Left Button":
+                        name = "LMB";
+                        break; 
+                    case "Right Button":
+                        name = "RMB";
+                        break; 
+                    case "Middle Button":
+                        name = "MMB";
+                        break; 
                     case "Left Shift":
                         name = "L.Shift";
                         break; 
@@ -166,11 +175,20 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
             case "ru":
                 switch (name)
                 {
+                    case "Left Button":
+                        name = "ЛКМ";
+                        break; 
+                    case "Right Button":
+                        name = "ПКМ";
+                        break; 
+                    case "Middle Button":
+                        name = "Колесико";
+                        break; 
                     case "Space":
                         name = "Пробел";
                         break;
                     case "Left Shift":
-                        name = "Л.Щифт";
+                        name = "Л.Шифт";
                         break; 
                     case "Right Shift":
                         name = "П.Шифт";
@@ -195,6 +213,15 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
             case "tr":
                 switch (name)
                 {
+                    case "Left Button":
+                        name = "Sol Fare Tuşu";
+                        break; 
+                    case "Right Button":
+                        name = "Sağ Fare Tuşu";
+                        break; 
+                    case "Middle Button":
+                        name = "Orta Fare Tuşu";
+                        break; 
                     case "Space":
                         name = "Uzay";
                         break;
@@ -224,6 +251,15 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
             case "es":
                 switch (name)
                 {
+                    case "Left Button":
+                        name = "BIM";
+                        break; 
+                    case "Right Button":
+                        name = "BDM";
+                        break; 
+                    case "Middle Button":
+                        name = "BCM";
+                        break; 
                     case "Space":
                         name = "Espacio";
                         break;
@@ -253,6 +289,15 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
             case "de":
                 switch (name)
                 {
+                    case "Left Button":
+                        name = "LM";
+                        break; 
+                    case "Right Button":
+                        name = "RM";
+                        break; 
+                    case "Middle Button":
+                        name = "MM";
+                        break; 
                     case "Space":
                         name = "Raum";
                         break;
@@ -282,9 +327,6 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
         }
 
         _text.text = name;
-        // _text.text = InputControlPath.ToHumanReadableString(
-        //     GetCurrentBinding().effectivePath,
-        //     InputControlPath.HumanReadableStringOptions.OmitDevice);
     }
 
 

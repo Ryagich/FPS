@@ -70,26 +70,6 @@ MonoBehaviour:
       (TMP)
     m_Metadata:
       m_Items: []
-  - m_Id: 9067324354560
-    m_Key: Menu/-----Template-----/Canvas/NavControls/Weapons_Canvas/NavControls_Root_Weapons_Types/Content/Button_Back/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10310960656384
-    m_Key: Menu/-----Template-----/Canvas/NavControls/Weapons_Canvas/NavControls_First_Weapons/content/Button_Back/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10605430157312
-    m_Key: Menu/-----Template-----/Canvas/NavControls/Weapons_Canvas/NavControls_Second_Weapons/Content/Button_Back/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10994107920384
-    m_Key: Menu/-----Template-----/Canvas/NavControls/Settings_Canvas/NavControls_Root_Settings/Content/Button_Back/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
   - m_Id: 10505714774016
     m_Key: Menu/-----Template-----/Canvas/NavControls/Weapons_Canvas/NavControls_Second_Weapons/Content/Button_Pistols/Text
       (TMP)
@@ -117,6 +97,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11835355279360
     m_Key: Menu/-----Template-----/Canvas/NavControls/Panels/Sensitivity/Content/Title_MouseSensitivityY/Back_Name/Text_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14252444594176
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Panels/Sensitivity/Content/Title_MouseSensitivityX/Back_Name/Text_Name
     m_Metadata:
       m_Items: []
   - m_Id: 11987562377216
@@ -151,10 +135,6 @@ MonoBehaviour:
     m_Key: Menu/-----Template-----/Canvas/NavControls/Panels/Bindings/Scroll View/Viewport/Content/Title_Interactable/Back_Name/Text_Name
     m_Metadata:
       m_Items: []
-  - m_Id: 14252444594176
-    m_Key: Menu/-----Template-----/Canvas/NavControls/Panels/Sensitivity/Content/Title_MouseSensitivityX/Back_Name/Text_Name
-    m_Metadata:
-      m_Items: []
   - m_Id: 14876515086336
     m_Key: Atachments_canvas/Canvas (Environment)/Atachments_canvas/NavControls_Root_AtachmentsMenu/Button_Scopes/Text
       (TMP)
@@ -172,10 +152,6 @@ MonoBehaviour:
   - m_Id: 15046581530624
     m_Key: Atachments_canvas/Canvas (Environment)/Atachments_canvas/NavControls_Root_AtachmentsMenu/Button_Grips/Text
       (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 15154584858624
-    m_Key: Atachments_canvas/Canvas (Environment)/Atachments_canvas/NavControls_Root_AtachmentsMenu/Button_Back/Back
     m_Metadata:
       m_Items: []
   - m_Id: 15229285412864
@@ -203,6 +179,43 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 15789413740544
     m_Key: Chosen/Canvas (Environment)/Chosen/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18366364758016
+    m_Key: CompleteCanvas/CompleteCanvas/Complete/Bottom/Back_Winning/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19219574272000
+    m_Key: MyGameMenu/MyGameMenu/Canvas Quality Settings/Canvas Animated/Image Background
+      Fade/Buttons/Button_MainMenu/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18820343640064
+    m_Key: DeathCanvas/DeathCanvas/DeadScreen/Bottom/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18864350277632
+    m_Key: DeathCanvas/DeathCanvas/DeadScreen/Bottom/Button_Continue/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19252147236864
+    m_Key: MyGameMenu/MyGameMenu/Canvas Quality Settings/Canvas Animated/Image Background
+      Fade/Buttons/Button_Continue/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19960451936256
+    m_Key: MyGameMenu/MyGameMenu/Canvas Quality Settings/Canvas Animated/Panel_Exit/Exit
+      To Main Menu?/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20005679116288
+    m_Key: MyGameMenu/MyGameMenu/Canvas Quality Settings/Canvas Animated/Panel_Exit/Buttons/Button_Yes/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20032753348608
+    m_Key: MyGameMenu/MyGameMenu/Canvas Quality Settings/Canvas Animated/Panel_Exit/Buttons/Button_No/Text
+      (TMP)
     m_Metadata:
       m_Items: []
   m_Metadata:

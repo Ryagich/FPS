@@ -54,10 +54,6 @@ MonoBehaviour:
     m_Localized: Second Weapons
     m_Metadata:
       m_Items: []
-  - m_Id: 9067324354560
-    m_Localized: ' Back'
-    m_Metadata:
-      m_Items: []
   - m_Id: 9833988599808
     m_Localized: Automatic Rifles
     m_Metadata:
@@ -70,22 +66,12 @@ MonoBehaviour:
     m_Localized: Submachine Guns
     m_Metadata:
       m_Items: []
-  - m_Id: 10310960656384
-    m_Localized: 'Back
-
-'
-    m_Metadata:
-      m_Items: []
   - m_Id: 10505714774016
     m_Localized: Pistols
     m_Metadata:
       m_Items: []
   - m_Id: 10549427810304
     m_Localized: Shotguns
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10605430157312
-    m_Localized: Back
     m_Metadata:
       m_Items: []
   - m_Id: 10753640083456
@@ -100,14 +86,8 @@ MonoBehaviour:
     m_Localized: Bindings
     m_Metadata:
       m_Items: []
-  - m_Id: 10994107920384
-    m_Localized: 'Back
-
-'
-    m_Metadata:
-      m_Items: []
   - m_Id: 11835355279360
-    m_Localized: 'mouse sensitivity Y '
+    m_Localized: 'Mouse Sensitivity Y '
     m_Metadata:
       m_Items: []
   - m_Id: 11987562377216
@@ -123,7 +103,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 12252466229248
-    m_Localized: "\rWeapoon Volume"
+    m_Localized: "\rWeapon Volume"
     m_Metadata:
       m_Items: []
   - m_Id: 12346557050880
@@ -145,7 +125,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14252444594176
-    m_Localized: mouse sensitivity X
+    m_Localized: Mouse Sensitivity X
     m_Metadata:
       m_Items: []
   - m_Id: 14876515086336
@@ -162,12 +142,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 15046581530624
     m_Localized: Grips
-    m_Metadata:
-      m_Items: []
-  - m_Id: 15154584858624
-    m_Localized: 'Back
-
-'
     m_Metadata:
       m_Items: []
   - m_Id: 15229285412864
@@ -198,6 +172,42 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 15789413740544
     m_Localized: Chosen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18366364758016
+    m_Localized: 'You Winning
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18820343640064
+    m_Localized: YOU DIED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18864350277632
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19219574272000
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19252147236864
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19960451936256
+    m_Localized: Exit To Main Menu?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20005679116288
+    m_Localized: 'Yes
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20032753348608
+    m_Localized: No
     m_Metadata:
       m_Items: []
   references:
