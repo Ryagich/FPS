@@ -1793,10 +1793,10 @@ MonoBehaviour:
   _ratio: 0.9
   _minHealth: 0
   _maxHealth: 100
-  _valueHealth: 10
+  _valueHealth: 100
   _minArmor: 0
   _maxArmor: 100
-  _valueArmor: 10
+  _valueArmor: 100
 --- !u!114 &8930412542136289808
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -210,6 +210,181 @@ MonoBehaviour:
     m_Localized: No
     m_Metadata:
       m_Items: []
+  - m_Id: 219762519289856
+    m_Localized: Forward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219807855521792
+    m_Localized: Left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219855351820288
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219932325687296
+    m_Localized: Right
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219979436109824
+    m_Localized: Run
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220020070526976
+    m_Localized: 'Jump
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220086420221952
+    m_Localized: Crouch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220179777040384
+    m_Localized: Left Leaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220248517488640
+    m_Localized: Right Crouch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220358534082560
+    m_Localized: Fire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 221742922838016
+    m_Localized: Aim
+    m_Metadata:
+      m_Items: []
+  - m_Id: 221811101249536
+    m_Localized: Reload
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222053439746048
+    m_Localized: Holster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222142828752896
+    m_Localized: Grenade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222230145773568
+    m_Localized: Melee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226300990435328
+    m_Localized: Inspect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226372067110912
+    m_Localized: Toggle Laser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226549461004288
+    m_Localized: Interact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244096013021184
+    m_Localized: Reward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370433046458368
+    m_Localized: Oneha's group has captured a remote town in the east. It is necessary
+      to get there and find out their plans.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370455980912640
+    m_Localized: Lost City
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370510381035520
+    m_Localized: Chemicals
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374218867191808
+    m_Localized: Oneha militants are planning to stage a huge terrorist attack by
+      blowing up a chemical warehouse. Our next goal is to dislodge the militants
+      from this warehouse.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384260236488704
+    m_Localized: Glad you're back to business, Booth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384343170461696
+    m_Localized: Oneha terrorists destroyed this city and established their base
+      here. Get inside and find out their plans.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384424028254208
+    m_Localized: 'Get into the city
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384791860326400
+    m_Localized: Great, now gather whatever information you can find.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384870625161216
+    m_Localized: Find information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384996005490688
+    m_Localized: There is a car at the end of the city, go to it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385080180977664
+    m_Localized: Find a car
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387541377593344
+    m_Localized: Great, now it's time to get out of here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387774534758400
+    m_Localized: Interesting. It says here about some chemicals... Keep looking,
+      we need more information.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387874719903744
+    m_Localized: Great. I think I know enough. Now it's time to get out of here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387967745372160
+    m_Localized: Get out
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400553765351424
+    m_Localized: It became known from laptops that Oneha plans to blow up huge tanks
+      of chemicals. Stop them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400592558469120
+    m_Localized: Clean up area
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401153764732928
+    m_Localized: Clean up area
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401403380346880
+    m_Localized: Destroy the Oneha terrorists.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402058891341824
+    m_Localized: Booth, do you see all these tanks, Booth? They want to blow them
+      up, you know?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402193566248960
+    m_Localized: Great, now it's time to get out of here. Get in the helicopter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402469211713536
+    m_Localized: The last stop is left. Let's not waste a second.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

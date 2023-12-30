@@ -18,7 +18,8 @@ public class PlayerSpawner : MonoBehaviour
 
     public void Spawn()
     {
-        Player = Instantiate(_playerPref, _parent);
+        Player = Instantiate(_playerPref, _parent.position,_parent.rotation);
+            //Player.transform.SetParent(_parent);
         _playerSpawned?.Invoke(Player);
     }
 }

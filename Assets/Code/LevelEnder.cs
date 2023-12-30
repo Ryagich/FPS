@@ -33,6 +33,8 @@ public class LevelEnder : MonoBehaviour
 
     public void OpenNextLevel(int index)
     {
+        if (YandexGame.savesData.OpenedLevels.Length <= index)
+            return;
         YandexGame.savesData.OpenedLevels[index] = true;
         YandexGame.SaveProgress();
         Debug.Log( YandexGame.savesData.OpenedLevels[index]);

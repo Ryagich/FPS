@@ -26,7 +26,6 @@ public class MissionsOpener : MonoBehaviour
         for (int i = 0; i < creator.Buttons.Count; i++)
         {
             creator.Buttons[i].interactable = YandexGame.savesData.OpenedLevels[i];
-            Debug.Log( creator.Buttons[i].interactable);
             if (!creator.Buttons[i].interactable)
             {
                 var colors = creator.Buttons[i].colors;

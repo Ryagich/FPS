@@ -1,7 +1,7 @@
 {
-    "idSave": 43,
+    "idSave": 112,
     "isFirstSession": false,
-    "language": "de",
+    "language": "ru",
     "promptDone": false,
     "Money": 2000,
     "SceneIndex": 4,
@@ -13,9 +13,9 @@
     "EffectsVolume": -30.0,
     "StepsVolume": -30.0,
     "ShootingVolume": -30.0,
-    "UsesLaptops": 0,
+    "UsesLaptops": 3,
     "OpenedLevels": [
         true,
-        false
+        true
     ]
 }
