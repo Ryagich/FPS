@@ -87,7 +87,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11835355279360
-    m_Localized: 'Mouse Sensitivity Y '
+    m_Localized: Vertical Sensitivity
     m_Metadata:
       m_Items: []
   - m_Id: 11987562377216
@@ -125,7 +125,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14252444594176
-    m_Localized: Mouse Sensitivity X
+    m_Localized: Horizon. Sensitivity
     m_Metadata:
       m_Items: []
   - m_Id: 14876515086336
@@ -149,13 +149,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15304501866496
-    m_Localized: '5 Minuts
+    m_Localized: '5 Minutes
 
       Reward x1.2 '
     m_Metadata:
       m_Items: []
   - m_Id: 15353101266944
-    m_Localized: '10 Minuts
+    m_Localized: '10 Minutes
 
       Reward x1.6 '
     m_Metadata:
@@ -171,7 +171,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15789413740544
-    m_Localized: Chosen
+    m_Localized: Selected
     m_Metadata:
       m_Items: []
   - m_Id: 18366364758016
@@ -245,7 +245,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 220248517488640
-    m_Localized: Right Crouch
+    m_Localized: Right Leaning
     m_Metadata:
       m_Items: []
   - m_Id: 220358534082560

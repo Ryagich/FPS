@@ -17,7 +17,353 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: af837c3e273b47744a87c87c56c48773, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 5416505683968
+    m_Localized: Oynamak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5659548823552
+    m_Localized: Cephanelik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7213441986560
+    m_Localized: Ayarlar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7733594402816
+    m_Localized: "G\xF6revler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8123618537472
+    m_Localized: "\xD6l\xFCm Ma\xE7\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8562208518144
+    m_Localized: Temel Silah
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8664281100288
+    m_Localized: "\u0130kinci Silahlar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9833988599808
+    m_Localized: "Otomatik T\xFCfekler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10159625973760
+    m_Localized: "Keskin Ni\u015Fanc\u0131lar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10221462597632
+    m_Localized: HMT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8369023070208
+    m_Localized: Geri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10505714774016
+    m_Localized: Tabancalar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10549427810304
+    m_Localized: "Av T\xFCfe\u011Fi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10753640083456
+    m_Localized: "Duyarl\u0131l\u0131k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10874457010176
+    m_Localized: Sesler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10950021591040
+    m_Localized: "Ba\u011Flamalar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11835355279360
+    m_Localized: "Dikey Duyarl\u0131l\u0131k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14252444594176
+    m_Localized: "Ufuk. Duyarl\u0131l\u0131k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11987562377216
+    m_Localized: Ana Ses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12117493526528
+    m_Localized: "Aray\xFCz Hacmi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12198217101312
+    m_Localized: Efekt Hacmi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12252466229248
+    m_Localized: Silah Hacmi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12346557050880
+    m_Localized: "Ad\u0131m Hacmi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12627734802432
+    m_Localized: Hareket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12716628881408
+    m_Localized: Silahlar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12812967849984
+    m_Localized: "Etkile\u015Fimli"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14876515086336
+    m_Localized: Kapsamlar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14931171061760
+    m_Localized: "A\u011F\u0131zl\u0131klar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14994345668608
+    m_Localized: Lazerler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15046581530624
+    m_Localized: "Saplar\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15229285412864
+    m_Localized: "100 \xD6ld\xFCrme\r\n\xD6d\xFCl x1,4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15304501866496
+    m_Localized: "5 Dakika\r\n\xD6d\xFCl x1,2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15353101266944
+    m_Localized: "10 Dakika\r\n\xD6d\xFCl x1,6"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15609339686912
+    m_Localized: "\u0130yile\u015Ftirmeler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15695792680960
+    m_Localized: "Se\xE7ildi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15789413740544
+    m_Localized: "Se\xE7ildi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18366364758016
+    m_Localized: "Kazan\u0131yorsun"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19219574272000
+    m_Localized: "Men\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18820343640064
+    m_Localized: "\xD6LD\xDCN"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18864350277632
+    m_Localized: Devam etmek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19252147236864
+    m_Localized: Devam etmek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19960451936256
+    m_Localized: "Ana Men\xFCye \xC7\u0131k\u0131ls\u0131n m\u0131?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20005679116288
+    m_Localized: Evet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20032753348608
+    m_Localized: HAYIR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219762519289856
+    m_Localized: "\u0130leri"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219807855521792
+    m_Localized: Sol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219855351820288
+    m_Localized: Geri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219932325687296
+    m_Localized: "Sa\u011F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219979436109824
+    m_Localized: "Ko\u015Fmak"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220020070526976
+    m_Localized: "Z\u0131plamak"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220086420221952
+    m_Localized: "\xC7\xF6melme"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220179777040384
+    m_Localized: "Sola E\u011Filimli"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220248517488640
+    m_Localized: "Sa\u011Fa E\u011Fimli"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220358534082560
+    m_Localized: "Ate\u015F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 221742922838016
+    m_Localized: "Ama\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 221811101249536
+    m_Localized: "Tekrar Y\xFCkle"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222053439746048
+    m_Localized: "K\u0131l\u0131f"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222142828752896
+    m_Localized: "El Bombas\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222230145773568
+    m_Localized: "Yak\u0131n D\xF6v\xFC\u015F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226300990435328
+    m_Localized: "\u0130ncelemek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226372067110912
+    m_Localized: "Lazeri De\u011Fi\u015Ftir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226549461004288
+    m_Localized: "Etkile\u015Fime girmek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244096013021184
+    m_Localized: "\xD6d\xFCl"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370455980912640
+    m_Localized: "Kay\u0131p \u015Eehir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370510381035520
+    m_Localized: Kimyasallar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384424028254208
+    m_Localized: "\u015Eehre Gir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384870625161216
+    m_Localized: Bilgi bulmak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384996005490688
+    m_Localized: "\u015Eehrin sonunda bir araba var, ona gidin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385080180977664
+    m_Localized: Bir araba bul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387541377593344
+    m_Localized: "Harika, art\u0131k buradan \xE7\u0131kma zaman\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374218867191808
+    m_Localized: "Oneha militanlar\u0131 bir kimyasal depoyu havaya u\xE7urarak b\xFCy\xFCk
+      bir ter\xF6r sald\u0131r\u0131s\u0131 d\xFCzenlemeyi planl\u0131yor. Bundan
+      sonraki hedefimiz militanlar\u0131 bu depodan \xE7\u0131karmak."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384260236488704
+    m_Localized: "\u0130\u015Fe d\xF6nmene sevindim Booth."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384343170461696
+    m_Localized: "Oneha ter\xF6ristleri bu \u015Fehri yerle bir ederek buraya \xFCs
+      kurdular. \u0130\xE7eri girin ve planlar\u0131n\u0131 \xF6\u011Frenin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384791860326400
+    m_Localized: "Harika, \u015Fimdi bulabildi\u011Finiz her t\xFCrl\xFC bilgiyi
+      toplay\u0131n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387774534758400
+    m_Localized: "\u0130lgin\xE7. Burada baz\u0131 kimyasallar yaz\u0131yor... Aramaya
+      devam edin, daha fazla bilgiye ihtiyac\u0131m\u0131z var."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387874719903744
+    m_Localized: "Harika. Yeterince bilgi sahibi oldu\u011Fumu d\xFC\u015F\xFCn\xFCyorum.
+      Art\u0131k buradan \xE7\u0131kman\u0131n zaman\u0131 geldi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387967745372160
+    m_Localized: "\xC7\u0131kmak"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400553765351424
+    m_Localized: "Oneha'n\u0131n devasa kimyasal tanklar\u0131n\u0131 havaya u\xE7urmay\u0131
+      planlad\u0131\u011F\u0131 diz\xFCst\xFC bilgisayarlardan \xF6\u011Frenildi.
+      Durdur onlar\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400592558469120
+    m_Localized: "Temizleme alan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401153764732928
+    m_Localized: "Temizleme alan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401403380346880
+    m_Localized: "Oneha ter\xF6ristlerini yok edin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402058891341824
+    m_Localized: "Booth, b\xFCt\xFCn bu tanklar\u0131 g\xF6r\xFCyor musun Booth?
+      Onlar\u0131 havaya u\xE7urmak istiyorlar, anl\u0131yor musun?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402193566248960
+    m_Localized: "Harika, art\u0131k buradan \xE7\u0131kma zaman\u0131. Helikoptere
+      binin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402469211713536
+    m_Localized: "Son durak kald\u0131. Bir saniyemizi bile bo\u015Fa harcamayal\u0131m."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

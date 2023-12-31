@@ -19,7 +19,354 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 14252444594176
-    m_Localized: 
+    m_Localized: Horizont. Empfindlichkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5416505683968
+    m_Localized: Spielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5659548823552
+    m_Localized: Waffen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7213441986560
+    m_Localized: Einstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7733594402816
+    m_Localized: Missionen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8123618537472
+    m_Localized: Todeskampf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8562208518144
+    m_Localized: Basic Waffe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8664281100288
+    m_Localized: Zweite Waffen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9833988599808
+    m_Localized: Waffen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10159625973760
+    m_Localized: "Scharfsch\xFCtzengewehr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10221462597632
+    m_Localized: Maschinengewehre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8369023070208
+    m_Localized: "Zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10505714774016
+    m_Localized: Pistolen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10549427810304
+    m_Localized: Schrotflinten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10753640083456
+    m_Localized: Empfindlichkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10874457010176
+    m_Localized: "Ger\xE4usche"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10950021591040
+    m_Localized: Bindungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11835355279360
+    m_Localized: Vertikal Empfindlichkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11987562377216
+    m_Localized: Master Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12117493526528
+    m_Localized: Schnittstellenvolumen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12198217101312
+    m_Localized: "Effektlautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12252466229248
+    m_Localized: Waffenvolumen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12346557050880
+    m_Localized: "Schritte Lautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12627734802432
+    m_Localized: Bewegung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12716628881408
+    m_Localized: Waffen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12812967849984
+    m_Localized: Interagierbar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14876515086336
+    m_Localized: Bereiche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14931171061760
+    m_Localized: "Maulk\xF6rbe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14994345668608
+    m_Localized: Laser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15046581530624
+    m_Localized: Griffe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15229285412864
+    m_Localized: '100 Kills
+
+      Belohnung x1,4'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15304501866496
+    m_Localized: '5 Minuten
+
+      Belohnung x1,2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15353101266944
+    m_Localized: '10 Minuten
+
+      Belohnung x1,6'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15609339686912
+    m_Localized: "Anh\xE4nge"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15695792680960
+    m_Localized: "W\xE4hlte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15789413740544
+    m_Localized: "Ausgew\xE4hlt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18366364758016
+    m_Localized: Du Gewinnst
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19219574272000
+    m_Localized: Speisekarte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18820343640064
+    m_Localized: Tod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18864350277632
+    m_Localized: Weitermachen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19252147236864
+    m_Localized: Weitermachen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19960451936256
+    m_Localized: "Zur\xFCck zum Hauptmen\xFC?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20005679116288
+    m_Localized: Ja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20032753348608
+    m_Localized: NEIN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219762519289856
+    m_Localized: Nach vorne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219807855521792
+    m_Localized: Links
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219855351820288
+    m_Localized: "Zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219932325687296
+    m_Localized: Rechts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219979436109824
+    m_Localized: Laufen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220020070526976
+    m_Localized: Springen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220086420221952
+    m_Localized: Hocken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220179777040384
+    m_Localized: Linkslastig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220248517488640
+    m_Localized: Rechtslastig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220358534082560
+    m_Localized: Feuer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 221742922838016
+    m_Localized: Ziel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 221811101249536
+    m_Localized: Neu Laden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222053439746048
+    m_Localized: Halfter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222142828752896
+    m_Localized: Granate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222230145773568
+    m_Localized: Nahkampf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226300990435328
+    m_Localized: "Pr\xFCfen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226372067110912
+    m_Localized: Laser umschalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226549461004288
+    m_Localized: Interagieren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244096013021184
+    m_Localized: Belohnen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370455980912640
+    m_Localized: Verlorene Stadt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370510381035520
+    m_Localized: Chemikalien
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384424028254208
+    m_Localized: Raus in die Stadt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384870625161216
+    m_Localized: Informationen finden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384996005490688
+    m_Localized: Am Ende der Stadt steht ein Auto, fahren Sie dorthin.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385080180977664
+    m_Localized: Finden Sie ein Auto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387541377593344
+    m_Localized: "Gro\xDFartig, jetzt ist es Zeit, hier rauszukommen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374218867191808
+    m_Localized: "Oneha-K\xE4mpfer planen einen riesigen Terroranschlag, indem sie
+      ein Chemielager in die Luft sprengen. Unser n\xE4chstes Ziel ist die Vertreibung
+      der Militanten aus diesem Lagerhaus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384260236488704
+    m_Localized: "Ich freue mich, dass Sie wieder im Gesch\xE4ft sind, Booth."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384343170461696
+    m_Localized: "Oneha-Terroristen zerst\xF6rten diese Stadt und errichteten hier
+      ihre Basis. Gehen Sie hinein und finden Sie ihre Pl\xE4ne heraus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384791860326400
+    m_Localized: "Gro\xDFartig, sammeln Sie jetzt alle Informationen, die Sie finden
+      k\xF6nnen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387774534758400
+    m_Localized: "Interessant. Hier steht \xFCber einige Chemikalien... Suchen Sie
+      weiter, wir brauchen mehr Informationen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387874719903744
+    m_Localized: "Gro\xDFartig. Ich glaube, ich wei\xDF genug. Jetzt ist es an der
+      Zeit, hier zu verschwinden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387967745372160
+    m_Localized: Aussteigen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400553765351424
+    m_Localized: "\xDCber Laptops wurde bekannt, dass Oneha plant, riesige Chemikalientanks
+      in die Luft zu jagen. Stoppe sie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400592558469120
+    m_Localized: "Bereich aufr\xE4umen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401153764732928
+    m_Localized: "Bereich aufr\xE4umen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401403380346880
+    m_Localized: "Zerst\xF6re die Oneha-Terroristen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402058891341824
+    m_Localized: Booth, siehst du all diese Panzer, Booth? Sie wollen sie in die
+      Luft jagen, wissen Sie?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402193566248960
+    m_Localized: "Gro\xDFartig, jetzt ist es an der Zeit, hier zu verschwinden. Steigen
+      Sie in den Helikopter."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402469211713536
+    m_Localized: "Die letzte Haltestelle ist \xFCbrig. Lasst uns keine Sekunde verschwenden."
     m_Metadata:
       m_Items: []
   references:

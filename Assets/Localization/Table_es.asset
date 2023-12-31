@@ -17,7 +17,355 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: af837c3e273b47744a87c87c56c48773, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 5416505683968
+    m_Localized: Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5659548823552
+    m_Localized: Arsenal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7213441986560
+    m_Localized: Ajustes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7733594402816
+    m_Localized: Misiones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8123618537472
+    m_Localized: Combate Muerte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8562208518144
+    m_Localized: "B\xE1sico Arma"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8664281100288
+    m_Localized: Segundas Armas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9833988599808
+    m_Localized: Armas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10159625973760
+    m_Localized: Francotiradores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10221462597632
+    m_Localized: Metralletas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8369023070208
+    m_Localized: "Atr\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10505714774016
+    m_Localized: Pistolas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10549427810304
+    m_Localized: Escopetas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10753640083456
+    m_Localized: Sensibilidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10874457010176
+    m_Localized: Sonidos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10950021591040
+    m_Localized: Fijaciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11835355279360
+    m_Localized: Vertical Sensibilidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14252444594176
+    m_Localized: Horizonte. Sensibilidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11987562377216
+    m_Localized: Volumen Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12117493526528
+    m_Localized: Volumen Interfaz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12252466229248
+    m_Localized: Volumen Arma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12198217101312
+    m_Localized: Volumen Efectos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12346557050880
+    m_Localized: Volumen Pasos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12627734802432
+    m_Localized: Movimiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12716628881408
+    m_Localized: Armas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12812967849984
+    m_Localized: Interactuable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14876515086336
+    m_Localized: Alcances
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14931171061760
+    m_Localized: Bozales
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14994345668608
+    m_Localized: "L\xE1seres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15046581530624
+    m_Localized: "Pu\xF1os"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15229285412864
+    m_Localized: '100 muertes
+
+      Recompensa x1.4'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15304501866496
+    m_Localized: '5 Minutos
+
+      Recompensa x1.2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15353101266944
+    m_Localized: '10 Minutos
+
+      Recompensa x1.6'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15609339686912
+    m_Localized: Mejoras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15695792680960
+    m_Localized: "Eligi\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15789413740544
+    m_Localized: Seleccionado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18366364758016
+    m_Localized: Tu Ganando
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19219574272000
+    m_Localized: "Men\xFA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18820343640064
+    m_Localized: MORITO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18864350277632
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19252147236864
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19960451936256
+    m_Localized: "\xBFSalir al men\xFA principal?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20005679116288
+    m_Localized: "S\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20032753348608
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219762519289856
+    m_Localized: Adelante
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219807855521792
+    m_Localized: Izquierdo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219855351820288
+    m_Localized: "Atr\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219932325687296
+    m_Localized: Derecho
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219979436109824
+    m_Localized: Correr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220020070526976
+    m_Localized: Saltar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220086420221952
+    m_Localized: Agacharse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220179777040384
+    m_Localized: "Inclinaci\xF3n Izquierda"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220248517488640
+    m_Localized: "Inclinaci\xF3n Derecha"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 220358534082560
+    m_Localized: Fuego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 221742922838016
+    m_Localized: Apuntar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 221811101249536
+    m_Localized: Recargar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222053439746048
+    m_Localized: Funda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222142828752896
+    m_Localized: Granada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 222230145773568
+    m_Localized: Pelea Confusa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226300990435328
+    m_Localized: Inspeccionar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226372067110912
+    m_Localized: "Alternar l\xE1ser"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226549461004288
+    m_Localized: Interactuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244096013021184
+    m_Localized: Premio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370455980912640
+    m_Localized: Ciudad Perdida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 370510381035520
+    m_Localized: Quimicos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384424028254208
+    m_Localized: Entrar en la ciudad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384870625161216
+    m_Localized: "Encontrar informaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384996005490688
+    m_Localized: "Hay un coche al final de la ciudad, ve hacia \xE9l."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385080180977664
+    m_Localized: Encontrar un auto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387541377593344
+    m_Localized: "Genial, ahora es el momento de salir de aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384260236488704
+    m_Localized: Encantado de que hayas vuelto al negocio, Booth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374218867191808
+    m_Localized: "Los militantes de Oneha planean realizar un gran ataque terrorista
+      haciendo volar un almac\xE9n de productos qu\xEDmicos. Nuestro pr\xF3ximo objetivo
+      es desalojar a los militantes de este almac\xE9n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384343170461696
+    m_Localized: "Los terroristas de Oneha destruyeron esta ciudad y establecieron
+      su base aqu\xED. Entra y descubre sus planes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 384791860326400
+    m_Localized: "Genial, ahora re\xFAne toda la informaci\xF3n que puedas encontrar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387774534758400
+    m_Localized: "Interesante. Aqu\xED dice sobre algunos qu\xEDmicos... Sigue buscando,
+      necesitamos m\xE1s informaci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387874719903744
+    m_Localized: "Excelente. Creo que s\xE9 lo suficiente. Ahora es el momento de
+      salir de aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 387967745372160
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400553765351424
+    m_Localized: "Por las computadoras port\xE1tiles se supo que Oneha planea hacer
+      estallar enormes tanques de productos qu\xEDmicos. Detenerlos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400592558469120
+    m_Localized: "Limpiar el \xE1rea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401153764732928
+    m_Localized: "Limpiar el \xE1rea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402058891341824
+    m_Localized: "Booth, \xBFves todos estos tanques, Booth? Quieren volarlos, \xBFsabes?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401403380346880
+    m_Localized: Destruye a los terroristas de Oneha.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402193566248960
+    m_Localized: "Genial, ahora es el momento de salir de aqu\xED. Sube al helic\xF3ptero."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402469211713536
+    m_Localized: "Queda la \xFAltima parada. No perdamos ni un segundo."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
