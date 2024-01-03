@@ -369,6 +369,28 @@ MonoBehaviour:
     m_Localized: "Die letzte Haltestelle ist \xFCbrig. Lasst uns keine Sekunde verschwenden."
     m_Metadata:
       m_Items: []
+  - m_Id: 370433046458368
+    m_Localized: "Onehas Gruppe hat eine abgelegene Stadt im Osten erobert. Es ist
+      notwendig, dorthin zu gelangen und ihre Pl\xE4ne herauszufinden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781440805875712
+    m_Localized: "Der Ort, an dem unser Vogel abgest\xFCrzt ist, zieht diejenigen
+      an, die vom Guten profitieren wollen. Sie loswerden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781387987005440
+    m_Localized: Schwarzer Falke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 782939225174016
+    m_Localized: "Dr\xFCcken Sie zum Starten eine beliebige Taste"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 782829481209856
+    m_Localized: Wird geladen
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -53,6 +53,5 @@ public class LaptopsController : MonoBehaviour
 
     public void UpdateLaptopsSave(int index)
     {
-        YandexGame.savesData.UsesLaptops = index;
     }
 }

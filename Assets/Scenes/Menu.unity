@@ -1490,12 +1490,12 @@ MonoBehaviour:
     type: 3}
   _info:
   - Label: Lost City
-    SceneIndex: 2
+    SceneIndex: 0
     Description: Oneha's group has captured a remote town in the east. It is necessary
       to get there and find out their plans.
     screenshot: {fileID: 21300000, guid: 7f5688f4555c64a45a032c80eacbc513, type: 3}
   - Label: Chemicals
-    SceneIndex: 3
+    SceneIndex: 0
     Description: Oneha militants are planning to stage a huge terrorist attack by
       blowing up a chemical warehouse. Our next goal is to dislodge the militants
       from this warehouse.
@@ -2624,6 +2624,50 @@ MonoBehaviour:
   <CostsMuzzle>k__BackingField: 90010000200300004c04000078050000
   <CostsLaser>k__BackingField: c8000000f4010000
   <CostsGrip>k__BackingField: bc02000084030000b0040000
+--- !u!1 &178556172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 178556173}
+  - component: {fileID: 178556174}
+  m_Layer: 0
+  m_Name: LanguageSwitcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &178556173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178556172}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1683831612}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &178556174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178556172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe62c002803fbe4c9c01e58d9959c79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &182193015
 GameObject:
   m_ObjectHideFlags: 0
@@ -5568,7 +5612,7 @@ MonoBehaviour:
           value: 1
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 3440083379430621322
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -5580,7 +5624,7 @@ MonoBehaviour:
           value: 1
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 3440083379430621323
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -5592,7 +5636,7 @@ MonoBehaviour:
           value: 160
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 160
     - rid: 3440083379430621324
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -5604,7 +5648,7 @@ MonoBehaviour:
           value: -128
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: -128
     - rid: 3440083379430621325
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -5616,7 +5660,7 @@ MonoBehaviour:
           value: 320
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 320
 --- !u!1 &406013027
 GameObject:
   m_ObjectHideFlags: 0
@@ -6302,7 +6346,7 @@ MonoBehaviour:
           value: 1
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 3440083379430621328
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -6314,7 +6358,7 @@ MonoBehaviour:
           value: 1
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 3440083379430621329
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -6326,7 +6370,7 @@ MonoBehaviour:
           value: 160
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 160
     - rid: 3440083379430621330
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -6338,7 +6382,7 @@ MonoBehaviour:
           value: -216
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: -216
     - rid: 3440083379430621331
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -6350,7 +6394,7 @@ MonoBehaviour:
           value: 320
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 320
 --- !u!1 &481010332
 GameObject:
   m_ObjectHideFlags: 0
@@ -8954,7 +8998,7 @@ RectTransform:
   m_Father: {fileID: 1303080105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.625, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10296,6 +10340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 862121262}
   - component: {fileID: 862121263}
+  - component: {fileID: 862121264}
   m_Layer: 0
   m_Name: DeathmatchCreator
   m_TagString: Untagged
@@ -10337,7 +10382,7 @@ MonoBehaviour:
     type: 3}
   _info:
   - Label: Deathmatch_1
-    SceneIndex: 4
+    SceneIndex: 0
     Description: 'Deathmatch Deathmatch Deathmatch Deathmatch
 
       Deathmatch Deathmatch
@@ -10345,6 +10390,64 @@ MonoBehaviour:
 
       DeathmatchDeathmatch'
     screenshot: {fileID: 21300000, guid: 92e1703777949b44ab372a6df63d9ef3, type: 3}
+--- !u!114 &862121264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862121261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 3440083434221338626
+  references:
+    version: 2
+    RefIds:
+    - rid: 3440083434221338626
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
+        asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 862121263}
+        m_TrackedProperties:
+          items:
+          - rid: 3440083434221338627
+          - rid: 3440083434221338628
+        m_UpdateType: 1
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 3440083434221338627
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 781387987005440
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[0].Label
+    - rid: 3440083434221338628
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 781440805875712
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[0].Description
 --- !u!1 &864234373
 GameObject:
   m_ObjectHideFlags: 0
@@ -11203,7 +11306,6 @@ GameObject:
   - component: {fileID: 926588932}
   - component: {fileID: 926588931}
   - component: {fileID: 926588934}
-  - component: {fileID: 926588935}
   m_Layer: 5
   m_Name: Button_DeathMatch
   m_TagString: Untagged
@@ -11226,10 +11328,10 @@ RectTransform:
   - {fileID: 1009514446}
   m_Father: {fileID: 956219468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 80}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 160, y: -128}
+  m_SizeDelta: {x: 320, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926588931
 MonoBehaviour:
@@ -11335,6 +11437,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 862121263}
+        m_TargetAssemblyTypeName: LevelsInfoCreator, Assembly-CSharp
+        m_MethodName: Init
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &926588932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11418,95 +11532,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &926588935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926588929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 3440083379430621340
-  references:
-    version: 2
-    RefIds:
-    - rid: 3440083379430621340
-      type: {class: TrackedRectTransform, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
-        asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 926588930}
-        m_TrackedProperties:
-          items:
-          - rid: 3440083379430621341
-          - rid: 3440083379430621342
-          - rid: 3440083379430621343
-          - rid: 3440083379430621344
-          - rid: 3440083379430621345
-    - rid: 3440083379430621341
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_AnchorMin.y
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: 1
-        - localeIdentifier:
-            m_Code: ru
-          value: 1
-    - rid: 3440083379430621342
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_AnchorMax.y
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: 1
-        - localeIdentifier:
-            m_Code: ru
-          value: 1
-    - rid: 3440083379430621343
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_AnchoredPosition.x
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: 160
-        - localeIdentifier:
-            m_Code: ru
-          value: 160
-    - rid: 3440083379430621344
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_AnchoredPosition.y
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: -128
-        - localeIdentifier:
-            m_Code: ru
-          value: -128
-    - rid: 3440083379430621345
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_SizeDelta.x
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: 320
-        - localeIdentifier:
-            m_Code: ru
-          value: 320
 --- !u!1 &931323511
 GameObject:
   m_ObjectHideFlags: 0
@@ -17453,6 +17478,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 96765608}
+        m_TargetAssemblyTypeName: LevelsInfoCreator, Assembly-CSharp
+        m_MethodName: Init
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1527300475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17907,7 +17944,7 @@ RectTransform:
   m_Father: {fileID: 2120530428}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0.6, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -19703,6 +19740,7 @@ Transform:
   - {fileID: 1436198678}
   - {fileID: 245482705}
   - {fileID: 1885919401}
+  - {fileID: 178556173}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1688367012
@@ -21550,7 +21588,7 @@ MonoBehaviour:
           value: 1
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 3440083379430621316
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -21562,7 +21600,7 @@ MonoBehaviour:
           value: 1
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 3440083379430621317
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -21574,7 +21612,7 @@ MonoBehaviour:
           value: 160
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 160
     - rid: 3440083379430621318
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -21586,7 +21624,7 @@ MonoBehaviour:
           value: -40
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: -40
     - rid: 3440083379430621319
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -21598,7 +21636,7 @@ MonoBehaviour:
           value: 320
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 320
 --- !u!1 &1881116207
 GameObject:
   m_ObjectHideFlags: 0
@@ -28334,7 +28372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1244830761267145405
 GameObject:
   m_ObjectHideFlags: 0
@@ -29454,7 +29492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1617112487433027395
 Transform:
   m_ObjectHideFlags: 0
@@ -32292,7 +32330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2761023217042962987
 Transform:
   m_ObjectHideFlags: 0
@@ -37591,7 +37629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4778657114051962175
 Transform:
   m_ObjectHideFlags: 0
@@ -39039,7 +39077,7 @@ PrefabInstance:
     - target: {fileID: 247701159401353154, guid: 5575f6eaade79a14eb283f60795e5f07,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 175.5
       objectReference: {fileID: 0}
     - target: {fileID: 247701159401353154, guid: 5575f6eaade79a14eb283f60795e5f07,
         type: 3}
@@ -40076,6 +40114,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -40
       objectReference: {fileID: 0}
+    - target: {fileID: 6878285100111781817, guid: 5575f6eaade79a14eb283f60795e5f07,
+        type: 3}
+      propertyPath: managedReferences[3440083399255523349].m_VariantData.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878285100111781817, guid: 5575f6eaade79a14eb283f60795e5f07,
+        type: 3}
+      propertyPath: managedReferences[3440083399255523350].m_VariantData.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7002233631007691829, guid: 5575f6eaade79a14eb283f60795e5f07,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -40385,6 +40433,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136634553259048730, guid: 5575f6eaade79a14eb283f60795e5f07,
+        type: 3}
+      propertyPath: managedReferences[3440083379430621438].m_VariantData.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136634553259048730, guid: 5575f6eaade79a14eb283f60795e5f07,
+        type: 3}
+      propertyPath: managedReferences[3440083379430621439].m_VariantData.Array.data[1].value
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

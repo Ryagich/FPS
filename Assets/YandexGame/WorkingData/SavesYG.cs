@@ -1,4 +1,6 @@
-﻿namespace YG
+﻿using UnityEngine;
+
+namespace YG
 {
     [System.Serializable]
     public class SavesYG
@@ -10,7 +12,7 @@
         public bool promptDone;
 
         // Ваши сохранения
-        public int Money = 2000;
+        public int Money = 3000;
         public int SceneIndex;
 
         // -1 - не дезматч; 0 - до 100 киллов; 1 - 5 мин; 2 - 10 мин;
@@ -272,7 +274,6 @@
         public float UIVolume = -30f;
         public float EffectsVolume = -30f;
         public float StepsVolume = -30f;
-
         public float ShootingVolume = -30f;
 
         public int UsesLaptops = 0;
@@ -295,7 +296,7 @@
     // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()
         {
-            // Допустим, задать значения по умолчанию для отдельных элементов массива
+            Debug.Log("UsesLaptops " + UsesLaptops);
         }
     }
 }

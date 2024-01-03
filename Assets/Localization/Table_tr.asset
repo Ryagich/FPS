@@ -364,6 +364,28 @@ MonoBehaviour:
     m_Localized: "Son durak kald\u0131. Bir saniyemizi bile bo\u015Fa harcamayal\u0131m."
     m_Metadata:
       m_Items: []
+  - m_Id: 370433046458368
+    m_Localized: "Oneha'n\u0131n grubu do\u011Fuda uzak bir kasabay\u0131 ele ge\xE7irdi.
+      Oraya gidip planlar\u0131n\u0131 \xF6\u011Frenmek gerekiyor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781440805875712
+    m_Localized: "Ku\u015Fumuzun d\xFC\u015Ft\xFC\u011F\xFC yer iyiliklerden yararlanmak
+      isteyenlerin ilgisini \xE7ekiyor. Onlardan kurtulmak."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781387987005440
+    m_Localized: "Kara \u015Eahin"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 782939225174016
+    m_Localized: "Ba\u015Flamak i\xE7in herhangi bir tu\u015Fa bas\u0131n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 782829481209856
+    m_Localized: "Y\xFCkleniyor"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

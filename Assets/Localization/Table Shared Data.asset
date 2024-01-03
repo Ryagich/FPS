@@ -382,6 +382,22 @@ MonoBehaviour:
     m_Key: lvl_2/----Environment----/No Lighting/Trigger Zones/Trigger_End
     m_Metadata:
       m_Items: []
+  - m_Id: 781387987005440
+    m_Key: Menu/-----Template-----/DeathmatchCreator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781440805875712
+    m_Key: Menu/-----Template-----/DeathmatchCreator 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 782829481209856
+    m_Key: LoadingScene/LoadingScene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 782939225174016
+    m_Key: LoadingScene/LoadingScene 1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -9,13 +9,13 @@ public class LanguageSwitcher : MonoBehaviour
     {
         if (YandexGame.SDKEnabled)
         {
-            Init();
+            StartCoroutine(WI());
             Debug.Log("YandexGame.SDKEnabled");
         }
         else
         {
-            YandexGame.GetDataEvent += Init;
-            //YandexGame.GetDataEvent += () => StartCoroutine(WI());
+            //YandexGame.GetDataEvent += Init;
+            YandexGame.GetDataEvent += () => StartCoroutine(WI());
             Debug.Log("NOT YandexGame.SDKEnabled");
         }
     }
@@ -30,8 +30,8 @@ public class LanguageSwitcher : MonoBehaviour
         LocalizationSettings.Instance.GetInitializationOperation();
         foreach (var locale in LocalizationSettings.AvailableLocales.Locales)
         {
-            Debug.Log($"{locale.Identifier.Code} == {YandexGame.EnvironmentData.language}");
-            Debug.Log(locale.Identifier.Code.Contains(YandexGame.EnvironmentData.language));
+//            Debug.Log($"{locale.Identifier.Code} == {YandexGame.EnvironmentData.language}");
+  //          Debug.Log(locale.Identifier.Code.Contains(YandexGame.EnvironmentData.language));
             if (locale.Identifier.Code.Contains(YandexGame.EnvironmentData.language))
             {
                 LocalizationSettings.SelectedLocale = locale;

@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -15,43 +17,45 @@ public class LevelsInfoCreator : MonoBehaviour
     [SerializeField] private LevelPanel _panel;
     [SerializeField] private Button _buttonPref;
     [SerializeField] private List<LevelInfo> _info = new();
-    
+
     private LevelPanel panel = null;
     private bool inited;
-    
-    private void Awake()
+
+    public void Init()
     {
-        if (YandexGame.SDKEnabled)
+        StartCoroutine(Initing());
+    }
+
+    [Button]
+    public void CheckLabel()
+    {
+        Debug.Log(_info[0].Label);
+    }
+
+    private IEnumerator Initing()
+    {
+        if (!inited)
         {
-            Init();
-        }
-        else
-        {
-            YandexGame.GetDataEvent += Init;
+            yield return new WaitForSeconds(0f);
+            foreach (var i in _info)
+            {
+                var b = Instantiate(_buttonPref, _parent);
+                b.GetComponentInChildren<TMP_Text>().text = i.Label;
+                b.onClick.AddListener(() => CreateNewPanel(i.screenshot, i.Label, i.Description));
+                b.onClick.AddListener(() =>
+                {
+                    YandexGame.savesData.SceneIndex = i.SceneIndex;
+                    YandexGame.SaveProgress();
+                });
+
+                Buttons.Add(b);
+            }
+
+            inited = true;
+            Inited?.Invoke();
         }
     }
 
-    private void Init()
-    {
-        if (inited)
-            return;
-        foreach (var i in _info)
-        {
-            var b = Instantiate(_buttonPref, _parent);
-            b.GetComponentInChildren<TMP_Text>().text = i.Label;
-            b.onClick.AddListener(() => CreateNewPanel(i.screenshot, i.Label, i.Description));
-            b.onClick.AddListener(() =>
-            {
-                YandexGame.savesData.SceneIndex = i.SceneIndex;
-                YandexGame.SaveProgress();
-            });
-            
-            Buttons.Add(b);
-        }
-        inited = true;
-        Inited?.Invoke();
-    }
-    
     public void DestroyPanel()
     {
         if (panel)

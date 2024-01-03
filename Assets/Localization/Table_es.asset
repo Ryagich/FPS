@@ -366,6 +366,28 @@ MonoBehaviour:
     m_Localized: "Queda la \xFAltima parada. No perdamos ni un segundo."
     m_Metadata:
       m_Items: []
+  - m_Id: 370433046458368
+    m_Localized: "El grupo de Oneha ha capturado una ciudad remota en el este. Es
+      necesario llegar all\xED y conocer sus planes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781440805875712
+    m_Localized: "El lugar donde se estrell\xF3 nuestro p\xE1jaro atrae a quienes
+      quieren beneficiarse del bien. Deshazte de ellos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781387987005440
+    m_Localized: "Halc\xF3n Negro"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 782939225174016
+    m_Localized: Presione cualquier tecla para comenzar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 782829481209856
+    m_Localized: Cargando
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

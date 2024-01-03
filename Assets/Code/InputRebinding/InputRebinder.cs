@@ -214,13 +214,13 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
                 switch (name)
                 {
                     case "Left Button":
-                        name = "Sol Fare Tuşu";
+                        name = "Sol FT";
                         break; 
                     case "Right Button":
-                        name = "Sağ Fare Tuşu";
+                        name = "Sağ FT";
                         break; 
                     case "Middle Button":
-                        name = "Orta Fare Tuşu";
+                        name = "Orta FT";
                         break; 
                     case "Space":
                         name = "Uzay";

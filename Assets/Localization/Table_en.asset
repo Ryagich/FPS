@@ -385,6 +385,23 @@ MonoBehaviour:
     m_Localized: The last stop is left. Let's not waste a second.
     m_Metadata:
       m_Items: []
+  - m_Id: 781387987005440
+    m_Localized: Black Hawk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781440805875712
+    m_Localized: The place where our bird crashed attracts those who want to profit
+      from goodness. Get rid of them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 782829481209856
+    m_Localized: Loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 782939225174016
+    m_Localized: Press any key to start
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
