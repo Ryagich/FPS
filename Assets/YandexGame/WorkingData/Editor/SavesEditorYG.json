@@ -1,10 +1,10 @@
 {
-    "idSave": 39,
+    "idSave": 3,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
-    "Money": 3000,
-    "SceneIndex": 2,
+    "Money": 2500,
+    "SceneIndex": 0,
     "DeatmatchType": -1,
     "SensitivityX": 1.25,
     "SensitivityY": 1.25,

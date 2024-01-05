@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -84,7 +85,7 @@ public class AttachmentsMenu : MonoBehaviour
     private void ShowButton(int i)
     {
         HideButton();
-        if (i<0||YandexGame.savesData.ChosenAttachments[weapon.WeaponIndex][section] == i)
+        if (i < 0 || YandexGame.savesData.ChosenAttachments[weapon.WeaponIndex][section] == i)
         {
             // if i<0 => index == -1. its nothing/default. its ok
             showButton = Instantiate(_shosen, transform);
@@ -92,14 +93,15 @@ public class AttachmentsMenu : MonoBehaviour
         else if (YandexGame.savesData.OpenedAttachments[weapon.WeaponIndex][section][i])
         {
             showButton = Instantiate(_choseButton.gameObject, transform);
-            showButton.GetComponent<Button>().onClick.AddListener(() =>Chose(i));
+            showButton.GetComponent<Button>().onClick.AddListener(() => Chose(i));
         }
         else
         {
             showButton = Instantiate(_buyButton.gameObject, transform);
             showButton.GetComponent<Button>().onClick.AddListener(() => TryBuy(i));
-            showButton.GetComponentInChildren<TMP_Text>().text = GetCurrCost(i).ToString() +'$';
+            showButton.GetComponentInChildren<TMP_Text>().text = GetCurrCost(i).ToString() + '$';
         }
+
         showButton.GetComponentInChildren<ButtonSoundPlayer>()?.SetSource(_source);
     }
 
@@ -123,36 +125,55 @@ public class AttachmentsMenu : MonoBehaviour
 
     private int GetCurrCost(int i)
     {
-        if (section == 0)
-            return AttachmentsCostsHolder.Instance.CostsScopes[i];
-        if (section == 1)
-            return AttachmentsCostsHolder.Instance.CostsMuzzle[i];
-        if (section == 2)
-            return AttachmentsCostsHolder.Instance.CostsLaser[i];
-        return AttachmentsCostsHolder.Instance.CostsGrip[i];
+        switch (section)
+        {
+            case 0:
+                return AttachmentsCostsHolder.Instance.CostsScopes[i];
+            case 1:
+                return AttachmentsCostsHolder.Instance.CostsMuzzle[i];
+            case 2:
+                return AttachmentsCostsHolder.Instance.CostsLaser[i];
+            case 3:
+                return AttachmentsCostsHolder.Instance.CostsGrip[i];
+            default:
+                throw new ArgumentException();
+        }
     }
 
     private void SetCurrAttachment(int i)
     {
-        if (section == 0)
-            weapon.Manager.SetScope(i);
-        if (section == 1)
-            weapon.Manager.SetMuzzle(i);
-        if (section == 2)
-            weapon.Manager.SetLaser(i);
-        if (section == 3)
-            weapon.Manager.SetGrip(i);
+        switch (section)
+        {
+            case 0:
+                weapon.Manager.SetScope(i);
+                break;
+            case 1:
+                weapon.Manager.SetMuzzle(i);
+                break;
+            case 2:
+                weapon.Manager.SetLaser(i);
+                break;
+            case 3:
+                weapon.Manager.SetGrip(i);
+                break;
+        }
     }
 
     private int GetCurrI()
     {
-        if (section == 0)
-            return weapon.Manager.GetScopeIndex;
-        if (section == 1)
-            return weapon.Manager.GetMuzzleIndex;
-        if (section == 2)
-            return weapon.Manager.GetLaserIndex;
-        return weapon.Manager.GetGripIndex;
+        switch (section)
+        {
+            case 0:
+                return weapon.Manager.GetScopeIndex;
+            case 1:
+                return weapon.Manager.GetMuzzleIndex;
+            case 2:
+                return weapon.Manager.GetLaserIndex;
+            case 3:
+                return weapon.Manager.GetGripIndex;
+            default:
+                throw new ArgumentException();
+        }
     }
 
     public void DestroyMenu()

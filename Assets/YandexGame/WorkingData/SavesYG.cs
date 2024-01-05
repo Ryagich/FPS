@@ -296,7 +296,7 @@ namespace YG
     // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()
         {
-            Debug.Log("UsesLaptops " + UsesLaptops);
+            //Debug.Log("UsesLaptops " + UsesLaptops);
         }
     }
 }
