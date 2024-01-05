@@ -108,7 +108,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _manyInteract: 0
+  _manyInteract: 1
   _simpleInteractable: 1
 --- !u!114 &514900904661511964
 MonoBehaviour:
