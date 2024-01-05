@@ -398,6 +398,10 @@ MonoBehaviour:
     m_Key: LoadingScene/LoadingScene 1
     m_Metadata:
       m_Items: []
+  - m_Id: 2092050705395712
+    m_Key: Level_Panel/Canvas (Environment)/Level_Panel/Button_Start/Main_Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

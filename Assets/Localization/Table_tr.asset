@@ -386,6 +386,10 @@ MonoBehaviour:
     m_Localized: "Y\xFCkleniyor"
     m_Metadata:
       m_Items: []
+  - m_Id: 2092050705395712
+    m_Localized: "Ba\u015Flang\u0131\xE7"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
