@@ -138,7 +138,7 @@ namespace EnemyAI
             magBullets = bullets;
             variables.shotsInRound = maximumBurst;
             // Near sense radius is half of perception radius.
-            nearRadius = perceptionRadius / 2;
+            nearRadius = 0;
             // Get/create Game Controller.
             var gameController = GameObject.FindGameObjectWithTag("GameController");
             if (gameController == null)

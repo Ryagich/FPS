@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: RifleStats
   m_EditorClassIdentifier: 
   aimOffset: {x: -23, y: 24, z: 0}
-  changeCoverChance: 33
+  leftArmAim: {x: 0, y: 0, z: 0}
+  leftArmGuard: {x: 0, y: 0, z: 0}
+  changeCoverChance: 0
   weaponType: 2
   bulletDamage: 9
   shotSound: {fileID: 8300000, guid: 550d02157d7611d47b48f6ec57941b8f, type: 3}

@@ -23,7 +23,7 @@ MonoBehaviour:
   speedDampTime: 0.4
   angularSpeedDampTime: 0.2
   angleResponseTime: 0.2
-  aboveCoverHeight: 1.5
+  aboveCoverHeight: 2.05
   coverMask:
     serializedVersion: 2
     m_Bits: 0

@@ -518,7 +518,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 8094564839891927323}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5869565
+  m_Size: 0.6164383
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1771,6 +1771,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Interact
+      objectReference: {fileID: 0}
+    - target: {fileID: 5569682591460565726, guid: 70d3602689521b64ba7a5cbffa36a0d7,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 5569682591460565726, guid: 70d3602689521b64ba7a5cbffa36a0d7,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 6238837603186644393, guid: 70d3602689521b64ba7a5cbffa36a0d7,
         type: 3}

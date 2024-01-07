@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: AKStats
   m_EditorClassIdentifier: 
   aimOffset: {x: -23, y: 24, z: 0}
-  changeCoverChance: 30
+  leftArmAim: {x: 0, y: 0, z: 0}
+  leftArmGuard: {x: 0, y: 0, z: 0}
+  changeCoverChance: 0
   weaponType: 2
   bulletDamage: 9
   shotSound: {fileID: 8300000, guid: 58ad36900a0b5c7449e3e3a8956a1045, type: 3}
