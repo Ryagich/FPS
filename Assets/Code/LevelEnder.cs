@@ -59,7 +59,7 @@ public class LevelEnder : MonoBehaviour
 
         holder.RewardedText.text = $"{_reward}: {Reward}$";
         holder.RewardedButton.onClick.AddListener(() => YandexGame.RewVideoShow(1));
-        holder.ExitToMenuButton.onClick.AddListener(() => YandexGame.savesData.Money += Reward);
+        holder.ExitToMenuButton.onClick.AddListener(() => YandexGame.savesData.SaveMoney(Reward));
 
         YandexGame.RewardVideoEvent += OnShowRewardedAd;
 
@@ -67,7 +67,7 @@ public class LevelEnder : MonoBehaviour
         disabler.Disable();
         holder.Complete.gameObject.SetActive(true);
     }
-
+    
     private void OnShowRewardedAd(int _)
     {
         Reward *= 3;

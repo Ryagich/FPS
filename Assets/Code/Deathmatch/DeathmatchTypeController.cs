@@ -61,7 +61,7 @@ public class DeathmatchTypeController : MonoBehaviour
 
         holder.RewardedText.text = $"{_reward}: {Reward}$";
         holder.RewardedButton.onClick.AddListener(() => YandexGame.RewVideoShow(1));
-        holder.ExitToMenuButton.onClick.AddListener(() => YandexGame.savesData.Money += Reward);
+        holder.ExitToMenuButton.onClick.AddListener(() => YandexGame.savesData.SaveMoney(Reward));
 
         YandexGame.RewardVideoEvent += OnShowRewardedAd;
 

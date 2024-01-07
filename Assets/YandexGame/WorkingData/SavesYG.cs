@@ -277,7 +277,13 @@ namespace YG
         public float ShootingVolume = -30f;
 
         public int UsesLaptops = 0;
-
+        
+        public void SaveMoney(int value)
+        {
+            Money += value;
+            YandexGame.SaveProgress();
+        }
+        
         // 0 - lvl, 1 - x,y,z
         // 0 - x, 1 - y, 2 - z;
         // -1000 - trash value

@@ -402,6 +402,10 @@ MonoBehaviour:
     m_Key: Level_Panel/Canvas (Environment)/Level_Panel/Button_Start/Main_Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 3091435786448896
+    m_Key: P_LPSP_UI_Canvas/P_LPSP_UI_Canvas/InteractableInterface/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
