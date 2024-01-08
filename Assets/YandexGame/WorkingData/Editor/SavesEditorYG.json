@@ -1,19 +1,19 @@
 {
-  "idSave": 44,
+  "idSave": 30,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Money": 30450,
+  "Money": 28800,
   "SceneIndex": 4,
   "DeatmatchType": 0,
   "OpenedWeapons": [
     [
       true,
-      false,
-      false
+      true,
+      true
     ],
     [
-      true,
+      false,
       false,
       false
     ],
@@ -36,9 +36,9 @@
   ],
   "ChosenWeapons": [
     [
-      true,
       false,
-      false
+      false,
+      true
     ],
     [
       false,
@@ -67,43 +67,43 @@
       [
         true,
         false,
-        true,
         false,
         false,
         false,
         false,
-        false
-      ],
-      [
-        true,
-        true,
         false,
         false
       ],
       [
         true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
         false
       ],
       [
         true,
         false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
         false,
         false
       ],
@@ -123,13 +123,13 @@
         false,
         false,
         false,
-        false,
+        true,
         false,
         false,
         false
       ],
       [
-        false,
+        true,
         false,
         false,
         false
@@ -156,34 +156,7 @@
         false
       ],
       [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
+        true,
         false,
         false,
         false
@@ -210,34 +183,7 @@
         false
       ],
       [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
+        true,
         false,
         false,
         false
@@ -264,34 +210,7 @@
         false
       ],
       [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
+        true,
         false,
         false,
         false
@@ -318,34 +237,7 @@
         false
       ],
       [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
+        true,
         false,
         false,
         false
@@ -372,34 +264,7 @@
         false
       ],
       [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
+        true,
         false,
         false,
         false
@@ -426,7 +291,34 @@
         false
       ],
       [
+        true,
         false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
         false,
         false,
         false
@@ -453,7 +345,7 @@
         false
       ],
       [
-        false,
+        true,
         false,
         false,
         false
@@ -471,16 +363,124 @@
     [
       [
         false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
         false,
         true,
         false,
         false,
         false,
         false,
+        false,
         false
       ],
       [
-        false,
+        true,
         false,
         false,
         false
@@ -499,96 +499,96 @@
   "ChosenAttachments": [
     [
       0,
+      0,
+      -1,
+      -1
+    ],
+    [
+      5,
+      0,
+      -1,
+      -1
+    ],
+    [
+      4,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
       1,
-      0,
-      0
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      -1,
-      0,
-      -1,
-      -1
-    ],
-    [
-      2,
       0,
       -1,
       -1
