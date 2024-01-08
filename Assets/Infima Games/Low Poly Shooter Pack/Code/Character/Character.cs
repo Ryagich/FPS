@@ -343,8 +343,6 @@ namespace InfimaGames.LowPolyShooterPack
 
             if (equippedWeapon.IsBoltAction() && equippedWeapon.HasAmmunition())
                 UpdateBolt(true);
-            else
-                UpdateBolt(false);
 
             if (!equippedWeapon.HasAmmunition() && equippedWeapon.GetAutomaticallyReloadOnEmpty())
                 StartCoroutine(nameof(TryReloadAutomatic));
@@ -998,32 +996,28 @@ namespace InfimaGames.LowPolyShooterPack
         {
             //Notify the weapon to fill the ammunition by the amount.
             if (equippedWeapon != null)
+            {
                 equippedWeapon.FillAmmunition(amount);
+                characterAnimator.SetBool(AHashes.Reloading,
+                    reloading = ((Inventory)inventory).CheckAmmo(((Weapon)equippedWeapon).AmmoType));
+            }
         }
 
-        /// <summary>
-        /// Grenade.
-        /// </summary>
         public override void Grenade()
         {
             //Make sure that the grenade is valid, otherwise we'll get errors.
             if (grenadePrefab == null)
                 return;
 
-            //Make sure we have a camera!
             if (cameraWorld == null)
                 return;
 
-            //Remove Grenade.
             if (!grenadesUnlimited)
                 grenadeCount--;
 
-            //Get Camera Transform.
             var cTransform = cameraWorld.transform;
-            //Calculate the throwing location.
             var position = cTransform.position;
             position += cTransform.forward * grenadeSpawnOffset;
-            //Throw.
             Instantiate(grenadePrefab, position, cTransform.rotation);
         }
 
@@ -1035,58 +1029,36 @@ namespace InfimaGames.LowPolyShooterPack
 
         public override void AnimationEndedBolt()
         {
-            //Update.
             UpdateBolt(false);
         }
 
         public override void AnimationEndedReload()
         {
-            //Stop reloading!
             reloading = false;
         }
 
-        /// <summary>
-        /// AnimationEndedGrenadeThrow.
-        /// </summary>
         public override void AnimationEndedGrenadeThrow()
         {
-            //Stop Grenade Throw.
             throwingGrenade = false;
         }
 
-        /// <summary>
-        /// AnimationEndedMelee.
-        /// </summary>
         public override void AnimationEndedMelee()
         {
-            //Stop Melee.
             meleeing = false;
         }
 
-        /// <summary>
-        /// AnimationEndedInspect.
-        /// </summary>
         public override void AnimationEndedInspect()
         {
-            //Stop Inspecting.
             inspecting = false;
         }
 
-        /// <summary>
-        /// AnimationEndedHolster.
-        /// </summary>
         public override void AnimationEndedHolster()
         {
-            //Stop Holstering.
             holstering = false;
         }
 
-        /// <summary>
-        /// SetSlideBack.
-        /// </summary>
         public override void SetSlideBack(int back)
         {
-            //Set slide back.
             if (equippedWeapon != null)
                 equippedWeapon.SetSlideBack(back);
         }

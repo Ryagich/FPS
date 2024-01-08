@@ -240,7 +240,7 @@ namespace InfimaGames.LowPolyShooterPack
 
                 var a = Quaternion.Euler(playerCamera.eulerAngles + spreadValue);
                 var projectile = Instantiate(prefabProjectile, muzzleBehaviour.transform.position, a);
-                
+
                 projectile.GetComponent<Projectile>().SetDamage(_damage);
                 projectile.GetComponent<Rigidbody>().velocity = projectile.transform.forward * projectileImpulse;
             }
@@ -262,6 +262,9 @@ namespace InfimaGames.LowPolyShooterPack
                 delta = GetAmmunitionTotal() - ammunitionCurrent;
             inventory.TakeAmmo(AmmoType, -delta);
             ammunitionCurrent += delta;
+           // Debug.Log(inventory.CheckAmmo(AmmoType));
+           // if (!inventory.CheckAmmo(AmmoType))
+            //    inventory.GetComponent<Character>().AnimationEndedReload();
         }
 
         public override void SetSlideBack(int back)
