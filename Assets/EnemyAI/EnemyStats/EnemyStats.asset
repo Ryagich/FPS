@@ -15,7 +15,7 @@ MonoBehaviour:
   patrolSpeed: 2
   chaseSpeed: 5
   evadeSpeed: 15
-  patrolWaitTime: 2
+  patrolWaitTime: 0
   obstacleMask:
     serializedVersion: 2
     m_Bits: 2621440

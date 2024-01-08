@@ -12,7 +12,7 @@ namespace YG
         public bool promptDone;
 
         // Ваши сохранения
-        public int Money = 3000;
+        public int Money = 40000;
         public int SceneIndex;
 
         // -1 - не дезматч; 0 - до 100 киллов; 1 - 5 мин; 2 - 10 мин;
@@ -46,7 +46,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -57,7 +57,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -68,7 +68,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -80,7 +80,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -91,7 +91,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -102,7 +102,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -114,7 +114,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -125,7 +125,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -136,7 +136,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -147,7 +147,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -158,7 +158,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -170,7 +170,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -181,7 +181,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -192,7 +192,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -203,7 +203,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips
@@ -215,7 +215,7 @@ namespace YG
                 //Scopes
                 new[] { false, false, false, false, false, false, false, false, },
                 //Muzzles
-                new[] { false, false, false, false, },
+                new[] { true, false, false, false, },
                 //Lasers
                 new[] { false, false, },
                 //Grips

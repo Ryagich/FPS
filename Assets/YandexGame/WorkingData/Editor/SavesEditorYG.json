@@ -1,65 +1,65 @@
 {
-  "idSave": 40,
+  "idSave": 28,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Money": 1084,
+  "Money": 30450,
   "SceneIndex": 4,
   "DeatmatchType": 0,
   "OpenedWeapons": [
     [
       true,
-      true,
-      false
-    ],
-    [
-      false,
-      false,
-      false
-    ],
-    [
-      false,
-      false,
-      false,
       false,
       false
     ],
     [
       true,
       false,
+      false
+    ],
+    [
+      false,
+      false,
+      false,
       false,
       false
     ],
     [
+      true,
+      false,
+      false,
       false
+    ],
+    [
+      true
     ]
   ],
   "ChosenWeapons": [
     [
-      false,
-      true,
-      false
-    ],
-    [
-      false,
-      false,
-      false
-    ],
-    [
-      false,
-      false,
-      false,
-      false,
-      false
-    ],
-    [
       true,
       false,
+      false
+    ],
+    [
+      false,
       false,
       false
     ],
     [
+      false,
+      false,
+      false,
+      false,
       false
+    ],
+    [
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      true
     ]
   ],
   "OpenedAttachments": [
@@ -67,7 +67,7 @@
       [
         true,
         false,
-        false,
+        true,
         false,
         false,
         false,
@@ -75,17 +75,17 @@
         false
       ],
       [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
+        true,
+        true,
         false,
         false
       ],
       [
-        false,
+        true,
+        false
+      ],
+      [
+        true,
         false,
         false
       ]
@@ -472,7 +472,7 @@
       [
         false,
         false,
-        false,
+        true,
         false,
         false,
         false,
@@ -499,9 +499,9 @@
   "ChosenAttachments": [
     [
       0,
+      1,
       0,
-      -1,
-      -1
+      0
     ],
     [
       -1,
@@ -588,7 +588,7 @@
       -1
     ],
     [
-      -1,
+      2,
       0,
       -1,
       -1
@@ -621,6 +621,6 @@
   ],
   "OpenedLevels": [
     true,
-    true
+    false
   ]
 }

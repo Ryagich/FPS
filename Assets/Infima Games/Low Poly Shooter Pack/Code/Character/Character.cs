@@ -175,7 +175,8 @@ namespace InfimaGames.LowPolyShooterPack
 
             if (holdingButtonFire)
             {
-                if (CanPlayAnimationFire() && equippedWeapon.HasAmmunition() && equippedWeapon.IsAutomatic() && cursorLocked)
+                if (CanPlayAnimationFire() && equippedWeapon.HasAmmunition() && equippedWeapon.IsAutomatic() &&
+                    cursorLocked)
                 {
                     if (Time.time - lastShotTime > 60.0f / equippedWeapon.GetRateOfFire())
                         Fire();
@@ -342,6 +343,8 @@ namespace InfimaGames.LowPolyShooterPack
 
             if (equippedWeapon.IsBoltAction() && equippedWeapon.HasAmmunition())
                 UpdateBolt(true);
+            else
+                UpdateBolt(false);
 
             if (!equippedWeapon.HasAmmunition() && equippedWeapon.GetAutomaticallyReloadOnEmpty())
                 StartCoroutine(nameof(TryReloadAutomatic));
