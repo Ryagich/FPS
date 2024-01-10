@@ -11094,7 +11094,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _itsSpeed: 0
-  _speed: 0.5
+  _speed: 0.3
 --- !u!114 &907836357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11115,7 +11115,7 @@ MonoBehaviour:
       m_Calls: []
   <IsMoving>k__BackingField: 0
   _itsSpeed: 0
-  _speed: 0.5
+  _speed: 0.3
   _offset: 0.01
 --- !u!1 &923609739
 GameObject:

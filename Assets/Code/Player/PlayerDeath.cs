@@ -1,9 +1,13 @@
 using InfimaGames.LowPolyShooterPack;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 public class PlayerDeath : MonoBehaviour
 {
+    public UnityEvent Deaded;
+    public UnityEvent Respawned;
+
     private Transform deadScreen;
     private Character character;
     private StatsController stats;
@@ -46,6 +50,8 @@ public class PlayerDeath : MonoBehaviour
         inventory.SetMaxAmmoInWeapons();
 
         EnemyController.Instance.SetCharacter(gameObject);
+        
+        Respawned?.Invoke();
     }
 
     public void Disable()
@@ -55,5 +61,7 @@ public class PlayerDeath : MonoBehaviour
         deadScreen.gameObject.SetActive(true);
 
         EnemyController.Instance.RemoveCharacter();
+        
+        Deaded?.Invoke();
     }
 }

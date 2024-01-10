@@ -1930,6 +1930,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457a6a714a8ae9f479e22063180f4656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Deaded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8435120935727210385}
+        m_TargetAssemblyTypeName: KillEnemyCallback, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Respawned:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8435120935727210385}
+        m_TargetAssemblyTypeName: KillEnemyCallback, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8435120935727210385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1946,6 +1976,7 @@ MonoBehaviour:
   _showTime: 0.25
   _minCost: 15
   _maxCost: 40
+  _distance: 70
   _callBack: {fileID: 4106992412920482964, guid: 7cd66f69242164c41bca49c935666152,
     type: 3}
 --- !u!114 &-2759979225079892511

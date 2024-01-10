@@ -3,10 +3,13 @@ using UnityEngine;
 using YG;
 using System.Collections;
 using InfimaGames.LowPolyShooterPack;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 public class DeathmatchTypeController : MonoBehaviour
 {
+    public UnityEvent Completed;
+    
     [SerializeField] private string _reward = "Reward";
 
     private KillEnemyCallback callback;
@@ -68,6 +71,8 @@ public class DeathmatchTypeController : MonoBehaviour
         pause.Pause();
         disabler.Disable();
         holder.Complete.gameObject.SetActive(true);
+        
+        Completed?.Invoke();
     }
 
     private void EndLevel()

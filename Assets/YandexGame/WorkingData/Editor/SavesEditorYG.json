@@ -1,9 +1,9 @@
 {
-  "idSave": 32,
+  "idSave": 64,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Money": 28800,
+  "Money": 35322,
   "SceneIndex": 4,
   "DeatmatchType": 0,
   "OpenedWeapons": [
@@ -621,6 +621,6 @@
   ],
   "OpenedLevels": [
     true,
-    false
+    true
   ]
 }
