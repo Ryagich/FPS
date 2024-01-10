@@ -12,7 +12,7 @@ namespace YG
         public bool promptDone;
 
         // Ваши сохранения
-        public int Money = 40000;
+        public int Money = 3000;
         public int SceneIndex;
 
         // -1 - не дезматч; 0 - до 100 киллов; 1 - 5 мин; 2 - 10 мин;
