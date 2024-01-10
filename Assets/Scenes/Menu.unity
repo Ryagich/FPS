@@ -2621,9 +2621,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <CostsScopes>k__BackingField: f401000020030000b0040000dc050000d60600006c07000034080000c4090000
-  <CostsMuzzle>k__BackingField: 90010000200300004c04000078050000
+  <CostsMuzzle>k__BackingField: 84030000b00400004006000034080000
   <CostsLaser>k__BackingField: c8000000f4010000
-  <CostsGrip>k__BackingField: bc02000084030000b0040000
+  <CostsGrip>k__BackingField: 20030000b6030000b0040000
 --- !u!1 &178556172
 GameObject:
   m_ObjectHideFlags: 0
@@ -7549,7 +7549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _section: 2
-  Costs: c8000000e80300008b060000bc07000092090000
+  Costs: 4c04000028050000ef060000840800000a0a0000
   _parent: {fileID: 628233778}
   _sectionsMenu: {fileID: 1341846470}
   _arrows: {fileID: 1648689738}
@@ -16306,7 +16306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _section: 3
-  Costs: 00000000ee020000dc050000d0070000
+  Costs: 0000000052030000dc050000d0070000
   _parent: {fileID: 628233778}
   _sectionsMenu: {fileID: 931323512}
   _arrows: {fileID: 1648689738}
