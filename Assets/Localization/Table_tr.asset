@@ -394,6 +394,16 @@ MonoBehaviour:
     m_Localized: Basmak
     m_Metadata:
       m_Items: []
+  - m_Id: 5794172965859328
+    m_Localized: Madinat Jidina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5794086827438080
+    m_Localized: "Bir zamanlar\u0131n b\xFCy\xFCk \u015Fehri, sava\u015Fan g\xFC\xE7lerin
+      \xE7at\u0131\u015Fmas\u0131n\u0131n yeri haline geldi. T\xFCm rakipleri yok
+      edin."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -396,6 +396,15 @@ MonoBehaviour:
     m_Localized: Prensa
     m_Metadata:
       m_Items: []
+  - m_Id: 5794172965859328
+    m_Localized: Madinat Jidina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5794086827438080
+    m_Localized: "La otrora gran ciudad se convirti\xF3 en el lugar de un choque
+      de fuerzas en guerra. Destruye a todos los oponentes."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

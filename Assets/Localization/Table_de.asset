@@ -399,6 +399,15 @@ MonoBehaviour:
     m_Localized: "Dr\xFCcken Sie"
     m_Metadata:
       m_Items: []
+  - m_Id: 5794086827438080
+    m_Localized: "Die einst gro\xDFe Stadt wurde zum Schauplatz eines Zusammensto\xDFes
+      verfeindeter Kr\xE4fte. Zerst\xF6re alle Gegner."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5794172965859328
+    m_Localized: Madinat Jidina
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
