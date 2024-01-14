@@ -414,6 +414,15 @@ MonoBehaviour:
 '
     m_Metadata:
       m_Items: []
+  - m_Id: 5794086827438080
+    m_Localized: The once great city became the site of a clash of warring forces.
+      Destroy all opponents.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5794172965859328
+    m_Localized: Madinat Jidina
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
