@@ -1,117 +1,329 @@
 fileFormatVersion: 2
 guid: ccbe109d3a5ab5642bbf68f7e42ae671
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: FpsChar_Head_Bone
-    100004: FpsChar_LArm_Lower_Bone
-    100006: FpsChar_LArm_Shoulder_Bone
-    100008: FpsChar_LArm_Upper_Bone
-    100010: FpsChar_LHand_Bone
-    100012: FpsChar_LHand_F1_Index01_Bone
-    100014: FpsChar_LHand_F1_Index02_Bone
-    100016: FpsChar_LHand_F1_Index03_Bone
-    100018: FpsChar_LHand_F2_Middle01_Bone
-    100020: FpsChar_LHand_F2_Middle02_Bone
-    100022: FpsChar_LHand_F2_Middle03_Bone
-    100024: FpsChar_LHand_F3_Ring01_Bone
-    100026: FpsChar_LHand_F3_Ring02_Bone
-    100028: FpsChar_LHand_F3_Ring03_Bone
-    100030: FpsChar_LHand_F4_Pinky01_Bone
-    100032: FpsChar_LHand_F4_Pinky02_Bone
-    100034: FpsChar_LHand_F4_Pinky03_Bone
-    100036: FpsChar_LHand_Thumb01_Bone
-    100038: FpsChar_LHand_Thumb02_Bone
-    100040: FpsChar_LHand_Thumb03_Bone
-    100042: FpsChar_LLeg_Foot_Bone
-    100044: FpsChar_LLeg_Lower_Bone
-    100046: FpsChar_LLeg_Toes_Bone
-    100048: FpsChar_LLeg_Upper_Bone
-    100050: FpsChar_Neck_Bone
-    100052: FpsChar_Pelvis_Bone
-    100054: FpsChar_RArm_Lower_Bone
-    100056: FpsChar_RArm_Shoulder_Bone
-    100058: FpsChar_RArm_Upper_Bone
-    100060: FpsChar_RHand_Bone
-    100062: FpsChar_RHand_F1_Index01_Bone
-    100064: FpsChar_RHand_F1_Index02_Bone
-    100066: FpsChar_RHand_F1_Index03_Bone
-    100068: FpsChar_RHand_F2_Middle01_Bone
-    100070: FpsChar_RHand_F2_Middle02_Bone
-    100072: FpsChar_RHand_F2_Middle03_Bone
-    100074: FpsChar_RHand_F3_Ring01_Bone
-    100076: FpsChar_RHand_F3_Ring02_Bone
-    100078: FpsChar_RHand_F3_Ring03_Bone
-    100080: FpsChar_RHand_F4_Pinky01_Bone
-    100082: FpsChar_RHand_F4_Pinky02_Bone
-    100084: FpsChar_RHand_F4_Pinky03_Bone
-    100086: FpsChar_RHand_Thumb01_Bone
-    100088: FpsChar_RHand_Thumb02_Bone
-    100090: FpsChar_RHand_Thumb03_Bone
-    100092: FpsChar_RLeg_Foot_Bone
-    100094: FpsChar_RLeg_Lower_Bone
-    100096: FpsChar_RLeg_Toes_Bone
-    100098: FpsChar_RLeg_Upper_Bone
-    100100: FpsChar_Spine_Bone
-    100102: FpsChar_Torso_Bone
-    400000: //RootNode
-    400002: FpsChar_Head_Bone
-    400004: FpsChar_LArm_Lower_Bone
-    400006: FpsChar_LArm_Shoulder_Bone
-    400008: FpsChar_LArm_Upper_Bone
-    400010: FpsChar_LHand_Bone
-    400012: FpsChar_LHand_F1_Index01_Bone
-    400014: FpsChar_LHand_F1_Index02_Bone
-    400016: FpsChar_LHand_F1_Index03_Bone
-    400018: FpsChar_LHand_F2_Middle01_Bone
-    400020: FpsChar_LHand_F2_Middle02_Bone
-    400022: FpsChar_LHand_F2_Middle03_Bone
-    400024: FpsChar_LHand_F3_Ring01_Bone
-    400026: FpsChar_LHand_F3_Ring02_Bone
-    400028: FpsChar_LHand_F3_Ring03_Bone
-    400030: FpsChar_LHand_F4_Pinky01_Bone
-    400032: FpsChar_LHand_F4_Pinky02_Bone
-    400034: FpsChar_LHand_F4_Pinky03_Bone
-    400036: FpsChar_LHand_Thumb01_Bone
-    400038: FpsChar_LHand_Thumb02_Bone
-    400040: FpsChar_LHand_Thumb03_Bone
-    400042: FpsChar_LLeg_Foot_Bone
-    400044: FpsChar_LLeg_Lower_Bone
-    400046: FpsChar_LLeg_Toes_Bone
-    400048: FpsChar_LLeg_Upper_Bone
-    400050: FpsChar_Neck_Bone
-    400052: FpsChar_Pelvis_Bone
-    400054: FpsChar_RArm_Lower_Bone
-    400056: FpsChar_RArm_Shoulder_Bone
-    400058: FpsChar_RArm_Upper_Bone
-    400060: FpsChar_RHand_Bone
-    400062: FpsChar_RHand_F1_Index01_Bone
-    400064: FpsChar_RHand_F1_Index02_Bone
-    400066: FpsChar_RHand_F1_Index03_Bone
-    400068: FpsChar_RHand_F2_Middle01_Bone
-    400070: FpsChar_RHand_F2_Middle02_Bone
-    400072: FpsChar_RHand_F2_Middle03_Bone
-    400074: FpsChar_RHand_F3_Ring01_Bone
-    400076: FpsChar_RHand_F3_Ring02_Bone
-    400078: FpsChar_RHand_F3_Ring03_Bone
-    400080: FpsChar_RHand_F4_Pinky01_Bone
-    400082: FpsChar_RHand_F4_Pinky02_Bone
-    400084: FpsChar_RHand_F4_Pinky03_Bone
-    400086: FpsChar_RHand_Thumb01_Bone
-    400088: FpsChar_RHand_Thumb02_Bone
-    400090: FpsChar_RHand_Thumb03_Bone
-    400092: FpsChar_RLeg_Foot_Bone
-    400094: FpsChar_RLeg_Lower_Bone
-    400096: FpsChar_RLeg_Toes_Bone
-    400098: FpsChar_RLeg_Upper_Bone
-    400100: FpsChar_Spine_Bone
-    400102: FpsChar_Torso_Bone
-    7400000: Idle
-    9500000: //RootNode
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: FpsChar_Head_Bone
+  - first:
+      1: 100004
+    second: FpsChar_LArm_Lower_Bone
+  - first:
+      1: 100006
+    second: FpsChar_LArm_Shoulder_Bone
+  - first:
+      1: 100008
+    second: FpsChar_LArm_Upper_Bone
+  - first:
+      1: 100010
+    second: FpsChar_LHand_Bone
+  - first:
+      1: 100012
+    second: FpsChar_LHand_F1_Index01_Bone
+  - first:
+      1: 100014
+    second: FpsChar_LHand_F1_Index02_Bone
+  - first:
+      1: 100016
+    second: FpsChar_LHand_F1_Index03_Bone
+  - first:
+      1: 100018
+    second: FpsChar_LHand_F2_Middle01_Bone
+  - first:
+      1: 100020
+    second: FpsChar_LHand_F2_Middle02_Bone
+  - first:
+      1: 100022
+    second: FpsChar_LHand_F2_Middle03_Bone
+  - first:
+      1: 100024
+    second: FpsChar_LHand_F3_Ring01_Bone
+  - first:
+      1: 100026
+    second: FpsChar_LHand_F3_Ring02_Bone
+  - first:
+      1: 100028
+    second: FpsChar_LHand_F3_Ring03_Bone
+  - first:
+      1: 100030
+    second: FpsChar_LHand_F4_Pinky01_Bone
+  - first:
+      1: 100032
+    second: FpsChar_LHand_F4_Pinky02_Bone
+  - first:
+      1: 100034
+    second: FpsChar_LHand_F4_Pinky03_Bone
+  - first:
+      1: 100036
+    second: FpsChar_LHand_Thumb01_Bone
+  - first:
+      1: 100038
+    second: FpsChar_LHand_Thumb02_Bone
+  - first:
+      1: 100040
+    second: FpsChar_LHand_Thumb03_Bone
+  - first:
+      1: 100042
+    second: FpsChar_LLeg_Foot_Bone
+  - first:
+      1: 100044
+    second: FpsChar_LLeg_Lower_Bone
+  - first:
+      1: 100046
+    second: FpsChar_LLeg_Toes_Bone
+  - first:
+      1: 100048
+    second: FpsChar_LLeg_Upper_Bone
+  - first:
+      1: 100050
+    second: FpsChar_Neck_Bone
+  - first:
+      1: 100052
+    second: FpsChar_Pelvis_Bone
+  - first:
+      1: 100054
+    second: FpsChar_RArm_Lower_Bone
+  - first:
+      1: 100056
+    second: FpsChar_RArm_Shoulder_Bone
+  - first:
+      1: 100058
+    second: FpsChar_RArm_Upper_Bone
+  - first:
+      1: 100060
+    second: FpsChar_RHand_Bone
+  - first:
+      1: 100062
+    second: FpsChar_RHand_F1_Index01_Bone
+  - first:
+      1: 100064
+    second: FpsChar_RHand_F1_Index02_Bone
+  - first:
+      1: 100066
+    second: FpsChar_RHand_F1_Index03_Bone
+  - first:
+      1: 100068
+    second: FpsChar_RHand_F2_Middle01_Bone
+  - first:
+      1: 100070
+    second: FpsChar_RHand_F2_Middle02_Bone
+  - first:
+      1: 100072
+    second: FpsChar_RHand_F2_Middle03_Bone
+  - first:
+      1: 100074
+    second: FpsChar_RHand_F3_Ring01_Bone
+  - first:
+      1: 100076
+    second: FpsChar_RHand_F3_Ring02_Bone
+  - first:
+      1: 100078
+    second: FpsChar_RHand_F3_Ring03_Bone
+  - first:
+      1: 100080
+    second: FpsChar_RHand_F4_Pinky01_Bone
+  - first:
+      1: 100082
+    second: FpsChar_RHand_F4_Pinky02_Bone
+  - first:
+      1: 100084
+    second: FpsChar_RHand_F4_Pinky03_Bone
+  - first:
+      1: 100086
+    second: FpsChar_RHand_Thumb01_Bone
+  - first:
+      1: 100088
+    second: FpsChar_RHand_Thumb02_Bone
+  - first:
+      1: 100090
+    second: FpsChar_RHand_Thumb03_Bone
+  - first:
+      1: 100092
+    second: FpsChar_RLeg_Foot_Bone
+  - first:
+      1: 100094
+    second: FpsChar_RLeg_Lower_Bone
+  - first:
+      1: 100096
+    second: FpsChar_RLeg_Toes_Bone
+  - first:
+      1: 100098
+    second: FpsChar_RLeg_Upper_Bone
+  - first:
+      1: 100100
+    second: FpsChar_Spine_Bone
+  - first:
+      1: 100102
+    second: FpsChar_Torso_Bone
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: FpsChar_Head_Bone
+  - first:
+      4: 400004
+    second: FpsChar_LArm_Lower_Bone
+  - first:
+      4: 400006
+    second: FpsChar_LArm_Shoulder_Bone
+  - first:
+      4: 400008
+    second: FpsChar_LArm_Upper_Bone
+  - first:
+      4: 400010
+    second: FpsChar_LHand_Bone
+  - first:
+      4: 400012
+    second: FpsChar_LHand_F1_Index01_Bone
+  - first:
+      4: 400014
+    second: FpsChar_LHand_F1_Index02_Bone
+  - first:
+      4: 400016
+    second: FpsChar_LHand_F1_Index03_Bone
+  - first:
+      4: 400018
+    second: FpsChar_LHand_F2_Middle01_Bone
+  - first:
+      4: 400020
+    second: FpsChar_LHand_F2_Middle02_Bone
+  - first:
+      4: 400022
+    second: FpsChar_LHand_F2_Middle03_Bone
+  - first:
+      4: 400024
+    second: FpsChar_LHand_F3_Ring01_Bone
+  - first:
+      4: 400026
+    second: FpsChar_LHand_F3_Ring02_Bone
+  - first:
+      4: 400028
+    second: FpsChar_LHand_F3_Ring03_Bone
+  - first:
+      4: 400030
+    second: FpsChar_LHand_F4_Pinky01_Bone
+  - first:
+      4: 400032
+    second: FpsChar_LHand_F4_Pinky02_Bone
+  - first:
+      4: 400034
+    second: FpsChar_LHand_F4_Pinky03_Bone
+  - first:
+      4: 400036
+    second: FpsChar_LHand_Thumb01_Bone
+  - first:
+      4: 400038
+    second: FpsChar_LHand_Thumb02_Bone
+  - first:
+      4: 400040
+    second: FpsChar_LHand_Thumb03_Bone
+  - first:
+      4: 400042
+    second: FpsChar_LLeg_Foot_Bone
+  - first:
+      4: 400044
+    second: FpsChar_LLeg_Lower_Bone
+  - first:
+      4: 400046
+    second: FpsChar_LLeg_Toes_Bone
+  - first:
+      4: 400048
+    second: FpsChar_LLeg_Upper_Bone
+  - first:
+      4: 400050
+    second: FpsChar_Neck_Bone
+  - first:
+      4: 400052
+    second: FpsChar_Pelvis_Bone
+  - first:
+      4: 400054
+    second: FpsChar_RArm_Lower_Bone
+  - first:
+      4: 400056
+    second: FpsChar_RArm_Shoulder_Bone
+  - first:
+      4: 400058
+    second: FpsChar_RArm_Upper_Bone
+  - first:
+      4: 400060
+    second: FpsChar_RHand_Bone
+  - first:
+      4: 400062
+    second: FpsChar_RHand_F1_Index01_Bone
+  - first:
+      4: 400064
+    second: FpsChar_RHand_F1_Index02_Bone
+  - first:
+      4: 400066
+    second: FpsChar_RHand_F1_Index03_Bone
+  - first:
+      4: 400068
+    second: FpsChar_RHand_F2_Middle01_Bone
+  - first:
+      4: 400070
+    second: FpsChar_RHand_F2_Middle02_Bone
+  - first:
+      4: 400072
+    second: FpsChar_RHand_F2_Middle03_Bone
+  - first:
+      4: 400074
+    second: FpsChar_RHand_F3_Ring01_Bone
+  - first:
+      4: 400076
+    second: FpsChar_RHand_F3_Ring02_Bone
+  - first:
+      4: 400078
+    second: FpsChar_RHand_F3_Ring03_Bone
+  - first:
+      4: 400080
+    second: FpsChar_RHand_F4_Pinky01_Bone
+  - first:
+      4: 400082
+    second: FpsChar_RHand_F4_Pinky02_Bone
+  - first:
+      4: 400084
+    second: FpsChar_RHand_F4_Pinky03_Bone
+  - first:
+      4: 400086
+    second: FpsChar_RHand_Thumb01_Bone
+  - first:
+      4: 400088
+    second: FpsChar_RHand_Thumb02_Bone
+  - first:
+      4: 400090
+    second: FpsChar_RHand_Thumb03_Bone
+  - first:
+      4: 400092
+    second: FpsChar_RLeg_Foot_Bone
+  - first:
+      4: 400094
+    second: FpsChar_RLeg_Lower_Bone
+  - first:
+      4: 400096
+    second: FpsChar_RLeg_Toes_Bone
+  - first:
+      4: 400098
+    second: FpsChar_RLeg_Upper_Bone
+  - first:
+      4: 400100
+    second: FpsChar_Spine_Bone
+  - first:
+      4: 400102
+    second: FpsChar_Torso_Bone
+  - first:
+      74: 7400000
+    second: Idle
+  - first:
+      95: 9500000
+    second: //RootNode
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -120,9 +332,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -140,6 +351,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Idle
       takeName: Take 001
+      internalID: 0
       firstFrame: 0
       lastFrame: 300
       wrapMode: 0
@@ -169,34 +381,51 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 1
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 1
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human:
     - boneName: FpsChar_Pelvis_Bone
       humanName: Hips
@@ -882,15 +1111,20 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: ece08e40b586c7e4eb8429c60b5cbd80,
     type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
