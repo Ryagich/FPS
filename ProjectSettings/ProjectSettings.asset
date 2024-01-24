@@ -138,7 +138,6 @@ PlayerSettings:
   bundleVersion: 1.1.2.1
   preloadedAssets:
   - {fileID: 11400000, guid: 0572c34014460124883612544df7f04e, type: 2}
-  - {fileID: 11400000, guid: 9eb07e2d669e9c94e9d7d3c782a916f7, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -618,7 +617,7 @@ PlayerSettings:
   webGLDecompressionFallback: 1
   webGLInitialMemorySize: 32
   webGLMaximumMemorySize: 2048
-  webGLMemoryGrowthMode: 1
+  webGLMemoryGrowthMode: 2
   webGLMemoryLinearGrowthStep: 16
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
