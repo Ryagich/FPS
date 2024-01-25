@@ -1,10 +1,10 @@
 {
-  "idSave": 147,
+  "idSave": 165,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Money": 30222,
-  "SceneIndex": 5,
+  "Money": 28902,
+  "SceneIndex": 2,
   "DeatmatchType": 0,
   "OpenedWeapons": [
     [
@@ -19,7 +19,7 @@
     ],
     [
       false,
-      false,
+      true,
       false,
       false,
       false
@@ -36,8 +36,8 @@
   ],
   "ChosenWeapons": [
     [
-      true,
       false,
+      true,
       false
     ],
     [
