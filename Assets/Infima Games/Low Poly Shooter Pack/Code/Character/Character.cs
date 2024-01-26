@@ -85,6 +85,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         [Tooltip("If true, the aiming input has to be held to be active.")] [SerializeField]
         private bool holdToAim = true;
+        public bool CanPause = true;
 
         private bool aiming;
         private bool wasAiming;
@@ -99,7 +100,7 @@ namespace InfimaGames.LowPolyShooterPack
         private WeaponAttachmentManagerBehaviour weaponAttachmentManager;
         private ScopeBehaviour equippedWeaponScope;
         private MagazineBehaviour equippedWeaponMagazine;
-        private bool reloading;
+        public bool reloading;
         private bool inspecting;
         private bool throwingGrenade;
         private bool meleeing;
@@ -118,8 +119,6 @@ namespace InfimaGames.LowPolyShooterPack
         public bool cursorLocked;
         private int shotsFired;
         private bool canSwitchWeaponState = false;
-
-        #region UNITY
 
         public static Character Instance;
 
@@ -142,11 +141,8 @@ namespace InfimaGames.LowPolyShooterPack
             if (knife != null)
                 knife.SetActive(false);
 
-            //Cache a reference to the holster layer's index.
             layerHolster = characterAnimator.GetLayerIndex("Layer Holster");
-            //Cache a reference to the action layer's index.
             layerActions = characterAnimator.GetLayerIndex("Layer Actions");
-            //Cache a reference to the overlay layer's index.
             layerOverlay = characterAnimator.GetLayerIndex("Layer Overlay");
         }
 
@@ -187,7 +183,6 @@ namespace InfimaGames.LowPolyShooterPack
                 }
             }
 
-            //Update Animator.
             UpdateAnimator();
 
             //Update Aiming Alpha. We need to get this here because we're using the Animator to interpolate the aiming value.
@@ -210,11 +205,8 @@ namespace InfimaGames.LowPolyShooterPack
             cameraDepth.fieldOfView = Mathf.Lerp(fieldOfViewWeapon,
                 fieldOfViewWeapon * equippedWeapon.GetFieldOfViewMultiplierAimWeapon(), aimingAlpha);
 
-            //Save Aiming Value.
             wasAiming = aiming;
         }
-
-        #endregion
 
         #region GETTERS
 
@@ -937,7 +929,6 @@ namespace InfimaGames.LowPolyShooterPack
             }
         }
 
-        public bool CanPause = true;
 
         public void OnLockCursor()
         {

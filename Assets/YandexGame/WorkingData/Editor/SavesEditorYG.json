@@ -1,5 +1,5 @@
 {
-  "idSave": 165,
+  "idSave": 173,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
@@ -37,11 +37,11 @@
   "ChosenWeapons": [
     [
       false,
-      true,
+      false,
       false
     ],
     [
-      false,
+      true,
       false,
       false
     ],

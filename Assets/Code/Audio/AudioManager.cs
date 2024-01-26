@@ -11,7 +11,10 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource _playerEffectsPref;
     [SerializeField] private AudioSource _itemEffectsPref;
     [SerializeField] private AudioSource _stepEffectsPref;
-    [FormerlySerializedAs("_EnemyShootPref")] [SerializeField] private AudioSource _ShootPref;
+
+    [FormerlySerializedAs("_EnemyShootPref")] [SerializeField]
+    private AudioSource _ShootPref;
+
     [SerializeField] private List<AudioSource> _sounds;
 
     private bool isPause;

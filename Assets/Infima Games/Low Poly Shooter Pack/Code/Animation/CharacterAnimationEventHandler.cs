@@ -4,39 +4,16 @@ using UnityEngine;
 
 namespace InfimaGames.LowPolyShooterPack
 {
-	/// <summary>
-	/// Handles all the animation events that come from the character in the asset.
-	/// </summary>
 	public class CharacterAnimationEventHandler : MonoBehaviour
 	{
-		#region FIELDS
-
-		/// <summary>
-        /// Character Component Reference.
-        /// </summary>
-        private CharacterBehaviour playerCharacter;
-
-		#endregion
-
-		#region UNITY
-
-		private void Awake()
-		{
-			//Grab a reference to the character component.
-			playerCharacter = ServiceLocator.Current.Get<IGameModeService>().GetPlayerCharacter();
-		}
-
-		#endregion
-
-		#region ANIMATION
+        [SerializeField]private CharacterBehaviour playerCharacter;
 
 		/// <summary>
 		/// Ejects a casing from the character's equipped weapon. This function is called from an Animation Event.
 		/// </summary>
 		private void OnEjectCasing()
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.EjectCasing();
 		}
 
@@ -46,8 +23,7 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private void OnAmmunitionFill(int amount = 0)
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.FillAmmunition(amount);
 		}
 		/// <summary>
@@ -55,8 +31,7 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private void OnSetActiveKnife(int active)
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.SetActiveKnife(active);
 		}
 		
@@ -65,8 +40,7 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private void OnGrenade()
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.Grenade();
 		}
 		/// <summary>
@@ -74,8 +48,7 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private void OnSetActiveMagazine(int active)
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.SetActiveMagazine(active);
 		}
 
@@ -84,8 +57,7 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private void OnAnimationEndedBolt()
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.AnimationEndedBolt();
 		}
 		/// <summary>
@@ -93,8 +65,7 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private void OnAnimationEndedReload()
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.AnimationEndedReload();
 		}
 
@@ -103,8 +74,7 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private void OnAnimationEndedGrenadeThrow()
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.AnimationEndedGrenadeThrow();
 		}
 		/// <summary>
@@ -112,8 +82,7 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private void OnAnimationEndedMelee()
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.AnimationEndedMelee();
 		}
 
@@ -122,8 +91,7 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private void OnAnimationEndedInspect()
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.AnimationEndedInspect();
 		}
 		/// <summary>
@@ -131,8 +99,7 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private void OnAnimationEndedHolster()
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.AnimationEndedHolster();
 		}
 
@@ -141,11 +108,8 @@ namespace InfimaGames.LowPolyShooterPack
 		/// </summary>
 		private void OnSlideBack(int back)
 		{
-			//Notify the character.
-			if(playerCharacter != null)
+			//if(playerCharacter != null)
 				playerCharacter.SetSlideBack(back);
 		}
-
-		#endregion
 	}   
 }
