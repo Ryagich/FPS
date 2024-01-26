@@ -85,6 +85,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         [Tooltip("If true, the aiming input has to be held to be active.")] [SerializeField]
         private bool holdToAim = true;
+
         public bool CanPause = true;
 
         private bool aiming;
@@ -110,7 +111,7 @@ namespace InfimaGames.LowPolyShooterPack
         private float runningAlpha;
         private Vector2 axisLook;
         private Vector2 axisMovement;
-        private bool bolting;
+        public bool bolting;
         private int grenadeCount;
         private bool holdingButtonAim;
         private bool holdingButtonRun;
@@ -333,7 +334,7 @@ namespace InfimaGames.LowPolyShooterPack
             const string stateName = "Fire";
             characterAnimator.CrossFade(stateName, 0.05f, layerOverlay, 0);
 
-            if (equippedWeapon.IsBoltAction() && equippedWeapon.HasAmmunition())
+            if (equippedWeapon.IsBoltAction() && !bolting && equippedWeapon.HasAmmunition())
                 UpdateBolt(true);
 
             if (!equippedWeapon.HasAmmunition() && equippedWeapon.GetAutomaticallyReloadOnEmpty())
