@@ -12,6 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _GLOSSYREFLECTIONS_OFF
   - _NORMALMAP
   - _SPECGLOSSMAP
   m_InvalidKeywords: []
@@ -46,7 +47,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 707ed2a3d8fcedf44bb64c7965d4328f, type: 3}
+        m_Texture: {fileID: 2800000, guid: aa61f37a12589b24594500cecf8c5917, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -62,7 +63,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
-        m_Texture: {fileID: 2800000, guid: 707ed2a3d8fcedf44bb64c7965d4328f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 105e13bc2d014614582fe1eca44aa0cc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -73,8 +74,8 @@ Material:
     - _DstBlend: 0
     - _GlossMapScale: 0.5
     - _Glossiness: 0.25
-    - _GlossyReflections: 1
-    - _Metallic: 0.1
+    - _GlossyReflections: 0
+    - _Metallic: 0.5
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
