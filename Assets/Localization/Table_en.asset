@@ -423,6 +423,15 @@ MonoBehaviour:
     m_Localized: Madinat Jidina
     m_Metadata:
       m_Items: []
+  - m_Id: 10527024316002304
+    m_Localized: Black Hawk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10527039700709376
+    m_Localized: The place where our bird crashed attracts those who want to profit
+      from goodness. Get rid of them.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -408,6 +408,11 @@ MonoBehaviour:
     m_Localized: Madinat Jidina
     m_Metadata:
       m_Items: []
+  - m_Id: 10527039700709376
+    m_Localized: "Der Ort, an dem unser Vogel abgest\xFCrzt ist, zieht diejenigen
+      an, die vom Guten profitieren wollen. Sie loswerden."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

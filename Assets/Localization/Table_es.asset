@@ -405,6 +405,11 @@ MonoBehaviour:
       de fuerzas en guerra. Destruye a todos los oponentes."
     m_Metadata:
       m_Items: []
+  - m_Id: 10527039700709376
+    m_Localized: "El lugar donde se estrell\xF3 nuestro p\xE1jaro atrae a quienes
+      quieren beneficiarse del bien. Deshazte de ellos."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

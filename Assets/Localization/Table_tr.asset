@@ -404,6 +404,11 @@ MonoBehaviour:
       edin."
     m_Metadata:
       m_Items: []
+  - m_Id: 10527039700709376
+    m_Localized: "Ku\u015Fumuzun d\xFC\u015Ft\xFC\u011F\xFC yer iyiliklerden yararlanmak
+      isteyenlerin ilgisini \xE7ekiyor. Onlardan kurtulmak."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
