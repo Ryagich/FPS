@@ -473,6 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7170d51de97d79e4fb11d3321667acb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammunitionCurrent: 0
   weaponName: Sniper 02
   multiplierMovementSpeed: 0.8
   automatic: 0
@@ -507,7 +508,6 @@ MonoBehaviour:
   <DropWeapon>k__BackingField: {fileID: 5588089466749444907, guid: 7ad7aeab2a18fb3468e895be34df3997,
     type: 3}
   <AmmoType>k__BackingField: 0
-  ammunitionCurrent: 0
 --- !u!114 &9116845346348752071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,6 +1416,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551271041699666340, guid: c472be678311843468e98214f36dec77,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6164686463225531250, guid: c472be678311843468e98214f36dec77,
         type: 3}

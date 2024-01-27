@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7170d51de97d79e4fb11d3321667acb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammunitionCurrent: 0
   weaponName: Assault Rifle 03
   multiplierMovementSpeed: 1
   automatic: 1
@@ -237,7 +238,6 @@ MonoBehaviour:
   <DropWeapon>k__BackingField: {fileID: 7815969848972636171, guid: 2c7292383ec9263478d53bb80b3e15ae,
     type: 3}
   <AmmoType>k__BackingField: 1
-  ammunitionCurrent: 0
 --- !u!114 &8813108788367931271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1114,6 +1114,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 4428515403314268477, guid: c472be678311843468e98214f36dec77,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4985362730852038044, guid: c472be678311843468e98214f36dec77,
         type: 3}
       propertyPath: m_Layer
@@ -1128,6 +1133,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551271041699666340, guid: c472be678311843468e98214f36dec77,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6164686463225531250, guid: c472be678311843468e98214f36dec77,
         type: 3}

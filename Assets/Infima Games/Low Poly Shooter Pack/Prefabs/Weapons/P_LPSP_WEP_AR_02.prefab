@@ -532,6 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7170d51de97d79e4fb11d3321667acb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammunitionCurrent: 0
   weaponName: Assault Rifle 02
   multiplierMovementSpeed: 1
   automatic: 1
@@ -566,7 +567,6 @@ MonoBehaviour:
   <DropWeapon>k__BackingField: {fileID: 1557612225581026735, guid: d9c8553b78f12924386fa921b5002f9c,
     type: 3}
   <AmmoType>k__BackingField: 1
-  ammunitionCurrent: 0
 --- !u!114 &2001368087282464131
 MonoBehaviour:
   m_ObjectHideFlags: 0
