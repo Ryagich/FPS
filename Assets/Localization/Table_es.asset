@@ -410,6 +410,10 @@ MonoBehaviour:
       quieren beneficiarse del bien. Deshazte de ellos."
     m_Metadata:
       m_Items: []
+  - m_Id: 10527024316002304
+    m_Localized: "Halc\xF3n Negro"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

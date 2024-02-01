@@ -409,6 +409,10 @@ MonoBehaviour:
       isteyenlerin ilgisini \xE7ekiyor. Onlardan kurtulmak."
     m_Metadata:
       m_Items: []
+  - m_Id: 10527024316002304
+    m_Localized: "Kara \u015Eahin"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
