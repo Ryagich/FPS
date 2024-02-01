@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using YG;
 
 public class YaStatsLoaded : MonoBehaviour
@@ -15,11 +16,13 @@ public class YaStatsLoaded : MonoBehaviour
             YandexGame.GetDataEvent += SendLoadedYaEvent;
         }
     }
+
     private void SendLoadedYaEvent()
     {
+        var triggerValue = $"Scene:{SceneManager.GetActiveScene().name} ";
         var eventParams = new Dictionary<string, string>
         {
-            { "loaded", "loaded" }
+            { "loaded", triggerValue }
         };
         YandexMetrica.Send("loaded", eventParams);
     }
