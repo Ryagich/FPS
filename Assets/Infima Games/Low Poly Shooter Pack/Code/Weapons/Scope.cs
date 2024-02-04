@@ -101,9 +101,9 @@ namespace InfimaGames.LowPolyShooterPack
                 return;
             
             camera.gameObject.SetActive(true);
-            var materials = meshRenderer.materials;
-            materials[materialIndex] = materialDefault;
-            meshRenderer.materials = materials;
+             var materials = meshRenderer.materials;
+             materials[materialIndex] = materialDefault;
+             meshRenderer.materials = materials;
         }
 
         public override void OnAimStop()

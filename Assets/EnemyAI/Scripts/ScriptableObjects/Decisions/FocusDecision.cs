@@ -46,7 +46,7 @@ public class FocusDecision : Decision
         var targets = GetTargetsInRadius(controller, radius);
         var bestTarget = GetBestTarget(controller, targets);
 
-        if (!bestTarget|| !controller.variables.feelAlert)
+        if (!bestTarget || !controller.variables.feelAlert)
             return false;
 
         if (invalidateCoverSpot)
@@ -77,7 +77,12 @@ public class FocusDecision : Decision
                 closest = target;
             }
         }
-
+        Debug.Log($"targets count {targets.Length}");
+        Debug.Log($"filtered count {filtered.Length}");
+        if (closest)
+            Debug.Log(closest.name);
+        else
+            Debug.Log("I havent closest");
         return closest;
     }
 }

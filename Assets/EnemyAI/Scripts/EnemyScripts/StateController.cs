@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Serialization;
@@ -63,7 +64,7 @@ namespace EnemyAI
         private static Dictionary<int, Vector3> coverSpot; // The cover position for each NPC, if any.
         private bool strafing; // Is the NPC strafing?
         private bool aiming; // Is the NPC aiming?
-        private bool checkedOnLoop, blockedSight; // Blocked sight test related variables.
+        private Dictionary<Transform, float> raycastDistance = new(); // Blocked sight test related variables.
 
         public List<Collider> MyColliders;
 
@@ -78,6 +79,7 @@ namespace EnemyAI
             var t = newTarget.GetComponent<TargetHolder>().Target;
             if (!Targets.Contains(t))
                 Targets.Add(t);
+            raycastDistance.TryAdd(t, -1);
         }
 
         public void RemoveTarget(Transform oldTarget)
@@ -85,6 +87,8 @@ namespace EnemyAI
             var t = oldTarget.GetComponent<TargetHolder>().Target;
             if (Targets.Contains(t))
                 Targets.Remove(t);
+            if (raycastDistance.ContainsKey(t))
+                raycastDistance.Remove(t);
         }
 
         // Get and Set current cover spot.
@@ -138,7 +142,7 @@ namespace EnemyAI
             magBullets = bullets;
             variables.shotsInRound = maximumBurst;
             // Near sense radius is half of perception radius.
-            nearRadius = 0;
+            nearRadius = perceptionRadius/2;
             // Get/create Game Controller.
             var gameController = GameObject.FindGameObjectWithTag("GameController");
             if (gameController == null)
@@ -161,10 +165,17 @@ namespace EnemyAI
         {
             currentState.OnEnableActions(this);
         }
-        
+
+        public bool _log;
+
         protected override void Run()
         {
-            checkedOnLoop = false;
+            foreach (var key in Targets)
+            {
+                raycastDistance[key] = -1;
+            }
+
+            //checkedOnLoop = false;
             if (!aiActive)
                 return;
             currentState.DoActions(this);
@@ -221,22 +232,29 @@ namespace EnemyAI
         // The common cast to target test, used by decisions that is based on NPC senses.
         public bool BlockedSight(Transform target)
         {
+            var checkedOnLoop = raycastDistance.ContainsKey(target) && raycastDistance[target] > 0;
             // The test was already performed on that game loop iteration?
             if (!checkedOnLoop)
             {
-                checkedOnLoop = true;
+                // checkedOnLoop = true;
 
                 // Get cast to target parameters.
                 var castOrigin = transform.position + Vector3.up * generalStats.aboveCoverHeight;
                 var dirToTarget = target.position - castOrigin;
 
                 // Hit anything other than target? Uses cover and obstacle masks.
-                blockedSight =
-                    Physics.Raycast(castOrigin, dirToTarget, out var hit, dirToTarget.magnitude,
-                        generalStats.coverMask | generalStats.obstacleMask);
+                var isBlocked = Physics.Raycast(castOrigin, dirToTarget, out var hit, dirToTarget.magnitude,
+                    generalStats.coverMask | generalStats.obstacleMask);
+                raycastDistance[target] = isBlocked ?  hit.distance: 0;
+                if (_log && isBlocked)
+                {
+                    Debug.Log(hit.collider.gameObject.name);
+                    Debug.DrawRay(castOrigin, dirToTarget);
+                }
             }
+            // Debug.Log(raycastDistance[target] != 0);
 
-            return blockedSight;
+            return raycastDistance[target] != 0;
         }
 
         public float DistanceTo(Transform t) => Vector3.Distance(transform.position, t.position);

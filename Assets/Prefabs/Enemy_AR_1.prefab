@@ -2066,6 +2066,7 @@ MonoBehaviour:
   coverLookup: {fileID: 0}
   personalTarget: {x: 0, y: 0, z: 0}
   MyColliders: []
+  _log: 0
   LastTarget: {fileID: 0}
 --- !u!114 &3887845070864410967
 MonoBehaviour:

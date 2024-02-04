@@ -57,6 +57,8 @@ namespace EnemyAI
 				// If a transition was performed to another state, trigger on enable for all actions of new state.
 				if (controller.currentState != this)
 				{
+					if(controller._log)
+						Debug.Log($" from {name} to {controller.currentState.name} \n using {decision} {transitions[i].decision.name}");
 					controller.currentState.OnEnableActions(controller);
 					// No need to check remaining transitions.
 					break;
