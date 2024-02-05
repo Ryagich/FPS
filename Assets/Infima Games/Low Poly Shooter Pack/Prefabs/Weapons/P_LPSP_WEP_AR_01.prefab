@@ -1741,6 +1741,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 4344479955153924831, guid: 613eeb9dc59c9934392391ae63fffa9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4359136084285236088, guid: 613eeb9dc59c9934392391ae63fffa9d,
         type: 3}
       propertyPath: sprite

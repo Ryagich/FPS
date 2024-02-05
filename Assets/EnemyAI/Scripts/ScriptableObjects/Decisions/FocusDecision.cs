@@ -79,10 +79,10 @@ public class FocusDecision : Decision
         }
         //Debug.Log($"targets count {targets.Length}");
         //Debug.Log($"filtered count {filtered.Length}");
-        if (closest)
-            Debug.Log(closest.name);
-        else
-            Debug.Log("I havent closest");
+        //if (closest)
+        //   Debug.Log(closest.name);
+       // else
+        //    Debug.Log("I havent closest");
         return closest;
     }
 }
