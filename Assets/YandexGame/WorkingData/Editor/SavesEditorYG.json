@@ -1,5 +1,5 @@
 {
-  "idSave": 347,
+  "idSave": 367,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
@@ -596,7 +596,7 @@
   ],
   "SensitivityX": 1.25,
   "SensitivityY": 1.25,
-  "MasterVolume": -80.0,
+  "MasterVolume": -26.0,
   "UIVolume": -30.0,
   "EffectsVolume": -30.0,
   "StepsVolume": -30.0,

@@ -95,7 +95,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: c718dab98cdc6e343b9a531b1dc9a27c,
+  m_LightingDataAsset: {fileID: 112000000, guid: 1a668daf0a997c5429921684e1e744f4,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 7dfcbad4a242a0e44929c1da72f9ff2f,
     type: 2}
@@ -5554,7 +5554,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3866113
+    m_Bits: 3804673
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
