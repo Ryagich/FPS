@@ -38,11 +38,6 @@ public class LookDecision : Decision
                 var inFOVCondition =
                     (Vector3.Angle(controllerTransform.forward, dirToTarget) < controller.viewAngle / 2);
                 // Is target in FOV and NPC have a clear sight?
-                // Костыль жоский
-              //  var isNearCondition = Vector3.Distance(target.position, controllerTransform.position) <
-               //                       20;
-              //  if (controller._log)
-//                    Debug.Log(inFOVCondition);
                 return (inFOVCondition) && !controller.BlockedSight(target);
             })
             .ToArray();

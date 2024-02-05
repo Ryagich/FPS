@@ -254,8 +254,7 @@ namespace EnemyAI
             }
             // Debug.Log(raycastDistance[target] != 0);
 
-           // return raycastDistance[target] != 0;
-           return false;
+           return raycastDistance[target] != 0;
         }
 
         public float DistanceTo(Transform t) => Vector3.Distance(transform.position, t.position);

@@ -62,9 +62,9 @@ public class FocusDecision : Decision
     private static Transform GetBestTarget(StateController controller, Transform[] targets)
     {
         // Is there any target, with a clear sight to it?
-        var filtered = targets
-            .Where(controller.BlockedSight)
-            .ToArray();
+        var filtered = targets;
+            //.Where(target => controller.BlockedSight(target))
+           // .ToArray();
 
         var min = float.MaxValue;
         Transform closest = null;
@@ -77,8 +77,8 @@ public class FocusDecision : Decision
                 closest = target;
             }
         }
-        Debug.Log($"targets count {targets.Length}");
-        Debug.Log($"filtered count {filtered.Length}");
+        //Debug.Log($"targets count {targets.Length}");
+        //Debug.Log($"filtered count {filtered.Length}");
         if (closest)
             Debug.Log(closest.name);
         else
