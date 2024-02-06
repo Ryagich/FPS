@@ -245,7 +245,8 @@ namespace InfimaGames.LowPolyShooterPack
 
         #endregion
 
-        #region METHODS
+        [SerializeField] private float _motionTime;
+        [SerializeField] private float _dampTime;
 
         private void UpdateAnimator()
         {
@@ -267,32 +268,32 @@ namespace InfimaGames.LowPolyShooterPack
 
             #endregion
 
+            _motionTime = Time.fixedDeltaTime * Time.timeScale;
             //Leaning. Affects how much the character should apply of the leaning additive animation.
             var leaningValue = Mathf.Clamp01(axisMovement.y);
-            characterAnimator.SetFloat(AHashes.LeaningForward, leaningValue, 0.5f, Time.deltaTime);
-
+            characterAnimator.SetFloat(AHashes.LeaningForward, leaningValue, 0.5f, _motionTime);
             //Movement Value. This value affects absolute movement. Aiming movement uses this, as opposed to per-axis movement.
             var movementValue = Mathf.Clamp01(Mathf.Abs(axisMovement.x) + Mathf.Abs(axisMovement.y));
-            characterAnimator.SetFloat(AHashes.Movement, movementValue, dampTimeLocomotion, Time.deltaTime);
+            characterAnimator.SetFloat(AHashes.Movement, movementValue, dampTimeLocomotion, _motionTime);
 
             //Aiming Speed Multiplier.
             characterAnimator.SetFloat(AHashes.AimingSpeedMultiplier, aimingSpeedMultiplier);
 
             //Turning Value. This determines how much of the turning animation to play based on our current look rotation.
-            characterAnimator.SetFloat(AHashes.Turning, Mathf.Abs(axisLook.x), dampTimeTurning, Time.deltaTime);
+            characterAnimator.SetFloat(AHashes.Turning, Mathf.Abs(axisLook.x), dampTimeTurning, _motionTime);
 
             //Horizontal Movement Float.
-            characterAnimator.SetFloat(AHashes.Horizontal, axisMovement.x, dampTimeLocomotion, Time.deltaTime);
+            characterAnimator.SetFloat(AHashes.Horizontal, axisMovement.x, dampTimeLocomotion, _motionTime);
             //Vertical Movement Float.
-            characterAnimator.SetFloat(AHashes.Vertical, axisMovement.y, dampTimeLocomotion, Time.deltaTime);
+            characterAnimator.SetFloat(AHashes.Vertical, axisMovement.y, dampTimeLocomotion, _motionTime);
 
             //Update the aiming value, but use interpolation. This makes sure that things like firing can transition properly.
-            characterAnimator.SetFloat(AHashes.AimingAlpha, Convert.ToSingle(aiming), dampTimeAiming, Time.deltaTime);
+            characterAnimator.SetFloat(AHashes.AimingAlpha, Convert.ToSingle(aiming), dampTimeAiming, _motionTime);
 
             //Set the locomotion play rate. This basically stops movement from happening while in the air.
             const string playRateLocomotionBool = "Play Rate Locomotion";
             characterAnimator.SetFloat(playRateLocomotionBool, movementBehaviour.IsGrounded() ? 1.0f : 0.0f, 0.2f,
-                Time.deltaTime);
+                _motionTime);
 
             #region Movement Play Rates
 
@@ -1055,16 +1056,10 @@ namespace InfimaGames.LowPolyShooterPack
                 equippedWeapon.SetSlideBack(back);
         }
 
-        /// <summary>
-        /// SetActiveKnife.
-        /// </summary>
         public override void SetActiveKnife(int active)
         {
-            //Set Active.
             knife.SetActive(active != 0);
         }
-
-        #endregion
 
         #endregion
     }
