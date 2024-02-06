@@ -247,6 +247,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         [SerializeField] private float _motionTime;
         [SerializeField] private float _dampTime;
+        private float lastLV;
 
         private void UpdateAnimator()
         {
@@ -271,7 +272,14 @@ namespace InfimaGames.LowPolyShooterPack
             _motionTime = Time.fixedDeltaTime * Time.timeScale;
             //Leaning. Affects how much the character should apply of the leaning additive animation.
             var leaningValue = Mathf.Clamp01(axisMovement.y);
-            characterAnimator.SetFloat(AHashes.LeaningForward, leaningValue, 0.5f, _motionTime);
+            _dampTime = Mathf.Clamp(
+                lastLV < leaningValue
+                        ? axisMovement.y / 1.5f
+                        : axisMovement.y,
+                0, 0.5f);
+
+            lastLV = leaningValue;
+            characterAnimator.SetFloat(AHashes.LeaningForward, leaningValue, _dampTime, _motionTime);
             //Movement Value. This value affects absolute movement. Aiming movement uses this, as opposed to per-axis movement.
             var movementValue = Mathf.Clamp01(Mathf.Abs(axisMovement.x) + Mathf.Abs(axisMovement.y));
             characterAnimator.SetFloat(AHashes.Movement, movementValue, dampTimeLocomotion, _motionTime);
