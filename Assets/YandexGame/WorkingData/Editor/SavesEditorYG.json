@@ -1,9 +1,9 @@
 {
-  "idSave": 455,
+  "idSave": 472,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Money": 9032,
+  "Money": 7926,
   "SceneIndex": 2,
   "DeatmatchType": 0,
   "OpenedWeapons": [
@@ -71,7 +71,7 @@
         true,
         true,
         true,
-        false,
+        true,
         false
       ],
       [
@@ -498,7 +498,7 @@
   ],
   "ChosenAttachments": [
     [
-      4,
+      6,
       0,
       -1,
       -1
