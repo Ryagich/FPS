@@ -277,7 +277,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 370455980912640
-    m_Localized: Ciudad Perdida
+    m_Localized: Buscar
     m_Metadata:
       m_Items: []
   - m_Id: 370510381035520
@@ -285,7 +285,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 384424028254208
-    m_Localized: Entrar en la ciudad
+    m_Localized: Entrar en una base militar
     m_Metadata:
       m_Items: []
   - m_Id: 384870625161216
@@ -293,11 +293,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 384996005490688
-    m_Localized: "Hay un coche al final de la ciudad, ve hacia \xE9l."
+    m_Localized: "Ahora es el momento de salir de aqu\xED."
     m_Metadata:
       m_Items: []
   - m_Id: 385080180977664
-    m_Localized: Encontrar un auto
+    m_Localized: Regresar al coche
     m_Metadata:
       m_Items: []
   - m_Id: 387541377593344
@@ -315,12 +315,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 384343170461696
-    m_Localized: "Los terroristas de Oneha destruyeron esta ciudad y establecieron
-      su base aqu\xED. Entra y descubre sus planes."
+    m_Localized: "Parte de la base militar y rob\xF3 informaci\xF3n sobre sus planes
+      adicionales."
     m_Metadata:
       m_Items: []
   - m_Id: 384791860326400
-    m_Localized: "Genial, ahora re\xFAne toda la informaci\xF3n que puedas encontrar."
+    m_Localized: Pienso en la tienda lo que estamos buscando.
     m_Metadata:
       m_Items: []
   - m_Id: 387774534758400
@@ -367,17 +367,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 370433046458368
-    m_Localized: "El grupo de Oneha ha capturado una ciudad remota en el este. Es
-      necesario llegar all\xED y conocer sus planes."
+    m_Localized: "Se ha descubierto un peque\xF1o campamento del grupo Onekha. Necesitas
+      entrar y descubrir sus planes."
     m_Metadata:
       m_Items: []
   - m_Id: 781440805875712
-    m_Localized: "El lugar donde se estrell\xF3 nuestro p\xE1jaro atrae a quienes
-      quieren beneficiarse del bien. Deshazte de ellos."
+    m_Localized: "Una peque\xF1a ciudad en medio del desierto interminable, como
+      si surgiera de la arena."
     m_Metadata:
       m_Items: []
   - m_Id: 781387987005440
-    m_Localized: "Halc\xF3n Negro"
+    m_Localized: Oasis
     m_Metadata:
       m_Items: []
   - m_Id: 782939225174016
@@ -406,12 +406,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10527039700709376
-    m_Localized: "El lugar donde se estrell\xF3 nuestro p\xE1jaro atrae a quienes
-      quieren beneficiarse del bien. Deshazte de ellos."
+    m_Localized: "Una peque\xF1a ciudad en medio del desierto interminable, como
+      si surgiera de la arena."
     m_Metadata:
       m_Items: []
   - m_Id: 10527024316002304
-    m_Localized: "Halc\xF3n Negro"
+    m_Localized: Oasis
     m_Metadata:
       m_Items: []
   references:

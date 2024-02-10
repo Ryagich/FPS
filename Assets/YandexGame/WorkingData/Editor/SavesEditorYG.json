@@ -1,10 +1,10 @@
 {
-  "idSave": 388,
+  "idSave": 455,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Money": 9727,
-  "SceneIndex": 4,
+  "Money": 9032,
+  "SceneIndex": 2,
   "DeatmatchType": 0,
   "OpenedWeapons": [
     [
@@ -69,7 +69,7 @@
         true,
         true,
         true,
-        false,
+        true,
         true,
         false,
         false
@@ -498,7 +498,7 @@
   ],
   "ChosenAttachments": [
     [
-      3,
+      4,
       0,
       -1,
       -1
@@ -597,16 +597,16 @@
   "SensitivityX": 1.25,
   "SensitivityY": 1.25,
   "MasterVolume": -26.0,
-  "UIVolume": -30.0,
+  "UIVolume": 20.0,
   "EffectsVolume": -30.0,
   "StepsVolume": -30.0,
   "ShootingVolume": -30.0,
   "UsesLaptops": 0,
   "levelsSpawnPlaces": [
     [
-      44.41,
-      -3.06999969,
-      138.78
+      -1000.0,
+      -1000.0,
+      -1000.0
     ],
     [
       -1000.0,

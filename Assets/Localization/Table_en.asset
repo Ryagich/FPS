@@ -289,12 +289,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 370433046458368
-    m_Localized: Oneha's group has captured a remote town in the east. It is necessary
-      to get there and find out their plans.
+    m_Localized: A small camp of the Onekha group has been discovered. You need to
+      get inside and find out their plans.
     m_Metadata:
       m_Items: []
   - m_Id: 370455980912640
-    m_Localized: Lost City
+    m_Localized: Search
     m_Metadata:
       m_Items: []
   - m_Id: 370510381035520
@@ -312,18 +312,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 384343170461696
-    m_Localized: Oneha terrorists destroyed this city and established their base
-      here. Get inside and find out their plans.
+    m_Localized: Part the military base and stole information about their further
+      plans.
     m_Metadata:
       m_Items: []
   - m_Id: 384424028254208
-    m_Localized: 'Get into the city
-
-'
+    m_Localized: Get into a military base
     m_Metadata:
       m_Items: []
   - m_Id: 384791860326400
-    m_Localized: Great, now gather whatever information you can find.
+    m_Localized: I think in the tent what we are looking for.
     m_Metadata:
       m_Items: []
   - m_Id: 384870625161216
@@ -331,11 +329,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 384996005490688
-    m_Localized: There is a car at the end of the city, go to it.
+    m_Localized: Now it's time to get out of here.
     m_Metadata:
       m_Items: []
   - m_Id: 385080180977664
-    m_Localized: Find a car
+    m_Localized: Return to the car
     m_Metadata:
       m_Items: []
   - m_Id: 387541377593344
@@ -386,12 +384,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 781387987005440
-    m_Localized: Black Hawk
+    m_Localized: Oasis
     m_Metadata:
       m_Items: []
   - m_Id: 781440805875712
-    m_Localized: The place where our bird crashed attracts those who want to profit
-      from goodness. Get rid of them.
+    m_Localized: A small city in the middle of the endless desert, as if growing
+      out of sand.
     m_Metadata:
       m_Items: []
   - m_Id: 782829481209856
@@ -424,12 +422,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10527024316002304
-    m_Localized: Black Hawk
+    m_Localized: Oasis
     m_Metadata:
       m_Items: []
   - m_Id: 10527039700709376
-    m_Localized: The place where our bird crashed attracts those who want to profit
-      from goodness. Get rid of them.
+    m_Localized: A small city in the middle of the endless desert, as if growing
+      out of sand.
     m_Metadata:
       m_Items: []
   references:

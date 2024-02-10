@@ -277,7 +277,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 370455980912640
-    m_Localized: Verlorene Stadt
+    m_Localized: Suchen
     m_Metadata:
       m_Items: []
   - m_Id: 370510381035520
@@ -285,7 +285,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 384424028254208
-    m_Localized: Raus in die Stadt
+    m_Localized: "Steigen Sie in eine Milit\xE4rbasis"
     m_Metadata:
       m_Items: []
   - m_Id: 384870625161216
@@ -293,11 +293,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 384996005490688
-    m_Localized: Am Ende der Stadt steht ein Auto, fahren Sie dorthin.
+    m_Localized: Jetzt ist es Zeit, hier rauszukommen.
     m_Metadata:
       m_Items: []
   - m_Id: 385080180977664
-    m_Localized: Finden Sie ein Auto
+    m_Localized: "Kehre zum Auto zur\xFCck"
     m_Metadata:
       m_Items: []
   - m_Id: 387541377593344
@@ -315,13 +315,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 384343170461696
-    m_Localized: "Oneha-Terroristen zerst\xF6rten diese Stadt und errichteten hier
-      ihre Basis. Gehen Sie hinein und finden Sie ihre Pl\xE4ne heraus."
+    m_Localized: "Teil die Milit\xE4rbasis und stahl Informationen \xFCber ihre weiteren
+      Pl\xE4ne."
     m_Metadata:
       m_Items: []
   - m_Id: 384791860326400
-    m_Localized: "Gro\xDFartig, sammeln Sie jetzt alle Informationen, die Sie finden
-      k\xF6nnen."
+    m_Localized: Ich denke im Zelt, wonach wir suchen.
     m_Metadata:
       m_Items: []
   - m_Id: 387774534758400
@@ -370,17 +369,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 370433046458368
-    m_Localized: "Onehas Gruppe hat eine abgelegene Stadt im Osten erobert. Es ist
-      notwendig, dorthin zu gelangen und ihre Pl\xE4ne herauszufinden."
+    m_Localized: "Ein kleines Lager der Onekha-Gruppe wurde entdeckt. Sie m\xFCssen
+      hineingehen und ihre Pl\xE4ne herausfinden."
     m_Metadata:
       m_Items: []
   - m_Id: 781440805875712
-    m_Localized: "Der Ort, an dem unser Vogel abgest\xFCrzt ist, zieht diejenigen
-      an, die vom Guten profitieren wollen. Sie loswerden."
+    m_Localized: "Eine kleine Stadt mitten in der endlosen W\xFCste, als w\xFCrde
+      sie aus Sand wachsen."
     m_Metadata:
       m_Items: []
   - m_Id: 781387987005440
-    m_Localized: Schwarzer Falke
+    m_Localized: Oase
     m_Metadata:
       m_Items: []
   - m_Id: 782939225174016
@@ -409,12 +408,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10527039700709376
-    m_Localized: "Der Ort, an dem unser Vogel abgest\xFCrzt ist, zieht diejenigen
-      an, die vom Guten profitieren wollen. Sie loswerden."
+    m_Localized: "Eine kleine Stadt mitten in der endlosen W\xFCste, als w\xFCrde
+      sie aus Sand wachsen."
     m_Metadata:
       m_Items: []
   - m_Id: 10527024316002304
-    m_Localized: Schwarzer Falke
+    m_Localized: Oase
     m_Metadata:
       m_Items: []
   references:

@@ -271,7 +271,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 370455980912640
-    m_Localized: "Kay\u0131p \u015Eehir"
+    m_Localized: Aramak
     m_Metadata:
       m_Items: []
   - m_Id: 370510381035520
@@ -279,7 +279,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 384424028254208
-    m_Localized: "\u015Eehre Gir"
+    m_Localized: "Askeri \xFCsse girin"
     m_Metadata:
       m_Items: []
   - m_Id: 384870625161216
@@ -287,11 +287,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 384996005490688
-    m_Localized: "\u015Eehrin sonunda bir araba var, ona gidin."
+    m_Localized: "\u015Eimdi buradan \xE7\u0131kma zaman\u0131"
     m_Metadata:
       m_Items: []
   - m_Id: 385080180977664
-    m_Localized: Bir araba bul
+    m_Localized: "Arabaya D\xF6n"
     m_Metadata:
       m_Items: []
   - m_Id: 387541377593344
@@ -309,13 +309,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 384343170461696
-    m_Localized: "Oneha ter\xF6ristleri bu \u015Fehri yerle bir ederek buraya \xFCs
-      kurdular. \u0130\xE7eri girin ve planlar\u0131n\u0131 \xF6\u011Frenin."
+    m_Localized: "Askeri \xFCss\xFCn\xFC ay\u0131r\u0131n ve di\u011Fer planlar\u0131
+      hakk\u0131nda bilgi \xE7ald\u0131."
     m_Metadata:
       m_Items: []
   - m_Id: 384791860326400
-    m_Localized: "Harika, \u015Fimdi bulabildi\u011Finiz her t\xFCrl\xFC bilgiyi
-      toplay\u0131n."
+    m_Localized: "San\u0131r\u0131m \xE7ad\u0131rda arad\u0131\u011F\u0131m\u0131z
+      \u015Fey var."
     m_Metadata:
       m_Items: []
   - m_Id: 387774534758400
@@ -365,17 +365,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 370433046458368
-    m_Localized: "Oneha'n\u0131n grubu do\u011Fuda uzak bir kasabay\u0131 ele ge\xE7irdi.
-      Oraya gidip planlar\u0131n\u0131 \xF6\u011Frenmek gerekiyor."
+    m_Localized: "Onekha grubunun k\xFC\xE7\xFCk bir kamp\u0131 ke\u015Ffedildi.
+      \u0130\xE7eri girip planlar\u0131n\u0131 \xF6\u011Frenmelisin."
     m_Metadata:
       m_Items: []
   - m_Id: 781440805875712
-    m_Localized: "Ku\u015Fumuzun d\xFC\u015Ft\xFC\u011F\xFC yer iyiliklerden yararlanmak
-      isteyenlerin ilgisini \xE7ekiyor. Onlardan kurtulmak."
+    m_Localized: "U\xE7suz bucaks\u0131z \xE7\xF6l\xFCn ortas\u0131nda kumdan b\xFCy\xFCm\xFC\u015F
+      gibi k\xFC\xE7\xFCk bir \u015Fehir."
     m_Metadata:
       m_Items: []
   - m_Id: 781387987005440
-    m_Localized: "Kara \u015Eahin"
+    m_Localized: Vaha
     m_Metadata:
       m_Items: []
   - m_Id: 782939225174016
@@ -405,12 +405,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10527039700709376
-    m_Localized: "Ku\u015Fumuzun d\xFC\u015Ft\xFC\u011F\xFC yer iyiliklerden yararlanmak
-      isteyenlerin ilgisini \xE7ekiyor. Onlardan kurtulmak."
+    m_Localized: "U\xE7suz bucaks\u0131z \xE7\xF6l\xFCn ortas\u0131nda kumdan b\xFCy\xFCm\xFC\u015F
+      gibi k\xFC\xE7\xFCk bir \u015Fehir."
     m_Metadata:
       m_Items: []
   - m_Id: 10527024316002304
-    m_Localized: "Kara \u015Eahin"
+    m_Localized: Vaha
     m_Metadata:
       m_Items: []
   references:
