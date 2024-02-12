@@ -33,8 +33,8 @@ public class InventoryWeapon : MonoBehaviour
     {
         //0 - Weapon; 1 - AttachmentsSection -> Attachments
         //0 - Scopes; 1 - Muzzles; 2 - Lasers; 3 - Grips;
-        Debug.Log(WeaponIndex);
-        ShowAttachments();
+        //        Debug.Log(WeaponIndex);
+       // ShowAttachments();
         Manager.SetScope(YandexGame.savesData.ChosenAttachments[WeaponIndex][0]);
         Manager.SetMuzzle(YandexGame.savesData.ChosenAttachments[WeaponIndex][1]);
         Manager.SetLaser(YandexGame.savesData.ChosenAttachments[WeaponIndex][2]);
