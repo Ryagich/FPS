@@ -1,30 +1,63 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using YG;
 
 public class LanguageSwitcher : MonoBehaviour
 {
+    [SerializeField] private GameObject _startPanel;
+    [SerializeField] private List<GameObject> _mainCanvas;
     
     private void Start()
     {
-        if (YandexGame.SDKEnabled)
+        if (YandexGame.LanguageEnabled)
         {
-            StartCoroutine(WI());
-            //  Debug.Log("YandexGame.SDKEnabled");
+            CheckLanguage();
         }
         else
         {
-            //YandexGame.GetDataEvent += Init;
-            YandexGame.GetDataEvent += () => StartCoroutine(WI());
-            //  Debug.Log("NOT YandexGame.SDKEnabled");
+            YandexGame.GetLanguageEvent += CheckLanguage;
         }
     }
 
-    private IEnumerator WI()
+    private void CheckLanguage()
     {
-        yield return new WaitForSeconds(2);
-        Init();
+        if (YandexGame.savesData.locale == "")
+        {
+            ShowStartPanel();
+        }
+        else
+        {
+            Init();
+        }
+    }
+
+    private void ShowStartPanel()
+    {
+        _startPanel.SetActive(true);
+    }
+
+    private void ShowMainCanvas()
+    {
+        foreach (var element in _mainCanvas)
+        {
+            element.SetActive(true);
+        }
+    }
+
+    public void SwitchLanguage(string code)
+    {
+        foreach (var locale in LocalizationSettings.AvailableLocales.Locales)
+        {
+            if (locale.Identifier.Code.Contains(code))
+            {
+                LocalizationSettings.SelectedLocale = locale;
+            }
+        }
+
+        YandexGame.savesData.locale = code;
+        YandexGame.SaveProgress();
     }
 
     private void Init()
@@ -34,11 +67,13 @@ public class LanguageSwitcher : MonoBehaviour
         {
             // Debug.Log($"{locale.Identifier.Code} == {YandexGame.EnvironmentData.language}");
             // Debug.Log(locale.Identifier.Code.Contains(YandexGame.EnvironmentData.language));
-            if (locale.Identifier.Code.Contains(YandexGame.EnvironmentData.language))
+            if (locale.Identifier.Code.Contains(YandexGame.savesData.locale))
             {
                 LocalizationSettings.SelectedLocale = locale;
-            //Debug.Log($"Locale is {LocalizationSettings.SelectedLocale.Identifier.Code}");
+                //Debug.Log($"Locale is {LocalizationSettings.SelectedLocale.Identifier.Code}");
             }
         }
+
+        ShowMainCanvas();
     }
 }

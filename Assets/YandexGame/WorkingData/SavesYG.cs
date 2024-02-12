@@ -15,6 +15,7 @@ namespace YG
         public int Money = 3000;
         public int SceneIndex;
 
+        public string locale = "";
         // -1 - не дезматч; 0 - до 100 киллов; 1 - 5 мин; 2 - 10 мин;
         public int DeatmatchType = -1;
 

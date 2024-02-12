@@ -344,8 +344,12 @@ namespace YG
             {
                 SwitchLangEvent?.Invoke(savesData.language);
             }
+            LanguageEnabled = true;
+            GetLanguageEvent?.Invoke(); // моя тема
         }
-
+        public static bool LanguageEnabled { get;private set;  }// моя тема
+        public static Action GetLanguageEvent;// моя тема
+        
         public static Action onResetProgress;
         public void _ResetSaveProgress()
         {

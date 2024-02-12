@@ -1,27 +1,28 @@
 {
-  "idSave": 517,
+  "idSave": 90,
   "isFirstSession": false,
   "language": "de",
   "promptDone": false,
-  "Money": 3746,
-  "SceneIndex": 4,
-  "DeatmatchType": 0,
+  "Money": 3000,
+  "SceneIndex": 0,
+  "locale": "ru",
+  "DeatmatchType": -1,
   "OpenedWeapons": [
     [
       true,
-      true,
-      true
+      false,
+      false
     ],
     [
-      true,
-      true,
-      true
+      false,
+      false,
+      false
     ],
     [
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
       false
     ],
     [
@@ -31,16 +32,11 @@
       false
     ],
     [
-      true
+      false
     ]
   ],
   "ChosenWeapons": [
     [
-      false,
-      false,
-      false
-    ],
-    [
       true,
       false,
       false
@@ -48,158 +44,28 @@
     [
       false,
       false,
-      false,
-      false,
       false
     ],
     [
       false,
       false,
       false,
+      false,
       false
     ],
     [
-      true
+      true,
+      false,
+      false,
+      false
+    ],
+    [
+      false
     ]
   ],
   "OpenedAttachments": [
     [
       [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        false,
-        false,
-        false,
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        false,
-        false,
-        false,
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        true
-      ],
-      [
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        false,
-        false,
-        false,
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        true
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
         false,
         false,
         false,
@@ -257,60 +123,6 @@
         false,
         false,
         false,
-        false,
-        false,
-        false,
-        true,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false
-      ]
-    ],
-    [
-      [
-        false,
-        false,
-        true,
         false,
         false,
         false,
@@ -471,7 +283,196 @@
     [
       [
         false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
         true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false
+      ]
+    ],
+    [
+      [
+        false,
+        false,
         false,
         false,
         false,
@@ -498,32 +499,14 @@
   ],
   "ChosenAttachments": [
     [
-      6,
+      -1,
       0,
       -1,
       -1
     ],
     [
-      5,
-      0,
       -1,
-      -1
-    ],
-    [
-      4,
       0,
-      -1,
-      -1
-    ],
-    [
-      7,
-      0,
-      -1,
-      -1
-    ],
-    [
-      4,
-      3,
       -1,
       -1
     ],
@@ -540,19 +523,13 @@
       -1
     ],
     [
-      6,
+      -1,
       0,
       -1,
       -1
     ],
     [
-      1,
-      0,
       -1,
-      -1
-    ],
-    [
-      2,
       0,
       -1,
       -1
@@ -588,7 +565,31 @@
       -1
     ],
     [
-      1,
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1
+    ],
+    [
+      -1,
       0,
       -1,
       -1
@@ -596,8 +597,8 @@
   ],
   "SensitivityX": 1.25,
   "SensitivityY": 1.25,
-  "MasterVolume": -26.0,
-  "UIVolume": 20.0,
+  "MasterVolume": -10.0,
+  "UIVolume": -30.0,
   "EffectsVolume": -30.0,
   "StepsVolume": -30.0,
   "ShootingVolume": -30.0,
@@ -621,6 +622,6 @@
   ],
   "OpenedLevels": [
     true,
-    true
+    false
   ]
 }

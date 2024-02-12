@@ -430,6 +430,18 @@ MonoBehaviour:
       out of sand.
     m_Metadata:
       m_Items: []
+  - m_Id: 16338852082200576
+    m_Localized: 'Current Language: English'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16338992213897216
+    m_Localized: Ready
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16347118199746560
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -422,6 +422,19 @@ MonoBehaviour:
     m_Key: Menu/-----Template-----/DeathmatchCreator 2 2
     m_Metadata:
       m_Items: []
+  - m_Id: 16338852082200576
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Panels/StartLanguage/Content/Title_CurrentLanguage/Back_Name/Text_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16338992213897216
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Panels/StartLanguage/Button_Ready/Text_Button_Ready
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16347118199746560
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Settings_Canvas/NavControls_Root_Settings/Content/Button_Language/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

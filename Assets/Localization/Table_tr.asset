@@ -413,6 +413,18 @@ MonoBehaviour:
     m_Localized: Vaha
     m_Metadata:
       m_Items: []
+  - m_Id: 16338992213897216
+    m_Localized: "Haz\u0131r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16338852082200576
+    m_Localized: "Mevcut dil: T\xFCrk\xE7e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16347118199746560
+    m_Localized: Dil
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
