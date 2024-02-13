@@ -39,16 +39,19 @@ public class LevelsInfoCreator : MonoBehaviour
             yield return new WaitForSeconds(0f);
             foreach (var i in _info)
             {
-                var b = Instantiate(_buttonPref, _parent);
-                b.GetComponentInChildren<TMP_Text>().text = i.Label;
-                b.onClick.AddListener(() => CreateNewPanel(i.screenshot, i.Label, i.Description));
-                b.onClick.AddListener(() =>
+                if (i.IsVisible)
                 {
-                    YandexGame.savesData.SceneIndex = i.SceneIndex;
-                    YandexGame.SaveProgress();
-                });
+                    var b = Instantiate(_buttonPref, _parent);
+                    b.GetComponentInChildren<TMP_Text>().text = i.Label;
+                    b.onClick.AddListener(() => CreateNewPanel(i.screenshot, i.Label, i.Description));
+                    b.onClick.AddListener(() =>
+                    {
+                        YandexGame.savesData.SceneIndex = i.SceneIndex;
+                        YandexGame.SaveProgress();
+                    });
 
-                Buttons.Add(b);
+                    Buttons.Add(b);
+                }
             }
 
             inited = true;

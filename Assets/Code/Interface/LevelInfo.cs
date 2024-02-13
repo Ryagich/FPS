@@ -10,5 +10,6 @@ public struct LevelInfo
     public int SceneIndex;
     [Multiline] public string Description;
     public Sprite screenshot;
+    public bool IsVisible;
 #pragma warning restore 0649
 }
