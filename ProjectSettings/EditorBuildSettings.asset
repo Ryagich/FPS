@@ -11,15 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoadingScene.unity
     guid: c7dcf74c56bb3c444a6fc7edbeb51819
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/lvl_1.unity
     guid: 077abd1b6bbc3e340b61b80510bb9913
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/lvl_2.unity
     guid: cf3d9bf74ff901d4f8eb68c1492dd92b
   - enabled: 1
     path: Assets/Scenes/Deathmatch_1.unity
     guid: b8b73cc2846b49448a2ff76bf9832f21
+  - enabled: 1
+    path: Assets/Scenes/Deathmatch_2.unity
+    guid: d5fa83bc8762dad498902fed3765fc3e
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f8c2c0fae963e6b489f86c5827f845af,
       type: 2}

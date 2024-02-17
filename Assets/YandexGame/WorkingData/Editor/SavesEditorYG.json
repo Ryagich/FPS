@@ -1,12 +1,12 @@
 {
-  "idSave": 1,
+  "idSave": 15,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
   "Money": 3000,
-  "SceneIndex": 0,
-  "locale": "",
-  "DeatmatchType": -1,
+  "SceneIndex": 2,
+  "locale": "ru",
+  "DeatmatchType": 0,
   "OpenedWeapons": [
     [
       true,

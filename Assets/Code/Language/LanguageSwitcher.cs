@@ -2,24 +2,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using YG;
+using System.Collections;
 
 public class LanguageSwitcher : MonoBehaviour
 {
     [SerializeField] private GameObject _startPanel;
     [SerializeField] private List<GameObject> _mainCanvas;
-    
+
     private void Start()
     {
         if (YandexGame.SDKEnabled)
         {
-            CheckLanguage();
+            StartCoroutine(WaitSomeTimes());
             Debug.Log("SDKEnabled");
         }
         else
         {
-            YandexGame.GetDataEvent += CheckLanguage;
+            YandexGame.GetDataEvent += () => StartCoroutine(WaitSomeTimes());
             Debug.Log("GetDataEvent");
         }
+    }
+
+    private IEnumerator WaitSomeTimes()
+    {
+        yield return new WaitForSeconds(1.5f);
+        CheckLanguage();
     }
 
     private void CheckLanguage()
