@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
@@ -11,13 +10,15 @@ public class LanguageSwitcher : MonoBehaviour
     
     private void Start()
     {
-        if (YandexGame.LanguageEnabled)
+        if (YandexGame.SDKEnabled)
         {
             CheckLanguage();
+            Debug.Log("SDKEnabled");
         }
         else
         {
-            YandexGame.GetLanguageEvent += CheckLanguage;
+            YandexGame.GetDataEvent += CheckLanguage;
+            Debug.Log("GetDataEvent");
         }
     }
 
