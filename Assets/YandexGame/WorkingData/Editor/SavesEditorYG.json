@@ -1,9 +1,9 @@
 {
-  "idSave": 19,
+  "idSave": 23,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Money": 3000,
+  "Money": 500,
   "SceneIndex": 3,
   "locale": "ru",
   "DeatmatchType": 0,
@@ -73,7 +73,7 @@
         false,
         false,
         false,
-        false
+        true
       ],
       [
         true,
@@ -499,7 +499,7 @@
   ],
   "ChosenAttachments": [
     [
-      -1,
+      7,
       0,
       -1,
       -1
