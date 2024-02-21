@@ -268,7 +268,7 @@ MonoBehaviour:
   purshasesSimulation: []
   metricaEnable: 1
   metricaCounterID: 96336316
-  debug: 1
+  debug: 0
   archivingBuild: 1
   logoImageFormat: 1
   backgroundImageFormat: 3

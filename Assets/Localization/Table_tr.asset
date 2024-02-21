@@ -405,8 +405,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10527039700709376
-    m_Localized: "U\xE7suz bucaks\u0131z \xE7\xF6l\xFCn ortas\u0131nda kumdan b\xFCy\xFCm\xFC\u015F
-      gibi k\xFC\xE7\xFCk bir \u015Fehir."
+    m_Localized: "U\xE7suz bucaks\u0131z bir \xE7\xF6l\xFCn ortas\u0131nda kumdan
+      b\xFCy\xFCyen k\xFC\xE7\xFCk bir \u015Fehir, \xF6l\xFCmc\xFCl bir sava\u015F\u0131n
+      alan\u0131 haline geldi."
     m_Metadata:
       m_Items: []
   - m_Id: 10527024316002304
@@ -423,6 +424,15 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 16347118199746560
     m_Localized: Dil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17991848637607936
+    m_Localized: "Merakl\u0131 g\xF6zlerden gizlenmi\u015F bir da\u011F kasabas\u0131,
+      hayatta kalma oyunu i\xE7in ideal bir yerdir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17988102054588416
+    m_Localized: Kaynak
     m_Metadata:
       m_Items: []
   references:

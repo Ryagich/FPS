@@ -426,8 +426,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10527039700709376
-    m_Localized: A small city in the middle of the endless desert, as if growing
-      out of sand.
+    m_Localized: A small city in the middle of an endless desert, as if growing out
+      of sand, became the site of a mortal battle.
     m_Metadata:
       m_Items: []
   - m_Id: 16338852082200576
@@ -444,6 +444,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 17988102054588416
     m_Localized: Rock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17991848637607936
+    m_Localized: A mountain town hidden from prying eyes is an ideal place for a
+      survival game
     m_Metadata:
       m_Items: []
   references:

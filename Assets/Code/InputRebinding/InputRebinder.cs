@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using YG;
+using UnityEngine.Localization.Settings;
 
 public class InputRebinder : MonoBehaviour, IPointerEnterHandler
 {
@@ -135,26 +135,27 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
 
     public void UpdateText()
     {
+        var localeName = LocalizationSettings.SelectedLocale.Identifier.Code;
         var name = InputControlPath.ToHumanReadableString(
             GetCurrentBinding().effectivePath,
             InputControlPath.HumanReadableStringOptions.OmitDevice);
-        switch (YandexGame.EnvironmentData.language)
+        switch (localeName)
         {
-            case "en":
+            case "en" or "EN":
                 switch (name)
                 {
                     case "Left Button":
                         name = "LMB";
-                        break; 
+                        break;
                     case "Right Button":
                         name = "RMB";
-                        break; 
+                        break;
                     case "Middle Button":
                         name = "MMB";
-                        break; 
+                        break;
                     case "Left Shift":
                         name = "L.Shift";
-                        break; 
+                        break;
                     case "Right Shift":
                         name = "R.Shift";
                         break;
@@ -171,25 +172,26 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
                         name = "R.Alt";
                         break;
                 }
+
                 break;
-            case "ru":
+            case "ru" or "RU":
                 switch (name)
                 {
                     case "Left Button":
                         name = "ЛКМ";
-                        break; 
+                        break;
                     case "Right Button":
                         name = "ПКМ";
-                        break; 
+                        break;
                     case "Middle Button":
                         name = "Колесико";
-                        break; 
+                        break;
                     case "Space":
                         name = "Пробел";
                         break;
                     case "Left Shift":
                         name = "Л.Шифт";
-                        break; 
+                        break;
                     case "Right Shift":
                         name = "П.Шифт";
                         break;
@@ -209,25 +211,26 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
                         name = "П.Алт";
                         break;
                 }
+
                 break;
-            case "tr":
+            case "tr" or "TR":
                 switch (name)
                 {
                     case "Left Button":
                         name = "Sol FT";
-                        break; 
+                        break;
                     case "Right Button":
                         name = "Sağ FT";
-                        break; 
+                        break;
                     case "Middle Button":
                         name = "Orta FT";
-                        break; 
+                        break;
                     case "Space":
                         name = "Uzay";
                         break;
                     case "Left Shift":
                         name = "Sol Shift";
-                        break; 
+                        break;
                     case "Right Shift":
                         name = "Sağ Shift";
                         break;
@@ -247,25 +250,26 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
                         name = "Sağ Alt";
                         break;
                 }
+
                 break;
-            case "es":
+            case "es" or "ES":
                 switch (name)
                 {
                     case "Left Button":
                         name = "BIM";
-                        break; 
+                        break;
                     case "Right Button":
                         name = "BDM";
-                        break; 
+                        break;
                     case "Middle Button":
                         name = "BCM";
-                        break; 
+                        break;
                     case "Space":
                         name = "Espacio";
                         break;
                     case "Left Shift":
                         name = "L.Shift";
-                        break; 
+                        break;
                     case "Right Shift":
                         name = "D.Shift";
                         break;
@@ -285,25 +289,26 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
                         name = "D.Alt";
                         break;
                 }
+
                 break;
-            case "de":
+            case "de" or "DE":
                 switch (name)
                 {
                     case "Left Button":
                         name = "LM";
-                        break; 
+                        break;
                     case "Right Button":
                         name = "RM";
-                        break; 
+                        break;
                     case "Middle Button":
                         name = "MM";
-                        break; 
+                        break;
                     case "Space":
                         name = "Raum";
                         break;
                     case "Left Shift":
                         name = "L.Shift";
-                        break; 
+                        break;
                     case "Right Shift":
                         name = "R.Shift";
                         break;
@@ -323,6 +328,7 @@ public class InputRebinder : MonoBehaviour, IPointerEnterHandler
                         name = "R.Alt";
                         break;
                 }
+
                 break;
         }
 

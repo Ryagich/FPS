@@ -36,6 +36,16 @@ public class BindingsController : MonoBehaviour
         }
     }
 
+    public void UpdateText()
+    {
+        if (_buttons.Count <1 )
+            return;
+        foreach (var button in _buttons)
+        {
+            button.GetComponent<InputRebinder>().UpdateText();
+        }
+    }
+    
     private void PlayHover()
     {
         _soundPlayer.PlayHover();

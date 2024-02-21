@@ -408,8 +408,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10527039700709376
-    m_Localized: "Eine kleine Stadt mitten in der endlosen W\xFCste, als w\xFCrde
-      sie aus Sand wachsen."
+    m_Localized: "Eine kleine Stadt inmitten einer endlosen W\xFCste, die wie aus
+      Sand wuchs, wurde zum Schauplatz einer t\xF6dlichen Schlacht."
     m_Metadata:
       m_Items: []
   - m_Id: 10527024316002304
@@ -426,6 +426,15 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 16347118199746560
     m_Localized: Sprache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17991848637607936
+    m_Localized: "Eine vor neugierigen Blicken verborgene Bergstadt ist ein idealer
+      Ort f\xFCr ein \xDCberlebensspiel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17988102054588416
+    m_Localized: Felsen
     m_Metadata:
       m_Items: []
   references:

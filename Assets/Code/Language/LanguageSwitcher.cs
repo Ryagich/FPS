@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
@@ -8,25 +9,24 @@ public class LanguageSwitcher : MonoBehaviour
 {
     [SerializeField] private GameObject _startPanel;
     [SerializeField] private List<GameObject> _mainCanvas;
+    [SerializeField] private float _initialDelay = .0f;
+
+    private void Awake()
+    {
+        LocalizationSettings.Instance.GetInitializationOperation();
+    }
 
     private void Start()
     {
         if (YandexGame.SDKEnabled)
         {
-            StartCoroutine(WaitSomeTimes());
-            Debug.Log("SDKEnabled");
+            CheckLanguage();
         }
         else
         {
-            YandexGame.GetDataEvent += () => StartCoroutine(WaitSomeTimes());
+            YandexGame.GetDataEvent += CheckLanguage;
             Debug.Log("GetDataEvent");
         }
-    }
-
-    private IEnumerator WaitSomeTimes()
-    {
-        yield return new WaitForSeconds(1.5f);
-        CheckLanguage();
     }
 
     private void CheckLanguage()
@@ -37,7 +37,8 @@ public class LanguageSwitcher : MonoBehaviour
         }
         else
         {
-            Init();
+            ShowMainCanvas();
+            StartCoroutine(WaitSomeTimes());
         }
     }
 
@@ -70,18 +71,22 @@ public class LanguageSwitcher : MonoBehaviour
 
     private void Init()
     {
-        LocalizationSettings.Instance.GetInitializationOperation();
+        Debug.Log("!!!!");
+        Debug.Log(YandexGame.savesData.locale);
+        Debug.Log("!!!!");
+
         foreach (var locale in LocalizationSettings.AvailableLocales.Locales)
         {
-            // Debug.Log($"{locale.Identifier.Code} == {YandexGame.EnvironmentData.language}");
-            // Debug.Log(locale.Identifier.Code.Contains(YandexGame.EnvironmentData.language));
             if (locale.Identifier.Code.Contains(YandexGame.savesData.locale))
             {
                 LocalizationSettings.SelectedLocale = locale;
-                //Debug.Log($"Locale is {LocalizationSettings.SelectedLocale.Identifier.Code}");
             }
         }
-
-        ShowMainCanvas();
+    }
+    
+    private IEnumerator WaitSomeTimes()
+    {
+        yield return new WaitForSeconds(_initialDelay);
+        Init();
     }
 }
