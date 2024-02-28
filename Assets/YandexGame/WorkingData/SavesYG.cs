@@ -17,7 +17,7 @@ namespace YG
 
         public string locale = "";
         // -1 - не дезматч; 0 - до 100 киллов; 1 - 5 мин; 2 - 10 мин;
-        public int DeatmatchType = -1;
+        public int CharacterIndex = 0;
 
         public bool[][] OpenedWeapons =
         {
@@ -267,7 +267,6 @@ namespace YG
 
         //Setings
         public float SensitivityX = 1.25f;
-
         public float SensitivityY = 1.25f;
 
         //Audio
@@ -277,8 +276,6 @@ namespace YG
         public float StepsVolume = -30f;
         public float ShootingVolume = -30f;
 
-        public int UsesLaptops = 0;
-        
         public void SaveMoney(int value)
         {
             Money += value;

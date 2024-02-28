@@ -12,9 +12,13 @@ public class Rotater : MonoBehaviour
     [SerializeField] private bool _itsSpeed = true;
     [SerializeField, Min(.0f)] private float _speed = 1f;
 
+    private Coroutine coroutine;
+
     public void Rotate(Transform target)
     {
-        StartCoroutine(Moving(target));
+        if (coroutine != null)
+            StopCoroutine(coroutine);
+        coroutine = StartCoroutine(Moving(target));
     }
 
     private IEnumerator Moving(Transform target)

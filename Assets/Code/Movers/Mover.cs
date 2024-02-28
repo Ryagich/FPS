@@ -18,6 +18,8 @@ public class Mover : MonoBehaviour
 
     public void Move(Transform target)
     {
+        if (coroutine != null)
+            StopCoroutine(coroutine);
         coroutine = StartCoroutine(Moving(target));
     }
 
@@ -30,7 +32,7 @@ public class Mover : MonoBehaviour
         while (Vector3.Distance(transform.position, target.position) > _offset)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, maxDistanceDelta);
-            
+
             yield return new WaitForFixedUpdate();
         }
 

@@ -39,6 +39,6 @@ public class MoneyController : MonoBehaviour
 
     private void UpdateText()
     {
-        _text.text = YandexGame.savesData.Money.ToString() +'$';
+        _text.text = YandexGame.savesData.Money.ToString();
     }
 }

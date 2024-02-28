@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using InfimaGames.LowPolyShooterPack;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +12,7 @@ public class WeaponsShower : MonoBehaviour
     [SerializeField] private Button _rightButton;
 
     private int index = 0;
+    
     public List<WeaponAttachmentManager> GetWeapons() => _weapons;
 
     private void OnEnable()
