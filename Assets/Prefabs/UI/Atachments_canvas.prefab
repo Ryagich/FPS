@@ -151,7 +151,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 496362374505027731}
+        - m_Target: {fileID: 193023368266242185}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayHover
           m_Mode: 1
@@ -167,7 +167,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 496362374505027731}
+        - m_Target: {fileID: 193023368266242185}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayClick
           m_Mode: 1
@@ -245,9 +245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Back
-
-'
+  m_text: "\u041D\u0430\u0437\u0430\u0434\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
@@ -544,7 +542,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 496362374505027731}
+        - m_Target: {fileID: 193023368266242185}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayHover
           m_Mode: 1
@@ -560,7 +558,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 496362374505027731}
+        - m_Target: {fileID: 193023368266242185}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayClick
           m_Mode: 1
@@ -638,7 +636,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lasers
+  m_text: "\u041B\u0430\u0437\u0435\u0440\u044B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
@@ -814,7 +812,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Scopes
+  m_text: "\u041F\u0440\u0438\u0446\u0435\u043B\u044B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
@@ -953,13 +951,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2868688975417676524}
   m_Father: {fileID: 1327767702829715696}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 200, y: -295}
-  m_SizeDelta: {x: 350, y: 450}
+  m_SizeDelta: {x: 350, y: 448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8882059083410986454
 CanvasRenderer:
@@ -1065,7 +1064,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Grips
+  m_text: "\u0421\u043E\u0448\u043A\u0438"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
@@ -1204,9 +1203,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1788023415193439417}
+  - {fileID: 8615446506596377363}
   - {fileID: 2822424460679118411}
-  - {fileID: 2868688975417676524}
   - {fileID: 1896254047793802231}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1240,154 +1238,7 @@ MonoBehaviour:
   _choseButton: {fileID: 9168561248121083762, guid: 901789f1d500869409c22dc1dc41a7e4,
     type: 3}
   _shosen: {fileID: 3481041460261802024, guid: f3d6818fa5c87174e824aa7727a2df2d, type: 3}
-  _source: {fileID: 4528764164538105381}
---- !u!1 &4777339281497647718
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1788023415193439417}
-  - component: {fileID: 496362374505027731}
-  - component: {fileID: 4528764164538105381}
-  m_Layer: 0
-  m_Name: ButtonSoundPlayer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1788023415193439417
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4777339281497647718}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960, y: -540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1327767702829715696}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &496362374505027731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4777339281497647718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc0d3425c18fbce4eb1fd8e78c76c47c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _awake:
-    m_PersistentCalls:
-      m_Calls: []
-  _source: {fileID: 4528764164538105381}
-  _hover: {fileID: 8300000, guid: adb603b316ac40b4c881d2351df7b32d, type: 3}
-  _click: {fileID: 8300000, guid: e8702f463ae705641826854cf0eec4e6, type: 3}
---- !u!82 &4528764164538105381
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4777339281497647718}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 2
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.9895935
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  _source: {fileID: 5405425942052078997}
 --- !u!1 &5686149765307985989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,7 +1263,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5686149765307985989}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1422,12 +1273,12 @@ RectTransform:
   - {fileID: 709401799177779932}
   - {fileID: 301168472065323913}
   - {fileID: 7793827862677768928}
-  m_Father: {fileID: 1327767702829715696}
+  m_Father: {fileID: 2822424460679118411}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 40, y: -80}
-  m_SizeDelta: {x: 320, y: -200}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 8, y: -8}
+  m_SizeDelta: {x: -16, y: -16}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &7241900764757524213
 MonoBehaviour:
@@ -1642,7 +1493,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 496362374505027731}
+        - m_Target: {fileID: 193023368266242185}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayHover
           m_Mode: 1
@@ -1658,7 +1509,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 496362374505027731}
+        - m_Target: {fileID: 193023368266242185}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayClick
           m_Mode: 1
@@ -1857,7 +1708,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 496362374505027731}
+        - m_Target: {fileID: 193023368266242185}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayHover
           m_Mode: 1
@@ -1873,7 +1724,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 496362374505027731}
+        - m_Target: {fileID: 193023368266242185}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayClick
           m_Mode: 1
@@ -1951,7 +1802,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Muzzles
+  m_text: "\u0413\u043B\u0443\u0448\u0438\u0442\u0435\u043B\u0438"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
@@ -2248,7 +2099,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 496362374505027731}
+        - m_Target: {fileID: 193023368266242185}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayHover
           m_Mode: 1
@@ -2264,7 +2115,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 496362374505027731}
+        - m_Target: {fileID: 193023368266242185}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayClick
           m_Mode: 1
@@ -2386,11 +2237,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2335637742431148231, guid: d7a7d5c1fb0d5ae4ba82fcaacec7b490,
         type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 4777339281497647718}
-    - target: {fileID: 2335637742431148231, guid: d7a7d5c1fb0d5ae4ba82fcaacec7b490,
-        type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: 
       objectReference: {fileID: 0}
@@ -2421,11 +2267,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2912577831419500126, guid: d7a7d5c1fb0d5ae4ba82fcaacec7b490,
         type: 3}
-      propertyPath: _awake.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 4528764164538105381}
-    - target: {fileID: 2912577831419500126, guid: d7a7d5c1fb0d5ae4ba82fcaacec7b490,
-        type: 3}
       propertyPath: _awake.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
@@ -2434,11 +2275,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Selection_Arrows
       objectReference: {fileID: 0}
-    - target: {fileID: 8773534212095364634, guid: d7a7d5c1fb0d5ae4ba82fcaacec7b490,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 4777339281497647718}
     - target: {fileID: 8773534212095364634, guid: d7a7d5c1fb0d5ae4ba82fcaacec7b490,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2479,3 +2315,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &6576623053167044272
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1327767702829715696}
+    m_Modifications:
+    - target: {fileID: 3230467562859136419, guid: 2492a3796f7d4694094abf5962379950,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230467562859136419, guid: 2492a3796f7d4694094abf5962379950,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230467562859136419, guid: 2492a3796f7d4694094abf5962379950,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230467562859136419, guid: 2492a3796f7d4694094abf5962379950,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230467562859136419, guid: 2492a3796f7d4694094abf5962379950,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230467562859136419, guid: 2492a3796f7d4694094abf5962379950,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230467562859136419, guid: 2492a3796f7d4694094abf5962379950,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230467562859136419, guid: 2492a3796f7d4694094abf5962379950,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230467562859136419, guid: 2492a3796f7d4694094abf5962379950,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230467562859136419, guid: 2492a3796f7d4694094abf5962379950,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149899256272577992, guid: 2492a3796f7d4694094abf5962379950,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonSoundPlayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2492a3796f7d4694094abf5962379950, type: 3}
+--- !u!114 &193023368266242185 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6478738579830963769, guid: 2492a3796f7d4694094abf5962379950,
+    type: 3}
+  m_PrefabInstance: {fileID: 6576623053167044272}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0d3425c18fbce4eb1fd8e78c76c47c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &5405425942052078997 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1172965136753271589, guid: 2492a3796f7d4694094abf5962379950,
+    type: 3}
+  m_PrefabInstance: {fileID: 6576623053167044272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8615446506596377363 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3230467562859136419, guid: 2492a3796f7d4694094abf5962379950,
+    type: 3}
+  m_PrefabInstance: {fileID: 6576623053167044272}
+  m_PrefabAsset: {fileID: 0}
