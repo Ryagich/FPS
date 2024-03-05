@@ -443,6 +443,285 @@ MonoBehaviour:
     m_Key: Menu/-----Template-----/DeathmatchCreator 2 4
     m_Metadata:
       m_Items: []
+  - m_Id: 23855976019099648
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23855981396197376
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back
+      1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23855990405562368
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back
+      2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23856023267934208
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back
+      3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23856043161518080
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back
+      4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23856510906105856
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857031473758208
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back_3
+      1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857041431035904
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back_3
+      2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857056945766400
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back_3
+      3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857076738686976
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back_3
+      4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857505853734912
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_3/Button_Back_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857574006980608
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_3/Button_Back_1
+      1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857778751930368
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_3/Button_Back_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857952257703936
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_3/Button_Back_2
+      1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857966396702720
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_3/Button_Back_2
+      2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857985363345408
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_3/Button_Back_2
+      3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858230050652160
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858235125760000
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+      1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858243828940800
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+      2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858258592890880
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+      3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858290549293056
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+      4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858755122987008
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+      5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858763645812736
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+      6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858771321389056
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+      7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858781597433856
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+      8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858819543302144
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+      9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23860305673289728
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_5/Button_Back_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23860365588922368
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_5/Button_Back_5
+      1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23860445100343296
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_5/Button_Back_5
+      2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23860636863922176
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_5/Button_Back_5
+      3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23860729285410816
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_5/Button_Back_5
+      4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23861638094618624
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_1/Upgrade_Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23861788988899328
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back
+      5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23862152412758016
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_2/Button_Back_3
+      5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23862448530620416
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_3/Button_Back_1
+      2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23863488449576960
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_3/Button_Back_2
+      4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23864102592151552
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+      10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23864174381858816
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_4/Button_Back_1
+      11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23864330690985984
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_1/Content/Level_5/Button_Back_5
+      5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865275004977152
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_2/Content/Level_1/Upgrade_Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865404445392896
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_2/Content/Level_2/Upgrade_Button_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865537375469568
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_2/Content/Level_2/Upgrade_Button_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865626542178304
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_2/Content/Level_3/Upgrade_Button_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23866183554138112
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_2/Content/Level_3/Upgrade_Button_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23868760937168896
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_2/Content/Level_4/Upgrade_Button_9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869032442855424
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_2/Content/Level_4/Upgrade_Button_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869840404217856
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_2/Content/Level_5/Upgrade_Button_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869982083612672
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_2/Content/Level_5/Upgrade_Button_8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23872589883736064
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_3/Content/Level_2/Upgrade_Button_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23873905540431872
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_3/Content/Level_1/Upgrade_Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23874069982314496
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_3/Content/Level_4/Upgrade_Button_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23876841481928704
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_5/Content/Level_1/Upgrade_Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877027914547200
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_5/Content/Level_2/Upgrade_Button_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877123989274624
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_5/Content/Level_2/Upgrade_Button_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877254654427136
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_5/Content/Level_3/Upgrade_Button_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877314087714816
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_5/Content/Level_3/Upgrade_Button_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877368278122496
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_5/Content/Level_4/Upgrade_Button_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877462457024512
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content/Upgrades_Branch_5/Content/Level_5/Upgrade_Button_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23878100041564160
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/UpgradesHeader_Text
+      (TMP)_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23878697394339840
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Description/Content/Buttons_Background_1/Content/Button_Upgrade/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23879224698044416
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Buttons_Background/Content/Button_Back/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

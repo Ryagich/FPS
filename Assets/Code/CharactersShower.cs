@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using YG;
 
@@ -17,7 +19,9 @@ public class CharactersShower : MonoBehaviour
 
     [SerializeField] private Mover _mover;
     [SerializeField] private Rotater _rotater;
-
+    [SerializeField] private SpecificationHolder _holder;
+    [SerializeField] private List<Specification> _specifications = new();
+    
     private int index;
     private bool inited;
 
@@ -38,7 +42,28 @@ public class CharactersShower : MonoBehaviour
         CheckIndex();
         _mover.Move(_idlePlaces[index]);
         _rotater.Rotate(_idlePlaces[index]);
+        ShowSpecification();
+
         CharacterChanged?.Invoke(index);
+    }
+
+    private void ShowSpecification()
+    {
+        _holder.Name.text = _specifications[index].name;
+        _holder.History.text = _specifications[index].history;
+        _holder.Health.text = $"{_specifications[index].health}";
+        _holder.Armour.text  =  $"{_specifications[index].armour}";
+        _holder.Speed.text =  $"x{_specifications[index].speed.ToString("F1",CultureInfo.InvariantCulture)}";
+        _holder.Ammo.text = $"x{_specifications[index].ammo.ToString("F1",CultureInfo.InvariantCulture)}";
+
+        _holder.FirstSkillName.text = _specifications[index].skills[0].name;
+        _holder.FirstSkillCooldown.text = $"{_specifications[index].skills[0].count}";
+        _holder.FirstSkillDescription.text = _specifications[index].skills[0].description;
+
+        _holder.SecondSkillName.text = _specifications[index].skills[1].name;
+        _holder.SecondSkillCount.text =  $"{_specifications[index].skills[1].count}";
+        _holder.SecondSkillDescription.text = _specifications[index].skills[1].description;
+
     }
 
     public void ShowReadyCharacter()
@@ -46,7 +71,7 @@ public class CharactersShower : MonoBehaviour
         CheckIndex();
         for (int i = 0; i < _readyCharacters.Count; i++)
         {
-            _readyCharacters[i].SetActive(i == index);
+            _readyCharacters[i].SetActive(i == YandexGame.savesData.CharacterIndex);
         }
     }
 

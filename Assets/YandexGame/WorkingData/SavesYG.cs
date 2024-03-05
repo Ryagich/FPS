@@ -12,12 +12,81 @@ namespace YG
         public bool promptDone;
 
         // Ваши сохранения
-        public int Money = 3000;
         public int SceneIndex;
 
+        public int Money = 3000;
+        public int Crystals = 3000;
+        public int UpgradesLevel = 0;
+
         public string locale = "";
+
         // -1 - не дезматч; 0 - до 100 киллов; 1 - 5 мин; 2 - 10 мин;
         public int CharacterIndex = 0;
+
+        //-2 - empty |-1 - close |0 - first level...
+        public int[][][] Upgrades =
+        {
+            //Branch 1 - index 0
+            //Expedition
+            new[]
+            {
+                //level 1 - index 0
+                new[] { 0, },
+                //level 2 - index 1
+                new[] { -1, -1, },
+                //level 3 - index 2
+                new[] {  -1, -1, },
+                //level 4 - index 3
+                new[] {  -1, -1, },
+                //level 5 - index 4
+                new[] {  -1, },
+            },
+            //Branch 2 - index 1
+            //Battle
+            new[]
+            {
+                //level 1 - index 0
+                new[] { 0, },
+                //level 2 - index 1
+                new[] { -1, -1, },
+                //level 3 - index 2
+                new[] {  -1, -1, },
+                //level 4 - index 3
+                new[] {  -1, -1, },
+                //level 5 - index 4
+                new[] {  -1, -1, },
+            },
+            //Branch 3 - index 2
+            //Skill
+            new[]
+            {
+                //level 1 - index 0
+                new[] { 0, },
+                //level 2 - index 1
+                new[] { -1,},
+                //level 3 - index 2
+                new[] { -1}, // empty
+                //level 4 - index 3
+                new[] {  -1, },
+                //level 5 - index 4
+                new[] {  -1,}, // empty
+            },
+            //Branch 4 - index 3
+            //Survival
+            new[]
+            {
+                //level 1 - index 0
+                new[] { 0, },
+                //level 2 - index 1
+                new[] { -1, -1, },
+                //level 3 - index 2
+                new[] { -1, -1, },
+                //level 4 - index 3
+                new[] { -1, },
+                //level 5 - index 4
+                new[] { -1,},
+            },
+        };
 
         public bool[][] OpenedWeapons =
         {
@@ -281,7 +350,7 @@ namespace YG
             Money += value;
             YandexGame.SaveProgress();
         }
-        
+
         // 0 - lvl, 1 - x,y,z
         // 0 - x, 1 - y, 2 - z;
         // -1000 - trash value
@@ -297,7 +366,7 @@ namespace YG
             true, false,
         };
 
-    // Вы можете выполнить какие то действия при загрузке сохранений
+        // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()
         {
             //Debug.Log("UsesLaptops " + UsesLaptops);

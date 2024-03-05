@@ -114,9 +114,9 @@ public class AttachmentsMenu : MonoBehaviour
 
     private void TryBuy(int i)
     {
-        if (!MoneyController.Instanse.Check(GetCurrCost(i)))
+        if (!CurrencyController.Instanse.Check(CurrencyType.Crystals,GetCurrCost(i)))
             return;
-        MoneyController.Instanse.ChangeAmount(-GetCurrCost(i));
+        CurrencyController.Instanse.ChangeAmount(CurrencyType.Crystals,-GetCurrCost(i));
         YandexGame.savesData.OpenedAttachments[weapon.WeaponIndex][section][i] = true;
         YandexGame.savesData.ChosenAttachments[weapon.WeaponIndex][section] = i;
         YandexGame.SaveProgress();

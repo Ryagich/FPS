@@ -100,9 +100,9 @@ public class WeaponsSection : MonoBehaviour
 
     private void TryBuy()
     {
-        if (!MoneyController.Instanse.Check(Costs[index]))
+        if (!CurrencyController.Instanse.Check(CurrencyType.Crystals,Costs[index]))
             return;
-        MoneyController.Instanse.ChangeAmount(-Costs[index]);
+        CurrencyController.Instanse.ChangeAmount(CurrencyType.Crystals,-Costs[index]);
         YandexGame.savesData.OpenedWeapons[_section][index] = true;
         YandexGame.SaveProgress();
         SetActionButton(index);

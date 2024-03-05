@@ -1,12 +1,93 @@
 {
-  "idSave": 152,
+  "idSave": 113,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Money": 500,
-  "SceneIndex": 3,
+  "SceneIndex": 0,
+  "Money": 3000,
+  "Crystals": 8710,
+  "UpgradesLevel": 37,
   "locale": "ru",
-  "CharacterIndex": 2,
+  "CharacterIndex": 0,
+  "Upgrades": [
+    [
+      [
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        -1,
+        -1
+      ]
+    ],
+    [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        -1
+      ],
+      [
+        -1
+      ],
+      [
+        -1
+      ]
+    ],
+    [
+      [
+        0
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1
+      ],
+      [
+        -1
+      ]
+    ]
+  ],
   "OpenedWeapons": [
     [
       true,
@@ -73,7 +154,7 @@
         false,
         false,
         false,
-        true
+        false
       ],
       [
         true,
@@ -499,7 +580,7 @@
   ],
   "ChosenAttachments": [
     [
-      7,
+      -1,
       0,
       -1,
       -1
@@ -598,7 +679,7 @@
   "SensitivityX": 1.25,
   "SensitivityY": 1.25,
   "MasterVolume": -10.0,
-  "UIVolume": -10.0,
+  "UIVolume": -30.0,
   "EffectsVolume": -30.0,
   "StepsVolume": -30.0,
   "ShootingVolume": -30.0,

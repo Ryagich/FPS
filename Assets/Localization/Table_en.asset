@@ -451,6 +451,253 @@ MonoBehaviour:
       survival game
     m_Metadata:
       m_Items: []
+  - m_Id: 23855976019099648
+    m_Localized: Get 100 coins at the start of the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23855981396197376
+    m_Localized: Get 200 coins at the start of the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23855990405562368
+    m_Localized: Get 300 coins at the start of the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23856023267934208
+    m_Localized: Get 400 coins at the start of the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23856043161518080
+    m_Localized: Get 500 coins at the start of the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23856510906105856
+    m_Localized: 20% Chance of finding coins in items.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857031473758208
+    m_Localized: 30% Chance of finding coins in items.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857041431035904
+    m_Localized: 45% Chance of finding coins in items.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857056945766400
+    m_Localized: 60% Chance of finding coins in items.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857076738686976
+    m_Localized: "80% \u0428\u0430\u043D\u0441 \u043D\u0430\u0439\u0442\u0438 \u043C\u043E\u043D\u0435\u0442\u044B
+      \u0432 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u0430\u0445"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857505853734912
+    m_Localized: The merchant has new items for sale.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857574006980608
+    m_Localized: The merchant has even more new items for sale.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857778751930368
+    m_Localized: 10% chance to receive additional coins for defeated opponents.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857952257703936
+    m_Localized: 15% chance to receive additional coins for defeated opponents.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857966396702720
+    m_Localized: 25% chance to receive additional coins for defeated opponents.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857985363345408
+    m_Localized: 30% chance to receive additional coins for defeated opponents.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858230050652160
+    m_Localized: Trader prices are reduced by 10%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858235125760000
+    m_Localized: Trader prices are reduced by 20%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858243828940800
+    m_Localized: Trader prices are reduced by 30%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858258592890880
+    m_Localized: Trader prices are reduced by 40%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858290549293056
+    m_Localized: Trader prices are reduced by 50%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858755122987008
+    m_Localized: 5% Chance to double the coins found.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858763645812736
+    m_Localized: 10% Chance to double the coins found.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858771321389056
+    m_Localized: 15% Chance to double the coins found.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858781597433856
+    m_Localized: 20% Chance to double the coins found.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23858819543302144
+    m_Localized: 25% Chance to double the coins found.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23860305673289728
+    m_Localized: Your first purchase from a merchant is free.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23860365588922368
+    m_Localized: The first two purchases from a merchant are free.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23860445100343296
+    m_Localized: The first three purchases from a merchant are free.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23860636863922176
+    m_Localized: The first five purchases from a merchant are free.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23860729285410816
+    m_Localized: The first four purchases from a merchant are free.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23861638094618624
+    m_Localized: Trade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23861788988899328
+    m_Localized: Starting Funds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23862152412758016
+    m_Localized: Gold all around
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23862448530620416
+    m_Localized: New goods
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23863488449576960
+    m_Localized: Production
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23864102592151552
+    m_Localized: Sale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23864174381858816
+    m_Localized: Stash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23864330690985984
+    m_Localized: Favorite client
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865275004977152
+    m_Localized: Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865404445392896
+    m_Localized: More ammo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865537375469568
+    m_Localized: Strong pistols
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865626542178304
+    m_Localized: Fast hands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23866183554138112
+    m_Localized: Primary Weapon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23868760937168896
+    m_Localized: Strong shotguns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869032442855424
+    m_Localized: Critical Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869840404217856
+    m_Localized: Critical Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869982083612672
+    m_Localized: Critical Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23872589883736064
+    m_Localized: Cooldown Reduction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23873905540431872
+    m_Localized: Capabilities
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23874069982314496
+    m_Localized: Strengthening abilities
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23876841481928704
+    m_Localized: Increased Health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877027914547200
+    m_Localized: Level treatment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877123989274624
+    m_Localized: Armor at level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877254654427136
+    m_Localized: Effective treatment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877314087714816
+    m_Localized: Armor Increase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877368278122496
+    m_Localized: Health recovery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877462457024512
+    m_Localized: Damage Resistance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23878100041564160
+    m_Localized: Upgrades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23878697394339840
+    m_Localized: 'Upgrade
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23879224698044416
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
