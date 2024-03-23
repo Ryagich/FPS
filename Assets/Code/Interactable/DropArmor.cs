@@ -6,6 +6,11 @@ public class DropArmor : MonoBehaviour
     [SerializeField] private UnityEvent _emptyValue;
     [SerializeField] private float _value = 100;
 
+    public void SetValue(float value)
+    {
+        _value = value;
+    }
+    
     public void Use(GameObject hero, GameObject _)
     {
         var sc = hero.GetComponent<StatsController>();

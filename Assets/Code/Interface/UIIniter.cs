@@ -18,8 +18,6 @@ public class UIIniter : MonoBehaviour
 
         var bh = canvas.GetComponent<UIHolder>();
 
-        sc.Init();
-
         bh.HP.fillAmount = sc.Hp.Value / sc.Hp.Max;
         bh.Armor.fillAmount = sc.Armor.Value / sc.Armor.Max;
 

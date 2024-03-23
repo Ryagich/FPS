@@ -18,13 +18,13 @@ public class CharacterSelector : MonoBehaviour
         _shower.CharacterChanged += ShowButton;
     }
 
-    private void ShowButton(int index)
+    private void ShowButton(int newIndex)
     {
-        this.index = index;
+        index = newIndex;
 
         if (currButton)
             Destroy(currButton);
-        if (index == YandexGame.savesData.CharacterIndex)
+        if (newIndex == YandexGame.savesData.CharacterIndex)
             currButton = Instantiate(_chosen, _parent);
         else
         {

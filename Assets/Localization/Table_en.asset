@@ -451,40 +451,28 @@ MonoBehaviour:
       survival game
     m_Metadata:
       m_Items: []
-  - m_Id: 23855976019099648
-    m_Localized: Get 100 coins at the start of the game.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 23855981396197376
-    m_Localized: Get 200 coins at the start of the game.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 23855990405562368
-    m_Localized: Get 300 coins at the start of the game.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 23856023267934208
-    m_Localized: Get 400 coins at the start of the game.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 23856043161518080
+  - m_Id: 25535090107056128
     m_Localized: Get 500 coins at the start of the game.
     m_Metadata:
       m_Items: []
-  - m_Id: 23856510906105856
+  - m_Id: 25535069496246272
+    m_Localized: Get 400 coins at the start of the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535006250336256
+    m_Localized: Get 300 coins at the start of the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25534970430980096
+    m_Localized: Get 200 coins at the start of the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25534946011742208
+    m_Localized: Get 100 coins at the start of the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535263830933504
     m_Localized: 20% Chance of finding coins in items.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 23857031473758208
-    m_Localized: 30% Chance of finding coins in items.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 23857041431035904
-    m_Localized: 45% Chance of finding coins in items.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 23857056945766400
-    m_Localized: 60% Chance of finding coins in items.
     m_Metadata:
       m_Items: []
   - m_Id: 23857076738686976
@@ -492,87 +480,83 @@ MonoBehaviour:
       \u0432 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u0430\u0445"
     m_Metadata:
       m_Items: []
-  - m_Id: 23857505853734912
+  - m_Id: 25535652072488960
     m_Localized: The merchant has new items for sale.
     m_Metadata:
       m_Items: []
-  - m_Id: 23857574006980608
+  - m_Id: 25535690815275008
     m_Localized: The merchant has even more new items for sale.
     m_Metadata:
       m_Items: []
-  - m_Id: 23857778751930368
-    m_Localized: 10% chance to receive additional coins for defeated opponents.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 23857952257703936
+  - m_Id: 25536636655992832
     m_Localized: 15% chance to receive additional coins for defeated opponents.
     m_Metadata:
       m_Items: []
-  - m_Id: 23857966396702720
+  - m_Id: 25536670474665984
     m_Localized: 25% chance to receive additional coins for defeated opponents.
     m_Metadata:
       m_Items: []
-  - m_Id: 23857985363345408
+  - m_Id: 25536743816265728
     m_Localized: 30% chance to receive additional coins for defeated opponents.
     m_Metadata:
       m_Items: []
-  - m_Id: 23858230050652160
+  - m_Id: 25537119437160448
     m_Localized: Trader prices are reduced by 10%.
     m_Metadata:
       m_Items: []
-  - m_Id: 23858235125760000
+  - m_Id: 25537154472181760
     m_Localized: Trader prices are reduced by 20%.
     m_Metadata:
       m_Items: []
-  - m_Id: 23858243828940800
+  - m_Id: 25537176488083456
     m_Localized: Trader prices are reduced by 30%.
     m_Metadata:
       m_Items: []
-  - m_Id: 23858258592890880
+  - m_Id: 25537199242182656
     m_Localized: Trader prices are reduced by 40%.
     m_Metadata:
       m_Items: []
-  - m_Id: 23858290549293056
+  - m_Id: 25537226559684608
     m_Localized: Trader prices are reduced by 50%.
     m_Metadata:
       m_Items: []
-  - m_Id: 23858755122987008
+  - m_Id: 25537335938744320
     m_Localized: 5% Chance to double the coins found.
     m_Metadata:
       m_Items: []
-  - m_Id: 23858763645812736
+  - m_Id: 25537390154317824
     m_Localized: 10% Chance to double the coins found.
     m_Metadata:
       m_Items: []
-  - m_Id: 23858771321389056
+  - m_Id: 25537433770885120
     m_Localized: 15% Chance to double the coins found.
     m_Metadata:
       m_Items: []
-  - m_Id: 23858781597433856
+  - m_Id: 25537467086241792
     m_Localized: 20% Chance to double the coins found.
     m_Metadata:
       m_Items: []
-  - m_Id: 23858819543302144
+  - m_Id: 25537587118833664
     m_Localized: 25% Chance to double the coins found.
     m_Metadata:
       m_Items: []
-  - m_Id: 23860305673289728
+  - m_Id: 25537685563342848
     m_Localized: Your first purchase from a merchant is free.
     m_Metadata:
       m_Items: []
-  - m_Id: 23860365588922368
+  - m_Id: 25537721567248384
     m_Localized: The first two purchases from a merchant are free.
     m_Metadata:
       m_Items: []
-  - m_Id: 23860445100343296
+  - m_Id: 25537762885337088
     m_Localized: The first three purchases from a merchant are free.
     m_Metadata:
       m_Items: []
-  - m_Id: 23860636863922176
+  - m_Id: 25537860348379136
     m_Localized: The first five purchases from a merchant are free.
     m_Metadata:
       m_Items: []
-  - m_Id: 23860729285410816
+  - m_Id: 25537800936062976
     m_Localized: The first four purchases from a merchant are free.
     m_Metadata:
       m_Items: []
@@ -580,31 +564,31 @@ MonoBehaviour:
     m_Localized: Trade
     m_Metadata:
       m_Items: []
-  - m_Id: 23861788988899328
+  - m_Id: 25539139623682048
     m_Localized: Starting Funds
     m_Metadata:
       m_Items: []
-  - m_Id: 23862152412758016
+  - m_Id: 25539197781901312
     m_Localized: Gold all around
     m_Metadata:
       m_Items: []
-  - m_Id: 23862448530620416
+  - m_Id: 25539240471527424
     m_Localized: New goods
     m_Metadata:
       m_Items: []
-  - m_Id: 23863488449576960
+  - m_Id: 25539277511426048
     m_Localized: Production
     m_Metadata:
       m_Items: []
-  - m_Id: 23864102592151552
+  - m_Id: 25539335518650368
     m_Localized: Sale
     m_Metadata:
       m_Items: []
-  - m_Id: 23864174381858816
+  - m_Id: 25539387007926272
     m_Localized: Stash
     m_Metadata:
       m_Items: []
-  - m_Id: 23864330690985984
+  - m_Id: 25539447351377920
     m_Localized: Favorite client
     m_Metadata:
       m_Items: []
@@ -696,6 +680,562 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 23879224698044416
     m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488676585340928
+    m_Localized: Increases all damage dealt by 5%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488681073246208
+    m_Localized: Increases all damage dealt by 10%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488694549544960
+    m_Localized: Increases all damage dealt by 15%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488706071298048
+    m_Localized: Increases all damage dealt by 20%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488738686205952
+    m_Localized: Increases all damage dealt by 25%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488750207959040
+    m_Localized: Increases all damage dealt by 30%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488775222788096
+    m_Localized: Increases all damage dealt by 35%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488804830380032
+    m_Localized: Increases all damage dealt by 40%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488842499424256
+    m_Localized: Increases all damage dealt by 45%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488866163687424
+    m_Localized: Increases all damage dealt by 50%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492900039753728
+    m_Localized: Increases ammo supply by 5%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492904519270400
+    m_Localized: Increases ammo supply by 10%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492920671535104
+    m_Localized: Increases ammo supply by 15%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492929626374144
+    m_Localized: Increases ammo supply by 20%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492938639933440
+    m_Localized: Increases ammo supply by 25%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492964862722048
+    m_Localized: Increases ammo supply by 30%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492977663737856
+    m_Localized: Increases ammo supply by 35%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492994864578560
+    m_Localized: Increases ammo supply by 40%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24493009527865344
+    m_Localized: Increases ammo supply by 45%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494025690284032
+    m_Localized: Upgrade Info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494292854865920
+    m_Localized: Increases pistol damage by 20%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494306356330496
+    m_Localized: Increases pistol damage by 30%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494314266787840
+    m_Localized: Increases pistol damage by 40%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494334844043264
+    m_Localized: Increases pistol damage by 50%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494839896965120
+    m_Localized: Increases weapon reload speed by 25%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494844993044480
+    m_Localized: Increases weapon reload speed by 50%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495259671298048
+    m_Localized: Increases Primary Weapon damage by 10%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495264847069184
+    m_Localized: Increases Primary Weapon damage by 20%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495277786497024
+    m_Localized: Increases Primary Weapon damage by 30%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495289975144448
+    m_Localized: Increases Primary Weapon damage by 40%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495306706223104
+    m_Localized: Increases Primary Weapon damage by 50%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496717007388672
+    m_Localized: Increases shotgun damage by 10%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496721549819904
+    m_Localized: Increases shotgun damage by 20%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496733742661632
+    m_Localized: Increases shotgun damage by 30%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496750482128896
+    m_Localized: Increases shotgun damage by 40%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496763476082688
+    m_Localized: Increases shotgun damage by 50%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24497221166923776
+    m_Localized: Attacks have a 5% chance to deal critical damage equal to 150%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24505797293867008
+    m_Localized: critical damage increases to 175%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24505803627266048
+    m_Localized: critical damage increases to 200%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24505847780704256
+    m_Localized: critical damage increases to 250%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24508024876138496
+    m_Localized: Chance to deal critical damage increases to 15%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24508028822978560
+    m_Localized: Chance to deal critical damage increases to 20%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512100342923264
+    m_Localized: The ability to use the abilities of operatives.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512738581774336
+    m_Localized: Reduces ability cooldown time by 10%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512741769445376
+    m_Localized: Reduces ability cooldown time by 20%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512748899762176
+    m_Localized: Reduces ability cooldown time by 30%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512759184195584
+    m_Localized: Reduces ability cooldown time by 40%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512769414103040
+    m_Localized: Reduces ability cooldown time by 50%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513049887211520
+    m_Localized: Increases the strength and effectiveness of abilities.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513386111008768
+    m_Localized: Increases health by 10 points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513393782390784
+    m_Localized: Increases health by 20 points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513403982938112
+    m_Localized: Increases health by 30 points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513416150614016
+    m_Localized: Increases health by 40 points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513435377303552
+    m_Localized: Increases health by 50 points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513754249265152
+    m_Localized: At levels you can find items that restore health, and they also
+      have a chance to drop from enemies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515032039784448
+    m_Localized: At levels you can find items that restore armor, and they also have
+      a chance to drop from enemies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515309799178240
+    m_Localized: Healing received from all sources increases by 10%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515314245140480
+    m_Localized: Healing received from all sources increases by 20%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515323212562432
+    m_Localized: Healing received from all sources increases by 30%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515331685056512
+    m_Localized: Healing received from all sources increases by 40%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515341898186752
+    m_Localized: Healing received from all sources increases by 50%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515842723250176
+    m_Localized: Increases armor by 15 points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515855599763456
+    m_Localized: Increases armor by 30 points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515867746467840
+    m_Localized: Increases armor by 50 points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517213069475840
+    m_Localized: Restore 0.5 health units every second.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517222674432000
+    m_Localized: Restore 1 health units every second.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517231117565952
+    m_Localized: Restore 2 health units every second.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517564795420672
+    m_Localized: Take 5% less damage from all sources.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517568691929088
+    m_Localized: Take 10% less damage from all sources.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517582210170880
+    m_Localized: Take 15% less damage from all sources.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517591131455488
+    m_Localized: Take 20% less damage from all sources.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517605178179584
+    m_Localized: Take 25% less damage from all sources.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24518482639159296
+    m_Localized: At the levels you can meet merchants selling a variety of goods.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24558171962179584
+    m_Localized: An experienced fighter who has visited many hot spots around the
+      world. It would take a long time to list his awards, but one thing is for sure
+      - Rambo is the best of the best, the real elite of the armed forces. Rambo
+      is skilled with melee weapons like this (+20% to damage and speed of using
+      SMGs and shotguns).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565575860846592
+    m_Localized: 'Booth is an experienced operative specializing in espionage operations.
+      He is extremely secretive, it is difficult to say how many operations he has
+      taken part in or even how old he is or whether his name is really Booth. We
+      can only say with confidence that he has eliminated many terrorist groups and
+      is eliminating more than one.
+
+      Pistol damage +50%.
+
+      Speed of using
+      pistols and automatic rifles +10%.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565592822611968
+    m_Localized: Boot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565614632992768
+    m_Localized: Rambo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565635059253248
+    m_Localized: Shadow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565712016343040
+    m_Localized: 'The Shadow is an eternal silent person who prefers loneliness to
+      any company. Behind his modest character lies a master of murder who leaves
+      no chance for his victims. There is no person in the world who can hide from
+      a Shadow''s bullet.
+
+      +20% damage to sniper rifles.
+
+      +25% speed
+      of using sniper rifles.
+
+      +25% accuracy and -20% firing speed for all
+      weapons.
+
+      +5% chance for critical attacks.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565760913539072
+    m_Localized: Last Blood
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565942598205440
+    m_Localized: 'When activated, Rambo stops feeling pain and taking damage for
+      some time.
+
+      If the next damage taken is fatal and the ability is ready
+      to be used, it will activate automatically.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565980846063616
+    m_Localized: Supplies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24566015482626048
+    m_Localized: 'When activated, grants 10% health and 12% armor.
+
+      Replenishes
+      20% of all ammunition from the maximum value.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24567533216694272
+    m_Localized: 'Using the ability slows down time for a while.
+
+      Opponents
+      are slowed down more than Booth.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24567566334918656
+    m_Localized: Acute reaction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590482539773952
+    m_Localized: When used, enemies begin to attack a random ally, ignoring Booth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590508850642944
+    m_Localized: Trick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590557903028224
+    m_Localized: 'Cooldown:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590578283151360
+    m_Localized: sec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590596167663616
+    m_Localized: 'Maximum charges:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24591678646222848
+    m_Localized: 'Parameters:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24591798636871680
+    m_Localized: History
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24591993919471616
+    m_Localized: 'Skills:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24592211066978304
+    m_Localized: Characters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24592246907305984
+    m_Localized: Upgrades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24592269996949504
+    m_Localized: 'Weapons
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24593866193862656
+    m_Localized: 'Current level:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596365437009920
+    m_Localized: 'Expedition
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596766659936256
+    m_Localized: 'Battle
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596782585708544
+    m_Localized: Skill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596806958809088
+    m_Localized: Survival
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24600058739785728
+    m_Localized: 'Current level:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24865453879033856
+    m_Localized: 'Start
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25012986949369856
+    m_Localized: Increases ammo supply by 50%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535270004948992
+    m_Localized: 30% Chance of finding coins in items.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535284198473728
+    m_Localized: 45% Chance of finding coins in items.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535334609813504
+    m_Localized: 60% Chance of finding coins in items.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535432383234048
+    m_Localized: 80% Chance of finding coins in items.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25536601260261376
+    m_Localized: 10% chance to receive additional coins for defeated opponents.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28439663406710784
+    m_Localized: Abilities
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28441243786903552
+    m_Localized: Additional Ability
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29992631956373504
+    m_Localized: Main Ability
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30630950050430976
+    m_Localized: 'Ammo type:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30630996594622464
+    m_Localized: 'Shooting type:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631126605463552
+    m_Localized: 'Movement factor:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631161195888640
+    m_Localized: 'Damage:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631231324651520
+    m_Localized: 'Rate of fire:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631276174344192
+    m_Localized: 'Spread:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631319660888064
+    m_Localized: 'Magazine capacity:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631331526574080
+    m_Localized: Automatic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631348811300864
+    m_Localized: Single
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30665899948343296
+    m_Localized: Talents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30669024620937216
+    m_Localized: Trader
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30669253587992576
+    m_Localized: Buy For Ad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30720282899742720
+    m_Localized: 'Help
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30720330526064640
+    m_Localized: Click on the card to select a talent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30720506846216192
+    m_Localized: Talents
     m_Metadata:
       m_Items: []
   references:

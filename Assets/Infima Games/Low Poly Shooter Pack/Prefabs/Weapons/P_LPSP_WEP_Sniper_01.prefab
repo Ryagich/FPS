@@ -543,6 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7170d51de97d79e4fb11d3321667acb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammunitionCurrent: 0
   weaponName: Sniper 01
   multiplierMovementSpeed: 1
   automatic: 0
@@ -577,8 +578,8 @@ MonoBehaviour:
   audioClipBoltAction: {fileID: 8300000, guid: 9437d90133cd4ff41b81629b342d38c9, type: 3}
   <DropWeapon>k__BackingField: {fileID: 6513875845327220866, guid: c60fb516a762c0d4b901fb57239391aa,
     type: 3}
+  <Type>k__BackingField: 1
   <AmmoType>k__BackingField: 0
-  ammunitionCurrent: 0
 --- !u!114 &8578661464601570599
 MonoBehaviour:
   m_ObjectHideFlags: 0

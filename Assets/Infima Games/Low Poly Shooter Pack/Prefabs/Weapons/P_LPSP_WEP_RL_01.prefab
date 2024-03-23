@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7170d51de97d79e4fb11d3321667acb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammunitionCurrent: 0
   weaponName: Rocket Launcher 01
   multiplierMovementSpeed: 1
   automatic: 0
@@ -181,6 +182,7 @@ MonoBehaviour:
   spread: 0
   projectileImpulse: 400
   roundsPerMinutes: 500
+  _damage: 40
   cycledReload: 0
   canReloadWhenFull: 0
   automaticReloadOnEmpty: 1
@@ -204,8 +206,8 @@ MonoBehaviour:
   audioClipBoltAction: {fileID: 0}
   <DropWeapon>k__BackingField: {fileID: 3932747175041551924, guid: 80a7499ffe2a5e54bbb8a3ce9277ac93,
     type: 3}
+  <Type>k__BackingField: 5
   <AmmoType>k__BackingField: 6
-  ammunitionCurrent: 0
 --- !u!114 &8840308336870320174
 MonoBehaviour:
   m_ObjectHideFlags: 0

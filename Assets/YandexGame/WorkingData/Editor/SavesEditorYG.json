@@ -1,33 +1,134 @@
 {
-  "idSave": 113,
+  "idSave": 59,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
   "SceneIndex": 0,
-  "Money": 3000,
-  "Crystals": 9580,
-  "UpgradesLevel": 28,
+  "Money": -1,
+  "MainSpellMax": -1,
+  "MainSpellCount": -1,
+  "AddSpellMax": 2,
+  "AddSpellCount": 2,
+  "ArmorMax": 180.0,
+  "Armor": 180.0,
+  "HealthMax": 180.0,
+  "Health": 210.0,
+  "AmmunitionMax": [
+    324,
+    486,
+    405,
+    243,
+    56,
+    27,
+    8
+  ],
+  "Ammunition": [
+    227,
+    486,
+    405,
+    243,
+    56,
+    27,
+    8
+  ],
+  "DamageFactor": 0.0,
+  "AddLive": 0,
+  "IsRun": true,
+  "FreePurchases": 0,
+  "speedWalking": 2.2,
+  "speedAiming": 1.56000018,
+  "speedCrouching": 1.8,
+  "speedRunning": 4.44,
+  "Crystals": 3000,
+  "UpgradesLevel": 0,
   "locale": "ru",
   "CharacterIndex": 0,
+  "Talents": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
   "Upgrades": [
     [
       [
         0
       ],
       [
-        4,
-        0
+        -1,
+        -1
       ],
       [
-        1,
-        0
+        -1,
+        -1
       ],
       [
-        4,
-        4
+        -1,
+        -1
       ],
       [
-        4
+        -1
       ]
     ],
     [
@@ -36,7 +137,7 @@
       ],
       [
         -1,
-        0
+        -1
       ],
       [
         -1,
@@ -59,13 +160,13 @@
         -1
       ],
       [
-        -1
+        -2
       ],
       [
         -1
       ],
       [
-        -1
+        -2
       ]
     ],
     [
@@ -678,8 +779,8 @@
   ],
   "SensitivityX": 1.25,
   "SensitivityY": 1.25,
-  "MasterVolume": -5.0,
-  "UIVolume": -15.0,
+  "MasterVolume": -10.0,
+  "UIVolume": -30.0,
   "EffectsVolume": -30.0,
   "StepsVolume": -30.0,
   "ShootingVolume": -30.0,

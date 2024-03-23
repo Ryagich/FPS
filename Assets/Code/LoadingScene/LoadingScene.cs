@@ -25,7 +25,9 @@ public class LoadingScene : MonoBehaviour
     private IEnumerator Loading()
     {
         var asyncOperation =
-            SceneManager.LoadSceneAsync(YandexGame.savesData.SceneIndex, LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync( 2,
+                         //YandexGame.savesData.SceneIndex,
+                         LoadSceneMode.Additive);
         while (!asyncOperation.isDone)
         {
             UpdateBar(asyncOperation.progress);

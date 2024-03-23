@@ -1,14 +1,9 @@
-//Copyright 2022, Infima Games. All Rights Reserved.
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering.PostProcessing;
 
 namespace InfimaGames.LowPolyShooterPack.Interface
 {
-    /// <summary>
-    /// Quality Settings Menu.
-    /// </summary>
     public class MenuQualitySettings : Element
     {
         [Title(label: "Settings")] [Tooltip("Canvas to play animations on.")] 
@@ -17,12 +12,14 @@ namespace InfimaGames.LowPolyShooterPack.Interface
         [SerializeField] private AnimationClip animationShow;
         [Tooltip("Animation played when hiding this menu.")] 
         [SerializeField] private AnimationClip animationHide;
-        
+        [SerializeField] private GameObject _talentsCanvas;
+        [SerializeField] private GameObject _canvas;
+
         private Animation animationComponent;
         private bool menuIsEnabled;
         private PostProcessVolume postProcessingVolume;
         private DepthOfField depthOfField;
-
+        
         private void Start()
         {
             animatedCanvas.GetComponent<CanvasGroup>().alpha = 0;
@@ -69,6 +66,8 @@ namespace InfimaGames.LowPolyShooterPack.Interface
 
             if (depthOfField != null)
                 depthOfField.active = false;
+            _talentsCanvas.SetActive(false);
+            _canvas.SetActive(true);
         }
     }
 }

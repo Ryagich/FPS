@@ -11,6 +11,7 @@ public class InventoryWeapon : MonoBehaviour
     public WeaponAttachmentManager Manager { get; private set; }
 
     [field: SerializeField] public int WeaponIndex { get; private set; }
+    [field: SerializeField] public Weapon Weapon { get; private set; }
 
     public void Init()
     {

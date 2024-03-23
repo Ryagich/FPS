@@ -6,6 +6,6 @@ public class DropItemSound : MonoBehaviour
 
     public void Play()
     {
-        AudioManager.Instance.PlaySound(_clip,AudioSourceType.Item,transform);
+        AudioManager.Instance.PlaySound(_clip, AudioSourceType.Item, transform);
     }
 }

@@ -21,7 +21,11 @@ public class CharactersShower : MonoBehaviour
     [SerializeField] private Rotater _rotater;
     [SerializeField] private SpecificationHolder _holder;
     [SerializeField] private List<Specification> _specifications = new();
-    
+    [Space] 
+    [SerializeField] private string _firstSkillCooldownTextBefore;
+    [SerializeField] private string _firstSkillCooldownTextAfter;
+    [SerializeField] private string _secondSkillCooldownText;
+
     private int index;
     private bool inited;
 
@@ -57,11 +61,11 @@ public class CharactersShower : MonoBehaviour
         _holder.Ammo.text = $"x{_specifications[index].ammo.ToString("F1",CultureInfo.InvariantCulture)}";
 
         _holder.FirstSkillName.text = _specifications[index].skills[0].name;
-        _holder.FirstSkillCooldown.text = $"{_specifications[index].skills[0].count}";
+        _holder.FirstSkillCooldown.text = $"{_firstSkillCooldownTextBefore} {_specifications[index].skills[0].value} {_firstSkillCooldownTextAfter}";
         _holder.FirstSkillDescription.text = _specifications[index].skills[0].description;
 
         _holder.SecondSkillName.text = _specifications[index].skills[1].name;
-        _holder.SecondSkillCount.text =  $"{_specifications[index].skills[1].count}";
+        _holder.SecondSkillCount.text =  $"{_secondSkillCooldownText} {_specifications[index].skills[1].value}";
         _holder.SecondSkillDescription.text = _specifications[index].skills[1].description;
 
     }

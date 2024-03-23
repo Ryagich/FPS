@@ -51,7 +51,7 @@ public class LevelEnder : MonoBehaviour
         }
 
         holder = character.GetComponent<CanvasSpawner>().Complete.GetComponent<CompleteUIHolder>();
-        var callback = character.GetComponent<KillEnemyCallback>();
+        var callback = character.GetComponent<CallbackController>();
         var disabler = character.GetComponent<CharacterDisabler>();
         pause = character.GetComponent<PauseController>();
 

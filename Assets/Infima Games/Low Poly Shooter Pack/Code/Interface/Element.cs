@@ -8,7 +8,6 @@ namespace InfimaGames.LowPolyShooterPack.Interface
         protected CharacterBehaviour characterBehaviour;
         protected InventoryBehaviour inventoryBehaviour;
         protected WeaponBehaviour equippedWeaponBehaviour;
-        #region UNITY
 
         protected virtual void Awake()
         {
@@ -26,7 +25,6 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             
             Tick();
         }
-        #endregion
 
         protected virtual void Tick() {}
     }

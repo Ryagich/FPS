@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using NaughtyAttributes;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,7 +14,8 @@ public class UpgradesController : MonoBehaviour
     [SerializeField] private TMP_Text _description;
     [SerializeField] private TMP_Text _level;
     [SerializeField] private Button _upgradeButton;
-
+    [SerializeField] private Transform _content;
+    [Space] [SerializeField] private string _levelText = "Current level:";
     [Space, Header("Debug SerializeField")] [SerializeField]
     private List<Upgrade> _upgrades = new();
 
@@ -20,7 +23,7 @@ public class UpgradesController : MonoBehaviour
 
     private void Awake()
     {
-        _upgrades = GetComponentsInChildren<Upgrade>().ToList();
+        _upgrades = _content.GetComponentsInChildren<Upgrade>().ToList();
 
         if (YandexGame.SDKEnabled)
         {
@@ -60,6 +63,8 @@ public class UpgradesController : MonoBehaviour
             SetUpgradeActivity(u);
             u.UpdateText();
         }
+
+        UpdateLevel();
     }
 
     private void OnClick(Upgrade upgrade)
@@ -76,12 +81,13 @@ public class UpgradesController : MonoBehaviour
         UpdateUpgradeButton(info);
     }
 
+    [Button]
     private void UpdateLevel()
     {
         YandexGame.savesData.UpgradesLevel++;
         YandexGame.SaveProgress();
 
-        _level.text = YandexGame.savesData.UpgradesLevel.ToString();
+        _level.text = $"{_levelText} {YandexGame.savesData.UpgradesLevel.ToString()}";
     }
 
     private void Upgrade(UpgradeInfo info)
@@ -97,7 +103,7 @@ public class UpgradesController : MonoBehaviour
 
         YandexGame.savesData.Upgrades[GetBranchIndex(_upgrade)][_upgrade.Level][_upgrade.Index] = _upgrade.GetCurrentLevelIndex();
         YandexGame.SaveProgress();
-        Debug.Log(_upgrade.GetCurrentLevelIndex());
+//        Debug.Log(_upgrade.GetCurrentLevelIndex());
     }
 
     private void UpdateDescription(UpgradeInfo info)

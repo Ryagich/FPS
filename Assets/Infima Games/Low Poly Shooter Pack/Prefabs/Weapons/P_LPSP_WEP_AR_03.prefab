@@ -209,7 +209,7 @@ MonoBehaviour:
   automatic: 1
   boltAction: 0
   shotCount: 1
-  spread: 0.25
+  spread: 0.35
   projectileImpulse: 400
   roundsPerMinutes: 650
   _damage: 39
@@ -237,6 +237,7 @@ MonoBehaviour:
   audioClipBoltAction: {fileID: 0}
   <DropWeapon>k__BackingField: {fileID: 7815969848972636171, guid: 2c7292383ec9263478d53bb80b3e15ae,
     type: 3}
+  <Type>k__BackingField: 2
   <AmmoType>k__BackingField: 1
 --- !u!114 &8813108788367931271
 MonoBehaviour:

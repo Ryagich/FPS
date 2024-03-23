@@ -7,12 +7,12 @@ public struct SkillSpecification
     public string name;
     [Multiline] public string description;
     public SkillType type;
-    public int count;
+    public int value;
         
     public enum SkillType
     {
-        Main,
-        Added,
+        Count,
+        Time,
     }
 }
 

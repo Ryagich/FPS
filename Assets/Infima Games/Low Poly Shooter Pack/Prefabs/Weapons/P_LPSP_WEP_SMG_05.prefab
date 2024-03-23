@@ -397,6 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7170d51de97d79e4fb11d3321667acb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammunitionCurrent: 0
   weaponName: SMG 05
   multiplierMovementSpeed: 1
   automatic: 1
@@ -430,8 +431,8 @@ MonoBehaviour:
   audioClipBoltAction: {fileID: 0}
   <DropWeapon>k__BackingField: {fileID: 625370887496998868, guid: 2e0ef0cd84d0c054f91f6f0ff6dbeccd,
     type: 3}
+  <Type>k__BackingField: 4
   <AmmoType>k__BackingField: 3
-  ammunitionCurrent: 0
 --- !u!114 &7061427760487870545
 MonoBehaviour:
   m_ObjectHideFlags: 0

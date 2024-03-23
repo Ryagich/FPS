@@ -13,7 +13,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
     {
         [Range(5, 100)] [Tooltip("After how long time should the bullet prefab be destroyed?")]
         public float destroyAfter;
-        
+
         [SerializeField] private LayerMask _mask;
         [Header("Impact Effect Prefabs")] public Transform[] bloodImpactPrefabs;
 
@@ -61,7 +61,8 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
             // 	return;
             // }
             //Чтобы не стреляли сами в себя
-            if (collision.gameObject.CompareTag("Player") || (collision.collider && LayerMask.NameToLayer("Character") == collision.gameObject.layer))
+            if (collision.gameObject.CompareTag("Player") ||
+                (collision.collider && LayerMask.NameToLayer("Character") == collision.gameObject.layer))
             {
                 return;
             }
@@ -113,7 +114,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
             }
 
             // if ((_mask.value & collision.gameObject.layer) != 0 && collision.collider)
-            //TODO: very bad
+            //TODO: bad
             if (collision.collider && LayerMask.NameToLayer("Enemy") == collision.gameObject.layer)
             {
                 collision.collider.SendMessageUpwards("HitCallback",
@@ -121,9 +122,15 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
                         transform.forward, damage,
                         collision.collider, TargetPointer.Instance.gameObject));
             }
+
+            if (collision.collider && LayerMask.NameToLayer("Damageble") == collision.gameObject.layer)
+            {
+                collision.gameObject.GetComponent<Damageble>().SetDamage(damage);
+            }
+
             Destroy(gameObject);
         }
-        
+
         private IEnumerator DestroyAfter()
         {
             yield return new WaitForSeconds(destroyAfter);

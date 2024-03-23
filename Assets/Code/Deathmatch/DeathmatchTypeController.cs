@@ -12,7 +12,7 @@ public class DeathmatchTypeController : MonoBehaviour
     
     [SerializeField] private string _reward = "Reward";
 
-    private KillEnemyCallback callback;
+    private CallbackController callbackController;
     private CompleteUIHolder holder;
     private CharacterDisabler disabler;
     private PauseController pause;

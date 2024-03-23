@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
+using YG;
 
 namespace InfimaGames.LowPolyShooterPack
 {
@@ -19,10 +21,52 @@ namespace InfimaGames.LowPolyShooterPack
         public int GetCurrentMaxAmmo() => AmmunitionMax[(int)GetCurrentWeapon.AmmoType];
         public Weapon GetCurrentWeapon => equipped as Weapon;
 
+        public void ApplyMaxAmmoFactor(float factor)
+        {
+            for (var i = 0; i < AmmunitionMax.Length; i++)
+            {
+                AmmunitionMax[i] += (int)(AmmunitionMax[i] * factor);
+                YandexGame.savesData.AmmunitionMax[i] = AmmunitionMax[i];
+            }
+
+            YandexGame.SaveProgress();
+        }
+
+        public void ApplyAmmoFactor(float factor)
+        {
+            for (var i = 0; i < Ammunition.Length; i++)
+            {
+                Ammunition[i] += (int)(Ammunition[i] * factor);
+                YandexGame.savesData.Ammunition[i] = Ammunition[i];
+            }
+            YandexGame.SaveProgress();
+        }
+
+        public void LoadSaves()
+        {
+            for (var i = 0; i < YandexGame.savesData.AmmunitionMax.Length; i++)
+            {
+                if (YandexGame.savesData.AmmunitionMax[i] is -1)
+                    continue;
+                AmmunitionMax[i] = YandexGame.savesData.AmmunitionMax[i];
+            }
+
+            for (var i = 0; i < YandexGame.savesData.Ammunition.Length; i++)
+            {
+                if (YandexGame.savesData.Ammunition[i] is -1)
+                    continue;
+                Ammunition[i] = YandexGame.savesData.Ammunition[i];
+            }
+        }
+
         public void FillAmmo()
         {
             for (var i = 0; i < Ammunition.Length; i++)
+            {
                 Ammunition[i] = AmmunitionMax[i];
+                YandexGame.savesData.Ammunition[i] = Ammunition[i];
+                YandexGame.SaveProgress();
+            }
         }
 
         public void SetMaxAmmoInWeapons()
@@ -43,17 +87,31 @@ namespace InfimaGames.LowPolyShooterPack
             if (need >= value)
             {
                 Ammunition[i] += value;
+                YandexGame.savesData.Ammunition[i] = Ammunition[i];
+                YandexGame.SaveProgress();
                 return value;
             }
 
             Ammunition[i] = AmmunitionMax[i];
+            YandexGame.savesData.Ammunition[i] = Ammunition[i];
+            YandexGame.SaveProgress();
             return need;
+        }
+
+        public void TakePercentAllAmmoTypes(float percent)
+        {
+            for (var i = 0; i < AmmunitionMax.Length; i++)
+            {
+                TakeAmmo((Ammo)i, (int)(AmmunitionMax[i] * percent));
+            }
         }
 
         public void TakeAmmo(Ammo type, int value)
         {
             var i = (int)type;
             Ammunition[i] = Mathf.Clamp(Ammunition[i] + value, 0, AmmunitionMax[i]);
+            YandexGame.savesData.Ammunition[i] = Ammunition[i];
+            YandexGame.SaveProgress();
         }
 
         public int GetAmmo(Ammo type, int need)
@@ -62,11 +120,15 @@ namespace InfimaGames.LowPolyShooterPack
             if (Ammunition[i] >= need)
             {
                 Ammunition[i] -= need;
+                YandexGame.savesData.Ammunition[i] = Ammunition[i];
+                YandexGame.SaveProgress();
                 return need;
             }
 
             var toReturn = Ammunition[i];
             Ammunition[i] = 0;
+            YandexGame.savesData.Ammunition[i] = Ammunition[i];
+            YandexGame.SaveProgress();
             return toReturn;
         }
 
@@ -75,6 +137,43 @@ namespace InfimaGames.LowPolyShooterPack
             return Ammunition[(int)type];
         }
 
+        public int GetAmmoWithTalent29(Ammo type, int need)
+        {
+            var toReturn = 0;
+            for (var i = 0; i < Ammunition.Length; i++)
+            {
+                if (i == (int)type)
+                {
+                    continue;
+                }
+                var ammo = GetAmmo((Ammo)i);
+                if (need - toReturn > ammo)
+                {
+                    toReturn += ammo;
+                    TakeAmmo((Ammo)i, -ammo);
+                }
+                else
+                {
+                    TakeAmmo((Ammo)i, -(need - toReturn));
+                    toReturn = need;
+                    break;
+                }
+            }
+
+            if (toReturn < need)
+            {
+                var lost = need - toReturn;
+                var delta = lost > GetAmmo(type)
+                    ? GetAmmo(type)
+                    : lost;
+
+                TakeAmmo(type, -delta);
+                toReturn += delta;
+            }
+            
+            return toReturn/2;
+        }
+        
         public bool CheckAmmo(Ammo type)
         {
             return Ammunition[(int)type] > 0;

@@ -99,7 +99,7 @@ public class AttachmentsMenu : MonoBehaviour
         {
             showButton = Instantiate(_buyButton.gameObject, transform);
             showButton.GetComponent<Button>().onClick.AddListener(() => TryBuy(i));
-            showButton.GetComponentInChildren<TMP_Text>().text = GetCurrCost(i).ToString() + '$';
+            showButton.GetComponentInChildren<TMP_Text>().text = GetCurrCost(i).ToString();// + '$';
         }
 
         showButton.GetComponentInChildren<ButtonSoundPlayer>()?.SetSource(_source);

@@ -20,4 +20,14 @@ public class Stat
         Value = Mathf.Clamp(Value + value, Min, Max);
         ValueChanged?.Invoke();
     }
+
+    public void ChangeValue(float newValue)
+    {
+        Value= Mathf.Clamp(newValue, Min, Max);
+    }
+    
+    public void ChangeMax(float newMax)
+    {
+        Max = newMax;
+    }
 }

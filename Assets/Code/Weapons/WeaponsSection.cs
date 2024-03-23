@@ -50,7 +50,7 @@ public class WeaponsSection : MonoBehaviour
         {
             button = Instantiate(_buyButton, _parent);
 
-            button.GetComponentInChildren<TMP_Text>().text = Costs[i].ToString() + '$';
+            button.GetComponentInChildren<TMP_Text>().text = Costs[i].ToString();// + '$';
             button.onClick.AddListener(TryBuy);
         }
         button.GetComponentInChildren<ButtonSoundPlayer>().SetSource(_source);

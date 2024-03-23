@@ -2,11 +2,14 @@ using System;
 using System.Collections.Generic;
 using InfimaGames.LowPolyShooterPack;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class WeaponsShower : MonoBehaviour
 {
     public event Action<int> WeaponChanged;
+
+    [SerializeField] private  UnityEvent<GameObject> WeaponChangedWithGO;
     [SerializeField] private List<WeaponAttachmentManager> _weapons = new();
     [SerializeField] private Button _leftButton;
     [SerializeField] private Button _rightButton;
@@ -31,6 +34,7 @@ public class WeaponsShower : MonoBehaviour
     {
         _weapons[index].gameObject.SetActive(true);
         WeaponChanged?.Invoke(index);
+        WeaponChangedWithGO?.Invoke(_weapons[index].gameObject);
     }
 
     public void Hide() => _weapons[index].gameObject.SetActive(false);
@@ -48,6 +52,7 @@ public class WeaponsShower : MonoBehaviour
         }
         _weapons[index].gameObject.SetActive(true);
         WeaponChanged?.Invoke(index);
+        WeaponChangedWithGO?.Invoke(_weapons[index].gameObject);
     }
 
     public void onLeftButton()
@@ -64,5 +69,6 @@ public class WeaponsShower : MonoBehaviour
 
         _weapons[index].gameObject.SetActive(true);
         WeaponChanged?.Invoke(index);
+        WeaponChangedWithGO?.Invoke(_weapons[index].gameObject);
     }
 }

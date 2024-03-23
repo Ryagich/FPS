@@ -507,6 +507,7 @@ MonoBehaviour:
   audioClipBoltAction: {fileID: 0}
   <DropWeapon>k__BackingField: {fileID: 5588089466749444907, guid: 7ad7aeab2a18fb3468e895be34df3997,
     type: 3}
+  <Type>k__BackingField: 1
   <AmmoType>k__BackingField: 0
 --- !u!114 &9116845346348752071
 MonoBehaviour:

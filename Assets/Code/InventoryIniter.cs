@@ -7,7 +7,7 @@ using YG;
 
 public class InventoryIniter : MonoBehaviour
 {
-    [field:SerializeField]  public Inventory _inventory { get; private set; }
+    [field: SerializeField] public Inventory _inventory { get; private set; }
     [SerializeField] private Character _character;
 
     private void Awake()

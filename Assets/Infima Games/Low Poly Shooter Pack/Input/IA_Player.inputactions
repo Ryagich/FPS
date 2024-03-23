@@ -87,7 +87,16 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Melee",
+                    "name": "MainSpell",
+                    "type": "Button",
+                    "id": "650babc7-1a5c-4355-aa2b-f39f4d5faa11",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AddSpell",
                     "type": "Button",
                     "id": "ee72309b-00d2-4acf-aa85-8779c255d656",
                     "expectedControlType": "Button",
@@ -375,7 +384,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Melee",
+                    "action": "AddSpell",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -386,7 +395,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Melee",
+                    "action": "AddSpell",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -739,6 +748,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "42bbd873-e644-4217-ba1e-43a5d57e2b60",
+                    "path": "<Keyboard>/b",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MainSpell",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1561a906-768e-40ca-aac4-42832ac5f08a",
+                    "path": "<Gamepad>/rightStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MainSpell",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

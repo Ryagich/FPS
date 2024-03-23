@@ -1,22 +1,20 @@
-﻿using InfimaGames.LowPolyShooterPack.Legacy;
+﻿using System.Linq;
+using InfimaGames.LowPolyShooterPack.Legacy;
 using UnityEngine;
+using YG;
 
 namespace InfimaGames.LowPolyShooterPack
 {
     public class Weapon : WeaponBehaviour
     {
         [HideInInspector] public int ammunitionCurrent;
-
-        #region FIELDS SERIALIZED
-
-        [Title(label: "Settings")]
-        [Tooltip("Weapon Name. Currently not used for anything, but in the future, we will use this for pickups!")]
-        [SerializeField]
+        
+        #region FIELDS SERIALIZED   
+        
+        [Title(label: "Settings")] [SerializeField]
         private string weaponName;
 
-        [Tooltip("How much the character's movement speed is multiplied by when wielding this weapon.")]
-        [SerializeField]
-        private float multiplierMovementSpeed = 1.0f;
+        [SerializeField] private float multiplierMovementSpeed = 1.0f;
 
         [Title(label: "Firing")]
         [Tooltip("Is this weapon automatic? If yes, then holding down the firing button will continuously fire.")]
@@ -35,6 +33,7 @@ namespace InfimaGames.LowPolyShooterPack
         [Tooltip("How far the weapon can fire from the center of the screen.")] [SerializeField]
         private float spread = 0.25f;
 
+        public float Spread => spread;
         [Tooltip("How fast the projectiles are.")] [SerializeField]
         private float projectileImpulse = 400.0f;
 
@@ -43,6 +42,7 @@ namespace InfimaGames.LowPolyShooterPack
         private int roundsPerMinutes = 200;
 
         [SerializeField] private float _damage = 40f;
+        public float Damage => _damage;
 
         [Title(label: "Reloading")]
         [Tooltip("Determines if this weapon reloads in cycles, meaning that it inserts one bullet at a time, or not.")]
@@ -108,6 +108,7 @@ namespace InfimaGames.LowPolyShooterPack
 
         [SerializeField] private AudioClip audioClipBoltAction;
         [field: SerializeField] public DropWeapon DropWeapon { get; private set; }
+        [field: SerializeField] public WeaponType Type { get; private set; }
         [field: SerializeField] public Ammo AmmoType { get; private set; }
 
         #endregion
@@ -115,8 +116,6 @@ namespace InfimaGames.LowPolyShooterPack
         private Animator animator;
         private WeaponAttachmentManagerBehaviour attachmentManager;
         private bool inited = false;
-
-
         private ScopeBehaviour scopeBehaviour;
         public MagazineBehaviour magazineBehaviour { get; private set; }
         private MuzzleBehaviour muzzleBehaviour;
@@ -126,6 +125,7 @@ namespace InfimaGames.LowPolyShooterPack
         private IGameModeService gameModeService;
         private CharacterBehaviour characterBehaviour;
         private Transform playerCamera;
+        private int shootCounter;
 
         #region UNITY
 
@@ -158,6 +158,183 @@ namespace InfimaGames.LowPolyShooterPack
             if (ammunitionCurrent == 0)
                 ammunitionCurrent = magazineBehaviour.GetAmmunitionTotal();
             inited = true;
+            SetDamage();
+        }
+
+        public void SetDamage()
+        {
+            switch (YandexGame.savesData.CharacterIndex)
+            {
+                case 0:
+                    if (Type is WeaponType.ShotGun or WeaponType.SMG)
+                        _damage += _damage * .2f;
+                    break;
+                //+20% к урону и скорости использования и скорости стрельбы ПП и дробовиков.
+                case 1:
+                    if (Type is WeaponType.Pistol)
+                        _damage += _damage * .5f;
+                    break;
+                //Урон пистолетов +50%.
+                case 2:
+                    if (Type is WeaponType.SniperRifle)
+                        _damage += _damage * .2f;
+                    break;
+                //+20% урона снайперских винтовок.
+            }
+
+            _damage += _damage * .05f * (1 + YandexGame.savesData.Upgrades[1][0][0]);
+            switch (Type)
+            {
+                case WeaponType.Pistol:
+                    _damage += _damage * .1f * (1 + YandexGame.savesData.Upgrades[1][1][1]);
+                    break;
+                case WeaponType.SniperRifle or WeaponType.AutoRifle or WeaponType.SMG:
+                    _damage += _damage * .1f * (1 + YandexGame.savesData.Upgrades[1][2][1]);
+                    break;
+                case WeaponType.ShotGun:
+                    _damage += _damage * .1f * (1 + YandexGame.savesData.Upgrades[1][3][0]);
+                    break;
+            }
+
+            _damage += _damage * YandexGame.savesData.DamageFactor;
+        }
+
+        private float GetDamage()
+        {
+            var talents = YandexGame.savesData.Talents;
+
+            var damage = GetDefaultDamage(talents);
+            if (Random.Range(.0f, 1f) <= GetCriticalDamageChange(talents))
+            {
+                return damage + GetAddCriticalDamage(talents, damage);
+            }
+
+            return damage + GetAddSimpleDamage(talents, damage);
+        }
+
+        private float GetCriticalDamageChange(bool[] talents)
+        {
+            var change = .0f;
+            if (YandexGame.savesData.Upgrades[1][3][1] is not -1)
+            {
+                change += .1f + .05f * (1 + YandexGame.savesData.Upgrades[1][4][1]);
+            }
+
+            if (talents[17])
+            {
+                change += .01f * (int)(StatsController.Instance.NeedHealth / StatsController.Instance.Hp.Max / 5);
+            }
+
+            if (talents[29])
+            {
+                change += .25f;
+            }
+
+            if (talents[55] && StatsController.Instance.TookDamageInLast5Seconds)
+            {
+                change += .2f;
+            }
+
+            if (talents[63])
+            {
+                change += .5f;
+                change = Mathf.Clamp(change, 0, .75f);
+            }
+
+            return change;
+        }
+
+        private float GetDefaultDamage(bool[] talents)
+        {
+            shootCounter++;
+            var damage = _damage;
+            if (shootCounter is 4)
+            {
+                shootCounter = 0;
+                if (talents[1])
+                {
+                    damage += .2f * _damage;
+                }
+            }
+
+            if (talents[3] && StatsController.Instance.IsHpMax)
+            {
+                damage += .25f * _damage;
+            }
+
+            if (talents[4] && ammunitionCurrent == magazineBehaviour.GetAmmunitionTotal() - 1)
+            {
+                damage += _damage;
+            }
+
+            if (talents[18])
+            {
+                damage += StatsController.Instance.IsArmorMax ? .75f : -.25f * _damage;
+            }
+
+            if (talents[27])
+            {
+                damage -= .5f * _damage;
+            }
+
+            if (talents[32])
+            {
+                damage += AddSpellController.Instance.SpellCount > 0 ? .75f : -.25f * _damage;
+            }
+
+            if (talents[33] && StatsController.Instance.TookDamageInLast5Seconds)
+            {
+                damage += .15f * _damage;
+            }
+
+            if (talents[52])
+            {
+                var max = magazineBehaviour.GetAmmunitionTotal();
+                damage += Mathf.Clamp((max - ammunitionCurrent) / max, .0f, .75f) * _damage;
+            }
+            
+            if (talents[58])
+            {
+                damage += _damage;
+            }
+            
+            if (talents[60])
+            {
+                damage += YandexGame.savesData.Money / 100 * .05f * _damage;
+            }
+
+            return damage;
+        }
+
+        private float GetAddSimpleDamage(bool[] talents, float damage)
+        {
+            var addDamage = .0f;
+            if (talents[0])
+            {
+                addDamage += damage * .2f;
+            }
+
+            if (talents[15])
+            {
+                addDamage += -.2f * damage;
+            }
+
+            return addDamage;
+        }
+
+        private float GetAddCriticalDamage(bool[] talents, float damage)
+        {
+            var addDamage = .0f;
+
+            addDamage += damage * .5f * (1 + YandexGame.savesData.Upgrades[1][3][1]);
+            addDamage += damage * .15f * (1 + YandexGame.savesData.Upgrades[1][4][0]);
+
+            if (talents[15])
+            {
+                addDamage += .5f * damage;
+            }
+
+            return addDamage;
         }
 
         protected override void Start()
@@ -217,10 +394,10 @@ namespace InfimaGames.LowPolyShooterPack
 
         public override void Fire(float spreadMultiplier = 1.0f)
         {
-            if (muzzleBehaviour == null)
+            if (muzzleBehaviour is null)
                 return;
 
-            if (playerCamera == null)
+            if (playerCamera is null)
                 return;
 
             const string stateName = "Fire";
@@ -241,7 +418,8 @@ namespace InfimaGames.LowPolyShooterPack
                 var a = Quaternion.Euler(playerCamera.eulerAngles + spreadValue);
                 var projectile = Instantiate(prefabProjectile, muzzleBehaviour.transform.position, a);
 
-                projectile.GetComponent<Projectile>().SetDamage(_damage);
+                projectile.GetComponent<Projectile>()
+                    .SetDamage(GetDamage());
                 projectile.GetComponent<Rigidbody>().velocity = projectile.transform.forward * projectileImpulse;
             }
         }
@@ -254,16 +432,26 @@ namespace InfimaGames.LowPolyShooterPack
             var neededAmmo = amount == 0
                 ? magazineBehaviour.GetAmmunitionTotal()
                 : amount;
-            var delta = neededAmmo > inventory.GetAmmo(AmmoType)
-                ? inventory.GetAmmo(AmmoType)
-                : neededAmmo;
 
-            if (delta + ammunitionCurrent > GetAmmunitionTotal())
-                delta = GetAmmunitionTotal() - ammunitionCurrent;
-            inventory.TakeAmmo(AmmoType, -delta);
-            ammunitionCurrent += delta;
-           // Debug.Log(inventory.CheckAmmo(AmmoType));
-           // if (!inventory.CheckAmmo(AmmoType))
+            if (YandexGame.savesData.Talents[29])
+            {
+                ammunitionCurrent += inventory.GetAmmoWithTalent29(AmmoType, neededAmmo * 2);
+            }
+            else
+            {
+                var delta = neededAmmo > inventory.GetAmmo(AmmoType)
+                    ? inventory.GetAmmo(AmmoType)
+                    : neededAmmo;
+
+                if (delta + ammunitionCurrent > GetAmmunitionTotal())
+                    delta = GetAmmunitionTotal() - ammunitionCurrent;
+                inventory.TakeAmmo(AmmoType, -delta);
+                ammunitionCurrent += delta;
+            }
+
+
+            // Debug.Log(inventory.CheckAmmo(AmmoType));
+            // if (!inventory.CheckAmmo(AmmoType))
             //    inventory.GetComponent<Character>().AnimationEndedReload();
         }
 
@@ -305,8 +493,23 @@ namespace InfimaGames.LowPolyShooterPack
         public override bool CanReloadWhenFull() => canReloadWhenFull;
         public override float GetRateOfFire() => roundsPerMinutes;
         public override bool IsFull() => ammunitionCurrent == magazineBehaviour.GetAmmunitionTotal();
-        public override bool HasAmmunition() => ammunitionCurrent > 0;
+
+        public override bool HasAmmunition()
+        {
+            return ammunitionCurrent > 0;
+        }
+
         public override RuntimeAnimatorController GetAnimatorController() => controller;
         public override WeaponAttachmentManagerBehaviour GetAttachmentManager() => attachmentManager;
+    }
+
+    public enum WeaponType
+    {
+        Pistol,
+        SniperRifle,
+        AutoRifle,
+        ShotGun,
+        SMG,
+        Grenade,
     }
 }

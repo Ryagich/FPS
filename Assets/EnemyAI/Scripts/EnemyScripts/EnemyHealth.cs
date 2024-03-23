@@ -74,10 +74,10 @@ namespace EnemyAI
                 if (!dead)
                 {
                     Kill();
-                    var callback = origin?.GetComponent<Character>()?.GetComponent<KillEnemyCallback>();
+                    var callback = origin?.GetComponent<Character>()?.GetComponent<CallbackController>();
                     if (callback)
                     {
-                        callback.GetKillCallback();
+                        callback.AddCallBack(new CallbackInfo(CallbackTypes.Money, "10"));
                     }
                 }
                 // Shooting a dead body? Just apply shot force on the ragdoll part.

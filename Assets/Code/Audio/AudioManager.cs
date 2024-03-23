@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using InfimaGames.LowPolyShooterPack;
 using UnityEngine;
 using UnityEngine.Serialization;
-using AudioSettings = InfimaGames.LowPolyShooterPack.AudioSettings;
 
 public class AudioManager : MonoBehaviour
 {

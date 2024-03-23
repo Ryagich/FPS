@@ -296,6 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7170d51de97d79e4fb11d3321667acb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammunitionCurrent: 0
   weaponName: Grenade Launcher 01
   multiplierMovementSpeed: 1
   automatic: 0
@@ -304,6 +305,7 @@ MonoBehaviour:
   spread: 0
   projectileImpulse: 15
   roundsPerMinutes: 200
+  _damage: 40
   cycledReload: 0
   canReloadWhenFull: 0
   automaticReloadOnEmpty: 1
@@ -328,8 +330,8 @@ MonoBehaviour:
   audioClipBoltAction: {fileID: 0}
   <DropWeapon>k__BackingField: {fileID: 489319342433380879, guid: d90f2bf3e1891d749bd86e048dbac47c,
     type: 3}
+  <Type>k__BackingField: 5
   <AmmoType>k__BackingField: 5
-  ammunitionCurrent: 0
 --- !u!114 &4743257906437891677
 MonoBehaviour:
   m_ObjectHideFlags: 0

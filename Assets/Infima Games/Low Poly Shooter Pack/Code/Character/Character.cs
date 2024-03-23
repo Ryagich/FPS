@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using YG;
 using Vector2 = UnityEngine.Vector2;
 
 namespace InfimaGames.LowPolyShooterPack
@@ -133,6 +134,7 @@ namespace InfimaGames.LowPolyShooterPack
         }
 
         public void FillGrenades() => grenadeCount = grenadeTotal;
+        public void AddGrenade() => grenadeCount++;
 
         protected override void Start()
         {
@@ -141,7 +143,6 @@ namespace InfimaGames.LowPolyShooterPack
             //Hide knife. We do this so we don't see a giant knife stabbing through the character's hands all the time!
             if (knife != null)
                 knife.SetActive(false);
-
             layerHolster = characterAnimator.GetLayerIndex("Layer Holster");
             layerActions = characterAnimator.GetLayerIndex("Layer Actions");
             layerOverlay = characterAnimator.GetLayerIndex("Layer Overlay");
@@ -172,11 +173,21 @@ namespace InfimaGames.LowPolyShooterPack
 
             if (holdingButtonFire)
             {
-                if (CanPlayAnimationFire() && equippedWeapon.HasAmmunition() && equippedWeapon.IsAutomatic() &&
-                    cursorLocked)
+                if (CanPlayAnimationFire() && equippedWeapon.IsAutomatic() && cursorLocked)
                 {
                     if (Time.time - lastShotTime > 60.0f / equippedWeapon.GetRateOfFire())
-                        Fire();
+                    {
+                        if (equippedWeapon.HasAmmunition())
+                        {
+                            Fire();
+                        }
+                        else if (YandexGame.savesData.Talents[39])
+                        {
+                            Fire();
+                            var sc = StatsController.Instance;
+                            sc.TakeDamage(sc.Hp.Max * .01f);
+                        }
+                    }
                 }
                 else
                 {
@@ -274,8 +285,8 @@ namespace InfimaGames.LowPolyShooterPack
             var leaningValue = Mathf.Clamp01(axisMovement.y);
             _dampTime = Mathf.Clamp(
                 lastLV < leaningValue
-                        ? axisMovement.y / 1.5f
-                        : axisMovement.y,
+                    ? axisMovement.y / 1.5f
+                    : axisMovement.y,
                 0, 0.5f);
 
             lastLV = leaningValue;
@@ -918,6 +929,7 @@ namespace InfimaGames.LowPolyShooterPack
         {
             Cursor.visible = !cursorLocked;
             Cursor.lockState = cursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
+
             if (Cursor.lockState == CursorLockMode.Locked)
             {
                 Time.timeScale = 1;
