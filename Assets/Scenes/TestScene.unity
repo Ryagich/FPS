@@ -314,6 +314,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d4566e09b9b5cc4aa279a0ce9112568, type: 3}
+--- !u!1001 &301823886
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3770309115186941890, guid: 3e898fc282604584c95846b3c4ab380a,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy_AR_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605766488413840, guid: 3e898fc282604584c95846b3c4ab380a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.7388954
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605766488413840, guid: 3e898fc282604584c95846b3c4ab380a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.063
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605766488413840, guid: 3e898fc282604584c95846b3c4ab380a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8888814
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605766488413840, guid: 3e898fc282604584c95846b3c4ab380a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.41318065
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605766488413840, guid: 3e898fc282604584c95846b3c4ab380a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605766488413840, guid: 3e898fc282604584c95846b3c4ab380a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9106491
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605766488413840, guid: 3e898fc282604584c95846b3c4ab380a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605766488413840, guid: 3e898fc282604584c95846b3c4ab380a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605766488413840, guid: 3e898fc282604584c95846b3c4ab380a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 131.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755605766488413840, guid: 3e898fc282604584c95846b3c4ab380a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3e898fc282604584c95846b3c4ab380a, type: 3}
 --- !u!1 &402016311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,8 +1456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c98f0b750271fe84dbde400c01626e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Talents>k__BackingField: {fileID: 11400000, guid: 65194ec901c680b4ea99ac83c42f47f4,
-    type: 2}
+  <Talents>k__BackingField: {fileID: 1206810225}
   _cardPref: {fileID: 5771931194129447936, guid: 52913e18176e75a49887ad7e83f285ba,
     type: 3}
 --- !u!1001 &907303755
@@ -1849,6 +1916,2474 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d5eb7499bc3be345b2288863a15e6a7, type: 3}
+--- !u!1 &1206810223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1206810224}
+  - component: {fileID: 1206810225}
+  - component: {fileID: 1206810226}
+  m_Layer: 0
+  m_Name: Talents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1206810224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206810223}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2018497497}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1206810225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206810223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83bec6229d2bfe347a152b2992af74d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TalentsInfo>k__BackingField:
+  - <Name>k__BackingField: Iron hand
+    <Description>k__BackingField: Non-critical damage increases by 20%.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Best number
+    <Description>k__BackingField: Every 4th attack deals 80% more damage.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Nimble Pocket
+    <Description>k__BackingField: When picking up an object, movement speed increases
+      by 20% for 2 seconds.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 29d26b5186befda448b70fcbe49a1984,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Bull
+    <Description>k__BackingField: At full health, damage dealt is 25% higher.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Pre-emptive strike
+    <Description>k__BackingField: The first bullet in the magazine deals 100% more
+      damage.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Determination
+    <Description>k__BackingField: Movement speed increases by 50% when there is no
+      shield.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 29d26b5186befda448b70fcbe49a1984,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Quality bullets
+    <Description>k__BackingField: When picking up cartridges, 2 units of armor are
+      also restored.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Love for gold
+    <Description>k__BackingField: When picking up coins and crystals, 1 unit of health
+      is also restored.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: f4bcee6ed11e12c41bd534b0e9b62c7d,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Double Explosion
+    <Description>k__BackingField: The power of the additional ability doubles.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: b60a62368b1f6334ba6e9cd62c3c9bd6,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Devil's Covenant
+    <Description>k__BackingField: Health is halved. Gets twice as many coins and
+      crystals from all sources.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 52a012f84f61811418680ceea7a0654e,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Phantom Bullet
+    <Description>k__BackingField: When reloading there is a 30% chance of not wasting
+      a cartridge.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: bff86f77fc9a58c4d8e772ccb77a13c3,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Hardness
+    <Description>k__BackingField: When stationary, damage increases by 50%.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Abnormal speed
+    <Description>k__BackingField: +2% movement speed for every 10% shield.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 29d26b5186befda448b70fcbe49a1984,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Bullet Bank
+    <Description>k__BackingField: All ammo collected is converted into ammo used
+      by the current weapon.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: bff86f77fc9a58c4d8e772ccb77a13c3,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Orderly
+    <Description>k__BackingField: Healing received from all sources is doubled.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: f4bcee6ed11e12c41bd534b0e9b62c7d,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Gambling
+    <Description>k__BackingField: +50% critical attack damage, but normal attacks
+      deal 20% less damage.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 149a88e5113f26d47b58af943b34df02,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Short respite
+    <Description>k__BackingField: Gain immunity to damage for 2 seconds after recharging.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Berserk
+    <Description>k__BackingField: +1% critical chance for every 5% of missing health.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 149a88e5113f26d47b58af943b34df02,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Brand new
+    <Description>k__BackingField: +75% damage dealt if armor is full, otherwise -25%
+      damage.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Trophy
+    <Description>k__BackingField: 25% chance to knock out ammo from a defeated enemy.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: bff86f77fc9a58c4d8e772ccb77a13c3,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Farsightedness
+    <Description>k__BackingField: Opponents at a distance of 10 meters or more receive
+      50% more damage, opponents located closer receive 15% less damage.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Gold card
+    <Description>k__BackingField: Your next purchase from the merchant will be free.
+      The talent disappears after use.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 52a012f84f61811418680ceea7a0654e,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Armor plate
+    <Description>k__BackingField: Start using armor plates. The armor plate blocks
+      any further damage and then breaks. Every 10 seconds, restore 1 armor plate.
+      Maximum 3 armor plates.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: e45be0352c903054882af767cfe418f4,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Quality shoes
+    <Description>k__BackingField: Movement speed increases by 15%.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 29d26b5186befda448b70fcbe49a1984,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Surprise
+    <Description>k__BackingField: 10% chance to knock out, when killing an enemy,
+      additional coins or a charge for an additional skill.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 52a012f84f61811418680ceea7a0654e,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Hidden Treasures
+    <Description>k__BackingField: The chance of finding coins or crystals in breakable
+      objects increases. The chance of finding everything else is lower.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 52a012f84f61811418680ceea7a0654e,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Expect good things
+    <Description>k__BackingField: The first shot after every 3 seconds will be critical.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 149a88e5113f26d47b58af943b34df02,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Vampire
+    <Description>k__BackingField: Attacks restore 1 unit of health, if health is
+      full, armor is restored. Attacks deal 50% less damage.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: f4bcee6ed11e12c41bd534b0e9b62c7d,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Boxer
+    <Description>k__BackingField: The chance of inflicting critical damage on an
+      enemy standing less than 5 meters away doubles.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 149a88e5113f26d47b58af943b34df02,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Bullet light
+    <Description>k__BackingField: Reloading consumes twice as much ammo (primarily
+      due to unused types of ammunition). Critical hit chance increases by 25%.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 149a88e5113f26d47b58af943b34df02,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Tactical reloading
+    <Description>k__BackingField: During reloading, movement speed increases by 25%
+      and damage taken is reduced by 10%.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 29d26b5186befda448b70fcbe49a1984,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Love of life
+    <Description>k__BackingField: After receiving damage, 3 health units are restored
+      over 5 seconds.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: f4bcee6ed11e12c41bd534b0e9b62c7d,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 1
+  - <Name>k__BackingField: Bad hand
+    <Description>k__BackingField: If you have additional skill charges, deal 75%
+      more damage, and if you don't have them, deal 25% less damage.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Grudge
+    <Description>k__BackingField: When receiving damage, your own damage increases
+      by 15% for 5 seconds.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Second chance
+    <Description>k__BackingField: When receiving lethal damage, restore 10% of your
+      maximum health. The skill disappears after triggering.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: e45be0352c903054882af767cfe418f4,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Dead soul
+    <Description>k__BackingField: Having received lethal damage, become invulnerable
+      for 5 seconds, if during this time you do not replenish your health, you will
+      die. The skill disappears after triggering.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: e45be0352c903054882af767cfe418f4,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Paranormal
+    <Description>k__BackingField: Maximum health drops to 1 unit. The amount of armor
+      triples.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Live meat
+    <Description>k__BackingField: Every second, 4% of your maximum health is converted
+      into missing armor. As a result of using the ability, health cannot fall below
+      20%.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Rescuer
+    <Description>k__BackingField: After receiving lethal damage, restore 10% of your
+      health, if within 5 seconds after the ability is triggered you do not kill
+      a single enemy, you will die. The skill disappears after triggering.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Bloody ammunition
+    <Description>k__BackingField: When the magazine is empty, you continue to fire,
+      dealing 2% more damage per shot, and losing 1% of your maximum health per shot.
+      It is possible to die as a result of using a skill.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Stock
+    <Description>k__BackingField: Lose 50% of your maximum armor and 50% of your
+      maximum health. Gain 2 extra lives.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: e45be0352c903054882af767cfe418f4,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Anemia
+    <Description>k__BackingField: Maximum health is doubled. Take 10% more damage
+      from all sources.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: f4bcee6ed11e12c41bd534b0e9b62c7d,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Discipline
+    <Description>k__BackingField: Every second, the chance of a critical shot increases
+      by 5%. Resets after landing a critical shot.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 149a88e5113f26d47b58af943b34df02,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Giant Slayer
+    <Description>k__BackingField: 5% chance that when an enemy takes damage, 5% of
+      their maximum health will be converted into bonus damage.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Alien energy
+    <Description>k__BackingField: 50% chance to restore 5 armor when killing an enemy.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Lightning
+    <Description>k__BackingField: The faster your current speed, the higher your
+      resistance to damage received. Maximum 30%.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Extravagance
+    <Description>k__BackingField: +10% to damage resistance for every 100 ammo spent.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Miner
+    <Description>k__BackingField: The reward for killing enemies within 7 meters
+      is twice as high.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 52a012f84f61811418680ceea7a0654e,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Veteran
+    <Description>k__BackingField: +1 to maximum health for each enemy killed up to
+      7 meters away.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Eggshell
+    <Description>k__BackingField: Gain an additional 15% damage resistance while
+      wearing armor. Become 15% vulnerable to damage when not armored.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Speed
+    <Description>k__BackingField: Movement speed is 50% higher, the main skill is
+      restored 150% longer.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 29d26b5186befda448b70fcbe49a1984,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: The limit of what's possible
+    <Description>k__BackingField: The additional skill can be used even when there
+      are no projectiles, for each such use you will receive 25 points of damage.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: b60a62368b1f6334ba6e9cd62c3c9bd6,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Sleeping bullet
+    <Description>k__BackingField: The less ammo left in the magazine, the higher
+      the weapon's damage (maximum +75%).
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Two sides of the coin
+    <Description>k__BackingField: Alternate between Yin and Yang states every 12
+      seconds. The Yin state gives +20% to damage resistance, and the Yang state
+      gives +50% to damage dealt.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 4f930a79624f75a45986a1219e34d7f3,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Double-edged sword
+    <Description>k__BackingField: For each enemy defeated, gain +1% damage and -0.5%
+      damage resistance.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Fury
+    <Description>k__BackingField: When receiving damage, you will receive +20% chance
+      to deal critical damage for 5 seconds.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 149a88e5113f26d47b58af943b34df02,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Golden armor
+    <Description>k__BackingField: When using an additional skill, restore 5% of your
+      armor from its maximum.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Grace
+    <Description>k__BackingField: Reduce damage resistance by 100%, but damage taken
+      cannot exceed 10% of maximum health.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: All or nothing
+    <Description>k__BackingField: Gain 100% damage. Lose 75% of your maximum health.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Penetrating projectile
+    <Description>k__BackingField: Critical attacks penetrate enemy armor.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 149a88e5113f26d47b58af943b34df02,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Atlant
+    <Description>k__BackingField: +5% damage for every 100 coins in stock.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Reserve armor
+    <Description>k__BackingField: When armor is broken, instantly restore 10% armor.
+      Reload time 45 seconds.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: e45be0352c903054882af767cfe418f4,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Heavy armor
+    <Description>k__BackingField: Gain +50 Max Shield and +10% Damage Resistance.
+      Lose 20% movement speed.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Reasonable Luck
+    <Description>k__BackingField: +50% chance to deal critical damage, but the maximum
+      chance cannot exceed 75%.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 149a88e5113f26d47b58af943b34df02,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+  - <Name>k__BackingField: Living armor
+    <Description>k__BackingField: The maximum amount of armor is reduced by 75%,
+      restore 1 unit of armor every second.
+    <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
+      type: 3}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
+--- !u!114 &1206810226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206810223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 4299248247611064322
+  references:
+    version: 2
+    RefIds:
+    - rid: 4299248247611064322
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
+        asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1206810225}
+        m_TrackedProperties:
+          items:
+          - rid: 4299248247611064323
+          - rid: 4299248247611064324
+          - rid: 4299248247611064325
+          - rid: 4299248247611064327
+          - rid: 4299248247611064328
+          - rid: 4299248247611064329
+          - rid: 4299248247611064330
+          - rid: 4299248247611064331
+          - rid: 4299248247611064332
+          - rid: 4299248247611064333
+          - rid: 4299248247611064334
+          - rid: 4299248247611064335
+          - rid: 4299248247611064336
+          - rid: 4299248247611064337
+          - rid: 4299248247611064338
+          - rid: 4299248247611064339
+          - rid: 4299248247611064340
+          - rid: 4299248247611064341
+          - rid: 4299248247611064342
+          - rid: 4299248247611064343
+          - rid: 4299248247611064344
+          - rid: 4299248247611064345
+          - rid: 4299248247611064346
+          - rid: 4299248247611064347
+          - rid: 4299248247611064348
+          - rid: 4299248247611064349
+          - rid: 4299248247611064350
+          - rid: 4299248247611064351
+          - rid: 4299248247611064352
+          - rid: 4299248247611064353
+          - rid: 4299248247611064354
+          - rid: 4299248247611064355
+          - rid: 4299248247611064357
+          - rid: 4299248247611064358
+          - rid: 4299248247611064359
+          - rid: 4299248247611064360
+          - rid: 4299248247611064361
+          - rid: 4299248247611064362
+          - rid: 4299248247611064363
+          - rid: 4299248247611064364
+          - rid: 4299248247611064365
+          - rid: 4299248247611064366
+          - rid: 4299248247611064367
+          - rid: 4299248247611064368
+          - rid: 4299248247611064369
+          - rid: 4299248247611064370
+          - rid: 4299248247611064371
+          - rid: 4299248247611064372
+          - rid: 4299248247611064373
+          - rid: 4299248247611064374
+          - rid: 4299248247611064375
+          - rid: 4299248247611064376
+          - rid: 4299248247611064377
+          - rid: 4299248247611064378
+          - rid: 4299248247611064379
+          - rid: 4299248247611064380
+          - rid: 4299248247611064381
+          - rid: 4299248247611064382
+          - rid: 4299248247611064383
+          - rid: 4299248247611064384
+          - rid: 4299248247611064385
+          - rid: 4299248247611064386
+          - rid: 4299248247611064387
+          - rid: 4299248247611064388
+          - rid: 4299248247611064389
+          - rid: 4299248247611064390
+          - rid: 4299248247611064391
+          - rid: 4299248247611064392
+          - rid: 4299248247611064393
+          - rid: 4299248247611064394
+          - rid: 4299248247611064395
+          - rid: 4299248247611064396
+          - rid: 4299248247611064397
+          - rid: 4299248247611064398
+          - rid: 4299248247611064399
+          - rid: 4299248247611064400
+          - rid: 4299248247611064401
+          - rid: 4299248247611064402
+          - rid: 4299248247611064403
+          - rid: 4299248247611064404
+          - rid: 4299248247611064405
+          - rid: 4299248247611064406
+          - rid: 4299248247611064407
+          - rid: 4299248247611064408
+          - rid: 4299248247611064409
+          - rid: 4299248247611064410
+          - rid: 4299248247611064411
+          - rid: 4299248247611064413
+          - rid: 4299248247611064414
+          - rid: 4299248247611064415
+          - rid: 4299248247611064416
+          - rid: 4299248247611064417
+          - rid: 4299248247611064418
+          - rid: 4299248247611064419
+          - rid: 4299248247611064420
+          - rid: 4299248247611064421
+          - rid: 4299248247611064422
+          - rid: 4299248247611064423
+          - rid: 4299248247611064424
+          - rid: 4299248247611064425
+          - rid: 4299248247611064426
+          - rid: 4299248247611064427
+          - rid: 4299248247611064428
+          - rid: 4299248247611064429
+          - rid: 4299248247611064430
+          - rid: 4299248247611064431
+          - rid: 4299248247611064432
+          - rid: 4299248247611064433
+          - rid: 4299248247611064434
+          - rid: 4299248247611064435
+          - rid: 4299248247611064436
+          - rid: 4299248247611064437
+          - rid: 4299248247611064438
+          - rid: 4299248247611064440
+          - rid: 4299248247611064441
+          - rid: 4299248247611064442
+          - rid: 4299248247611064443
+          - rid: 4299248247611064444
+          - rid: 4299248247611064445
+          - rid: 4299248247611064446
+          - rid: 4299248247611064447
+          - rid: 4299248247611064448
+          - rid: 4299248247611064449
+          - rid: 4299248247611064450
+          - rid: 4299248247611064451
+          - rid: 4299248247611064452
+          - rid: 4299248247611064453
+          - rid: 4299248247611064454
+          - rid: 4299248247611064455
+          - rid: 4299248247611064456
+        m_UpdateType: 1
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 4299248247611064323
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31043252675379200
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[0].<Name>k__BackingField
+    - rid: 4299248247611064324
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31045760848199680
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[0].<Description>k__BackingField
+    - rid: 4299248247611064325
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31045847452188672
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[1].<Name>k__BackingField
+    - rid: 4299248247611064327
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31045956340514816
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[1].<Description>k__BackingField
+    - rid: 4299248247611064328
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31046108409200640
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[2].<Name>k__BackingField
+    - rid: 4299248247611064329
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31046166433202176
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[2].<Description>k__BackingField
+    - rid: 4299248247611064330
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31046244162043904
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[3].<Name>k__BackingField
+    - rid: 4299248247611064331
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31046308167122944
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[3].<Description>k__BackingField
+    - rid: 4299248247611064332
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31046614250651648
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[4].<Name>k__BackingField
+    - rid: 4299248247611064333
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31046777295831040
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[4].<Description>k__BackingField
+    - rid: 4299248247611064334
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31046936218009600
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[5].<Name>k__BackingField
+    - rid: 4299248247611064335
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31047283854508032
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[5].<Description>k__BackingField
+    - rid: 4299248247611064336
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31047768049156096
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[6].<Name>k__BackingField
+    - rid: 4299248247611064337
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31049837237731328
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[6].<Description>k__BackingField
+    - rid: 4299248247611064338
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31049944809046016
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[7].<Name>k__BackingField
+    - rid: 4299248247611064339
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31050041177374720
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[7].<Description>k__BackingField
+    - rid: 4299248247611064340
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31050116293165056
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[8].<Name>k__BackingField
+    - rid: 4299248247611064341
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31050241094680576
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[8].<Description>k__BackingField
+    - rid: 4299248247611064342
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31050410372595712
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[9].<Name>k__BackingField
+    - rid: 4299248247611064343
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31050468623089664
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[9].<Description>k__BackingField
+    - rid: 4299248247611064344
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31050782344445952
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[10].<Name>k__BackingField
+    - rid: 4299248247611064345
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31050850044706816
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[10].<Description>k__BackingField
+    - rid: 4299248247611064346
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31050918592217088
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[11].<Name>k__BackingField
+    - rid: 4299248247611064347
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31051762750423040
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[11].<Description>k__BackingField
+    - rid: 4299248247611064348
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31052097741094912
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[12].<Name>k__BackingField
+    - rid: 4299248247611064349
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31052166770950144
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[12].<Description>k__BackingField
+    - rid: 4299248247611064350
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31052221187850240
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[13].<Name>k__BackingField
+    - rid: 4299248247611064351
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31052269296517120
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[13].<Description>k__BackingField
+    - rid: 4299248247611064352
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31052340490633216
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[14].<Name>k__BackingField
+    - rid: 4299248247611064353
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31052391908605952
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[14].<Description>k__BackingField
+    - rid: 4299248247611064354
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31052465099210752
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[15].<Name>k__BackingField
+    - rid: 4299248247611064355
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31052550314885120
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[15].<Description>k__BackingField
+    - rid: 4299248247611064357
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31053115098890240
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[16].<Name>k__BackingField
+    - rid: 4299248247611064358
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31053187169615872
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[16].<Description>k__BackingField
+    - rid: 4299248247611064359
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31053245332029440
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[17].<Name>k__BackingField
+    - rid: 4299248247611064360
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31053303653826560
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[17].<Description>k__BackingField
+    - rid: 4299248247611064361
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31053392753426432
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[18].<Name>k__BackingField
+    - rid: 4299248247611064362
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31053466686423040
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[18].<Description>k__BackingField
+    - rid: 4299248247611064363
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31053528334303232
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[19].<Name>k__BackingField
+    - rid: 4299248247611064364
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31053587549487104
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[19].<Description>k__BackingField
+    - rid: 4299248247611064365
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31053654327001088
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[20].<Name>k__BackingField
+    - rid: 4299248247611064366
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31053710518091776
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[20].<Description>k__BackingField
+    - rid: 4299248247611064367
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056074318774272
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[21].<Description>k__BackingField
+    - rid: 4299248247611064368
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056131365502976
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[21].<Name>k__BackingField
+    - rid: 4299248247611064369
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056224273530880
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[22].<Name>k__BackingField
+    - rid: 4299248247611064370
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056289226522624
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[22].<Description>k__BackingField
+    - rid: 4299248247611064371
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056511377833984
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[23].<Name>k__BackingField
+    - rid: 4299248247611064372
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056553195044864
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[23].<Description>k__BackingField
+    - rid: 4299248247611064373
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056647457832960
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[24].<Name>k__BackingField
+    - rid: 4299248247611064374
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056710494027776
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[24].<Description>k__BackingField
+    - rid: 4299248247611064375
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056775094697984
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[25].<Name>k__BackingField
+    - rid: 4299248247611064376
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056825413763072
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[25].<Description>k__BackingField
+    - rid: 4299248247611064377
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056904224735232
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[26].<Name>k__BackingField
+    - rid: 4299248247611064378
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31056953046433792
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[26].<Description>k__BackingField
+    - rid: 4299248247611064379
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31057030422953984
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[27].<Name>k__BackingField
+    - rid: 4299248247611064380
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31057081501188096
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[27].<Description>k__BackingField
+    - rid: 4299248247611064381
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31057141697839104
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[28].<Name>k__BackingField
+    - rid: 4299248247611064382
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31057205505785856
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[28].<Description>k__BackingField
+    - rid: 4299248247611064383
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31057732822073344
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[29].<Name>k__BackingField
+    - rid: 4299248247611064384
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31057780205125632
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[29].<Description>k__BackingField
+    - rid: 4299248247611064385
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31057878158901248
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[30].<Name>k__BackingField
+    - rid: 4299248247611064386
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31057930998743040
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[30].<Description>k__BackingField
+    - rid: 4299248247611064387
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058101526560768
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[31].<Name>k__BackingField
+    - rid: 4299248247611064388
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058142538465280
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[31].<Description>k__BackingField
+    - rid: 4299248247611064389
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058353398710272
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[32].<Name>k__BackingField
+    - rid: 4299248247611064390
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058410890035200
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[32].<Description>k__BackingField
+    - rid: 4299248247611064391
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058460814835712
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[33].<Name>k__BackingField
+    - rid: 4299248247611064392
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058510748024832
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[33].<Description>k__BackingField
+    - rid: 4299248247611064393
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058639177613312
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[34].<Name>k__BackingField
+    - rid: 4299248247611064394
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058694127190016
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[34].<Description>k__BackingField
+    - rid: 4299248247611064395
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058773680553984
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[35].<Name>k__BackingField
+    - rid: 4299248247611064396
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058827006935040
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[35].<Description>k__BackingField
+    - rid: 4299248247611064397
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058899727777792
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[36].<Name>k__BackingField
+    - rid: 4299248247611064398
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31058952466956288
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[36].<Description>k__BackingField
+    - rid: 4299248247611064399
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059004375662592
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[37].<Name>k__BackingField
+    - rid: 4299248247611064400
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059096268668928
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[37].<Description>k__BackingField
+    - rid: 4299248247611064401
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059159950786560
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[38].<Name>k__BackingField
+    - rid: 4299248247611064402
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059214011170816
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[38].<Description>k__BackingField
+    - rid: 4299248247611064403
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059289005326336
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[39].<Name>k__BackingField
+    - rid: 4299248247611064404
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059340918226944
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[39].<Description>k__BackingField
+    - rid: 4299248247611064405
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059392487194624
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[40].<Name>k__BackingField
+    - rid: 4299248247611064406
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059441489248256
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[40].<Description>k__BackingField
+    - rid: 4299248247611064407
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059523341090816
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[41].<Name>k__BackingField
+    - rid: 4299248247611064408
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059578219364352
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[41].<Description>k__BackingField
+    - rid: 4299248247611064409
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059737359646720
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[42].<Name>k__BackingField
+    - rid: 4299248247611064410
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059792305029120
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[42].<Description>k__BackingField
+    - rid: 4299248247611064411
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31059851427938304
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[43].<Name>k__BackingField
+    - rid: 4299248247611064413
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31060503931617280
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[43].<Description>k__BackingField
+    - rid: 4299248247611064414
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31061095064240128
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[44].<Name>k__BackingField
+    - rid: 4299248247611064415
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31061156036837376
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[44].<Description>k__BackingField
+    - rid: 4299248247611064416
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31061486338277376
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[45].<Name>k__BackingField
+    - rid: 4299248247611064417
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31061579061755904
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[45].<Description>k__BackingField
+    - rid: 4299248247611064418
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31061787724185600
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[46].<Name>k__BackingField
+    - rid: 4299248247611064419
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31061871878701056
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[46].<Description>k__BackingField
+    - rid: 4299248247611064420
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31061950547066880
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[47].<Name>k__BackingField
+    - rid: 4299248247611064421
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062009099550720
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[47].<Description>k__BackingField
+    - rid: 4299248247611064422
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062079006015488
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[48].<Name>k__BackingField
+    - rid: 4299248247611064423
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062158857175040
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[48].<Description>k__BackingField
+    - rid: 4299248247611064424
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062225408196608
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[49].<Name>k__BackingField
+    - rid: 4299248247611064425
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062291074220032
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[49].<Description>k__BackingField
+    - rid: 4299248247611064426
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062367293112320
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[50].<Name>k__BackingField
+    - rid: 4299248247611064427
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062452806582272
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[50].<Description>k__BackingField
+    - rid: 4299248247611064428
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062536822685696
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[51].<Name>k__BackingField
+    - rid: 4299248247611064429
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062713918783488
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[51].<Description>k__BackingField
+    - rid: 4299248247611064430
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062784479559680
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[52].<Name>k__BackingField
+    - rid: 4299248247611064431
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062850485321728
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[52].<Description>k__BackingField
+    - rid: 4299248247611064432
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062918873448448
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[53].<Name>k__BackingField
+    - rid: 4299248247611064433
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31062984656912384
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[53].<Description>k__BackingField
+    - rid: 4299248247611064434
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31063098184138752
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[54].<Name>k__BackingField
+    - rid: 4299248247611064435
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31063184452583424
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[54].<Description>k__BackingField
+    - rid: 4299248247611064436
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31063278077837312
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[55].<Name>k__BackingField
+    - rid: 4299248247611064437
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31063336345108480
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[55].<Description>k__BackingField
+    - rid: 4299248247611064438
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31063401612673024
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[56].<Name>k__BackingField
+    - rid: 4299248247611064440
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31063503441985536
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[56].<Description>k__BackingField
+    - rid: 4299248247611064441
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31063593569189888
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[57].<Name>k__BackingField
+    - rid: 4299248247611064442
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31063675618164736
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[57].<Description>k__BackingField
+    - rid: 4299248247611064443
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31063749253365760
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[58].<Name>k__BackingField
+    - rid: 4299248247611064444
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31063838109696000
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[58].<Description>k__BackingField
+    - rid: 4299248247611064445
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31063908662083584
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[59].<Name>k__BackingField
+    - rid: 4299248247611064446
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31064012856983552
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[59].<Description>k__BackingField
+    - rid: 4299248247611064447
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31064089025544192
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[60].<Name>k__BackingField
+    - rid: 4299248247611064448
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31064140158304256
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[60].<Description>k__BackingField
+    - rid: 4299248247611064449
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31064210505170944
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[61].<Name>k__BackingField
+    - rid: 4299248247611064450
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31064285067313152
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[61].<Description>k__BackingField
+    - rid: 4299248247611064451
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31064475794898944
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[62].<Name>k__BackingField
+    - rid: 4299248247611064452
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31064603607924736
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[62].<Description>k__BackingField
+    - rid: 4299248247611064453
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31064681911386112
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[63].<Name>k__BackingField
+    - rid: 4299248247611064454
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31064749796196352
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[63].<Description>k__BackingField
+    - rid: 4299248247611064455
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31064867777773568
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[64].<Name>k__BackingField
+    - rid: 4299248247611064456
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 31065196049170432
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: <TalentsInfo>k__BackingField.Array.data[64].<Description>k__BackingField
 --- !u!1001 &1243049126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3907,6 +6442,7 @@ Transform:
   - {fileID: 1045076301}
   - {fileID: 2060050385}
   - {fileID: 885721171}
+  - {fileID: 1206810224}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2060050384
@@ -3997,13 +6533,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d37eddd34c7cfb49b6aafb0d4af3d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemies: []
-  _places: []
-  _patrolPoints: []
-  _enemy: {fileID: 2077118780103722586, guid: 3e898fc282604584c95846b3c4ab380a, type: 3}
-  _respawnTime: 0
-  _maxEnemyCount: 0
-  _isDeathmatch: 0
 --- !u!1 &2117291596
 GameObject:
   m_ObjectHideFlags: 0
@@ -4238,3 +6767,4 @@ SceneRoots:
   - {fileID: 1668930979}
   - {fileID: 1314441216}
   - {fileID: 556458159}
+  - {fileID: 301823886}

@@ -1,63 +1,30 @@
 ﻿using System.Collections;
+using EnemyAI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 // This class is created for the example scene. There is no support for this script.
 public class SimplePlayerHealth : HealthManager
 {
-	public float health = 100f;
+    public static SimplePlayerHealth Instance;
+    private StatsController statsC;
 
-	public Transform canvas;
-	public GameObject hurtPrefab;
-	public float decayFactor = 0.8f;
+    private void Awake()
+    {
+        statsC = GetComponentInParent<StatsController>();
 
-	private HurtHUD hurtUI;
+        statsC.Died += Dead;
+    }
 
-	private void Awake()
-	{
-		AudioListener.pause = false;
-		hurtUI = this.gameObject.AddComponent<HurtHUD>();
-		hurtUI.Setup(canvas, hurtPrefab, decayFactor, this.transform);
-	}
+    public override void TakeDamage(Vector3 location, Vector3 direction, float damage, Collider bodyPart,
+        GameObject origin)
+    {
+        statsC.TakeDamage(damage);
+    }
 
-	public override void TakeDamage(Vector3 location, Vector3 direction, float damage, Collider bodyPart, GameObject origin)
-	{
-		health -= damage;
-
-		if (hurtPrefab && canvas)
-			hurtUI.DrawHurtUI(origin.transform, origin.GetHashCode());
-	}
-
-	public void OnGUI()
-	{
-		if (health > 0f)
-		{
-			var textStyle = new GUIStyle
-			{
-				fontSize = 50
-			};
-			textStyle.normal.textColor = Color.white;
-			GUI.Label(new Rect(0, Screen.height - 60, 30, 30), health.ToString(), textStyle);
-		}
-		else if (!dead)
-		{
-			dead = true;
-			StartCoroutine("ReloadScene");
-		}
-	}
-
-	private IEnumerator ReloadScene()
-	{
-		SendMessage("PlayerDead", SendMessageOptions.DontRequireReceiver);
-		yield return new WaitForSeconds(0.5f);
-		canvas.gameObject.SetActive(false);
-		AudioListener.pause = true;
-		Camera.main.clearFlags = CameraClearFlags.SolidColor;
-		Camera.main.backgroundColor = Color.black;
-		Camera.main.cullingMask = LayerMask.GetMask();
-
-		yield return new WaitForSeconds(1);
-
-		SceneManager.LoadScene(0);
-	}
+    private void Dead()
+    {
+        dead = true;
+    }
 }

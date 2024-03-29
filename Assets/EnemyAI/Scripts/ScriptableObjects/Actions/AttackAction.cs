@@ -79,7 +79,7 @@ public class AttackAction : Action
 	{
 		// Get shot imprecision vector.
 		var imprecision = Random.Range(-controller.classStats.shotErrorRate, controller.classStats.shotErrorRate)
-		                  * controller.transform.right;
+			* controller.transform.right;
 
 		imprecision += Random.Range(-controller.classStats.shotErrorRate, controller.classStats.shotErrorRate)
 			* controller.transform.up;
@@ -90,8 +90,7 @@ public class AttackAction : Action
 		if (Physics.Raycast(ray, out var hit, controller.viewRadius, controller.generalStats.shotMask.value))
 		{
 			// Hit something organic? Consider all layers in target mask as organic.
-			var isOrganic = !((hit.transform.gameObject.layer & controller.generalStats.targetMask) > 0);
-			//var isOrganic = ((1 << hit.transform.root.gameObject.layer) & controller.generalStats.targetMask) != 0;
+			var isOrganic = ((1 << hit.transform.root.gameObject.layer) & controller.generalStats.targetMask) != 0;
 			DoShot(controller, ray.direction, hit.point, hit.normal, isOrganic, hit.transform);
 		}
 		else
@@ -108,7 +107,7 @@ public class AttackAction : Action
 		var muzzleFlash = Instantiate(controller.classStats.muzzleFlash, controller.enemyAnimation.gunMuzzle);
 		muzzleFlash.transform.localPosition = Vector3.zero;
 		muzzleFlash.transform.localEulerAngles = Vector3.back * 90f;
-		controller.StartCoroutine(this.DestroyFlash(muzzleFlash));
+		controller.StartCoroutine(DestroyFlash(muzzleFlash));
 
 		// Draw shot tracer and smoke.
 		var shotTracer = Instantiate(controller.classStats.shot, controller.enemyAnimation.gunMuzzle);
@@ -129,22 +128,20 @@ public class AttackAction : Action
 		// The object hit is organic, call take damage function.
 		else if(target && organic)
 		{
-			var targetHealth = target.GetComponentInParent<HealthManager>();
+			var targetHealth = target.GetComponent<HealthManager>();
 			if(targetHealth)
 			{
 				targetHealth.TakeDamage(hitPoint, direction, controller.classStats.bulletDamage, target.GetComponent<Collider>(), controller.gameObject);
 			}
 
-			var stats = target.GetComponentInParent<StatsController>();
-			if (stats)
+			var targetStatsController = target.GetComponent<StatsController>();
+			if (targetStatsController)
 			{
-				stats.TakeDamage(controller.classStats.bulletDamage);
+				targetStatsController.TakeDamage(controller.classStats.bulletDamage);
 			}
 		}
 		// Play shot audio clip at shot position.
-		AudioManager.Instance.PlaySound(controller.classStats.shotSound,AudioSourceType.Weapon,
-			controller.enemyAnimation.gunMuzzle);
-		//AudioSource.PlayClipAtPoint(controller.classStats.shotSound, controller.enemyAnimation.gunMuzzle.position, 2f);
+		AudioSource.PlayClipAtPoint(controller.classStats.shotSound, controller.enemyAnimation.gunMuzzle.position, 2f);
 	}
 	// Function to destroy the muzzle flash.
 	public IEnumerator DestroyFlash(GameObject flash)

@@ -18,8 +18,6 @@ public class LightGunShooterGameManagement : MonoBehaviour
 	void Awake()
 	{
 		Cursor.SetCursor(cursorTexture, Vector2.one * (cursorTexture.width * 0.5f), CursorMode.Auto);
-		player = GameObject.FindGameObjectWithTag("Player").GetComponent<SimplePlayerHealth>();
-		fullHealth = player.health;
 		nav = GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>();
 	}
 
@@ -51,7 +49,7 @@ public class LightGunShooterGameManagement : MonoBehaviour
 
 	void EnableLevelEnemies()
 	{
-		foreach(var enemy in GameObject.FindObjectsOfType<StateController>())
+		foreach(StateController enemy in GameObject.FindObjectsOfType<StateController>())
 		{
 			if (enemy.name.Contains("enemy (" + currentLevel))
 				enemy.enabled = true;
@@ -62,7 +60,7 @@ public class LightGunShooterGameManagement : MonoBehaviour
 	{
 		if (engaging)
 		{
-			foreach (var enemy in GameObject.FindObjectsOfType<StateController>())
+			foreach (StateController enemy in GameObject.FindObjectsOfType<StateController>())
 			{
 				if (enemy.enabled)
 				{
@@ -73,10 +71,6 @@ public class LightGunShooterGameManagement : MonoBehaviour
 			Cursor.visible = false;
 			engaging = false;
 			currentLevel++;
-			player.health = fullHealth;
-
-			if (currentLevel > 3)
-				player.health = 0f;
 		}
 	}
 }

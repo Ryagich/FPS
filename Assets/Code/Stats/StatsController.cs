@@ -6,6 +6,7 @@ using YG;
 public class StatsController : MonoBehaviour
 {
     public static StatsController Instance;
+    public bool IsDead { get; private set; }
     public event Action Died;
     public bool IsHpMax => Hp.Max == Hp.Value;
     public bool IsArmorMax => Armor.Max == Armor.Value;
@@ -137,6 +138,7 @@ public class StatsController : MonoBehaviour
             else
             {
                 StopAllCoroutines();
+                IsDead = true;
                 Died?.Invoke();
             }
         }
@@ -195,6 +197,7 @@ public class StatsController : MonoBehaviour
         if (Hp.Value <= 0)
         {
             StopAllCoroutines();
+            IsDead = true;
             Died?.Invoke();
         }
     }

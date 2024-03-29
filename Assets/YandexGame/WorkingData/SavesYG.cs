@@ -17,7 +17,7 @@ namespace YG
         //Trading saves
 
         //Сохранения забега
-        public int Money = -1;
+        public int Money = 0;
         public int MainSpellMax = -1;
         public int MainSpellCount = -1;
         public int AddSpellMax = -1;

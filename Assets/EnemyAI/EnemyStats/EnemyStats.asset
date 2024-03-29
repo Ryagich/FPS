@@ -15,18 +15,18 @@ MonoBehaviour:
   patrolSpeed: 2
   chaseSpeed: 5
   evadeSpeed: 15
-  patrolWaitTime: 0
+  patrolWaitTime: 2
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 2621440
-  angleDeadzone: 30
+    m_Bits: 3801089
+  angleDeadzone: 5
   speedDampTime: 0.4
   angularSpeedDampTime: 0.2
   angleResponseTime: 0.2
-  aboveCoverHeight: 2.05
+  aboveCoverHeight: 1.5
   coverMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 524288
   shotMask:
     serializedVersion: 2
     m_Bits: 132096

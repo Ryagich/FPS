@@ -24,7 +24,7 @@ namespace UnityStandardAssets.Utility
         public IEnumerator DoBobCycle()
         {
             // make the camera move down slightly
-            var t = 0f;
+            float t = 0f;
             while (t < BobDuration)
             {
                 m_Offset = Mathf.Lerp(0f, BobAmount, t/BobDuration);

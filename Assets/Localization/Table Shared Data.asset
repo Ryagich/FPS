@@ -1311,6 +1311,530 @@ MonoBehaviour:
     m_Key: TalentSelectionCanvas/TalentSelectionCanvas/Background/Name_Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 30734557034807296
+    m_Key: Menu/empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31043252675379200
+    m_Key: TestScene/-----Template-----/Talents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045760848199680
+    m_Key: TestScene/-----Template-----/Talents 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045847452188672
+    m_Key: TestScene/-----Template-----/Talents 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045956340514816
+    m_Key: TestScene/-----Template-----/Talents 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046108409200640
+    m_Key: TestScene/-----Template-----/Talents 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046166433202176
+    m_Key: TestScene/-----Template-----/Talents 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046244162043904
+    m_Key: TestScene/-----Template-----/Talents 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046308167122944
+    m_Key: TestScene/-----Template-----/Talents 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046614250651648
+    m_Key: TestScene/-----Template-----/Talents 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046777295831040
+    m_Key: TestScene/-----Template-----/Talents 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046936218009600
+    m_Key: TestScene/-----Template-----/Talents 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31047283854508032
+    m_Key: TestScene/-----Template-----/Talents 11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31047768049156096
+    m_Key: TestScene/-----Template-----/Talents 12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31049837237731328
+    m_Key: TestScene/-----Template-----/Talents 13
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31049944809046016
+    m_Key: TestScene/-----Template-----/Talents 14
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050041177374720
+    m_Key: TestScene/-----Template-----/Talents 15
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050116293165056
+    m_Key: TestScene/-----Template-----/Talents 16
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050241094680576
+    m_Key: TestScene/-----Template-----/Talents 17
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050410372595712
+    m_Key: TestScene/-----Template-----/Talents 18
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050468623089664
+    m_Key: TestScene/-----Template-----/Talents 19
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050782344445952
+    m_Key: TestScene/-----Template-----/Talents 20
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050850044706816
+    m_Key: TestScene/-----Template-----/Talents 21
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050918592217088
+    m_Key: TestScene/-----Template-----/Talents 22
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31051762750423040
+    m_Key: TestScene/-----Template-----/Talents 23
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052097741094912
+    m_Key: TestScene/-----Template-----/Talents 24
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052166770950144
+    m_Key: TestScene/-----Template-----/Talents 25
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052221187850240
+    m_Key: TestScene/-----Template-----/Talents 26
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052269296517120
+    m_Key: TestScene/-----Template-----/Talents 27
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052340490633216
+    m_Key: TestScene/-----Template-----/Talents 28
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052391908605952
+    m_Key: TestScene/-----Template-----/Talents 29
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052465099210752
+    m_Key: TestScene/-----Template-----/Talents 30
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052550314885120
+    m_Key: TestScene/-----Template-----/Talents 31
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053115098890240
+    m_Key: TestScene/-----Template-----/Talents 32
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053187169615872
+    m_Key: TestScene/-----Template-----/Talents 33
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053245332029440
+    m_Key: TestScene/-----Template-----/Talents 34
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053303653826560
+    m_Key: TestScene/-----Template-----/Talents 35
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053392753426432
+    m_Key: TestScene/-----Template-----/Talents 36
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053466686423040
+    m_Key: TestScene/-----Template-----/Talents 37
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053528334303232
+    m_Key: TestScene/-----Template-----/Talents 38
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053587549487104
+    m_Key: TestScene/-----Template-----/Talents 39
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053654327001088
+    m_Key: TestScene/-----Template-----/Talents 40
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053710518091776
+    m_Key: TestScene/-----Template-----/Talents 41
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056074318774272
+    m_Key: TestScene/-----Template-----/Talents 42
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056131365502976
+    m_Key: TestScene/-----Template-----/Talents 43
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056224273530880
+    m_Key: TestScene/-----Template-----/Talents 44
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056289226522624
+    m_Key: TestScene/-----Template-----/Talents 45
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056511377833984
+    m_Key: TestScene/-----Template-----/Talents 46
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056553195044864
+    m_Key: TestScene/-----Template-----/Talents 47
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056647457832960
+    m_Key: TestScene/-----Template-----/Talents 48
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056710494027776
+    m_Key: TestScene/-----Template-----/Talents 49
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056775094697984
+    m_Key: TestScene/-----Template-----/Talents 50
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056825413763072
+    m_Key: TestScene/-----Template-----/Talents 51
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056904224735232
+    m_Key: TestScene/-----Template-----/Talents 52
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056953046433792
+    m_Key: TestScene/-----Template-----/Talents 53
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057030422953984
+    m_Key: TestScene/-----Template-----/Talents 54
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057081501188096
+    m_Key: TestScene/-----Template-----/Talents 55
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057141697839104
+    m_Key: TestScene/-----Template-----/Talents 56
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057205505785856
+    m_Key: TestScene/-----Template-----/Talents 57
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057732822073344
+    m_Key: TestScene/-----Template-----/Talents 58
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057780205125632
+    m_Key: TestScene/-----Template-----/Talents 59
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057878158901248
+    m_Key: TestScene/-----Template-----/Talents 60
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057930998743040
+    m_Key: TestScene/-----Template-----/Talents 61
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058101526560768
+    m_Key: TestScene/-----Template-----/Talents 62
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058142538465280
+    m_Key: TestScene/-----Template-----/Talents 63
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058353398710272
+    m_Key: TestScene/-----Template-----/Talents 64
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058410890035200
+    m_Key: TestScene/-----Template-----/Talents 65
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058460814835712
+    m_Key: TestScene/-----Template-----/Talents 66
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058510748024832
+    m_Key: TestScene/-----Template-----/Talents 67
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058639177613312
+    m_Key: TestScene/-----Template-----/Talents 68
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058694127190016
+    m_Key: TestScene/-----Template-----/Talents 69
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058773680553984
+    m_Key: TestScene/-----Template-----/Talents 70
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058827006935040
+    m_Key: TestScene/-----Template-----/Talents 71
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058899727777792
+    m_Key: TestScene/-----Template-----/Talents 72
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058952466956288
+    m_Key: TestScene/-----Template-----/Talents 73
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059004375662592
+    m_Key: TestScene/-----Template-----/Talents 74
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059096268668928
+    m_Key: TestScene/-----Template-----/Talents 75
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059159950786560
+    m_Key: TestScene/-----Template-----/Talents 76
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059214011170816
+    m_Key: TestScene/-----Template-----/Talents 77
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059289005326336
+    m_Key: TestScene/-----Template-----/Talents 78
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059340918226944
+    m_Key: TestScene/-----Template-----/Talents 79
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059392487194624
+    m_Key: TestScene/-----Template-----/Talents 80
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059441489248256
+    m_Key: TestScene/-----Template-----/Talents 81
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059523341090816
+    m_Key: TestScene/-----Template-----/Talents 82
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059578219364352
+    m_Key: TestScene/-----Template-----/Talents 83
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059737359646720
+    m_Key: TestScene/-----Template-----/Talents 84
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059792305029120
+    m_Key: TestScene/-----Template-----/Talents 85
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059851427938304
+    m_Key: TestScene/-----Template-----/Talents 86
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31060503931617280
+    m_Key: TestScene/-----Template-----/Talents 87
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061095064240128
+    m_Key: TestScene/-----Template-----/Talents 88
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061156036837376
+    m_Key: TestScene/-----Template-----/Talents 89
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061486338277376
+    m_Key: TestScene/-----Template-----/Talents 90
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061579061755904
+    m_Key: TestScene/-----Template-----/Talents 91
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061787724185600
+    m_Key: TestScene/-----Template-----/Talents 92
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061871878701056
+    m_Key: TestScene/-----Template-----/Talents 93
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061950547066880
+    m_Key: TestScene/-----Template-----/Talents 94
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062009099550720
+    m_Key: TestScene/-----Template-----/Talents 95
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062079006015488
+    m_Key: TestScene/-----Template-----/Talents 96
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062158857175040
+    m_Key: TestScene/-----Template-----/Talents 97
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062225408196608
+    m_Key: TestScene/-----Template-----/Talents 98
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062291074220032
+    m_Key: TestScene/-----Template-----/Talents 99
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062367293112320
+    m_Key: TestScene/-----Template-----/Talents 100
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062452806582272
+    m_Key: TestScene/-----Template-----/Talents 101
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062536822685696
+    m_Key: TestScene/-----Template-----/Talents 102
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062713918783488
+    m_Key: TestScene/-----Template-----/Talents 103
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062784479559680
+    m_Key: TestScene/-----Template-----/Talents 104
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062850485321728
+    m_Key: TestScene/-----Template-----/Talents 105
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062918873448448
+    m_Key: TestScene/-----Template-----/Talents 106
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062984656912384
+    m_Key: TestScene/-----Template-----/Talents 107
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063098184138752
+    m_Key: TestScene/-----Template-----/Talents 108
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063184452583424
+    m_Key: TestScene/-----Template-----/Talents 109
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063278077837312
+    m_Key: TestScene/-----Template-----/Talents 110
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063336345108480
+    m_Key: TestScene/-----Template-----/Talents 111
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063401612673024
+    m_Key: TestScene/-----Template-----/Talents 112
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063503441985536
+    m_Key: TestScene/-----Template-----/Talents 113
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063593569189888
+    m_Key: TestScene/-----Template-----/Talents 114
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063675618164736
+    m_Key: TestScene/-----Template-----/Talents 115
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063749253365760
+    m_Key: TestScene/-----Template-----/Talents 116
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063838109696000
+    m_Key: TestScene/-----Template-----/Talents 117
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063908662083584
+    m_Key: TestScene/-----Template-----/Talents 118
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064012856983552
+    m_Key: TestScene/-----Template-----/Talents 119
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064089025544192
+    m_Key: TestScene/-----Template-----/Talents 120
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064140158304256
+    m_Key: TestScene/-----Template-----/Talents 121
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064210505170944
+    m_Key: TestScene/-----Template-----/Talents 122
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064285067313152
+    m_Key: TestScene/-----Template-----/Talents 123
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064475794898944
+    m_Key: TestScene/-----Template-----/Talents 124
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064603607924736
+    m_Key: TestScene/-----Template-----/Talents 125
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064681911386112
+    m_Key: TestScene/-----Template-----/Talents 126
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064749796196352
+    m_Key: TestScene/-----Template-----/Talents 127
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064867777773568
+    m_Key: TestScene/-----Template-----/Talents 128
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31065196049170432
+    m_Key: TestScene/-----Template-----/Talents 129
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

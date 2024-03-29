@@ -2031,7 +2031,7 @@ MonoBehaviour:
   classStats: {fileID: 11400000, guid: 91b50b16cfdf9f344ad104b3f9e5ccfe, type: 2}
   currentState: {fileID: 11400000, guid: 5f57170ec6dffc7488b0a2159dbccf3d, type: 2}
   remainState: {fileID: 11400000, guid: 301991cf0b50f1745a515210895c9156, type: 2}
-  Targets: []
+  aimTarget: {fileID: 0}
   patrolWayPoints: []
   bullets: 30
   viewRadius: 20
@@ -2065,9 +2065,6 @@ MonoBehaviour:
     blindEngageTimer: 0
   coverLookup: {fileID: 0}
   personalTarget: {x: 0, y: 0, z: 0}
-  MyColliders: []
-  _log: 0
-  LastTarget: {fileID: 0}
 --- !u!114 &3887845070864410967
 MonoBehaviour:
   m_ObjectHideFlags: 0

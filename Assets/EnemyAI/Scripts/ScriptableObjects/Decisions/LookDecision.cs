@@ -1,58 +1,39 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 using EnemyAI;
 
 // The decision to see the target. Sense of sight.
 [CreateAssetMenu(menuName = "Enemy AI/Decisions/Look")]
 public class LookDecision : Decision
 {
-    // The decide function, called on Update() (State controller - current state - transition - decision).
-    public override bool Decide(StateController controller)
-    {
-        // Reset sight status on loop before checking.
-        controller.targetInSight = false;
-        // Check sight.
-        var targetsToCheck = GetTargetsInRadius(controller, controller.viewRadius);
-        var bestTarget = GetBestTarget(controller, targetsToCheck);
-        if (!bestTarget)
-            return false;
+	// The decide function, called on Update() (State controller - current state - transition - decision).
+	public override bool Decide(StateController controller)
+	{
+		// Reset sight status on loop before checking.
+		controller.targetInSight = false;
+		// Check sight.
+		return Decision.CheckTargetsInRadius(controller, controller.viewRadius, MyHandleTargets);
+	}
 
-        // Set current target parameters.
-        controller.targetInSight = true;
-        controller.LastTarget = bestTarget;
-        //controller.personalTarget = controller.GetClosestTarget().position;
-        controller.personalTarget = bestTarget.position;
-        return true;
-    }
-
-    // The delegate for results of overlapping targets in look decision.
-    private static Transform GetBestTarget(StateController controller, Transform[] targetsInViewRadius)
-    {
-        var controllerTransform = controller.transform;
-        var filtered = targetsInViewRadius
-            .Where(target =>
-            {
-                // Check if target is in field of view.
-                var dirToTarget = target.position - controllerTransform.position;
-                //var dirToTarget = Vector3.Distance(target, controller.transform.position);
-                var inFOVCondition =
-                    (Vector3.Angle(controllerTransform.forward, dirToTarget) < controller.viewAngle / 2);
-                // Is target in FOV and NPC have a clear sight?
-                return (inFOVCondition) && !controller.BlockedSight(target);
-            })
-            .ToArray();
-        var min = float.MaxValue;
-        Transform closest = null;
-        foreach (var target in filtered)
-        {
-            var dis = controller.DistanceTo(target);
-            if (dis < min)
-            {
-                min = dis;
-                closest = target;
-            }
-        }
-
-        return closest;
-    }
+	// The delegate for results of overlapping targets in look decision.
+	private bool MyHandleTargets(StateController controller, bool hasTargets, Collider[] targetsInViewRadius)
+	{
+		// Is there any sight on view radius?
+		if(hasTargets)
+		{
+			Vector3 target = targetsInViewRadius[0].transform.position;
+			// Check if target is in field of view.
+			Vector3 dirToTarget = target - controller.transform.position;
+			bool inFOVCondition = (Vector3.Angle(controller.transform.forward, dirToTarget) < controller.viewAngle / 2);
+			// Is target in FOV and NPC have a clear sight?
+			if (inFOVCondition && !controller.BlockedSight())
+			{
+				// Set current target parameters.
+				controller.targetInSight = true;
+				controller.personalTarget = controller.aimTarget.position;
+				return true;
+			}
+		}
+		// No target on sight.
+		return false;
+	}
 }

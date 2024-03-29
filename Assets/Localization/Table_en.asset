@@ -1238,6 +1238,566 @@ MonoBehaviour:
     m_Localized: Talents
     m_Metadata:
       m_Items: []
+  - m_Id: 30734557034807296
+    m_Localized: Iron hand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31043252675379200
+    m_Localized: Iron hand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045760848199680
+    m_Localized: Non-critical damage increases by 20%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045847452188672
+    m_Localized: Best number
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045956340514816
+    m_Localized: Every 4th attack deals 80% more damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046108409200640
+    m_Localized: Nimble Pocket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046166433202176
+    m_Localized: When picking up an object, movement speed increases by 20% for 2
+      seconds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046244162043904
+    m_Localized: Bull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046308167122944
+    m_Localized: At full health, damage dealt is 25% higher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046614250651648
+    m_Localized: Pre-emptive strike
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046777295831040
+    m_Localized: The first bullet in the magazine deals 100% more damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046936218009600
+    m_Localized: Determination
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31047283854508032
+    m_Localized: Movement speed increases by 50% when there is no shield.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31047768049156096
+    m_Localized: Quality bullets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31049837237731328
+    m_Localized: When picking up cartridges, 2 units of armor are also restored.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31049944809046016
+    m_Localized: Love for gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050041177374720
+    m_Localized: When picking up coins and crystals, 1 unit of health is also restored.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050116293165056
+    m_Localized: Double Explosion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050241094680576
+    m_Localized: The power of the additional ability doubles.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050410372595712
+    m_Localized: Devil's Covenant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050468623089664
+    m_Localized: Health is halved. Gets twice as many coins and crystals from all
+      sources.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050782344445952
+    m_Localized: Phantom Bullet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050850044706816
+    m_Localized: When reloading there is a 30% chance of not wasting a cartridge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050918592217088
+    m_Localized: Hardness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31051762750423040
+    m_Localized: When stationary, damage increases by 50%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052097741094912
+    m_Localized: Abnormal speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052166770950144
+    m_Localized: +2% movement speed for every 10% shield.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052221187850240
+    m_Localized: Bullet Bank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052269296517120
+    m_Localized: All ammo collected is converted into ammo used by the current weapon.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052340490633216
+    m_Localized: Orderly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052391908605952
+    m_Localized: Healing received from all sources is doubled.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052465099210752
+    m_Localized: Gambling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052550314885120
+    m_Localized: +50% critical attack damage, but normal attacks deal 20% less damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053115098890240
+    m_Localized: Short respite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053187169615872
+    m_Localized: Gain immunity to damage for 2 seconds after recharging.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053245332029440
+    m_Localized: Berserk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053303653826560
+    m_Localized: +1% critical chance for every 5% of missing health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053392753426432
+    m_Localized: Brand new
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053466686423040
+    m_Localized: +75% damage dealt if armor is full, otherwise -25% damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053528334303232
+    m_Localized: Trophy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053587549487104
+    m_Localized: 25% chance to knock out ammo from a defeated enemy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053654327001088
+    m_Localized: Farsightedness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053710518091776
+    m_Localized: Opponents at a distance of 10 meters or more receive 50% more damage,
+      opponents located closer receive 15% less damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056074318774272
+    m_Localized: Your next purchase from the merchant will be free. The talent disappears
+      after use.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056131365502976
+    m_Localized: Gold card
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056224273530880
+    m_Localized: Armor plate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056289226522624
+    m_Localized: Start using armor plates. The armor plate blocks any further damage
+      and then breaks. Every 10 seconds, restore 1 armor plate. Maximum 3 armor plates.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056511377833984
+    m_Localized: Quality shoes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056553195044864
+    m_Localized: Movement speed increases by 15%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056647457832960
+    m_Localized: Surprise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056710494027776
+    m_Localized: 10% chance to knock out, when killing an enemy, additional coins
+      or a charge for an additional skill.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056775094697984
+    m_Localized: Hidden Treasures
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056825413763072
+    m_Localized: The chance of finding coins or crystals in breakable objects increases.
+      The chance of finding everything else is lower.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056904224735232
+    m_Localized: Expect good things
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056953046433792
+    m_Localized: The first shot after every 3 seconds will be critical.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057030422953984
+    m_Localized: Vampire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057081501188096
+    m_Localized: Attacks restore 1 unit of health, if health is full, armor is restored.
+      Attacks deal 50% less damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057141697839104
+    m_Localized: Boxer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057205505785856
+    m_Localized: The chance of inflicting critical damage on an enemy standing less
+      than 5 meters away doubles.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057732822073344
+    m_Localized: Bullet light
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057780205125632
+    m_Localized: Reloading consumes twice as much ammo (primarily due to unused types
+      of ammunition). Critical hit chance increases by 25%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057878158901248
+    m_Localized: Tactical reloading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057930998743040
+    m_Localized: During reloading, movement speed increases by 25% and damage taken
+      is reduced by 10%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058101526560768
+    m_Localized: Love of life
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058142538465280
+    m_Localized: After receiving damage, 3 health units are restored over 5 seconds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058353398710272
+    m_Localized: Bad hand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058410890035200
+    m_Localized: If you have additional skill charges, deal 75% more damage, and
+      if you don't have them, deal 25% less damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058460814835712
+    m_Localized: Grudge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058510748024832
+    m_Localized: When receiving damage, your own damage increases by 15% for 5 seconds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058639177613312
+    m_Localized: Second chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058694127190016
+    m_Localized: When receiving lethal damage, restore 10% of your maximum health.
+      The skill disappears after triggering.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058773680553984
+    m_Localized: Dead soul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058827006935040
+    m_Localized: Having received lethal damage, become invulnerable for 5 seconds,
+      if during this time you do not replenish your health, you will die. The skill
+      disappears after triggering.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058899727777792
+    m_Localized: Paranormal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058952466956288
+    m_Localized: Maximum health drops to 1 unit. The amount of armor triples.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059004375662592
+    m_Localized: Live meat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059096268668928
+    m_Localized: Every second, 4% of your maximum health is converted into missing
+      armor. As a result of using the ability, health cannot fall below 20%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059159950786560
+    m_Localized: Rescuer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059214011170816
+    m_Localized: After receiving lethal damage, restore 10% of your health, if within
+      5 seconds after the ability is triggered you do not kill a single enemy, you
+      will die. The skill disappears after triggering.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059289005326336
+    m_Localized: Bloody ammunition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059340918226944
+    m_Localized: When the magazine is empty, you continue to fire, dealing 2% more
+      damage per shot, and losing 1% of your maximum health per shot. It is possible
+      to die as a result of using a skill.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059392487194624
+    m_Localized: Stock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059441489248256
+    m_Localized: Lose 50% of your maximum armor and 50% of your maximum health. Gain
+      2 extra lives.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059523341090816
+    m_Localized: Anemia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059578219364352
+    m_Localized: Maximum health is doubled. Take 10% more damage from all sources.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059737359646720
+    m_Localized: Discipline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059792305029120
+    m_Localized: Every second, the chance of a critical shot increases by 5%. Resets
+      after landing a critical shot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059851427938304
+    m_Localized: Giant Slayer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31060503931617280
+    m_Localized: 5% chance that when an enemy takes damage, 5% of their maximum health
+      will be converted into bonus damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061095064240128
+    m_Localized: Alien energy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061156036837376
+    m_Localized: 50% chance to restore 5 armor when killing an enemy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061486338277376
+    m_Localized: Lightning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061579061755904
+    m_Localized: The faster your current speed, the higher your resistance to damage
+      received. Maximum 30%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061787724185600
+    m_Localized: Extravagance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061871878701056
+    m_Localized: +10% to damage resistance for every 100 ammo spent.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061950547066880
+    m_Localized: Miner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062009099550720
+    m_Localized: The reward for killing enemies within 7 meters is twice as high.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062079006015488
+    m_Localized: Veteran
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062158857175040
+    m_Localized: +1 to maximum health for each enemy killed up to 7 meters away.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062225408196608
+    m_Localized: Eggshell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062291074220032
+    m_Localized: Gain an additional 15% damage resistance while wearing armor. Become
+      15% vulnerable to damage when not armored.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062367293112320
+    m_Localized: Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062452806582272
+    m_Localized: Movement speed is 50% higher, the main skill is restored 150% longer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062536822685696
+    m_Localized: The limit of what's possible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062713918783488
+    m_Localized: The additional skill can be used even when there are no projectiles,
+      for each such use you will receive 25 points of damage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062784479559680
+    m_Localized: Sleeping bullet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062850485321728
+    m_Localized: The less ammo left in the magazine, the higher the weapon's damage
+      (maximum +75%).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062918873448448
+    m_Localized: Two sides of the coin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062984656912384
+    m_Localized: Alternate between Yin and Yang states every 12 seconds. The Yin
+      state gives +20% to damage resistance, and the Yang state gives +50% to damage
+      dealt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063098184138752
+    m_Localized: Double-edged sword
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063184452583424
+    m_Localized: For each enemy defeated, gain +1% damage and -0.5% damage resistance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063278077837312
+    m_Localized: Fury
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063336345108480
+    m_Localized: When receiving damage, you will receive +20% chance to deal critical
+      damage for 5 seconds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063401612673024
+    m_Localized: Golden armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063503441985536
+    m_Localized: When using an additional skill, restore 5% of your armor from its
+      maximum.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063593569189888
+    m_Localized: Grace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063675618164736
+    m_Localized: Reduce damage resistance by 100%, but damage taken cannot exceed
+      10% of maximum health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063749253365760
+    m_Localized: All or nothing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063838109696000
+    m_Localized: Gain 100% damage. Lose 75% of your maximum health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063908662083584
+    m_Localized: Penetrating projectile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064012856983552
+    m_Localized: Critical attacks penetrate enemy armor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064089025544192
+    m_Localized: Atlant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064140158304256
+    m_Localized: +5% damage for every 100 coins in stock.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064210505170944
+    m_Localized: Reserve armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064285067313152
+    m_Localized: When armor is broken, instantly restore 10% armor. Reload time 45
+      seconds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064475794898944
+    m_Localized: Heavy armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064603607924736
+    m_Localized: Gain +50 Max Shield and +10% Damage Resistance. Lose 20% movement
+      speed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064681911386112
+    m_Localized: Reasonable Luck
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064749796196352
+    m_Localized: +50% chance to deal critical damage, but the maximum chance cannot
+      exceed 75%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064867777773568
+    m_Localized: Living armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31065196049170432
+    m_Localized: The maximum amount of armor is reduced by 75%, restore 1 unit of
+      armor every second.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

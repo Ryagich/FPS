@@ -32,8 +32,8 @@ public class HurtHUD : MonoBehaviour
 
 	void Update()
     {
-		var toRemoveKeys = new List<int>();
-		foreach (var key in hurtUIdata.Keys)
+		List<int> toRemoveKeys = new List<int>();
+		foreach (int key in hurtUIdata.Keys)
 		{
 			SetRotation(hurtUIdata[key].hurtImg, cam.forward, hurtUIdata[key].shotOrigin.position - player.position);
 			hurtUIdata[key].hurtImg.color = GetUpdatedAlpha(hurtUIdata[key].hurtImg.color);
@@ -42,7 +42,7 @@ public class HurtHUD : MonoBehaviour
 				toRemoveKeys.Add(key);
 			}
 		}
-		for (var i = 0; i < toRemoveKeys.Count; i++)
+		for (int i = 0; i < toRemoveKeys.Count; i++)
 		{
 			DestroyHurtUI(toRemoveKeys[i]);
 		}
@@ -56,7 +56,7 @@ public class HurtHUD : MonoBehaviour
 		}
 		else
 		{
-			var hurtUI = Object.Instantiate<GameObject>(hurtPrefab, canvas);
+			GameObject hurtUI = Object.Instantiate<GameObject>(hurtPrefab, canvas);
 			SetRotation(hurtUI.GetComponent<Image>(), cam.forward, shotOrigin.position - player.position);
 			HurtData data;
 			data.shotOrigin = shotOrigin;
@@ -89,11 +89,11 @@ public class HurtHUD : MonoBehaviour
 	{
 		orientation.y = 0;
 		shotDirection.y = 0;
-		var rotation = Vector3.SignedAngle(shotDirection, orientation, Vector3.up);
+		float rotation = Vector3.SignedAngle(shotDirection, orientation, Vector3.up);
 
-		var newRotation = hurtUI.rectTransform.rotation.eulerAngles;
+		Vector3 newRotation = hurtUI.rectTransform.rotation.eulerAngles;
 		newRotation.z = rotation;
-		var hurtImg = hurtUI.GetComponent<Image>();
+		Image hurtImg = hurtUI.GetComponent<Image>();
 		hurtImg.rectTransform.rotation = Quaternion.Euler(newRotation);
 	}
 }

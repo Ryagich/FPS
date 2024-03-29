@@ -16,7 +16,7 @@ namespace EnemyAI
 		// Perform the state corresponding actions.
 		public void DoActions(StateController controller)
 		{
-			for (var i = 0; i < actions.Length; i++)
+			for (int i = 0; i < actions.Length; i++)
 			{
 				actions[i].Act(controller);
 			}
@@ -25,12 +25,12 @@ namespace EnemyAI
 		// Trigger the state action once when the state is becomes the current one.
 		public void OnEnableActions(StateController controller)
 		{
-			for (var i = 0; i < actions.Length; i++)
+			for (int i = 0; i < actions.Length; i++)
 			{
 				// Trigger on enable for all actions once, when the state is activated.
 				actions[i].OnEnableAction(controller);
 			}
-			for (var i = transitions.Length - 1; i >= 0; i--)
+			for (int i = transitions.Length - 1; i >= 0; i--)
 			{
 				// Trigger on enable for all decisions once, when the state is activated.
 				transitions[i].decision.OnEnableDecision(controller);
@@ -41,9 +41,9 @@ namespace EnemyAI
 		public void CheckTransitions(StateController controller)
 		{
 			// First decisions has precedence over the last ones.
-			for (var i = 0; i < transitions.Length; i++)
+			for (int i = 0; i < transitions.Length; i++)
 			{
-				var decision = transitions[i].decision.Decide(controller);
+				bool decision = transitions[i].decision.Decide(controller);
 				if (decision)
 				{
 					// Go to true state.
@@ -57,8 +57,6 @@ namespace EnemyAI
 				// If a transition was performed to another state, trigger on enable for all actions of new state.
 				if (controller.currentState != this)
 				{
-					if(controller._log)
-						Debug.Log($" from {name} to {controller.currentState.name} \n using {decision} {transitions[i].decision.name}");
 					controller.currentState.OnEnableActions(controller);
 					// No need to check remaining transitions.
 					break;

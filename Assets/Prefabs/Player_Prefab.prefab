@@ -1822,6 +1822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ratio: 0.9
   InvulnerabilityC: {fileID: 0}
+  _secondChange: Second Change
   TookDamageInLast5Seconds: 0
 --- !u!114 &8930412542136289808
 MonoBehaviour:
@@ -3045,6 +3046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8110723816788279956}
   - component: {fileID: 5049632089844197767}
+  - component: {fileID: 575374973526392902}
   m_Layer: 10
   m_Name: spine_03
   m_TagString: Untagged
@@ -3091,6 +3093,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.25
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &575374973526392902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4229378731708253671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e7439bc9b350747b1ff7cdd4c29535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dead: 0
 --- !u!1 &4288561174321063812
 GameObject:
   m_ObjectHideFlags: 0

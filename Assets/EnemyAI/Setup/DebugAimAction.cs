@@ -20,10 +20,10 @@ public class DebugAimAction : Action
 		{
 			// Focus on target.
 			controller.focusSight = controller.targetInSight = true;
-			controller.personalTarget = controller.LastTarget.position;
+			controller.personalTarget = controller.aimTarget.position;
 			// DEBUG: draw alignment lines.
 			Debug.DrawRay(controller.enemyAnimation.gunMuzzle.position, -controller.enemyAnimation.gunMuzzle.right, Color.red);
-			Debug.DrawLine(controller.enemyAnimation.gunMuzzle.position, controller.LastTarget.position, Color.green);
+			Debug.DrawLine(controller.enemyAnimation.gunMuzzle.position, controller.aimTarget.position, Color.green);
 		}
 	}
 	// The action on enable function, triggered once after a FSM state transition.

@@ -17,18 +17,18 @@ public class Upgrade : MonoBehaviour
     [field: SerializeField] public UpgradeType Type { get; private set; }
     [field: SerializeField, Range(0, 4)] public int Level { get; private set; }
     [field: SerializeField, Range(0, 2)] public int Index { get; private set; }
-    
+
     private void Awake()
     {
-        Text.gameObject.SetActive(Info.Count > 1);
+        Text.gameObject.SetActive(Info.Count > 0);
         UpdateText();
     }
 
     public void UpdateText()
     {
-        Text.text = ( GetCurrentLevelIndex() + 1).ToString();
+        Text.text = $"{GetCurrentLevelIndex() + 1}/{Info.Count}";
     }
-    
+
     public bool CheckLastUpgrades()
     {
         foreach (var upgrade in LastUpgrades)
@@ -36,7 +36,7 @@ public class Upgrade : MonoBehaviour
                 return false;
         return true;
     }
-    
+
     public UpgradeInfo GetNextLevel()
     {
         foreach (var i in Info)
@@ -44,7 +44,7 @@ public class Upgrade : MonoBehaviour
                 return i;
         return null;
     }
-    
+
     public int GetNextLevelIndex()
     {
         for (var i = 0; i < Info.Count; i++)
