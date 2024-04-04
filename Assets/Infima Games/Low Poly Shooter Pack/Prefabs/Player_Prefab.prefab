@@ -995,6 +995,7 @@ GameObject:
   - component: {fileID: 7187869948156095639}
   - component: {fileID: -2759979225079892511}
   - component: {fileID: 7394901386026528467}
+  - component: {fileID: -2624841668629697885}
   - component: {fileID: 4818736797759305148}
   - component: {fileID: 6219025921223107655}
   - component: {fileID: 6273730452981155187}
@@ -1125,6 +1126,8 @@ MonoBehaviour:
   bolting: 0
   holdingButtonFire: 0
   cursorLocked: 0
+  _motionTime: 0
+  _dampTime: 0
 --- !u!114 &8163229473432397683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1190,6 +1193,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8435120935727210385}
         m_TargetAssemblyTypeName: DamageCallback, Assembly-CSharp
+        m_MethodName: Init
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -2624841668629697885}
+        m_TargetAssemblyTypeName: AdController, Assembly-CSharp
         m_MethodName: Init
         m_Mode: 0
         m_Arguments:
@@ -2025,6 +2040,22 @@ MonoBehaviour:
   movement: {fileID: 448958757}
   heart: {fileID: 4027078435281450844}
   _pause: {fileID: -2759979225079892511}
+--- !u!114 &-2624841668629697885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751027687307977091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74f2f504bbaf6a4a8d28149bd26791e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  before: Ad after
+  after: sec
+  time: 60
+  countdown: 3
 --- !u!143 &4818736797759305148
 CharacterController:
   m_ObjectHideFlags: 0

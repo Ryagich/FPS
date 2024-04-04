@@ -24,5 +24,5 @@ public class UIHolder : MonoBehaviour
     [field: SerializeField] public Image BloodScreen{ get; private set; }
     [field: SerializeField] public Transform StartKillCallbackPoint { get; private set; }
     [field: SerializeField] public Transform CallbackParent { get; private set; }
-
+    [field: SerializeField] public TMP_Text AdText { get; private set; }
 }
