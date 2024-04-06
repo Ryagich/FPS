@@ -28,6 +28,9 @@ namespace InfimaGames.LowPolyShooterPack.Interface
             postProcessingVolume = GameObject.Find("Post Processing Volume")?.GetComponent<PostProcessVolume>();
             if (postProcessingVolume != null)
                 postProcessingVolume.profile.TryGetSettings(out depthOfField);
+            
+            animationComponent.clip = animationHide;
+            animationComponent.Play();
         }
 
         protected override void Tick()

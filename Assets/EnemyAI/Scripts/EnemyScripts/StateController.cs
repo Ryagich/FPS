@@ -229,7 +229,7 @@ namespace EnemyAI
 				catch (UnassignedReferenceException)
 				{
 					// Ensure the NPC has an aim target set.
-					Debug.LogError("Assign an aim target to " + transform.name);
+					//Debug.LogError("Assign an aim target to " + transform.name);
 				}
 				// Get cast to target parameters.
 				Vector3 castOrigin = transform.position + Vector3.up * generalStats.aboveCoverHeight;

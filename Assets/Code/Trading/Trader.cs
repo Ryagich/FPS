@@ -8,6 +8,6 @@ public class Trader : MonoBehaviour
 {
      public void StartTrading(GameObject character,GameObject go)
      {
-          character.GetComponent<CanvasSpawner>().Trade.GetComponent<TradingCanvas>().Open(character);
+          TradingCanvas.Instance.Open(character);
      }
 }

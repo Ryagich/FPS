@@ -23,9 +23,10 @@ public class SoundsSetterFromSave : MonoBehaviour
 
     private void SetVolume()
     {
-        _mixer.SetFloat("Master_Volume",
-            YandexGame.savesData.MasterVolume);
-        _mixer.SetFloat("UI_Volume",
-            YandexGame.savesData.UIVolume);
+        _mixer.SetFloat("Master_Volume", YandexGame.savesData.MasterVolume);
+        _mixer.SetFloat("UI_Volume", YandexGame.savesData.UIVolume);
+        _mixer.SetFloat("Effects_Volume", YandexGame.savesData.EffectsVolume);
+        _mixer.SetFloat("Shooting_Volume", YandexGame.savesData.ShootingVolume);
+        _mixer.SetFloat("Steps_Volume", YandexGame.savesData.StepsVolume);
     }
 }

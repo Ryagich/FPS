@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,7 @@ public class TradeButton : MonoBehaviour
     [field: SerializeField] public Button Button { get; private set; }
     [field: SerializeField] public Image Image { get; private set; }
     [field: SerializeField] public Image BackgroundImage { get; private set; }
+    [field: SerializeField]public TMP_Text Price { get; private set; }
     [field: SerializeField]public TradeItemInfo Info { get; private set; }
 
     public void SetInfo(TradeItemInfo info)
@@ -13,6 +15,7 @@ public class TradeButton : MonoBehaviour
         Info = info;
         BackgroundImage.color = info.BackgroundColor;
         Image.sprite = info.Sprite;
+        Price.text = info.Cost + "$";
     }
 }
 

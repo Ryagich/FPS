@@ -27,6 +27,7 @@ public class TalentsController : MonoBehaviour
         Instance = this;
         LoadSaves();
     }
+    
     public string GetTalentName(int index) => Talents.TalentsInfo[index].Name;
     public List<TalentInfo> GetSelectedTalentsInfo()
     {

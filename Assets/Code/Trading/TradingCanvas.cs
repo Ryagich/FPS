@@ -15,7 +15,9 @@ public class TradingCanvas : MonoBehaviour
     [SerializeField] private Transform _parent;
     [SerializeField] private TradeButton _buttonPref;
 
-    [Space] [SerializeField] private TMP_Text _name;
+    [Space] [SerializeField] private GameObject _card;
+    [SerializeField] private Image _cardImage;
+    [SerializeField] private TMP_Text _name;
     [SerializeField] private TMP_Text _description;
     [SerializeField] private Button _buyButton;
 
@@ -24,7 +26,8 @@ public class TradingCanvas : MonoBehaviour
 
     private List<TradeButton> buttons = new();
     private CharacterDisabler disabler;
-
+    private PauseController pause;
+    
     private void Awake()
     {
         Instance = this;
@@ -51,6 +54,8 @@ public class TradingCanvas : MonoBehaviour
                 InstantiateButtons(10);
                 break;
         }
+
+        DisableDescription();
     }
 
     private void InstantiateButtons(int value)
@@ -66,6 +71,7 @@ public class TradingCanvas : MonoBehaviour
 
     public void DisableDescription()
     {
+        _card.SetActive(false);
         _name.text = "";
         _description.text = "";
         _buyButton.onClick.RemoveAllListeners();
@@ -76,6 +82,8 @@ public class TradingCanvas : MonoBehaviour
 
     private void UpdateDescription(TradeItemInfo info)
     {
+        _card.SetActive(true);
+        _cardImage.sprite = info.Sprite;
         _name.text = info.Name;
         _description.text = info.Description;
 
@@ -176,7 +184,9 @@ public class TradingCanvas : MonoBehaviour
     public void Open(GameObject character)
     {
         disabler = character.GetComponent<CharacterDisabler>();
+        pause = character.GetComponent<PauseController>();
         disabler.Disable();
+        pause.Pause();
         _canvas.SetActive(true);
         character.GetComponent<CanvasSpawner>().Canvas.gameObject.SetActive(false);
     }
@@ -184,6 +194,7 @@ public class TradingCanvas : MonoBehaviour
     public void Close()
     {
         disabler.Activate();
+        pause.UnPause();
         _canvas.SetActive(false);
         disabler.GetComponent<CanvasSpawner>().Canvas.gameObject.SetActive(true);
     }

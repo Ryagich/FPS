@@ -1,5 +1,5 @@
 {
-  "idSave": 12,
+  "idSave": 42,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
@@ -44,6 +44,7 @@
   "locale": "ru",
   "CharacterIndex": 0,
   "Talents": [
+    true,
     false,
     false,
     false,
@@ -65,8 +66,7 @@
     false,
     false,
     false,
-    false,
-    false,
+    true,
     false,
     false,
     false,
