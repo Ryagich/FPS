@@ -31,6 +31,10 @@ public class AttachmentsMenu : MonoBehaviour
         {
             InitButton(AttachmentsButtons[i], i);
         }
+
+        UpdateWarnings();
+        CurrencyController.Instanse.CrystalsChanged += UpdateWarnings;
+        Back.onClick.AddListener(() => CurrencyController.Instanse.CrystalsChanged += UpdateWarnings);
     }
 
     private void RemoveArrowsListeners()
@@ -53,6 +57,49 @@ public class AttachmentsMenu : MonoBehaviour
         button.onClick.AddListener(() => section = s);
         button.onClick.AddListener(() => weapon.ChosenCurrentAttachments());
         button.onClick.AddListener(() => ShowButton(GetCurrI()));
+    }
+
+    public void UpdateWarnings()
+    {
+        for (int i = 0; i < AttachmentsButtons.Count; i++)
+        {
+            AttachmentsButtons[i].GetComponentInChildren<WarningIcon>()
+                .gameObject
+                .SetActive(CheckPossibilityInSection(i));
+        }
+    }
+
+    private bool CheckPossibilityInSection(int i)
+    {
+        var s = YandexGame.savesData.OpenedAttachments[weapon.WeaponIndex][i];
+        for (var a = 0; a < s.Length; a++)
+        {
+            if (!s[a])
+            {
+                switch (i)
+                {
+                    case 0:
+                        if (YandexGame.savesData.Crystals >= AttachmentsCostsHolder.Instance.CostsScopes[a])
+                            return true;
+                        break;
+                    case 1:
+                        if (YandexGame.savesData.Crystals >= AttachmentsCostsHolder.Instance.CostsMuzzle[a])
+                            return true;
+                        break;
+                    case 2:
+                        if (YandexGame.savesData.Crystals >= AttachmentsCostsHolder.Instance.CostsLaser[a])
+                            return true;
+                        break;
+                    case 3:
+                        if (YandexGame.savesData.Crystals >= AttachmentsCostsHolder.Instance.CostsGrip[a])
+                            return true;
+                        break;
+                    default:
+                        throw new ArgumentException();
+                }
+            }
+        }
+        return false;
     }
 
     private void OnLeftArrow()
@@ -99,7 +146,9 @@ public class AttachmentsMenu : MonoBehaviour
         {
             showButton = Instantiate(_buyButton.gameObject, transform);
             showButton.GetComponent<Button>().onClick.AddListener(() => TryBuy(i));
-            showButton.GetComponentInChildren<TMP_Text>().text = GetCurrCost(i).ToString();// + '$';
+            showButton.GetComponentInChildren<TMP_Text>().text = GetCurrCost(i).ToString(); // + '$';
+            showButton.GetComponentInChildren<WarningIcon>().gameObject
+                .SetActive(GetCurrCost(i) >= YandexGame.savesData.Crystals);
         }
 
         showButton.GetComponentInChildren<ButtonSoundPlayer>()?.SetSource(_source);
@@ -114,9 +163,9 @@ public class AttachmentsMenu : MonoBehaviour
 
     private void TryBuy(int i)
     {
-        if (!CurrencyController.Instanse.Check(CurrencyType.Crystals,GetCurrCost(i)))
+        if (!CurrencyController.Instanse.Check(CurrencyType.Crystals, GetCurrCost(i)))
             return;
-        CurrencyController.Instanse.ChangeAmount(CurrencyType.Crystals,-GetCurrCost(i));
+        CurrencyController.Instanse.ChangeAmount(CurrencyType.Crystals, -GetCurrCost(i));
         YandexGame.savesData.OpenedAttachments[weapon.WeaponIndex][section][i] = true;
         YandexGame.savesData.ChosenAttachments[weapon.WeaponIndex][section] = i;
         YandexGame.SaveProgress();

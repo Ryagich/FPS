@@ -5,34 +5,30 @@ using System.Linq;
 using NaughtyAttributes;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using YG;
 
 public class UpgradesController : MonoBehaviour
 {
+    public List<Upgrade> Upgrades { get; private set; } = new();
+
     [SerializeField] private TMP_Text _name;
     [SerializeField] private TMP_Text _description;
     [SerializeField] private TMP_Text _level;
     [SerializeField] private Button _upgradeButton;
     [SerializeField] private Transform _content;
     [Space] [SerializeField] private string _levelText = "Current level:";
-    [Space, Header("Debug SerializeField")] [SerializeField]
-    private List<Upgrade> _upgrades = new();
 
-    [SerializeField] private Upgrade _upgrade;
-
-    private void Awake()
+    private Upgrade _upgrade;
+    private bool isInit = false;
+    
+    public void Init()
     {
-        _upgrades = _content.GetComponentsInChildren<Upgrade>().ToList();
-
-        if (YandexGame.SDKEnabled)
-        {
-            LoadSaves();
-        }
-        else
-        {
-            YandexGame.GetDataEvent += LoadSaves;
-        }
+        Upgrades = _content.GetComponentsInChildren<Upgrade>().ToList();
+        LoadSaves();
+        isInit = true;
     }
 
     private int GetBranchIndex(Upgrade upgrade)
@@ -51,7 +47,7 @@ public class UpgradesController : MonoBehaviour
 
     private void LoadSaves()
     {
-        foreach (var u in _upgrades)
+        foreach (var u in Upgrades)
         {
             var branch = GetBranchIndex(u);
                 
@@ -100,10 +96,10 @@ public class UpgradesController : MonoBehaviour
         _upgrade.UpdateText();
         UpdateInterface();
         UpdateUpgrades();
-
+        
         YandexGame.savesData.Upgrades[GetBranchIndex(_upgrade)][_upgrade.Level][_upgrade.Index] = _upgrade.GetCurrentLevelIndex();
         YandexGame.SaveProgress();
-//        Debug.Log(_upgrade.GetCurrentLevelIndex());
+        //Debug.Log(_upgrade.GetCurrentLevelIndex());
     }
 
     private void UpdateDescription(UpgradeInfo info)
@@ -114,7 +110,7 @@ public class UpgradesController : MonoBehaviour
 
     private void UpdateUpgrades()
     {
-        foreach (var upgrade in _upgrades)
+        foreach (var upgrade in Upgrades)
         {
             SetUpgradeActivity(upgrade);
         }
@@ -129,6 +125,7 @@ public class UpgradesController : MonoBehaviour
 
     private void UpdateUpgradeButton(UpgradeInfo info)
     {
+        _upgradeButton.onClick.RemoveAllListeners();
         _upgradeButton.interactable = !info.Opened
                                       && _upgrade.CheckLastUpgrades()
                                       && YandexGame.savesData.UpgradesLevel >= _upgrade.MinLevel

@@ -457,10 +457,11 @@ namespace YG
         //Audio
         public float MasterVolume = -10f;
         public float UIVolume = -30f;
-        public float EffectsVolume = -30f;
+        public float EffectsVolume = -15f;
         public float StepsVolume = -30f;
         public float ShootingVolume = -30f;
-
+        public float MusicVolume = -25f;
+        
         public void SaveMoney(int value)
         {
             Money += value;

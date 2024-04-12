@@ -15,7 +15,6 @@ public class TalentsCanvas : MonoBehaviour
     [SerializeField] private SelectedTalent _selectedTalentPref;
 
     private List<SelectedTalent> selectedTalents = new();
-
     private void Awake()
     {
         Instance = this;

@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using YG;
@@ -5,6 +6,7 @@ using YG;
 public class CurrencyController : MonoBehaviour
 {
     public static CurrencyController Instanse;
+    public Action CrystalsChanged ;
     [SerializeField] private TMP_Text _money;
     [SerializeField] private TMP_Text _crystals;
     [SerializeField] private bool isRun = false;
@@ -77,6 +79,7 @@ public class CurrencyController : MonoBehaviour
                 break;
             case CurrencyType.Crystals:
                 YandexGame.savesData.Crystals += value;
+                CrystalsChanged?.Invoke();
                 break;
         }
 

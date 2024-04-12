@@ -1798,6 +1798,14 @@ MonoBehaviour:
       armor every second.
     m_Metadata:
       m_Items: []
+  - m_Id: 36450387831926784
+    m_Localized: "\rMusic Volume"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36495000718389248
+    m_Localized: 'Current Level:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

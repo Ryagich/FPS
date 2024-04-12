@@ -46,6 +46,11 @@ public class SoundSetting : MonoBehaviour
                 slider.value = YandexGame.savesData.StepsVolume;
                 break;
             }
+            case SoundType.Music:
+            {
+                slider.value = YandexGame.savesData.MusicVolume;
+                break;
+            }
         }
 
         UpdateVolume();
@@ -85,6 +90,12 @@ public class SoundSetting : MonoBehaviour
                 _mixer.SetFloat("Steps_Volume", YandexGame.savesData.StepsVolume);
                 break;
             }
+            case SoundType.Music:
+            {
+                YandexGame.savesData.MusicVolume = slider.value;
+                _mixer.SetFloat("Music_Volume", YandexGame.savesData.MusicVolume);
+                break;
+            }
         }
 
         YandexGame.SaveProgress();
@@ -99,4 +110,5 @@ public enum SoundType
     Effects,
     Weapon,
     Steps,
+    Music,
 }

@@ -1835,6 +1835,15 @@ MonoBehaviour:
     m_Key: TestScene/-----Template-----/Talents 129
     m_Metadata:
       m_Items: []
+  - m_Id: 36450387831926784
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Panels/Sounds/Content/Title_Music/Back_Name/Text_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36495000718389248
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content
+      1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

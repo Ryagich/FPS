@@ -17,6 +17,7 @@ public class Upgrade : MonoBehaviour
     [field: SerializeField] public UpgradeType Type { get; private set; }
     [field: SerializeField, Range(0, 4)] public int Level { get; private set; }
     [field: SerializeField, Range(0, 2)] public int Index { get; private set; }
+    [field: SerializeField] public WarningIcon WarningIcon { get; private set; }
 
     private void Awake()
     {

@@ -258,3 +258,9 @@ MonoBehaviour:
   <Button>k__BackingField: {fileID: 1322232894285704048}
   <Image>k__BackingField: {fileID: 750756073716632579}
   <BackgroundImage>k__BackingField: {fileID: 5247476095046474674}
+  Info:
+    <Name>k__BackingField: 
+    <Description>k__BackingField: 
+    <Sprite>k__BackingField: {fileID: 0}
+    <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
+    <Opened>k__BackingField: 0
