@@ -14,9 +14,8 @@ namespace YG
         // Ваши сохранения
         public int SceneIndex;
 
-        //Trading saves
-
         //Сохранения забега
+        public bool HaveRun = false;
         public int Money = 0;
         public int MainSpellMax = -1;
         public int MainSpellCount = -1;
@@ -54,7 +53,7 @@ namespace YG
         // Shadow: Hp 100 | Armor 80 | Speed 1.5 | Ammo 1.0 | AddSpell Max 2 |
         
         public int CharacterIndex;
-        //64 Таланта пиздец
+        //65 Таланта пиздец
 // | 0 +++ | Не критический урон возрастает на 20%.
 // | 1 +++ | Каждая 4 атака наносит на 80% больше урона 
 // | 2 +++ | При поднятие предмета, скорость передвижения вырастает на 20% на 2 секунды.
@@ -482,34 +481,7 @@ namespace YG
         {
             true, false,
         };
-
-        public void UnSaveRun()
-        {
-            Money = 0;
-            MainSpellMax = -1;
-            MainSpellCount = -1;
-            AddSpellMax = -1;
-            AddSpellCount = -1;
-            ArmorMax = 0;
-            Armor = -1;
-            HealthMax = 0;
-            Health = -1;
-            DamageFactor = .0f;
-            AmmunitionMax = new[] { -1, -1, -1, -1, -1, -1, -1 };
-            Ammunition = new[] { -1, -1, -1, -1, -1, -1, -1 };
-            AddLive = 0;
-            IsRun = false;
-            FreePurchases = -1;
-            Talents = new bool[65];
-
-            speedWalking = -1f;
-            speedAiming = -1f;
-            speedCrouching = -1f;
-            speedRunning = -1f;
-
-            YandexGame.SaveProgress();
-        }
-
+        
         // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()
         {

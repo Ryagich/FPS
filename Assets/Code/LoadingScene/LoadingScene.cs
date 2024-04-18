@@ -48,7 +48,7 @@ public class LoadingScene : MonoBehaviour
                 var unloader = SceneManager.UnloadSceneAsync(1);
                 unloader.completed += operation =>
                 {
-                    GameObject.Find("PlayerSpawner").GetComponent<PlayerSpawner>().Spawn();
+                  GameObject.Find("LevelSpawner").GetComponent<LevelSpawner>().CreateLevel();
                 };
             }
         }

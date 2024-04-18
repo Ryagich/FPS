@@ -5,8 +5,11 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public static EnemyController Instance { get; private set; }
-    private List<StateController> enemyStatesC = new();
+    [SerializeField] private StateController _enemyPref;
+    [SerializeField] private List<EnemyStage> _stages = new();
 
+    public Transform Target { get; private set; }
+    
     private void Awake()
     {
         Instance = this;
@@ -14,18 +17,36 @@ public class EnemyController : MonoBehaviour
 
     public void SetCharacter(GameObject target)
     {
-        var t = target.GetComponent<TargetHolder>().Target;
-        foreach (var en in enemyStatesC)
+        Target = target.GetComponent<TargetHolder>().Target;
+        foreach (var stage in _stages)
         {
-            en.SetTarget(t);
+            if (stage.IsActive)
+            {
+                stage.SetTarget(Target);
+            }
         }
     }
 
     public void RemoveCharacter()
     {
-        foreach (var en in enemyStatesC)
+        foreach (var stage in _stages)
         {
-            en.RemoveTarget();
+            if (stage.IsActive)
+            {
+                stage.RemoveTarget();
+            }
         }
+    }
+
+    public StateController InstantiateEnemy(Transform place)
+    {
+        return Instantiate(_enemyPref, place);
+    }
+
+    public void StartStage(int index)
+    {
+        if (_stages.Count <= index)
+            Debug.LogError("Ну ты косяк пиздец");
+        _stages[index].Activate(this);
     }
 }

@@ -92,7 +92,9 @@ public class CurrencyController : MonoBehaviour
         switch (type)
         {
             case CurrencyType.Money:
+                Debug.Log(YandexGame.savesData.Money);
                 _money.text = YandexGame.savesData.Money + "$";
+                Debug.Log(YandexGame.savesData.Money);
                 break;
             case CurrencyType.Crystals:
                 _crystals.text = YandexGame.savesData.Crystals.ToString();

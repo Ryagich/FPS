@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 namespace EnemyAI
 {
@@ -7,6 +8,7 @@ namespace EnemyAI
 	// Any in-game entity that reacts to a shot must have a HealthManager script.
 	public class EnemyHealth : HealthManager
 	{
+		public UnityEvent Dead;
 		[Tooltip("The current NPC health.")]
 		public float health = 100f;
 		[Tooltip("The game object particle emitted when hit.")]
@@ -63,6 +65,7 @@ namespace EnemyAI
 
 				// Shooting a dead body? Just apply shot force on the ragdoll part.
 				bodyPart.GetComponent<Rigidbody>().AddForce(100f * direction.normalized, ForceMode.Impulse);
+				Dead?.Invoke();
 			}
 		}
 
