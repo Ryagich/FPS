@@ -70,6 +70,10 @@ namespace EnemyAI
 		{
 			aimTarget = null;
 		}
+		public void SetPatrolPoints(List<Transform> points)
+		{
+			patrolWayPoints = points;
+		}
 		// Get and Set current cover spot.
 		public Vector3 CoverSpot
 		{

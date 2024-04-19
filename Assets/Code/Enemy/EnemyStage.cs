@@ -5,25 +5,37 @@ using EnemyAI;
 using UnityEngine.Events;
 
 [Serializable]
+public struct EnemySpawnAndPatrolPoints
+{
+    public Transform Key;
+    public List<Transform> Value;
+}
+
+[Serializable]
 public class EnemyStage
 {
     public UnityEvent EnemiesOver;
     public bool IsActive { get; private set; } = false;
 
-    [field: SerializeField] public List<Transform> Places { get; private set; } = new();
     [field: SerializeField] public List<StateController> Enemies { get; private set; } = new();
+    [field: SerializeField] public List<EnemySpawnAndPatrolPoints> Points{ get; private set; } = new();
 
     public void Activate(EnemyController enemyC)
     {
         IsActive = true;
-        foreach (var place in Places)
+        foreach (var element in Points)
         {
+            var place = element.Key;
             var enemy = enemyC.InstantiateEnemy(place);
+            if (element.Value.Count > 0)
+            {
+                enemy.SetPatrolPoints(element.Value);
+            }
             enemy.GetComponent<EnemyHealth>().Dead.AddListener(() => RemoveEnemy(enemy));
             Enemies.Add(enemy);
         }
     }
-
+    
     public void SetTarget(Transform target)
     {
         if (Enemies.Count == 0)
@@ -46,7 +58,7 @@ public class EnemyStage
             enemy.RemoveTarget();
         }
     }
-    
+
     private void RemoveEnemy(StateController enemy)
     {
         Enemies.Remove(enemy);
