@@ -10,7 +10,7 @@ public class GameStarter : MonoBehaviour
 
     public void StartNewGame()
     {
-        YandexGame.savesData.HaveRun = false;
+        YandexGame.savesData.Stage = 0;
         YandexGame.savesData.Money = 0;
         YandexGame.savesData.MainSpellMax = -1;
         YandexGame.savesData.MainSpellCount = -1;
@@ -38,6 +38,6 @@ public class GameStarter : MonoBehaviour
 
     public void CheckContinueGame()
     {
-        _continueButton.interactable = YandexGame.savesData.HaveRun;
+        _continueButton.interactable = YandexGame.savesData.Stage > 0;
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7463832978794816251}
   - component: {fileID: -8341584857422513467}
   m_Layer: 23
-  m_Name: Prop_1
+  m_Name: Prop (Type 1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

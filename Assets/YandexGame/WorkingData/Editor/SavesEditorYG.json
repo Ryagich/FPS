@@ -1,10 +1,10 @@
 {
-  "idSave": 281,
+  "idSave": 313,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
   "SceneIndex": 0,
-  "HaveRun": false,
+  "Stage": 1,
   "Money": 0,
   "MainSpellMax": -1,
   "MainSpellCount": -1,
@@ -41,7 +41,7 @@
   "speedCrouching": 4.25,
   "speedRunning": 9.200001,
   "Crystals": 3000,
-  "UpgradesLevel": 8,
+  "UpgradesLevel": 11,
   "locale": "ru",
   "CharacterIndex": 2,
   "Talents": [
@@ -52,7 +52,7 @@
     false,
     false,
     false,
-    false,
+    true,
     false,
     false,
     false,
@@ -785,26 +785,5 @@
   "EffectsVolume": -15.0,
   "StepsVolume": -30.0,
   "ShootingVolume": -30.0,
-  "MusicVolume": -25.0,
-  "levelsSpawnPlaces": [
-    [
-      -1000.0,
-      -1000.0,
-      -1000.0
-    ],
-    [
-      -1000.0,
-      -1000.0,
-      -1000.0
-    ],
-    [
-      -1000.0,
-      -1000.0,
-      -1000.0
-    ]
-  ],
-  "OpenedLevels": [
-    true,
-    false
-  ]
+  "MusicVolume": -25.0
 }

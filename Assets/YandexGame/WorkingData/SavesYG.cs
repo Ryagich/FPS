@@ -15,7 +15,7 @@ namespace YG
         public int SceneIndex;
 
         //Сохранения забега
-        public bool HaveRun = false;
+        public int Stage = 0;
         public int Money = 0;
         public int MainSpellMax = -1;
         public int MainSpellCount = -1;
@@ -466,21 +466,6 @@ namespace YG
             Money += value;
             YandexGame.SaveProgress();
         }
-
-        // 0 - lvl, 1 - x,y,z
-        // 0 - x, 1 - y, 2 - z;
-        // -1000 - trash value
-        public float[][] levelsSpawnPlaces =
-        {
-            new[] { -1000f, -1000f, -1000f },
-            new[] { -1000f, -1000f, -1000f },
-            new[] { -1000f, -1000f, -1000f },
-        };
-
-        public bool[] OpenedLevels =
-        {
-            true, false,
-        };
         
         // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()

@@ -8139,7 +8139,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1560988544}
         m_TargetAssemblyTypeName: LevelEnder, Assembly-CSharp
-        m_MethodName: End
+        m_MethodName: EndWithHideTime
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,7 +1,6 @@
 using InfimaGames.LowPolyShooterPack;
 using UnityEngine;
 using UnityEngine.Events;
-using Random = UnityEngine.Random;
 
 public class PlayerDeath : MonoBehaviour
 {
@@ -35,7 +34,7 @@ public class PlayerDeath : MonoBehaviour
 
     private void Respawn()
     {
-        var place = SpawnPlaces.Instance.GetSpawnPlace();
+        var place = transform;
         transform.position = place.position;
         transform.rotation = place.rotation;
         

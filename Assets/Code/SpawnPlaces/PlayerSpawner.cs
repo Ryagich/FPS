@@ -5,7 +5,9 @@ using UnityEngine.Events;
 
 public class PlayerSpawner : MonoBehaviour
 {
-    [SerializeField] public UnityEvent<GameObject> _playerSpawned;
+    public UnityEvent<GameObject> _playerSpawned;
+    public UnityEvent<GameObject> OnPlayerSpawnWithDelay;
+
     public static PlayerSpawner Instance;
     public GameObject Player { get; private set; }
     [SerializeField] private Transform _parent;
@@ -19,7 +21,12 @@ public class PlayerSpawner : MonoBehaviour
     public void Spawn()
     {
         Player = Instantiate(_playerPref, _parent.position,_parent.rotation);
-            //Player.transform.SetParent(_parent);
         _playerSpawned?.Invoke(Player);
+        Invoke(nameof(SendDelayedMessage), .5f);
+    }
+
+    public void SendDelayedMessage()
+    {
+        OnPlayerSpawnWithDelay?.Invoke(Player);
     }
 }

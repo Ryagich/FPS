@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using InfimaGames.LowPolyShooterPack;
 using InfimaGames.LowPolyShooterPack.Interface;
@@ -7,7 +6,6 @@ using YG;
 
 public class LevelEnder : MonoBehaviour
 {
-    [SerializeField] private TriggerZone _zone;
     [SerializeField] private string _reward = "Reward";
 
     private CompleteUIHolder holder;
@@ -16,28 +14,20 @@ public class LevelEnder : MonoBehaviour
 
     private int Reward = 0;
 
-    private void Awake()
-    {
-        _zone._entered.AddListener(Init);
-    }
-
     private void Init(GameObject go)
     {
         character = go.GetComponent<Character>();
     }
 
-    public void End()
+    public void EndWithHideTime()
     {
         StartCoroutine(HideTimeSpeed());
     }
 
-    public void OpenNextLevel(int index)
+    public void OpenNextStage(int index)
     {
-        if (YandexGame.savesData.OpenedLevels.Length <= index)
-            return;
-        YandexGame.savesData.OpenedLevels[index] = true;
+        YandexGame.savesData.Stage = index;
         YandexGame.SaveProgress();
-        Debug.Log( YandexGame.savesData.OpenedLevels[index]);
     }
 
     private IEnumerator HideTimeSpeed()
