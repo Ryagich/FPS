@@ -384,7 +384,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 781387987005440
-    m_Localized: Military City
+    m_Localized: Road
     m_Metadata:
       m_Items: []
   - m_Id: 781440805875712
@@ -422,7 +422,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10527024316002304
-    m_Localized: Military City
+    m_Localized: Road
     m_Metadata:
       m_Items: []
   - m_Id: 10527039700709376
@@ -443,7 +443,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17988102054588416
-    m_Localized: Rock
+    m_Localized: On the edge
     m_Metadata:
       m_Items: []
   - m_Id: 17991848637607936

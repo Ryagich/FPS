@@ -12,7 +12,7 @@ namespace YG
         public bool promptDone;
 
         // Ваши сохранения
-        public int Money = 3000;
+        public int Money = 8000;
         public int SceneIndex;
 
         public string locale = "";

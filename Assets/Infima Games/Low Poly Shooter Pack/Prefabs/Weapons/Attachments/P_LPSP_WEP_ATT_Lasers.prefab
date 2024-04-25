@@ -41,6 +41,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 656903430812877113}
     m_Modifications:
+    - target: {fileID: -8936985284912004408, guid: 9cd79930b39d3b74bad7b19421a5ddf6,
+        type: 3}
+      propertyPath: turnOffWhileAiming
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8936985284912004408, guid: 9cd79930b39d3b74bad7b19421a5ddf6,
+        type: 3}
+      propertyPath: turnOffWhileRunning
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4039613764133794855, guid: 9cd79930b39d3b74bad7b19421a5ddf6,
         type: 3}
       propertyPath: m_Layer
@@ -229,6 +239,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197646608800969640, guid: b8575028f4533b64b8ffada2b0d7b181,
+        type: 3}
+      propertyPath: turnOffWhileRunning
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
