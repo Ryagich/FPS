@@ -1,9 +1,9 @@
 {
-  "idSave": 8,
+  "idSave": 34,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
-  "Money": 8000,
+  "Money": 2236,
   "SceneIndex": 2,
   "locale": "ru",
   "DeatmatchType": 0,
@@ -11,10 +11,10 @@
     [
       true,
       false,
-      false
+      true
     ],
     [
-      false,
+      true,
       false,
       false
     ],
@@ -37,9 +37,9 @@
   ],
   "ChosenWeapons": [
     [
-      true,
       false,
-      false
+      false,
+      true
     ],
     [
       false,
@@ -122,7 +122,7 @@
       [
         false,
         false,
-        false,
+        true,
         false,
         false,
         false,
@@ -131,16 +131,16 @@
       ],
       [
         true,
-        false,
-        false,
-        false
-      ],
-      [
+        true,
         false,
         false
       ],
       [
         false,
+        true
+      ],
+      [
+        true,
         false,
         false
       ]
@@ -154,16 +154,16 @@
         false,
         false,
         false,
+        true
+      ],
+      [
+        true,
+        true,
+        false,
         false
       ],
       [
         true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
         false
       ],
       [
@@ -511,15 +511,15 @@
       -1
     ],
     [
-      -1,
-      0,
-      -1,
-      -1
+      2,
+      1,
+      1,
+      0
     ],
     [
-      -1,
+      7,
+      1,
       0,
-      -1,
       -1
     ],
     [

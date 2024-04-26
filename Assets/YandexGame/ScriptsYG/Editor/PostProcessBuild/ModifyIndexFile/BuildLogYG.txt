@@ -1,2 +1,2 @@
-Build path: G:/EGOR_PROJECTS/Build_FPS_6
-Build number: 131
+Build path: C:/Users/egora/OneDrive/Рабочий стол/FPS_7_WebGL
+Build number: 133
