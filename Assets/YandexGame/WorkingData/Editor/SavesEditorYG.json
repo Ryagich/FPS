@@ -1,5 +1,5 @@
 {
-  "idSave": 313,
+  "idSave": 372,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
@@ -41,7 +41,7 @@
   "speedCrouching": 4.25,
   "speedRunning": 9.200001,
   "Crystals": 3000,
-  "UpgradesLevel": 11,
+  "UpgradesLevel": 18,
   "locale": "ru",
   "CharacterIndex": 2,
   "Talents": [
@@ -780,7 +780,7 @@
   ],
   "SensitivityX": 1.25,
   "SensitivityY": 1.25,
-  "MasterVolume": -10.0,
+  "MasterVolume": -5.0,
   "UIVolume": -30.0,
   "EffectsVolume": -15.0,
   "StepsVolume": -30.0,
