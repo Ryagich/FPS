@@ -20,7 +20,7 @@ public class AdController : MonoBehaviour
         text.gameObject.SetActive(false);
         YandexGame.CloseFullAdEvent += () => Character.Instance.OnLockCursor();
 
-        var adDay = new DateTime(2024, 5, 2, 0, 0, 0);
+        var adDay = new DateTime(2024, 5, 6, 0, 0, 0);
         if (DateTime.Today > adDay)
         {
             Stub();
