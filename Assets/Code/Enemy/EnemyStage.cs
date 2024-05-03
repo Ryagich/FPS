@@ -17,13 +17,13 @@ public class EnemyStage
     public UnityEvent EnemiesOver;
     public bool IsActive { get; private set; } = false;
 
-    [field: SerializeField] public List<StateController> Enemies { get; private set; } = new();
-    [field: SerializeField] public List<EnemySpawnAndPatrolPoints> Points{ get; private set; } = new();
+    public List<StateController> Enemies { get; private set; } = new();
+    [field: SerializeField] public List<EnemySpawnAndPatrolPoints> SpawnAndPatrolPoints{ get; private set; } = new();
 
     public void Activate(EnemyController enemyC)
     {
         IsActive = true;
-        foreach (var element in Points)
+        foreach (var element in SpawnAndPatrolPoints)
         {
             var place = element.Key;
             var enemy = enemyC.InstantiateEnemy(place);

@@ -57,13 +57,13 @@ public class TalentsController : MonoBehaviour
             YandexGame.savesData.Talents[i] = false;
         }
 
-        YandexGame.SaveProgress();
+        //YandexGame.SaveProgress();
     }
 
     private void Save(int index)
     {
         YandexGame.savesData.Talents[index] = true;
-        YandexGame.SaveProgress();
+        //YandexGame.SaveProgress();
     }
 
     private bool CheckTalents()
@@ -161,7 +161,7 @@ public class TalentsController : MonoBehaviour
         if (index is 21)
         {
             YandexGame.savesData.FreePurchases++;
-            YandexGame.SaveProgress();
+            //YandexGame.SaveProgress();
         }
 
         if (index is 23)

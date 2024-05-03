@@ -9,6 +9,7 @@ public class SoundSetting : MonoBehaviour
     [SerializeField] private TMP_Text _text;
     [SerializeField] private AudioMixer _mixer;
     [SerializeField] private SoundType _setting;
+    [SerializeField] private bool _canSave = true;
 
     private Slider slider;
 
@@ -98,7 +99,8 @@ public class SoundSetting : MonoBehaviour
             }
         }
 
-        YandexGame.SaveProgress();
+        if (_canSave)       
+            YandexGame.SaveProgress();
         _text.text = (slider.value + 80).ToString();
     }
 }

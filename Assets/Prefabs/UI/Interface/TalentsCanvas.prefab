@@ -1018,6 +1018,7 @@ MonoBehaviour:
   _icon: {fileID: 6280078497596393581}
   _selectedTalentPref: {fileID: 3694662026802859837, guid: f23a0bff8e267974188c4e93811f962d,
     type: 3}
+  selectedTalents: []
 --- !u!1 &5436883785126668053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,9 +1751,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Traveling Trader
-
-'
+  m_text: Chosen Talents
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,

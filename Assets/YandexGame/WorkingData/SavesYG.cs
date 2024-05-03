@@ -53,6 +53,8 @@ namespace YG
         // Shadow: Hp 100 | Armor 80 | Speed 1.5 | Ammo 1.0 | AddSpell Max 2 |
         
         public int CharacterIndex;
+        public int DifficultIndex;
+  
         //65 Таланта пиздец
 // | 0 +++ | Не критический урон возрастает на 20%.
 // | 1 +++ | Каждая 4 атака наносит на 80% больше урона 

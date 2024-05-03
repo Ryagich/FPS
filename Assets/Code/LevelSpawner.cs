@@ -28,7 +28,6 @@ public class LevelSpawner : MonoBehaviour
                 Instantiate(_levels.Stage_4[Random.Range(0, _levels.Stage_4.Count - 1)]);
                 break;
         }
-        GameObject.Find("NavMesh").GetComponent<NavMeshSurface>().BuildNavMesh();
         GameObject.Find("PlayerSpawner").GetComponent<PlayerSpawner>().Spawn();
     }
 }

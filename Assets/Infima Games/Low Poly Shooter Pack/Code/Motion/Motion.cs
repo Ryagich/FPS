@@ -1,12 +1,7 @@
-﻿//Copyright 2022, Infima Games. All Rights Reserved.
-
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace InfimaGames.LowPolyShooterPack
 {
-    /// <summary>
-    /// MotionType.
-    /// </summary>
     public enum MotionType { Camera, Item }
     
     /// <summary>

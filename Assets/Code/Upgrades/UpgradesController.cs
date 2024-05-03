@@ -59,8 +59,7 @@ public class UpgradesController : MonoBehaviour
             SetUpgradeActivity(u);
             u.UpdateText();
         }
-
-        UpdateLevel();
+        _level.text = $"{_levelText} {YandexGame.savesData.UpgradesLevel.ToString()}";
     }
 
     private void OnClick(Upgrade upgrade)
@@ -89,7 +88,6 @@ public class UpgradesController : MonoBehaviour
     private void Upgrade(UpgradeInfo info)
     {
         _upgradeButton.onClick.RemoveAllListeners();
-        CurrencyController.Instanse.ChangeAmount(CurrencyType.Crystals, info.Cost);
 
         info.Open();
         UpdateLevel();
@@ -97,6 +95,7 @@ public class UpgradesController : MonoBehaviour
         UpdateInterface();
         UpdateUpgrades();
         
+        CurrencyController.Instanse.ChangeAmount(CurrencyType.Crystals, info.Cost);
         YandexGame.savesData.Upgrades[GetBranchIndex(_upgrade)][_upgrade.Level][_upgrade.Index] = _upgrade.GetCurrentLevelIndex();
         YandexGame.SaveProgress();
         //Debug.Log(_upgrade.GetCurrentLevelIndex());

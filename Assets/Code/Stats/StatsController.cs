@@ -49,18 +49,20 @@ public class StatsController : MonoBehaviour
         YandexGame.savesData.ArmorMax = Armor.Max;
         YandexGame.savesData.HealthMax = Armor.Max;
         YandexGame.savesData.Health = Hp.Value;
-        YandexGame.SaveProgress();
+        //YandexGame.SaveProgress();
     }
 
     public void TakeArmor(float value)
     {
         Armor.AddValue(value);
         YandexGame.savesData.Armor = Armor.Value;
-        YandexGame.SaveProgress();
+       // YandexGame.SaveProgress();
     }
 
     public void TakeDamage(float value)
     {
+        if (InvulnerabilityC.isInvulnerability)
+            return;
         var talents = YandexGame.savesData.Talents;
         value -= value * GetDamageResistCoefficient();
         if (talents[22] && armorPlate > 0)
@@ -147,7 +149,7 @@ public class StatsController : MonoBehaviour
 
         YandexGame.savesData.Armor = Armor.Value;
         YandexGame.savesData.Health = Hp.Value;
-        YandexGame.SaveProgress();
+       // YandexGame.SaveProgress();
     }
 
     private float GetDamageResistCoefficient()
@@ -188,7 +190,7 @@ public class StatsController : MonoBehaviour
 
         Hp.AddValue(value);
         YandexGame.savesData.Health = Hp.Value;
-        YandexGame.SaveProgress();
+        //YandexGame.SaveProgress();
     }
 
     private IEnumerator WaitHeal()
@@ -208,7 +210,7 @@ public class StatsController : MonoBehaviour
 
         YandexGame.savesData.HealthMax = Hp.Max;
         YandexGame.savesData.Health = Hp.Value;
-        YandexGame.SaveProgress();
+        //YandexGame.SaveProgress();
     }
 
     public void SetNewMaxArmor(float newMax)
@@ -218,7 +220,7 @@ public class StatsController : MonoBehaviour
 
         YandexGame.savesData.ArmorMax = Armor.Max;
         YandexGame.savesData.Armor = Armor.Value;
-        YandexGame.SaveProgress();
+        //      YandexGame.SaveProgress();
     }
 
     private void TakeDamageLast5Seconds()

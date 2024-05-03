@@ -30,11 +30,10 @@ public class UpgradesChecker : MonoBehaviour
         var have = false;
         foreach (var upgrade in _upgradesController.Upgrades)
         {
-            var activity = upgrade.GetNextLevel() != null
-                            && upgrade.CheckLastUpgrades()
-                            && YandexGame.savesData.UpgradesLevel >= upgrade.MinLevel
-                            && YandexGame.savesData.Crystals >= upgrade.GetNextLevel().Cost;
-            
+            var activity =  upgrade.GetNextLevelIndex() is not -1
+                           && upgrade.CheckLastUpgrades()
+                           && YandexGame.savesData.UpgradesLevel >= upgrade.MinLevel
+                           && YandexGame.savesData.Crystals >= upgrade.GetNextLevel().Cost;
             upgrade.WarningIcon.gameObject.SetActive(activity);
             if (activity)
             {

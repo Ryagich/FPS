@@ -16,8 +16,6 @@ MonoBehaviour:
     type: 3}
   <Stage_1>k__BackingField:
   - {fileID: 5730485469364838883, guid: cfc110f1bc060be419c0e84855703dbf, type: 3}
-  - {fileID: 5730485469364838883, guid: 9cf73da012d6b084695acb84e98b33d5, type: 3}
-  - {fileID: 5730485469364838883, guid: 99c92691484495d4db7faa21fd0c740b, type: 3}
   <Stage_2>k__BackingField: []
   <Stage_3>k__BackingField: []
   <Stage_4>k__BackingField: []

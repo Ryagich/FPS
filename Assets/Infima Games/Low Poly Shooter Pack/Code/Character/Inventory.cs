@@ -28,8 +28,8 @@ namespace InfimaGames.LowPolyShooterPack
                 AmmunitionMax[i] += (int)(AmmunitionMax[i] * factor);
                 YandexGame.savesData.AmmunitionMax[i] = AmmunitionMax[i];
             }
-
-            YandexGame.SaveProgress();
+            //??
+            //YandexGame.SaveProgress();
         }
 
         public void ApplyAmmoFactor(float factor)
@@ -39,8 +39,9 @@ namespace InfimaGames.LowPolyShooterPack
                 Ammunition[i] += (int)(Ammunition[i] * factor);
                 YandexGame.savesData.Ammunition[i] = Ammunition[i];
             }
-            YandexGame.SaveProgress();
-        }
+            //??
+            //YandexGame.SaveProgress();
+        }       
 
         public void LoadSaves()
         {
@@ -65,7 +66,7 @@ namespace InfimaGames.LowPolyShooterPack
             {
                 Ammunition[i] = AmmunitionMax[i];
                 YandexGame.savesData.Ammunition[i] = Ammunition[i];
-                YandexGame.SaveProgress();
+               // YandexGame.SaveProgress();
             }
         }
 
@@ -88,13 +89,13 @@ namespace InfimaGames.LowPolyShooterPack
             {
                 Ammunition[i] += value;
                 YandexGame.savesData.Ammunition[i] = Ammunition[i];
-                YandexGame.SaveProgress();
+               // YandexGame.SaveProgress();
                 return value;
             }
 
             Ammunition[i] = AmmunitionMax[i];
             YandexGame.savesData.Ammunition[i] = Ammunition[i];
-            YandexGame.SaveProgress();
+           // YandexGame.SaveProgress();
             return need;
         }
 
@@ -111,7 +112,7 @@ namespace InfimaGames.LowPolyShooterPack
             var i = (int)type;
             Ammunition[i] = Mathf.Clamp(Ammunition[i] + value, 0, AmmunitionMax[i]);
             YandexGame.savesData.Ammunition[i] = Ammunition[i];
-            YandexGame.SaveProgress();
+            //YandexGame.SaveProgress();
         }
 
         public int GetAmmo(Ammo type, int need)
@@ -121,14 +122,14 @@ namespace InfimaGames.LowPolyShooterPack
             {
                 Ammunition[i] -= need;
                 YandexGame.savesData.Ammunition[i] = Ammunition[i];
-                YandexGame.SaveProgress();
+                //YandexGame.SaveProgress();
                 return need;
             }
 
             var toReturn = Ammunition[i];
             Ammunition[i] = 0;
             YandexGame.savesData.Ammunition[i] = Ammunition[i];
-            YandexGame.SaveProgress();
+            // YandexGame.SaveProgress();
             return toReturn;
         }
 

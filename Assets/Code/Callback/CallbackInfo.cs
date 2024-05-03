@@ -1,5 +1,4 @@
 using System;
-using InfimaGames.LowPolyShooterPack;
 using UnityEngine;
 
 [Serializable]
@@ -26,4 +25,6 @@ public enum CallbackTypes
     AddSpell,
     Ammo,
     Grenade,
+    Headshot,
+    Damage,
 }

@@ -10,11 +10,19 @@ public class Interactable : MonoBehaviour
     [SerializeField] private UnityEvent<GameObject, GameObject> _mouseOff;
     [SerializeField] private bool _manyInteract = false;
     [SerializeField] private bool _simpleInteractable = true;
-
+    [SerializeField] private bool _canInteractable = true;
+    
     private bool hasInteract = false;
 
+    public void TurnInteractableState( bool state)
+    {
+        _canInteractable = state;
+    }
+    
     public void Interact(GameObject hero)
     {
+        if (!_canInteractable)
+            return;
         if (_manyInteract || !hasInteract)
         {
             if (_simpleInteractable)
@@ -26,6 +34,8 @@ public class Interactable : MonoBehaviour
     
     public void MouseOn(GameObject hero)
     {
+        if (!_canInteractable)
+            return;
         if (_simpleInteractable)
             InteractableInterface.instance.Show();
         _mouseOn?.Invoke(hero, gameObject);
@@ -33,6 +43,8 @@ public class Interactable : MonoBehaviour
     
     public void MouseOff(GameObject hero)
     {
+        if (!_canInteractable)
+            return;
         if (_simpleInteractable)
             InteractableInterface.instance.Hide();
         _mouseOff?.Invoke(hero, gameObject);

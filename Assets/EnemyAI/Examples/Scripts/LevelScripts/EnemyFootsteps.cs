@@ -12,7 +12,8 @@ public class EnemyFootsteps : MonoBehaviour
 	private bool playedRightFoot;
 	private Vector3 leftFootIKPos;
 	private Vector3 rightFootIKPos;
-
+	[SerializeField] private AudioSource _stepPointSource;
+	
 	void Awake()
 	{
 
@@ -51,7 +52,10 @@ public class EnemyFootsteps : MonoBehaviour
 		{
 			index = Random.Range(0, stepClips.Length);
 		}
-		AudioSource.PlayClipAtPoint(stepClips[index], transform.position, 0.1f);
+
+		var step = Instantiate(_stepPointSource, transform.position, transform.rotation);
+		step.PlayOneShot(stepClips[index]);
+		//AudioSource.PlayClipAtPoint(stepClips[index], transform.position, 0.1f);
 	}
 
 	void OnAnimatorIK()

@@ -194,7 +194,8 @@ namespace InfimaGames.LowPolyShooterPack
             YandexGame.savesData.speedAiming += factor * _speedAiming;
             YandexGame.savesData.speedCrouching += factor * _speedCrouching;
             YandexGame.savesData.speedRunning += factor * _speedRunning;
-            YandexGame.SaveProgress();
+            //??
+            //YandexGame.SaveProgress();
         }
 
         private Coroutine addedItemSpeedCor;

@@ -482,6 +482,18 @@ MonoBehaviour:
   _interact:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 4065268173303090979}
+        m_TargetAssemblyTypeName: Saver, Assembly-CSharp
+        m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 4195889097200592500}
         m_TargetAssemblyTypeName: LevelEnder, Assembly-CSharp
         m_MethodName: OpenNextStage
@@ -2387,6 +2399,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c692bc5d9b8d6b346b613bc63dc5f9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4065268173303090979 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3798723486916845585, guid: 33616b9f95514b44d915aca36806ff84,
+    type: 3}
+  m_PrefabInstance: {fileID: 927034811870228274}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48ebc031ce7fba4489e377e2f588bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &4195889097200592500 stripped

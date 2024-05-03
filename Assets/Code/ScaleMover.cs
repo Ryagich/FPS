@@ -16,6 +16,12 @@ public class ScaleMover : MonoBehaviour
     [SerializeField] private Side _side = Side.Y;
 
     private Coroutine coroutine;
+    private Vector3 defScale;
+
+    private void Start()
+    {
+        defScale = transform.localScale;
+    }
 
     public void Move()
     {
@@ -24,6 +30,24 @@ public class ScaleMover : MonoBehaviour
         coroutine = StartCoroutine(Moving());
     }
 
+    public void SetDefaultScale()
+    {
+        switch (_side)
+        {
+            case Side.X:
+                transform.localScale = transform.localScale.WithX(defScale.x);
+                break;
+            case Side.Y:
+                transform.localScale = transform.localScale.WithY(defScale.y);
+                break;
+            case Side.Z:
+                transform.localScale = transform.localScale.WithZ(defScale.z);
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+    }
+    
     private IEnumerator Moving()
     {
         OnStartMove?.Invoke();

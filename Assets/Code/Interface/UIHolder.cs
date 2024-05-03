@@ -23,6 +23,8 @@ public class UIHolder : MonoBehaviour
     [field: SerializeField] public Image Heart { get; private set; }
     [field: SerializeField] public Image BloodScreen { get; private set; }
     [field: SerializeField] public Transform StartKillCallbackPoint { get; private set; }
+    [field: SerializeField] public Transform StartDamageCallbackPoint { get; private set; }
+
     [field: SerializeField] public Transform CallbackParent { get; private set; }
     [field: SerializeField] public Image MainSpellAmount { get; private set; }
     [field: SerializeField] public Image Invulnerability { get; private set; }

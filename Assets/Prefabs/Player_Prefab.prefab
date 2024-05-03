@@ -999,6 +999,7 @@ GameObject:
   - component: {fileID: 4818736797759305148}
   - component: {fileID: 6219025921223107655}
   - component: {fileID: 8512608923869119222}
+  - component: {fileID: 5113141879568175699}
   m_Layer: 10
   m_Name: Player_Prefab
   m_TagString: Player
@@ -1821,7 +1822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ratio: 0.9
-  InvulnerabilityC: {fileID: 0}
+  InvulnerabilityC: {fileID: 8512608923869119222}
   _secondChange: Second Change
   TookDamageInLast5Seconds: 0
 --- !u!114 &8930412542136289808
@@ -1999,6 +2000,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  character: {fileID: 434113066}
+  stats: {fileID: 5528527924162952464}
+  disabler: {fileID: 7394901386026528467}
+  _saver: {fileID: 5113141879568175699}
 --- !u!114 &8435120935727210385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2032,6 +2037,12 @@ MonoBehaviour:
     type: 3}
   _grenadeCallBack: {fileID: 4106992412920482964, guid: 1788be4e2d3f30c4bb71c837e99d34d0,
     type: 3}
+  _headshotCallBack: {fileID: 4106992412920482964, guid: 4d801ae57b9f31e4e9ac90f2295b0d76,
+    type: 3}
+  _damageCallBack: {fileID: 4106992412920482964, guid: 3c80f2bb74035b2429593e3eeed75944,
+    type: 3}
+  damageSpeed: 25
+  _damageShowTime: 0.75
 --- !u!114 &-2759979225079892511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2061,6 +2072,7 @@ MonoBehaviour:
   movement: {fileID: 448958757}
   heart: {fileID: 4027078435281450844}
   _pause: {fileID: -2759979225079892511}
+  _cameraLook: {fileID: 7954147704929373820}
 --- !u!114 &794605517749560917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,6 +2236,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _statsC: {fileID: 5528527924162952464}
   _RamboClip: {fileID: 8300000, guid: d3f2e09bd4354fc409ba5f222d82964b, type: 3}
+--- !u!114 &5113141879568175699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751027687307977091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48ebc031ce7fba4489e377e2f588bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2906013363015915789
 GameObject:
   m_ObjectHideFlags: 0

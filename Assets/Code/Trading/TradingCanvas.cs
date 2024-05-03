@@ -35,7 +35,8 @@ public class TradingCanvas : MonoBehaviour
         if (YandexGame.savesData.FreePurchases is -1)
         {
             YandexGame.savesData.FreePurchases = 1 + YandexGame.savesData.Upgrades[0][4][0];
-            YandexGame.SaveProgress();
+            //??
+            //YandexGame.SaveProgress();
         }
     }
 
@@ -95,7 +96,7 @@ public class TradingCanvas : MonoBehaviour
         {
             cost = 0;
             YandexGame.savesData.FreePurchases--;
-            YandexGame.SaveProgress();
+            //YandexGame.SaveProgress();
         }
         else
         {
@@ -121,7 +122,6 @@ public class TradingCanvas : MonoBehaviour
     {
         info.Open();
         YandexGame.savesData.Money -= cost;
-        YandexGame.SaveProgress();
 
         var statsC = Character.Instance.GetComponent<StatsController>();
         var addSpellC = Character.Instance.GetComponent<AddSpellController>();
@@ -177,7 +177,7 @@ public class TradingCanvas : MonoBehaviour
                 break;
         }
 
-        YandexGame.SaveProgress();
+        //YandexGame.SaveProgress();
         UpdateDescription(info);
     }
 

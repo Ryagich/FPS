@@ -21,7 +21,7 @@ public class AddSpellController : MonoBehaviour
             SpellCount = MaxSpell;
             YandexGame.savesData.AddSpellMax = MaxSpell;
             YandexGame.savesData.AddSpellCount = SpellCount;
-            YandexGame.SaveProgress();
+           // YandexGame.SaveProgress();
         }
 
         Instance = this;
@@ -68,13 +68,13 @@ public class AddSpellController : MonoBehaviour
     {
         SpellCount = Mathf.Clamp(SpellCount + value, 0, MaxSpell);
         YandexGame.savesData.AddSpellCount = SpellCount;
-        YandexGame.SaveProgress();
+       // YandexGame.SaveProgress();
     }
 
     public void AddMax()
     {
         MaxSpell++;
         YandexGame.savesData.AddSpellMax = MaxSpell;
-        YandexGame.SaveProgress();
+       // YandexGame.SaveProgress();
     }
 }

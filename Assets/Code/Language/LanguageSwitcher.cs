@@ -25,7 +25,6 @@ public class LanguageSwitcher : MonoBehaviour
         else
         {
             YandexGame.GetDataEvent += CheckLanguage;
-//            Debug.Log("GetDataEvent");
         }
     }
 
@@ -71,8 +70,6 @@ public class LanguageSwitcher : MonoBehaviour
 
     private void Init()
     {
-        // Debug.Log(YandexGame.savesData.locale);
-
         foreach (var locale in LocalizationSettings.AvailableLocales.Locales)
         {
             if (locale.Identifier.Code.Contains(YandexGame.savesData.locale))

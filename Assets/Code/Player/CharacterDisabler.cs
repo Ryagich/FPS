@@ -11,30 +11,36 @@ public class CharacterDisabler : MonoBehaviour
     [SerializeField] private Movement movement;
     [SerializeField] private BeatingHeart heart;
     [SerializeField] private PauseController _pause;
-
+    [SerializeField] private CameraLook _cameraLook;
+    
     public void Activate()
     {
         character.CanPause = true;
+        character.enabled = true;
         movement.enabled = true;
+        _cameraLook.enabled = true;
+        
         OnLockCursor();
-
         bloodScreen.StartBleeding();
         heart.StartBeating();
     }
 
-    public void Disable()
+    public void Disable()   
     {
         character.CanPause = false;
+        character.enabled = false;
         movement.enabled = false;
+        _cameraLook.enabled = false;
         character.holdingButtonFire = false;
+        
         OnLockCursor();
-
         bloodScreen.StopBleeding();
         heart.StopBeating();
     }
 
-    private void OnLockCursor()
+    public void OnLockCursor()
     {
+        //character.OnLockCursor();
         character.cursorLocked = !character.cursorLocked;
         Cursor.visible = !character.cursorLocked;
         Cursor.lockState = character.cursorLocked ? CursorLockMode.Locked : CursorLockMode.None;

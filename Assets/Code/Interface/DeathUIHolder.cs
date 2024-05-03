@@ -7,7 +7,8 @@ public class DeathUIHolder : MonoBehaviour
    
    [field: SerializeField] public Transform DeadScreen{ get; private set; }
    [field: SerializeField] public Button ContinueButton{ get; private set; }
-   
+   [field: SerializeField] public Button ExitButton{ get; private set; }
+
    private void Awake()
    {
       Instance = this;

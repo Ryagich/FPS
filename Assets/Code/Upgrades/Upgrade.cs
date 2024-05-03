@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -40,10 +41,7 @@ public class Upgrade : MonoBehaviour
 
     public UpgradeInfo GetNextLevel()
     {
-        foreach (var i in Info)
-            if (!i.Opened)
-                return i;
-        return null;
+        return Info.FirstOrDefault(i => !i.Opened);
     }
 
     public int GetNextLevelIndex()

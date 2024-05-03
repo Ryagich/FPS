@@ -2170,6 +2170,7 @@ MonoBehaviour:
   _text: {fileID: 6738360678223329905}
   _mixer: {fileID: 24100000, guid: f51b465d8d249cd48b2c66931dbcbbd7, type: 2}
   _setting: 3
+  _canSave: 0
 --- !u!1 &1529386002526456627
 GameObject:
   m_ObjectHideFlags: 0
@@ -4488,6 +4489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 6073869027766670658}
   _isX: 1
+  _canSave: 0
 --- !u!1 &3025609146831334196
 GameObject:
   m_ObjectHideFlags: 0
@@ -6690,6 +6692,7 @@ MonoBehaviour:
   _text: {fileID: 3238807155538012149}
   _mixer: {fileID: 24100000, guid: f51b465d8d249cd48b2c66931dbcbbd7, type: 2}
   _setting: 2
+  _canSave: 0
 --- !u!1 &5155480562622536730
 GameObject:
   m_ObjectHideFlags: 0
@@ -7705,6 +7708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 4433772637804817188}
   _isX: 0
+  _canSave: 0
 --- !u!1 &5860483297534190192
 GameObject:
   m_ObjectHideFlags: 0
@@ -9324,6 +9328,7 @@ MonoBehaviour:
   _text: {fileID: 2721863558431252518}
   _mixer: {fileID: 24100000, guid: f51b465d8d249cd48b2c66931dbcbbd7, type: 2}
   _setting: 4
+  _canSave: 0
 --- !u!1 &6331030311678420865
 GameObject:
   m_ObjectHideFlags: 0
@@ -9506,6 +9511,7 @@ MonoBehaviour:
   _text: {fileID: 8788399939042547629}
   _mixer: {fileID: 24100000, guid: f51b465d8d249cd48b2c66931dbcbbd7, type: 2}
   _setting: 0
+  _canSave: 0
 --- !u!1 &6394005631541565635
 GameObject:
   m_ObjectHideFlags: 0
@@ -9915,6 +9921,7 @@ MonoBehaviour:
   _text: {fileID: 913287259540257905}
   _mixer: {fileID: 24100000, guid: f51b465d8d249cd48b2c66931dbcbbd7, type: 2}
   _setting: 1
+  _canSave: 0
 --- !u!1 &6938852959372593065
 GameObject:
   m_ObjectHideFlags: 0

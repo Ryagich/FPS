@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: a39279ed58510b84592b590d5b75859a
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: CharactersVANYA (1)(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.8212536e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: Armature
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -2.8807758e-31, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: Root
+      position: {x: -1.3138836e-16, y: 0.9042922, z: -0.000000007904191}
+      rotation: {x: -0.43881872, y: 0.5544713, z: -0.43881807, w: 0.55447125}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Spine_01
+      parentName: Hips
+      position: {x: -0.096449144, y: 0.038724255, z: 0.00000009155033}
+      rotation: {x: -0.6398813, y: 0.76847374, z: 0.0000006448994, w: 0.00000018175766}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: Spine_02
+      parentName: Spine_01
+      position: {x: 0.0000000023841722, y: 0.18151164, z: -1.9895197e-15}
+      rotation: {x: -0.09800282, y: 0.99518615, z: 0.000000011453953, w: -0.00000019677697}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Spine_03
+      parentName: Spine_02
+      position: {x: 0.00000002384186, y: 0.17903711, z: 1.6484591e-14}
+      rotation: {x: -0.28359738, y: 0.9589435, z: -0.000000040385846, w: 0.00000021498715}
+      scale: {x: 0.99999976, y: 0.99999976, z: 1}
+    - name: Neck
+      parentName: Spine_03
+      position: {x: -0.038623758, y: 0.10501203, z: -0.0000000062670447}
+      rotation: {x: -0.000000045055184, y: 0.0000000309951, z: 0.13407278, w: 0.9909715}
+      scale: {x: 0.9999998, y: 1.0000001, z: 1}
+    - name: Head
+      parentName: Neck
+      position: {x: 0.0000000101327595, y: 0.1216446, z: 7.649703e-13}
+      rotation: {x: 0.2069964, y: 0.6761478, z: -0.20690723, w: 0.67614055}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Eyes
+      parentName: Head
+      position: {x: 0.000016831658, y: 0.15287025, z: 0.0248423}
+      rotation: {x: -0.36795768, y: 0.00000009544482, z: -0.00006326469, w: 0.92984253}
+      scale: {x: 1, y: 0.9999996, z: 0.9999998}
+    - name: Eyebrows
+      parentName: Head
+      position: {x: 0.000020734602, y: 0.17707515, z: 0.0021286584}
+      rotation: {x: -0.36795768, y: 0.000000095441436, z: -0.00006326469, w: 0.92984253}
+      scale: {x: 1, y: 0.9999995, z: 0.9999998}
+    - name: Jaw
+      parentName: Head
+      position: {x: -0.00003756637, y: 0.060365748, z: -0.026970528}
+      rotation: {x: -0.3679576, y: 0.00000009544113, z: -0.000063264706, w: 0.9298426}
+      scale: {x: 1, y: 0.99999976, z: 0.9999999}
+    - name: Clavicle_L
+      parentName: Spine_03
+      position: {x: 0.019312704, y: 0.06891454, z: 0.07447149}
+      rotation: {x: 0.68545854, y: -0.43559566, z: -0.31696445, w: 0.48983318}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Shoulder_L
+      parentName: Clavicle_L
+      position: {x: 0.000000020749866, y: 0.13197875, z: -0.0000000049317896}
+      rotation: {x: -0.19555944, y: -0.00592041, z: -0.014436275, w: 0.9805678}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
+    - name: Elbow_L
+      parentName: Shoulder_L
+      position: {x: 0.000000005029142, y: 0.33947992, z: -5.9604643e-10}
+      rotation: {x: -0.003237217, y: -0.0020846124, z: 0.030919643, w: 0.99951446}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Hand_L
+      parentName: Elbow_L
+      position: {x: -0.00000001810491, y: 0.2711455, z: -0.000000005960464}
+      rotation: {x: -0.046955314, y: -0.08214359, z: -0.014603723, w: 0.9954067}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Thumb_01
+      parentName: Hand_L
+      position: {x: 0.0037850386, y: 0.04233228, z: -0.03994416}
+      rotation: {x: -0.24519251, y: 0.06644228, z: -0.019356843, w: 0.9670012}
+      scale: {x: 0.9999999, y: 0.99999964, z: 1}
+    - name: Thumb_02
+      parentName: Thumb_01
+      position: {x: -0.00000005543232, y: 0.063702285, z: 0.00000002990375}
+      rotation: {x: 0.021912161, y: 0.040614117, z: -0.026336381, w: 0.9985874}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: Thumb_03
+      parentName: Thumb_02
+      position: {x: 0.000000109076495, y: 0.056655593, z: -0.00000004843081}
+      rotation: {x: 0.15203491, y: 0.03640336, z: 0.22999407, w: 0.96055347}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000001}
+    - name: IndexFinger_01
+      parentName: Hand_L
+      position: {x: -0.009353371, y: 0.10669304, z: -0.008254245}
+      rotation: {x: 0.016034713, y: 0.08102695, z: 0.012814652, w: 0.99650055}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.99999976}
+    - name: IndexFinger_02
+      parentName: IndexFinger_01
+      position: {x: -0.00000017184254, y: 0.040936083, z: 0.000000005967231}
+      rotation: {x: 0.0041980282, y: 0.0011583786, z: -0.03843126, w: 0.9992518}
+      scale: {x: 0.99999976, y: 0.9999998, z: 1}
+    - name: IndexFinger_03
+      parentName: IndexFinger_02
+      position: {x: 0.00000012793112, y: 0.03791176, z: 0.000000007570197}
+      rotation: {x: 0.01665398, y: 0.0069204085, z: -0.03691245, w: 0.99915576}
+      scale: {x: 0.99999994, y: 0.9999995, z: 0.99999976}
+    - name: IndexFinger_04
+      parentName: IndexFinger_03
+      position: {x: 0.00000017368234, y: 0.037798148, z: 0.0000000044063926}
+      rotation: {x: 0.028039774, y: 0.004519582, z: 0.15906616, w: 0.9868593}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Finger_01
+      parentName: Hand_L
+      position: {x: 0.0055677965, y: 0.09322205, z: 0.048198447}
+      rotation: {x: 0.12061806, y: 0.089307114, z: -0.047855593, w: 0.9875148}
+      scale: {x: 1, y: 1, z: 0.9999998}
+    - name: Finger_02
+      parentName: Finger_01
+      position: {x: 0.00000010475516, y: 0.042488135, z: -0.000000010154618}
+      rotation: {x: -0.019491918, y: -0.0026371018, z: -0.021267971, w: 0.9995803}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: Finger_03
+      parentName: Finger_02
+      position: {x: 0.00000022437423, y: 0.03513326, z: -0.0000000026152156}
+      rotation: {x: 0.023078011, y: 0.01826062, z: -0.029875815, w: 0.9991203}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1.0000001}
+    - name: Finger_04
+      parentName: Finger_03
+      position: {x: -0.000000070929524, y: 0.030032657, z: -6.50034e-10}
+      rotation: {x: -0.09652557, y: -0.016647479, z: 0.16912647, w: 0.98071504}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999994}
+    - name: Clavicle_R
+      parentName: Spine_03
+      position: {x: 0.019311113, y: 0.0689178, z: -0.0744715}
+      rotation: {x: -0.31697005, y: -0.48983002, z: 0.6854665, w: 0.43558267}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.9999997}
+    - name: Shoulder_R
+      parentName: Clavicle_R
+      position: {x: 0.00000006202608, y: 0.1319786, z: -0.000000006875907}
+      rotation: {x: -0.19556063, y: 0.005926475, z: 0.014417589, w: 0.9805678}
+      scale: {x: 0.99999994, y: 0.99999946, z: 0.9999995}
+    - name: Elbow_R
+      parentName: Shoulder_R
+      position: {x: -0.000000035669654, y: 0.3394807, z: -0.000000005960464}
+      rotation: {x: -0.0032348763, y: 0.002084552, z: -0.030916886, w: 0.9995145}
+      scale: {x: 0.9999998, y: 0.99999994, z: 1}
+    - name: Hand_R
+      parentName: Elbow_R
+      position: {x: -0.00000009295065, y: 0.27114514, z: -8.9406965e-10}
+      rotation: {x: -0.046955377, y: 0.0821437, z: 0.014603067, w: 0.9954066}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.99999994}
+    - name: Thumb_01.001
+      parentName: Hand_R
+      position: {x: -0.003787614, y: 0.042332277, z: -0.039944682}
+      rotation: {x: -0.24517204, y: -0.06644769, z: 0.019336402, w: 0.9670065}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: Thumb_02.001
+      parentName: Thumb_01.001
+      position: {x: 0.00000015467405, y: 0.063701265, z: 0.000000025144544}
+      rotation: {x: 0.021904582, y: -0.040600304, z: 0.026337722, w: 0.99858814}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Thumb_03.001
+      parentName: Thumb_02.001
+      position: {x: -0.0000002324581, y: 0.056655034, z: 2.8521754e-10}
+      rotation: {x: 0.15203701, y: -0.036406465, z: -0.23000029, w: 0.96055156}
+      scale: {x: 0.99999976, y: 0.9999996, z: 0.9999998}
+    - name: IndexFinger_01.001
+      parentName: Hand_R
+      position: {x: 0.009356434, y: 0.10669372, z: -0.008253659}
+      rotation: {x: 0.016033424, y: -0.0810267, z: -0.012803334, w: 0.99650073}
+      scale: {x: 0.99999976, y: 0.9999996, z: 0.9999996}
+    - name: IndexFinger_02.001
+      parentName: IndexFinger_01.001
+      position: {x: 0.00000004373738, y: 0.04093567, z: 0.000000009950891}
+      rotation: {x: 0.004197775, y: -0.0011588852, z: 0.03842928, w: 0.99925184}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000002}
+    - name: IndexFinger_03.001
+      parentName: IndexFinger_02.001
+      position: {x: 0.00000002449844, y: 0.037912108, z: -0.000000018085702}
+      rotation: {x: 0.016683677, y: -0.006917633, z: 0.03690945, w: 0.9991554}
+      scale: {x: 1.0000002, y: 0.9999998, z: 1}
+    - name: IndexFinger_04.001
+      parentName: IndexFinger_03.001
+      position: {x: 0.00000033150891, y: 0.03779342, z: 0.000000005585025}
+      rotation: {x: 0.028042747, y: -0.0045203045, z: -0.1589981, w: 0.9868702}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Finger_01.001
+      parentName: Hand_R
+      position: {x: -0.0055680955, y: 0.093222044, z: 0.04819833}
+      rotation: {x: 0.1206182, y: -0.08930731, z: 0.04785574, w: 0.98751473}
+      scale: {x: 1.0000001, y: 0.9999998, z: 0.99999976}
+    - name: Finger_02.001
+      parentName: Finger_01.001
+      position: {x: -0.000000002235174, y: 0.042488202, z: -0.000000007611124}
+      rotation: {x: -0.019492248, y: 0.0026374818, z: 0.02126815, w: 0.9995803}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.9999999}
+    - name: Finger_03.001
+      parentName: Finger_02.001
+      position: {x: -0.00000019535422, y: 0.035133198, z: 6.6444045e-10}
+      rotation: {x: 0.023079174, y: -0.018269934, z: 0.02987127, w: 0.99912024}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: Finger_04.001
+      parentName: Finger_03.001
+      position: {x: 0.00000008702278, y: 0.03003115, z: -0.000000023572937}
+      rotation: {x: -0.09653253, y: 0.01665447, z: -0.16912897, w: 0.9807138}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: UpperLeg_R
+      parentName: Hips
+      position: {x: 0.04822455, y: 0.009647301, z: 0.09896701}
+      rotation: {x: 0.5613668, y: 0.42996243, z: -0.5474364, w: 0.4475634}
+      scale: {x: 1, y: 1.0000002, z: 0.9999999}
+    - name: LowerLeg_R
+      parentName: UpperLeg_R
+      position: {x: -0.0000000085617575, y: 0.39930904, z: -0.0000000016143599}
+      rotation: {x: -0.024462773, y: -0.64437854, z: 0.004737752, w: 0.7643006}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.9999998}
+    - name: Ankle_R
+      parentName: LowerLeg_R
+      position: {x: -8.9406965e-10, y: 0.37712368, z: 0.000000007392191}
+      rotation: {x: 0.50721294, y: 0.8576702, z: 0.03975228, w: 0.07454286}
+      scale: {x: 0.9999998, y: 0.99999964, z: 0.9999998}
+    - name: Ball_R
+      parentName: Ankle_R
+      position: {x: -0.0000000026100768, y: 0.11284036, z: 0.0000000094068335}
+      rotation: {x: 0.0000000719366, y: 0.00000006332221, z: 0.27001584, w: 0.9628559}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
+    - name: Toes_R
+      parentName: Ball_R
+      position: {x: 5.6776345e-10, y: 0.072957605, z: 0.000000006239244}
+      rotation: {x: 0.7071069, y: -0.000000038310635, z: -0.000000045128616, w: 0.7071067}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: UpperLeg_L
+      parentName: Hips
+      position: {x: 0.048224527, y: 0.009647492, z: -0.09896712}
+      rotation: {x: -0.54743654, y: -0.44756573, z: 0.56136566, w: -0.42996144}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.9999996}
+    - name: LowerLeg_L
+      parentName: UpperLeg_L
+      position: {x: 0.000000011364318, y: 0.3993092, z: 2.1715095e-10}
+      rotation: {x: -0.024463547, y: 0.6444158, z: -0.0047377325, w: 0.7642692}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+    - name: Ankle_L
+      parentName: LowerLeg_L
+      position: {x: 0.000000008493662, y: 0.3771235, z: 4.9228216e-10}
+      rotation: {x: -0.5072149, y: 0.857674, z: 0.039727822, w: -0.074499235}
+      scale: {x: 0.9999996, y: 0.9999996, z: 0.99999994}
+    - name: Ball_L
+      parentName: Ankle_L
+      position: {x: 0.000000002573331, y: 0.11284033, z: -0.000000014944264}
+      rotation: {x: 0.00000009125993, y: -0.000000053929853, z: -0.27001587, w: 0.9628559}
+      scale: {x: 1.0000002, y: 0.99999976, z: 1}
+    - name: Toes_L
+      parentName: Ball_L
+      position: {x: 2.5250188e-10, y: 0.07295752, z: 0.0000000056469207}
+      rotation: {x: 0.7071067, y: -0.000000011408527, z: -0.000000027321807, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Insurgent_Female_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Insurgent_Female_02
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Insurgent_Male_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Soldier_Male_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Attach_Bombsuit_Neck_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Contractor_Male_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Pilot_Female_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Attach_Insurgent_Headpiece_04
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Civilian_Female_02
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Ghillie_Male_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Attach_Contractor_Scarf_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Contractor_Female_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Attack_Ghillie_Mask_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Pilot_Male_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Attach_Insurgent_Neck_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Leader_Male_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Insurgent_Male_04
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Contractor_Male_02
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Insurgent_Male_05
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Bombsuit_Male_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Attach_Insurgent_Headpiece_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Insurgent_Male_02
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Attach_Insurgent_Neck_03
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Soldier_Female_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Civilian_Male_02
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Soldier_Female_02
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Attach_Insurgent_Neck_02
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Attach_Insurgent_Headpiece_02
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Civilian_Female_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Soldier_Male_02
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Civilian_Male_01
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Insurgent_Male_03
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SM_Chr_Attach_Insurgent_Headpiece_03
+      parentName: CharactersVANYA (1)(Clone)
+      position: {x: 0.0000000030320848, y: -4.4837488e-11, z: 3.019573e-10}
+      rotation: {x: 0.00000014106499, y: -0.000000043711385, z: 3.9395155e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

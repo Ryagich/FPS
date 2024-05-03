@@ -7,6 +7,7 @@ public class SensitivitySetting : MonoBehaviour
 {
     [SerializeField] private TMP_Text _text;
     [SerializeField] private bool _isX;
+    [SerializeField] private bool _canSave = true;
 
     private Slider slider;
 
@@ -27,6 +28,7 @@ public class SensitivitySetting : MonoBehaviour
         else
             YandexGame.savesData.SensitivityY = slider.value / 100;
         _text.text = slider.value.ToString();
-        YandexGame.SaveProgress();
+        if (_canSave)
+            YandexGame.SaveProgress();
     }
 }

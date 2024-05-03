@@ -33,7 +33,7 @@ public class CurrencyController : MonoBehaviour
         {
             Add(CurrencyType.Money, 100 * (1 + YandexGame.savesData.Upgrades[0][1][0]));
             YandexGame.savesData.IsRun = true;
-            YandexGame.SaveProgress();
+           // YandexGame.SaveProgress();
         }
     }
 
@@ -65,7 +65,7 @@ public class CurrencyController : MonoBehaviour
                 break;
         }
 
-        YandexGame.SaveProgress();
+        //YandexGame.SaveProgress();
         UpdateText(type);
     }
 
@@ -87,6 +87,14 @@ public class CurrencyController : MonoBehaviour
         UpdateText(type);
     }
 
+    public void Reward(int value)
+    {
+        YandexGame.savesData.Crystals += value;
+        YandexGame.SaveProgress();
+        
+        UpdateText(CurrencyType.Crystals);
+
+    }
     private void UpdateText(CurrencyType type)
     {
         switch (type)

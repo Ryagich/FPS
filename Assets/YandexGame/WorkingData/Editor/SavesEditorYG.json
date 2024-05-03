@@ -1,5 +1,5 @@
 {
-  "idSave": 391,
+  "idSave": 25,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
@@ -10,49 +10,50 @@
   "MainSpellCount": -1,
   "AddSpellMax": 2,
   "AddSpellCount": 2,
-  "ArmorMax": 80.0,
-  "Armor": 80.0,
-  "HealthMax": 80.0,
-  "Health": 100.0,
+  "ArmorMax": 180.0,
+  "Armor": 180.0,
+  "HealthMax": 180.0,
+  "Health": 210.0,
   "AmmunitionMax": [
-    240,
-    360,
-    300,
-    180,
-    42,
-    20,
-    6
+    324,
+    486,
+    405,
+    243,
+    56,
+    27,
+    8
   ],
   "Ammunition": [
-    240,
-    360,
-    300,
-    180,
-    42,
-    20,
-    6
+    324,
+    486,
+    405,
+    243,
+    56,
+    27,
+    8
   ],
   "DamageFactor": 0.0,
   "AddLive": 0,
   "IsRun": true,
   "FreePurchases": 0,
-  "speedWalking": 5.0,
-  "speedAiming": 3.80000019,
-  "speedCrouching": 4.25,
-  "speedRunning": 9.200001,
-  "Crystals": 3000,
-  "UpgradesLevel": 37,
+  "speedWalking": 2.2,
+  "speedAiming": 1.56000018,
+  "speedCrouching": 1.8,
+  "speedRunning": 4.44,
+  "Crystals": 9775,
+  "UpgradesLevel": 0,
   "locale": "ru",
-  "CharacterIndex": 2,
+  "CharacterIndex": 0,
+  "DifficultIndex": 2,
   "Talents": [
     false,
     false,
     false,
     false,
-    false,
-    false,
-    false,
     true,
+    false,
+    false,
+    false,
     false,
     false,
     false,
@@ -197,7 +198,7 @@
       false
     ],
     [
-      false,
+      true,
       false,
       false
     ],
@@ -220,12 +221,12 @@
   ],
   "ChosenWeapons": [
     [
-      true,
+      false,
       false,
       false
     ],
     [
-      false,
+      true,
       false,
       false
     ],
@@ -337,11 +338,11 @@
         false,
         false,
         false,
-        false
+        true
       ],
       [
         true,
-        false,
+        true,
         false,
         false
       ],
@@ -700,8 +701,8 @@
       -1
     ],
     [
-      -1,
-      0,
+      7,
+      1,
       -1,
       -1
     ],
@@ -780,7 +781,7 @@
   ],
   "SensitivityX": 1.25,
   "SensitivityY": 1.25,
-  "MasterVolume": -5.0,
+  "MasterVolume": -10.0,
   "UIVolume": -30.0,
   "EffectsVolume": -15.0,
   "StepsVolume": -30.0,

@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using InfimaGames.LowPolyShooterPack;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class CallbackController : MonoBehaviour
@@ -17,7 +16,6 @@ public class CallbackController : MonoBehaviour
     [SerializeField] private float _distance = 70;
 
     [SerializeField] private GameObject _moneyCallBack;
-
     [SerializeField] private GameObject _textCallback;
     [SerializeField] private GameObject _healthCallback;
     [SerializeField] private GameObject _armorCallback;
@@ -26,18 +24,23 @@ public class CallbackController : MonoBehaviour
     [SerializeField] private GameObject _addSpellCallBack;
     [SerializeField] private GameObject _ammoCallBack;
     [SerializeField] private GameObject _grenadeCallBack;
+    [SerializeField] private GameObject _headshotCallBack;
+    [SerializeField] private GameObject _damageCallBack;
 
+    [Space] [SerializeField] private float damageSpeed = 5f;
+    [SerializeField] private float _damageShowTime = .25f;
+    
     private List<CallbackInfo> infoList = new();
     private Dictionary<CallbackInfo, Ammo> AmmoTypes = new();
-
     private float modifier;
     private float speed;
-
     private UIHolder holder;
     private Transform parent;
     private Coroutine coroutine;
     private Coroutine movingCoroutine;
     private Transform startPlace;
+
+    private DamageCallBackController damageCB = new();
 
     private void Awake()
     {
@@ -49,11 +52,30 @@ public class CallbackController : MonoBehaviour
         holder = go.GetComponent<UIHolder>();
         parent = holder.CallbackParent;
         startPlace = holder.StartKillCallbackPoint;
+        damageCB.Init(holder.StartDamageCallbackPoint,damageSpeed,_damageShowTime);
     }
 
     public void ChangeState(bool state)
     {
         parent.gameObject.SetActive(state);
+    }
+
+    public void AddDamageCallBack(CallbackInfo info)
+    {
+        GameObject callback = null;
+        switch (info.Type)
+        {
+            case CallbackTypes.Damage:
+                callback = Instantiate(_damageCallBack, parent);
+                callback.GetComponentInChildren<TMP_Text>().text = info.Text;
+                break;
+            case CallbackTypes.Headshot:
+                callback = Instantiate(_headshotCallBack, parent);
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+        damageCB.AddCallBack(callback);
     }
 
     public void AddCallBack(CallbackInfo info)
@@ -77,13 +99,6 @@ public class CallbackController : MonoBehaviour
         }
     }
 
-    private void UpdateSpeed()
-    {
-        var defSpeed = _distance / _time * Time.fixedDeltaTime;
-        modifier = Mathf.Clamp(1f * infoList.Count, 1f, 3f);
-        speed = defSpeed * modifier;
-    }
-
     private GameObject GetCallBack(Transform point)
     {
         var info = infoList[0];
@@ -104,7 +119,7 @@ public class CallbackController : MonoBehaviour
                 break;
             case CallbackTypes.Money:
                 callback = Instantiate(_moneyCallBack, parent);
-                callback.GetComponentInChildren<TMP_Text>().text ="$" + info.Text;
+                callback.GetComponentInChildren<TMP_Text>().text = "$" + info.Text;
                 break;
             case CallbackTypes.Crystal:
                 callback = Instantiate(_crystalCallback, parent);
@@ -152,6 +167,13 @@ public class CallbackController : MonoBehaviour
                 text.text = $"{info.Text} 12mm";
                 break;
         }
+    }
+
+    private void UpdateSpeed()
+    {
+        var defSpeed = _distance / _time * Time.fixedDeltaTime;
+        modifier = Mathf.Clamp(1f * infoList.Count, 1f, 3f);
+        speed = defSpeed * modifier;
     }
 
     private IEnumerator ShowCallBack()

@@ -577,17 +577,6 @@
                 },
                 {
                     "name": "",
-                    "id": "84f67f9e-d7e6-4db3-8ca5-39f8f2727aa0",
-                    "path": "<Keyboard>/p",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Lock Cursor",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "ac8aaf0e-baa6-466d-a2fd-5c3eb2bf85d7",
                     "path": "<Gamepad>/start",
                     "interactions": "",

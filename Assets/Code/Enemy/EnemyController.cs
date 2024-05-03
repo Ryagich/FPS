@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private List<EnemyStage> _stages = new();
 
     public Transform Target { get; private set; }
-    
+
     private void Awake()
     {
         Instance = this;
@@ -40,7 +40,10 @@ public class EnemyController : MonoBehaviour
 
     public StateController InstantiateEnemy(Transform place)
     {
-        return Instantiate(_enemyPref, place);
+        var enemy = Instantiate(_enemyPref, place.position, place.rotation);
+        if (Target)
+            enemy.SetTarget(Target);
+        return enemy;
     }
 
     public void StartStage(int index)
