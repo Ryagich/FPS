@@ -25,12 +25,12 @@ public class CharacterDisabler : MonoBehaviour
 
     public void Disable()
     {
+        OnLockCursor();
+
         character.CanPause = false;
         movement.enabled = false;
         character.holdingButtonFire = false;
         _cameraLook.enabled = false;
-
-        OnLockCursor();
 
         bloodScreen.StopBleeding();
         heart.StopBeating();
