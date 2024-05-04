@@ -1000,6 +1000,7 @@ GameObject:
   - component: {fileID: 6219025921223107655}
   - component: {fileID: 8512608923869119222}
   - component: {fileID: 5113141879568175699}
+  - component: {fileID: 5398687669352837798}
   m_Layer: 10
   m_Name: Player_Prefab
   m_TagString: Player
@@ -1123,6 +1124,7 @@ MonoBehaviour:
   holdToRun: 1
   holdToAim: 1
   CanPause: 1
+  _stats: {fileID: 5528527924162952464}
   reloading: 0
   bolting: 0
   holdingButtonFire: 0
@@ -2004,6 +2006,7 @@ MonoBehaviour:
   stats: {fileID: 5528527924162952464}
   disabler: {fileID: 7394901386026528467}
   _saver: {fileID: 5113141879568175699}
+  _statsC: {fileID: 5528527924162952464}
 --- !u!114 &8435120935727210385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2071,7 +2074,6 @@ MonoBehaviour:
   bloodScreen: {fileID: -1736663397859153334}
   movement: {fileID: 448958757}
   heart: {fileID: 4027078435281450844}
-  _pause: {fileID: -2759979225079892511}
   _cameraLook: {fileID: 7954147704929373820}
 --- !u!114 &794605517749560917
 MonoBehaviour:
@@ -2246,6 +2248,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b48ebc031ce7fba4489e377e2f588bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5398687669352837798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751027687307977091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5536d1d0990df284fa3db8b3ed99cd0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2906013363015915789

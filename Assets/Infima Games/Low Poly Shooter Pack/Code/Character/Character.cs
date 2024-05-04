@@ -88,6 +88,7 @@ namespace InfimaGames.LowPolyShooterPack
         private bool holdToAim = true;
 
         public bool CanPause = true;
+        [SerializeField] private StatsController _stats;
 
         private bool aiming;
         private bool wasAiming;
@@ -719,6 +720,8 @@ namespace InfimaGames.LowPolyShooterPack
 
         public void OnTryFire(InputAction.CallbackContext context)
         {
+            if (_stats.IsDead)
+                return;
             if (!cursorLocked || !canSwitchWeaponState)
                 return;
             switch (context)

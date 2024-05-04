@@ -8,6 +8,8 @@ public class StatsController : MonoBehaviour
     public static StatsController Instance;
     public bool IsDead { get; private set; }
     public event Action Died;
+    public event Action Respawned;
+
     public bool IsHpMax => Hp.Max == Hp.Value;
     public bool IsArmorMax => Armor.Max == Armor.Value;
     public float NeedHealth => Hp.Max - Hp.Value;
@@ -29,11 +31,7 @@ public class StatsController : MonoBehaviour
     {
         Instance = this;
 
-        StartCoroutine(RecoveryArmorPlate());
-        StartCoroutine(Regen());
-        StartCoroutine(RegenArmor());
-        StartCoroutine(ReloadArmorCharge());
-        StartCoroutine(RegenArmorForHealth());
+        Respawn();
     }
 
     public void Init(float maxHp, float minHp, float hp,
@@ -56,7 +54,7 @@ public class StatsController : MonoBehaviour
     {
         Armor.AddValue(value);
         YandexGame.savesData.Armor = Armor.Value;
-       // YandexGame.SaveProgress();
+        // YandexGame.SaveProgress();
     }
 
     public void TakeDamage(float value)
@@ -116,7 +114,7 @@ public class StatsController : MonoBehaviour
                 YandexGame.savesData.AddLive--;
                 Hp.AddValue(Hp.Max);
                 Armor.AddValue(Armor.Max);
-                CallbackController.Instance.AddCallBack(new CallbackInfo(CallbackTypes.Text,_secondChange));
+                CallbackController.Instance.AddCallBack(new CallbackInfo(CallbackTypes.Text, _secondChange));
             }
             else if (talents[34])
             {
@@ -130,7 +128,7 @@ public class StatsController : MonoBehaviour
             {
                 Hp.AddValue(Hp.Max * .1f);
                 YandexGame.savesData.Talents[35] = false;
-                
+
                 InvulnerabilityController.Instance.ActivateInvulnerability();
                 CallbackController.Instance.AddCallBack(
                     new CallbackInfo(CallbackTypes.Text,
@@ -149,7 +147,19 @@ public class StatsController : MonoBehaviour
 
         YandexGame.savesData.Armor = Armor.Value;
         YandexGame.savesData.Health = Hp.Value;
-       // YandexGame.SaveProgress();
+        // YandexGame.SaveProgress();
+    }
+
+    public void Respawn()
+    {
+        IsDead = false;
+        StartCoroutine(RecoveryArmorPlate());
+        StartCoroutine(Regen());
+        StartCoroutine(RegenArmor());
+        StartCoroutine(ReloadArmorCharge());
+        StartCoroutine(RegenArmorForHealth());
+
+        Respawned?.Invoke();
     }
 
     private float GetDamageResistCoefficient()
@@ -203,6 +213,7 @@ public class StatsController : MonoBehaviour
             Died?.Invoke();
         }
     }
+
     public void SetNewMaxHealth(float newMax)
     {
         Hp.ChangeMax(newMax);

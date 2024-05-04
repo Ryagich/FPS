@@ -248,6 +248,13 @@ namespace InfimaGames.LowPolyShooterPack
         {
             shootCounter++;
             var damage = _damage;
+
+            if (YandexGame.savesData.CharacterIndex is 1 && YandexGame.savesData.BootAddSpellBullets > 0)
+            {
+                damage += .2f * _damage;
+                YandexGame.savesData.BootAddSpellBullets--;
+            }
+            
             if (shootCounter is 4)
             {
                 shootCounter = 0;

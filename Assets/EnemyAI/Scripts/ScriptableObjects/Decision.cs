@@ -14,7 +14,10 @@ namespace EnemyAI
 		public static bool CheckTargetsInRadius(StateController controller, float radius, HandeTargets handleTargets)
 		{
 			// Target is dead, ignore sense triggers.
-			if (!controller.aimTarget || controller.aimTarget.GetComponent<HealthManager>().dead)
+			if (!controller.aimTarget)
+				return false;
+			var hm = controller.aimTarget.GetComponent<HealthManager>();
+			if (hm && hm.dead)
 				return false;
 			// Target is alive.
 			else

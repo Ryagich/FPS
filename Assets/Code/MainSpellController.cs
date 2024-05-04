@@ -56,15 +56,17 @@ public class MainSpellController : MonoBehaviour
                 }
                 break;
             case 1:
+                TimeSpell.Instance.Activate();
                 break;
             case 2:
+                EnemyController.Instance.AttackEnemy();
                 break;
         }
 
         IsReady = false;
         var time = YandexGame.savesData.CharacterIndex switch
         {
-            0 => 2f,
+            0 => 120f,
             1 => 60f,
             _ => 40f
         };

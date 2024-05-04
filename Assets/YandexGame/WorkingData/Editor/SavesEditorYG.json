@@ -1,5 +1,5 @@
 {
-  "idSave": 25,
+  "idSave": 52,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
@@ -10,41 +10,42 @@
   "MainSpellCount": -1,
   "AddSpellMax": 2,
   "AddSpellCount": 2,
-  "ArmorMax": 180.0,
-  "Armor": 180.0,
-  "HealthMax": 180.0,
-  "Health": 210.0,
+  "ArmorMax": 80.0,
+  "Armor": 80.0,
+  "HealthMax": 80.0,
+  "Health": 100.0,
   "AmmunitionMax": [
-    324,
-    486,
-    405,
-    243,
-    56,
-    27,
-    8
+    240,
+    360,
+    300,
+    180,
+    42,
+    20,
+    6
   ],
   "Ammunition": [
-    324,
-    486,
-    405,
-    243,
-    56,
-    27,
-    8
+    240,
+    360,
+    300,
+    180,
+    42,
+    20,
+    6
   ],
   "DamageFactor": 0.0,
   "AddLive": 0,
   "IsRun": true,
   "FreePurchases": 0,
-  "speedWalking": 2.2,
-  "speedAiming": 1.56000018,
-  "speedCrouching": 1.8,
-  "speedRunning": 4.44,
-  "Crystals": 9775,
+  "speedWalking": 5.0,
+  "speedAiming": 3.80000019,
+  "speedCrouching": 4.25,
+  "speedRunning": 9.200001,
+  "Crystals": 8691,
   "UpgradesLevel": 0,
   "locale": "ru",
-  "CharacterIndex": 0,
-  "DifficultIndex": 2,
+  "CharacterIndex": 2,
+  "DifficultIndex": 1,
+  "BootAddSpellBullets": 0,
   "Talents": [
     false,
     false,
@@ -195,7 +196,7 @@
     [
       true,
       false,
-      false
+      true
     ],
     [
       true,
@@ -223,10 +224,10 @@
     [
       false,
       false,
-      false
+      true
     ],
     [
-      true,
+      false,
       false,
       false
     ],
@@ -306,7 +307,7 @@
       [
         false,
         false,
-        false,
+        true,
         false,
         false,
         false,
@@ -315,16 +316,16 @@
       ],
       [
         true,
-        false,
-        false,
-        false
-      ],
-      [
+        true,
         false,
         false
       ],
       [
-        false,
+        true,
+        false
+      ],
+      [
+        true,
         false,
         false
       ]
@@ -695,10 +696,10 @@
       -1
     ],
     [
-      -1,
+      2,
+      1,
       0,
-      -1,
-      -1
+      0
     ],
     [
       7,

@@ -44,7 +44,8 @@ namespace EnemyAI
             weapon = weapon.parent;
         }
 
-        public override void TakeDamage(Vector3 location, Vector3 direction, float damage, Collider bodyPart,
+        public override void TakeDamage(Vector3 location, Vector3 direction, float damage, bool isPlayer,
+            Collider bodyPart,
             GameObject origin = null)
         {
             if (!dead && headshot && bodyPart.transform == anim.GetBoneTransform(HumanBodyBones.Head))
@@ -52,7 +53,8 @@ namespace EnemyAI
                 damage *= 2;
                 GameObject.FindGameObjectWithTag("GameController")
                     .SendMessage("HeadShotCallback", SendMessageOptions.DontRequireReceiver);
-                CallbackController.Instance.AddDamageCallBack(new CallbackInfo(CallbackTypes.Headshot,""));
+                if (isPlayer)
+                    CallbackController.Instance.AddDamageCallBack(new CallbackInfo(CallbackTypes.Headshot, ""));
             }
 
             Object.Instantiate<GameObject>(bloodSample, location, Quaternion.LookRotation(-direction), this.transform);
@@ -64,8 +66,10 @@ namespace EnemyAI
                     anim.SetTrigger("Hit");
                 controller.variables.feelAlert = true;
                 controller.personalTarget = controller.aimTarget.position;
+                if (isPlayer)
 
-                CallbackController.Instance.AddDamageCallBack(new CallbackInfo(CallbackTypes.Damage,((int)damage).ToString()));
+                    CallbackController.Instance.AddDamageCallBack(new CallbackInfo(CallbackTypes.Damage,
+                        ((int)damage).ToString()));
                 _source.PlayOneShot(_hurtSounds[Random.Range(0, _hurtSounds.Count - 1)]);
             }
 

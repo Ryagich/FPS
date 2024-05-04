@@ -119,7 +119,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
             {
                 collision.collider.SendMessageUpwards("HitCallback",
                     new HealthManager.DamageInfo(transform.position,
-                        transform.forward, damage,
+                        transform.forward, damage,true,
                         collision.collider, TargetPointer.Instance.gameObject));
             }
 

@@ -998,6 +998,8 @@ GameObject:
   - component: {fileID: 4818736797759305148}
   - component: {fileID: 6219025921223107655}
   - component: {fileID: 6273730452981155187}
+  - component: {fileID: 2440599809066690857}
+  - component: {fileID: 4372779607310382828}
   m_Layer: 10
   m_Name: Player_Prefab
   m_TagString: Player
@@ -1039,13 +1041,13 @@ MonoBehaviour:
   acceleration: 12
   accelerationInAir: 1.7
   deceleration: 11
-  speedWalking: 5
-  speedAiming: 3
-  speedCrouching: 3
-  speedRunning: 7.4
-  walkingMultiplierForward: 1
-  walkingMultiplierSideways: 0.9
-  walkingMultiplierBackwards: 0.9
+  _speedWalking: 4
+  _speedAiming: 3.2
+  _speedCrouching: 3.5
+  _speedRunning: 6.8
+  _walkingMultiplierForward: 1
+  _walkingMultiplierSideways: 1
+  _walkingMultiplierBackwards: 1
   airControl: 0.15
   gravity: 35
   jumpGravity: 35
@@ -1121,10 +1123,13 @@ MonoBehaviour:
   holdToRun: 1
   holdToAim: 1
   CanPause: 1
+  _stats: {fileID: 0}
   reloading: 0
   bolting: 0
   holdingButtonFire: 0
   cursorLocked: 0
+  _motionTime: 0
+  _dampTime: 0
 --- !u!114 &8163229473432397683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1245,6 +1250,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _canvasTradeInstantiated:
+    m_PersistentCalls:
+      m_Calls: []
+  _canvasChoseInstantiated:
+    m_PersistentCalls:
+      m_Calls: []
   canvasPrefab: {fileID: 5393623835024644669, guid: 48d7771c50bd625489d38055025597a3,
     type: 3}
   qualitySettingsPrefab: {fileID: 5965040680208419700, guid: 00d9a0b49ef46f347b8cb9c8409204f0,
@@ -1253,6 +1264,8 @@ MonoBehaviour:
     type: 3}
   _completePrefab: {fileID: 5393623835024644669, guid: 9657a564fe93f4a47890b10463f11184,
     type: 3}
+  _tradePrefab: {fileID: 0}
+  _chosePrefab: {fileID: 0}
 --- !u!114 &4190955791512926966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1690,6 +1703,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: d3fe2f9d-240d-4983-a336-1ca7fdb5998c
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 650babc7-1a5c-4355-aa2b-f39f4d5faa11
+    m_ActionName: 'Player/MainSpell[/Keyboard/b]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -1768,12 +1785,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ratio: 0.9
-  _minHealth: 0
-  _maxHealth: 100
-  _valueHealth: 100
-  _minArmor: 0
-  _maxArmor: 100
-  _valueArmor: 100
+  InvulnerabilityC: {fileID: 4372779607310382828}
+  _secondChange: Second Change
+  TookDamageInLast5Seconds: 0
 --- !u!114 &8930412542136289808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1949,6 +1963,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  character: {fileID: 434113066}
+  stats: {fileID: 5528527924162952464}
+  disabler: {fileID: 7394901386026528467}
+  _saver: {fileID: 2440599809066690857}
+  _statsC: {fileID: 5528527924162952464}
 --- !u!114 &8435120935727210385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1963,11 +1982,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _time: 1
   _showTime: 0.25
-  _minCost: 15
-  _maxCost: 40
   _distance: 70
-  _callBack: {fileID: 4106992412920482964, guid: 7cd66f69242164c41bca49c935666152,
-    type: 3}
+  _moneyCallBack: {fileID: 0}
+  _textCallback: {fileID: 0}
+  _healthCallback: {fileID: 0}
+  _armorCallback: {fileID: 0}
+  _crystalCallback: {fileID: 0}
+  _mainSpellCallBack: {fileID: 0}
+  _addSpellCallBack: {fileID: 0}
+  _ammoCallBack: {fileID: 0}
+  _grenadeCallBack: {fileID: 0}
+  _headshotCallBack: {fileID: 0}
+  _damageCallBack: {fileID: 0}
+  damageSpeed: 5
+  _damageShowTime: 0.25
 --- !u!114 &7187869948156095639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2025,6 +2053,7 @@ MonoBehaviour:
   movement: {fileID: 448958757}
   heart: {fileID: 4027078435281450844}
   _pause: {fileID: -2759979225079892511}
+  _cameraLook: {fileID: 7954147704929373820}
 --- !u!143 &4818736797759305148
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2191,6 +2220,32 @@ MonoBehaviour:
           m_WaitForCompletion: 0
           m_LocalVariables: []
         m_PropertyPath: _reward
+--- !u!114 &2440599809066690857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751027687307977091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48ebc031ce7fba4489e377e2f588bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4372779607310382828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751027687307977091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f60f66543ab4014e8565399ad847c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _statsC: {fileID: 5528527924162952464}
+  _RamboClip: {fileID: 8300000, guid: d3f2e09bd4354fc409ba5f222d82964b, type: 3}
 --- !u!1 &2906013363015915789
 GameObject:
   m_ObjectHideFlags: 0

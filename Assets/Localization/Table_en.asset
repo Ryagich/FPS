@@ -1043,10 +1043,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 24566015482626048
-    m_Localized: 'When activated, grants 10% health and 12% armor.
-
-      Replenishes
-      20% of all ammunition from the maximum value.'
+    m_Localized: When activated, grants 10% health and 5% armor.
     m_Metadata:
       m_Items: []
   - m_Id: 24567533216694272
@@ -1061,11 +1058,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 24590482539773952
-    m_Localized: When used, enemies begin to attack a random ally, ignoring Booth.
+    m_Localized: The next 4 shots will deal 20% more damage.
     m_Metadata:
       m_Items: []
   - m_Id: 24590508850642944
-    m_Localized: Trick
+    m_Localized: Experienced hand
     m_Metadata:
       m_Items: []
   - m_Id: 24590557903028224

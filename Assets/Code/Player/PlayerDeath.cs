@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using YG;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class PlayerDeath : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class PlayerDeath : MonoBehaviour
     [SerializeField] private StatsController stats;
     [SerializeField] private CharacterDisabler disabler;
     [SerializeField] private Saver _saver;
-    
+
+    [SerializeField] private StatsController _statsC;
     private Transform deadScreen;
 
     private void Awake()
@@ -54,6 +56,7 @@ public class PlayerDeath : MonoBehaviour
         transform.position = place.position;
         transform.rotation = place.rotation;
 
+        _statsC.Respawn();
         disabler.Activate();
         character.GetCameraDepth().enabled = true;
         deadScreen.gameObject.SetActive(false);
@@ -65,7 +68,7 @@ public class PlayerDeath : MonoBehaviour
         inventory.SetMaxAmmoInWeapons();
 
         EnemyController.Instance.SetCharacter(gameObject);
-        disabler.OnLockCursor(); //??
+        //disabler.OnLockCursor(); //??
         Respawned?.Invoke();
     }
 

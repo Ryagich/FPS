@@ -70,6 +70,7 @@ namespace EnemyAI
 		{
 			aimTarget = null;
 		}
+		
 		public void SetPatrolPoints(List<Transform> points)
 		{
 			patrolWayPoints = points;

@@ -55,6 +55,7 @@ public class EnemyFootsteps : MonoBehaviour
 
 		var step = Instantiate(_stepPointSource, transform.position, transform.rotation);
 		step.PlayOneShot(stepClips[index]);
+		Destroy(step.gameObject,2f);
 		//AudioSource.PlayClipAtPoint(stepClips[index], transform.position, 0.1f);
 	}
 

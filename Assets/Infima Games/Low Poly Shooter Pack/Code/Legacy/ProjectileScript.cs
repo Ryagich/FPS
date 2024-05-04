@@ -225,7 +225,7 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
                     var damage = 80 * ((radius - Vector3.Distance(с.transform.position, explosionPos)) / radius);
                     с.SendMessageUpwards("HitCallback",
                         new HealthManager.DamageInfo(transform.position,
-                            transform.forward, damage,
+                            transform.forward, damage,true,
                             с, TargetPointer.Instance.gameObject));
                 }
             }

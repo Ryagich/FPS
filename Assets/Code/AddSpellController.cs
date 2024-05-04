@@ -21,7 +21,7 @@ public class AddSpellController : MonoBehaviour
             SpellCount = MaxSpell;
             YandexGame.savesData.AddSpellMax = MaxSpell;
             YandexGame.savesData.AddSpellCount = SpellCount;
-           // YandexGame.SaveProgress();
+            // YandexGame.SaveProgress();
         }
 
         Instance = this;
@@ -29,26 +29,38 @@ public class AddSpellController : MonoBehaviour
 
     public void Use(InputAction.CallbackContext context)
     {
-        var talents = YandexGame.savesData.Talents;
-        var sc = StatsController.Instance;
         if (!context.started)
         {
             return;
         }
 
+        var talents = YandexGame.savesData.Talents;
+        var sc = StatsController.Instance;
+
         if (SpellCount == 0)
         {
             if (talents[51])
             {
-                if (talents[56])
-                {
-                    sc.TakeArmor(sc.Armor.Max * .05f);
-                }
-
+                SpellCount++;
                 StatsController.Instance.TakeDamage(25);
             }
+            else
+            {
+                return;
+            }
+        }
 
-            return;
+        switch (YandexGame.savesData.CharacterIndex)
+        {
+            case 0:
+                sc.TakeHealth(sc.Hp.Max * .1f);
+                sc.TakeArmor(sc.Armor.Max * .05f);
+                break;
+            case 1:
+                YandexGame.savesData.BootAddSpellBullets = 4;
+                break;
+            case 2:
+                break;
         }
 
         if (talents[56])
@@ -68,13 +80,13 @@ public class AddSpellController : MonoBehaviour
     {
         SpellCount = Mathf.Clamp(SpellCount + value, 0, MaxSpell);
         YandexGame.savesData.AddSpellCount = SpellCount;
-       // YandexGame.SaveProgress();
+        // YandexGame.SaveProgress();
     }
 
     public void AddMax()
     {
         MaxSpell++;
         YandexGame.savesData.AddSpellMax = MaxSpell;
-       // YandexGame.SaveProgress();
+        // YandexGame.SaveProgress();
     }
 }

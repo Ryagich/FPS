@@ -54,7 +54,8 @@ namespace YG
         
         public int CharacterIndex;
         public int DifficultIndex;
-  
+        public int BootAddSpellBullets;
+
         //65 Таланта пиздец
 // | 0 +++ | Не критический урон возрастает на 20%.
 // | 1 +++ | Каждая 4 атака наносит на 80% больше урона 
