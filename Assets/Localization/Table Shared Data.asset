@@ -1844,6 +1844,14 @@ MonoBehaviour:
       1
     m_Metadata:
       m_Items: []
+  - m_Id: 45881654637232128
+    m_Key: Menu/-----Template-----/CharactersController 17
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45881692562128896
+    m_Key: Menu/-----Template-----/CharactersController 18
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

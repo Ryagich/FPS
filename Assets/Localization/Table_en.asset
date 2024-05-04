@@ -1801,6 +1801,14 @@ MonoBehaviour:
     m_Localized: 'Current Level:'
     m_Metadata:
       m_Items: []
+  - m_Id: 45881654637232128
+    m_Localized: Forces enemies to attack one enemy until it dies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45881692562128896
+    m_Localized: Illusion
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
