@@ -101,7 +101,7 @@ public class SoundSetting : MonoBehaviour
 
         if (_canSave)       
             YandexGame.SaveProgress();
-        _text.text = (slider.value + 80).ToString();
+        _text.text = (slider.value + 80).ToString();    
     }
 }
 
