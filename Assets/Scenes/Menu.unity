@@ -9020,8 +9020,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 166, y: -236}
-  m_SizeDelta: {x: 332, y: 240}
+  m_AnchoredPosition: {x: 166, y: -250}
+  m_SizeDelta: {x: 332, y: 268}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &171271945
 MonoBehaviour:
@@ -19114,7 +19114,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995597999
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -19126,7 +19126,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995598000
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -19138,7 +19138,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 44
     - rid: 4299247837995598001
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -19150,7 +19150,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 70
 --- !u!1 &411970946
 GameObject:
   m_ObjectHideFlags: 0
@@ -24351,7 +24351,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995598033
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -24363,7 +24363,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995598034
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -24375,7 +24375,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 44
     - rid: 4299247837995598035
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -24387,7 +24387,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 70
 --- !u!1 &520184050 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6320436967496774326, guid: ef011fad432d2ef4dbde74fe9d185ff1,
@@ -40255,7 +40255,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995598038
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -40267,7 +40267,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995598039
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -40279,7 +40279,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 92
     - rid: 4299247837995598040
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -40291,7 +40291,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: -70
     - rid: 4299247837995598041
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -40303,7 +40303,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 70
 --- !u!114 &798817172 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6442041768872208318, guid: c472be678311843468e98214f36dec77,
@@ -49322,7 +49322,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995598027
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -49334,7 +49334,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995598028
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -49346,7 +49346,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 92
     - rid: 4299247837995598029
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -49358,7 +49358,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: -70
     - rid: 4299247837995598030
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -49370,7 +49370,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 70
 --- !u!1 &985165110 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6320436967496774326, guid: ef011fad432d2ef4dbde74fe9d185ff1,
@@ -52025,7 +52025,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995597988
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -52037,7 +52037,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995597989
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -52049,7 +52049,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 44
     - rid: 4299247837995597990
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -52061,7 +52061,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 70
 --- !u!1 &1035257301
 GameObject:
   m_ObjectHideFlags: 0
@@ -53554,7 +53554,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 226, y: -174}
-  m_SizeDelta: {x: 348, y: 372}
+  m_SizeDelta: {x: 348, y: 400}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1069491903
 MonoBehaviour:
@@ -59647,7 +59647,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995598022
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -59659,7 +59659,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995598023
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -59671,7 +59671,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 44
     - rid: 4299247837995598024
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -59683,7 +59683,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 70
 --- !u!1 &1170898349
 GameObject:
   m_ObjectHideFlags: 0
@@ -60006,7 +60006,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995598004
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -60018,7 +60018,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995598005
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -60030,7 +60030,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 92
     - rid: 4299247837995598006
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -60042,7 +60042,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: -70
     - rid: 4299247837995598007
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -60054,7 +60054,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 70
 --- !u!114 &1174073590 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4373566201424978108, guid: c472be678311843468e98214f36dec77,
@@ -97958,7 +97958,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995597993
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -97970,7 +97970,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 1
     - rid: 4299247837995597994
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -97982,7 +97982,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 92
     - rid: 4299247837995597995
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -97994,7 +97994,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: -70
     - rid: 4299247837995597996
       type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
         asm: Unity.Localization}
@@ -98006,7 +98006,7 @@ MonoBehaviour:
           value: 0
         - localeIdentifier:
             m_Code: ru
-          value: 0
+          value: 70
 --- !u!1 &1945705711
 GameObject:
   m_ObjectHideFlags: 0
