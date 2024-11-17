@@ -7,7 +7,7 @@ using YG;
 public class LevelEnder : MonoBehaviour
 {
     [SerializeField] private string _reward = "Reward";
-
+        
     private CompleteUIHolder holder;
     private PauseController pause;
     private Character character;
@@ -24,12 +24,12 @@ public class LevelEnder : MonoBehaviour
         StartCoroutine(HideTimeSpeed());
     }
 
-    public void OpenNextStage(int index)
+    public void OpenNextStage(bool isZero)
     {
-        YandexGame.savesData.Stage = index;
+        var levelSpawner = GameObject.Find("LevelSpawner").GetComponent<LevelSpawner>();
+        levelSpawner.UpdateInfo(isZero);
         YandexGame.SaveProgress();
     }
-
     private IEnumerator HideTimeSpeed()
     {
         character.CanPause = false;

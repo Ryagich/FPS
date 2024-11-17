@@ -229,7 +229,8 @@ namespace EnemyAI
 				Vector3 target = default;
 				try
 				{
-					target = aimTarget.position;
+					if (aimTarget != null)
+						target = aimTarget.position;
 				}
 				catch (UnassignedReferenceException)
 				{

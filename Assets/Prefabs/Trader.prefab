@@ -95,6 +95,7 @@ MonoBehaviour:
         m_CallState: 2
   _manyInteract: 1
   _simpleInteractable: 1
+  _canInteractable: 1
 --- !u!114 &5301226291499908811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,6 +468,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4387480390157369618, guid: a39279ed58510b84592b590d5b75859a,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 48843a2db7a47754f9c8d6ae390ebf4b, type: 2}
     - target: {fileID: 5067174115621491719, guid: a39279ed58510b84592b590d5b75859a,
         type: 3}
       propertyPath: m_IsActive

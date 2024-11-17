@@ -497,14 +497,14 @@ MonoBehaviour:
       - m_Target: {fileID: 4195889097200592500}
         m_TargetAssemblyTypeName: LevelEnder, Assembly-CSharp
         m_MethodName: OpenNextStage
-        m_Mode: 3
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 2223172907105802173}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
@@ -550,6 +550,7 @@ MonoBehaviour:
         m_CallState: 2
   _manyInteract: 0
   _simpleInteractable: 1
+  _canInteractable: 1
 --- !u!114 &3971490988458155823
 MonoBehaviour:
   m_ObjectHideFlags: 0

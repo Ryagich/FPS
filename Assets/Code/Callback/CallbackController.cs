@@ -58,6 +58,7 @@ public class CallbackController : MonoBehaviour
     public void ChangeState(bool state)
     {
         parent.gameObject.SetActive(state);
+        damageCB.Clear();
     }
 
     public void AddDamageCallBack(CallbackInfo info)

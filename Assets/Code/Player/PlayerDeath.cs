@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using YG;
 using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem;
 
 public class PlayerDeath : MonoBehaviour
 {

@@ -18,7 +18,7 @@ public class DamageCallBackController
         this.showTime = showTime;
         defSpeed = damageSpeed;
     }
-
+    
     public void AddCallBack(GameObject callback)
     {
         var damageInfo = callback.GetComponent<DamageCallbackInfo>();
@@ -32,6 +32,15 @@ public class DamageCallBackController
         damageInfo.Ended += Remove;
         InfoList.Add(damageInfo);
         damageInfo.StartMove();
+    }
+
+    public void Clear()
+    {
+        foreach (var info in InfoList)
+        {
+            info.Destroy();
+        }
+        InfoList.Clear();
     }
 
     private void Remove(DamageCallbackInfo info)

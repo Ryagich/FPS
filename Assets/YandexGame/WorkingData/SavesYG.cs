@@ -16,6 +16,8 @@ namespace YG
 
         //Сохранения забега
         public int Stage = 0;
+        public int[] levelIndeces;
+        public int currentLevelIndex = -1;
         public int Money = 0;
         public int MainSpellMax = -1;
         public int MainSpellCount = -1;
