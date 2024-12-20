@@ -267,9 +267,9 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_Spacing: 32
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
@@ -309,9 +309,9 @@ RectTransform:
   m_Father: {fileID: 666518306866051953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 602, y: -454}
-  m_SizeDelta: {x: -1204, y: -620}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 602, y: -76}
+  m_SizeDelta: {x: -1204, y: 136}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4827818904113783620
 CanvasRenderer:
@@ -684,7 +684,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Talents
+  m_text: "\u0422\u0430\u043B\u0430\u043D\u0442\u044B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
@@ -860,7 +860,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Click on the card to select a talent
+  m_text: "\u041A\u043B\u0438\u043A\u043D\u0438\u0442\u0435 \u043D\u0430 \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0443,
+    \u0447\u0442\u043E\u0431\u044B \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u0442\u0430\u043B\u0430\u043D\u0442"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
@@ -1037,9 +1038,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Help
-
-'
+  m_text: "\u041F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0430"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,

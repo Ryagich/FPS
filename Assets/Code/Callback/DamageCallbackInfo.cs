@@ -27,7 +27,8 @@ public class DamageCallbackInfo : MonoCache
 
     public void StartMove()
     {
-        coroutine = StartCoroutine(ShowCallBack());
+        if (this.enabled)
+            coroutine = StartCoroutine(ShowCallBack());
     }
 
     private IEnumerator ShowCallBack()

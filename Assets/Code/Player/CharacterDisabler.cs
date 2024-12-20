@@ -19,14 +19,15 @@ public class CharacterDisabler : MonoBehaviour
         movement.enabled = true;
         _cameraLook.enabled = true;
         
-        character.OnLockCursor();
         bloodScreen.StartBleeding();
         heart.StartBeating();
+        
+        character.LockCursor(true);
     }
 
     public void Disable()   
     {
-        character.OnLockCursor();
+        character.LockCursor(false);
 
         character.CanPause = false;
         character.enabled = false;
@@ -43,6 +44,7 @@ public class CharacterDisabler : MonoBehaviour
         //character.OnLockCursor();
         character.cursorLocked = !character.cursorLocked;
         Cursor.visible = !character.cursorLocked;
-        Cursor.lockState = character.cursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
+        //Cursor.lockState = character.cursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

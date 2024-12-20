@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
-    [SerializeField] private UnityEvent<GameObject, GameObject> _interact;
+    [SerializeField] public UnityEvent<GameObject, GameObject> _interact;
     [SerializeField] private UnityEvent<GameObject, GameObject> _mouseOn;
     [SerializeField] private UnityEvent<GameObject, GameObject> _mouseOff;
     [SerializeField] private bool _manyInteract = false;

@@ -65,9 +65,9 @@ namespace EnemyAI
                 if (!anim.IsInTransition(3) && anim.GetCurrentAnimatorStateInfo(3).IsName("No hit"))
                     anim.SetTrigger("Hit");
                 controller.variables.feelAlert = true;
-                controller.personalTarget = controller.aimTarget.position;
+                if (controller.aimTarget)
+                    controller.personalTarget = controller.aimTarget.position;
                 if (isPlayer)
-
                     CallbackController.Instance.AddDamageCallBack(new CallbackInfo(CallbackTypes.Damage,
                         ((int)damage).ToString()));
                 _source.PlayOneShot(_hurtSounds[Random.Range(0, _hurtSounds.Count - 1)]);

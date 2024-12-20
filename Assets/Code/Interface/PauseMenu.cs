@@ -8,6 +8,6 @@ public class PauseMenu : MonoBehaviour
     
     public void Init(Character character)
     {
-        _continueButton.onClick.AddListener(character.OnLockCursor);
+        _continueButton.onClick.AddListener(character.ToggleCursor);
     }
 }

@@ -93,23 +93,21 @@ public class TalentsController : MonoBehaviour
 
         for (var i = 0; i < 3; i++)
         {
-            var card = SpawnCard();
+            var card = SpawnCard(chosen.Parent.transform);
             if (card is null)
             {
                 break;
             }
-
-            card.transform.SetParent(chosen.Parent.transform);
         }
     }
 
-    private TalentCardHolder SpawnCard()
+    private TalentCardHolder SpawnCard(Transform parent)
     {
         var info = GetRandomTalent();
         if (info is null)
             return null;
         currInfo.Add(info);
-        var card = Instantiate(_cardPref);
+        var card = Instantiate(_cardPref, parent);
 
         card.SetColor(info.BackgroundColor);
         card.SetIcon(info.Sprite);
@@ -217,9 +215,8 @@ public class TalentsController : MonoBehaviour
             Talents.TalentsInfo
                 .Where(talent => !talent.Opened && !currInfo.Contains(talent))
                 .ToList();
-
         return closestTalents.Count > 0
-            ? closestTalents[Random.Range(0, closestTalents.Count - 1)]
+            ? closestTalents[Random.Range(0, closestTalents.Count)]
             : null;
     }
 }

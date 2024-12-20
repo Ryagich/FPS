@@ -103,7 +103,7 @@ public class TradingCanvas : MonoBehaviour
             cost = info.Cost + (int)(info.Cost * .1f * (1 + YandexGame.savesData.Upgrades[0][3][0]));
         }
 
-        _buyButton.GetComponentInChildren<TMP_Text>().text = "Buy " + cost;
+        _buyButton.GetComponentInChildren<TMP_Text>().text = cost + "$";
 
         _buyButton.interactable = !info.Opened && YandexGame.savesData.Money >= cost;
         _adButton.interactable = !info.Opened;

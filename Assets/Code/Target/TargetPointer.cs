@@ -67,7 +67,7 @@ public class TargetPointer : MonoBehaviour
 			}
 		}
 		// ограничиваем позицию областью экрана
-		var offset = PointerUI.sizeDelta.x / 2;
+		var offset = 0;//PointerUI.sizeDelta.x / 2;
 		outPos.x = Mathf.Clamp(outPos.x, offset, Screen.width - offset);
 		outPos.y = Mathf.Clamp(outPos.y, offset, Screen.height - offset);
 

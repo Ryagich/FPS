@@ -206,7 +206,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 1
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 1
@@ -218,7 +218,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 1
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 1
@@ -230,7 +230,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 452
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 452
@@ -242,7 +242,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: -50
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: -50
@@ -254,7 +254,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 100
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 100
@@ -372,7 +372,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 1
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 1
@@ -384,7 +384,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 1
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 1
@@ -396,7 +396,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 300
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 300
@@ -408,7 +408,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: -50
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: -50
@@ -420,7 +420,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 600
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 600
@@ -654,7 +654,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 1
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 1
@@ -666,7 +666,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 1
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 1
@@ -678,7 +678,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 148
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 148
@@ -690,7 +690,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: -50
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: -50
@@ -702,7 +702,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 100
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 100
@@ -802,8 +802,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 56
+  m_fontSizeBase: 56
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -995,7 +995,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 1
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 1
@@ -1007,7 +1007,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 1
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 1
@@ -1019,7 +1019,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 300
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 300
@@ -1031,7 +1031,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: -266
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: -266
@@ -1043,7 +1043,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 600
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 600
@@ -1886,7 +1886,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 1
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 1
@@ -1898,7 +1898,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 1
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 1
@@ -1910,7 +1910,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 300
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 300
@@ -1922,7 +1922,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: -158
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: -158
@@ -1934,7 +1934,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 600
+          value: 0
         - localeIdentifier:
             m_Code: ru
           value: 600
@@ -2033,8 +2033,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 56
+  m_fontSizeBase: 56
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

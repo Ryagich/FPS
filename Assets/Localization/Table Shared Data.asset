@@ -1852,6 +1852,166 @@ MonoBehaviour:
     m_Key: Menu/-----Template-----/CharactersController 18
     m_Metadata:
       m_Items: []
+  - m_Id: 121666483485863936
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Game_Canvas/Background/Content/Button_Continue/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667124396486656
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Difficulty_Canvas/Background/Content/Button_Continue/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667408682217472
+    m_Key: Menu/-----Template-----/Canvas/NavControls/ChoseDifficulty_Canvas/Background_1/Content/Button_Easy/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667615054557184
+    m_Key: Menu/-----Template-----/Canvas/NavControls/ChoseDifficulty_Canvas/Background_1/Content/Button_Normal/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121668141116747776
+    m_Key: Menu/-----Template-----/Canvas/NavControls/ChoseDifficulty_Canvas/Background_1/Content/Button_Hard/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121795978716966912
+    m_Key: DeathCanvas/DeathCanvas/Back/Content/Button_Exit/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121796244656812032
+    m_Key: MyGameMenu/MyGameMenu/Canvas Quality Settings/Canvas Animated/Image Background
+      Fade/Buttons/Button_Talents/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121796799319961600
+    m_Key: P_LPSP_UI_Canvas/P_LPSP_UI_Canvas/Invulnerability_Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121797089213476864
+    m_Key: TalentsCanvas/TalentsCanvas/Upgrades_Canvas/Background/HeaderBack/Name_Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121797924446203904
+    m_Key: TradingCanvas/TradingCanvas/Background/HeaderBack/Name_Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833317132595200
+    m_Key: TradingCanvas/TradingCanvas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833452545699840
+    m_Key: TradingCanvas/TradingCanvas 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833563111747584
+    m_Key: TradingCanvas/TradingCanvas 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833605985923072
+    m_Key: TradingCanvas/TradingCanvas 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121834196472623104
+    m_Key: TradingCanvas/TradingCanvas 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121834435917049856
+    m_Key: TradingCanvas/TradingCanvas 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121835587463213056
+    m_Key: TradingCanvas/TradingCanvas 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121835881005772800
+    m_Key: TradingCanvas/TradingCanvas 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121836343016747008
+    m_Key: TradingCanvas/TradingCanvas 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121836476638883840
+    m_Key: TradingCanvas/TradingCanvas 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844121009582080
+    m_Key: TradingCanvas/TradingCanvas 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844188810506240
+    m_Key: TradingCanvas/TradingCanvas 11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844353659236352
+    m_Key: TradingCanvas/TradingCanvas 12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844388409044992
+    m_Key: TradingCanvas/TradingCanvas 13
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844497322536960
+    m_Key: TradingCanvas/TradingCanvas 14
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844950122819584
+    m_Key: TradingCanvas/TradingCanvas 15
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845022231293952
+    m_Key: TradingCanvas/TradingCanvas 16
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845104129273856
+    m_Key: TradingCanvas/TradingCanvas 17
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845156855869440
+    m_Key: TradingCanvas/TradingCanvas 18
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845452571078656
+    m_Key: TradingCanvas/TradingCanvas 19
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122474811233333248
+    m_Key: Menu/-----Template-----/CharactersController 19
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122474845043617792
+    m_Key: Menu/-----Template-----/CharactersController 20
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122737281864757248
+    m_Key: HeadShotCallBack/Canvas (Environment)/HeadShotCallBack/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122806134456119296
+    m_Key: Level_0(Type_0)/Level_0(Type_0)/-Template-/PlayerSpawner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122807583701397504
+    m_Key: Level_0(Type_0)/Level_0(Type_0)/-Environment-/Chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123501049787904000
+    m_Key: Menu/-----Template-----/Canvas/NavControls/Upgrades_Canvas/Background/Content
+      2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125009717381492736
+    m_Key: Level_0(Type_0)/Level_0(Type_0)/-Template-/TaskCaller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125016869508673536
+    m_Key: Level_0(Type_0)/Level_0(Type_0)/-Template-/TaskCaller 1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

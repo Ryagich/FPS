@@ -955,11 +955,19 @@ namespace InfimaGames.LowPolyShooterPack
         }
 
 
-        public void OnLockCursor()
+        public void ToggleCursor()
         {
             if (!CanPause)
                 return;
             cursorLocked = !cursorLocked;
+            UpdateCursorState();
+        }
+
+        public void LockCursor(bool newState)
+        {
+            if (!CanPause)
+                return;
+            cursorLocked = newState;
             UpdateCursorState();
         }
 

@@ -1,54 +1,58 @@
 {
-  "idSave": 130,
+  "idSave": 45,
   "isFirstSession": false,
   "language": "ru",
   "promptDone": false,
   "SceneIndex": 0,
   "Stage": 1,
   "levelIndeces": [
-    0
+    1,
+    2,
+    4,
+    7,
+    8
   ],
-  "currentLevelIndex": 0,
-  "Money": 843,
+  "currentLevelIndex": 4,
+  "Money": 0,
   "MainSpellMax": -1,
   "MainSpellCount": -1,
   "AddSpellMax": 2,
   "AddSpellCount": 2,
-  "ArmorMax": 110.0,
-  "Armor": 110.0,
-  "HealthMax": 110.0,
-  "Health": 99.0,
+  "ArmorMax": 180.0,
+  "Armor": 180.0,
+  "HealthMax": 180.0,
+  "Health": 250.0,
   "AmmunitionMax": [
-    264,
-    396,
-    330,
-    198,
-    46,
-    22,
-    6
+    324,
+    486,
+    405,
+    243,
+    56,
+    27,
+    8
   ],
   "Ammunition": [
-    264,
-    302,
-    330,
-    198,
-    46,
-    22,
-    6
+    324,
+    486,
+    405,
+    243,
+    56,
+    27,
+    8
   ],
   "DamageFactor": 0.0,
   "AddLive": 0,
   "IsRun": true,
   "FreePurchases": 0,
-  "speedWalking": 3.0,
-  "speedAiming": 2.2,
-  "speedCrouching": 2.5,
-  "speedRunning": 5.8,
-  "Crystals": 8895,
-  "UpgradesLevel": 0,
-  "locale": "ru",
-  "CharacterIndex": 1,
-  "DifficultIndex": 1,
+  "speedWalking": 2.2,
+  "speedAiming": 1.56000018,
+  "speedCrouching": 1.8,
+  "speedRunning": 4.44,
+  "Crystals": 90,
+  "UpgradesLevel": 5,
+  "locale": "tr",
+  "CharacterIndex": 0,
+  "DifficultIndex": 0,
   "BootAddSpellBullets": 0,
   "Talents": [
     false,
@@ -56,8 +60,8 @@
     false,
     false,
     false,
-    true,
-    true,
+    false,
+    false,
     false,
     false,
     false,
@@ -140,7 +144,7 @@
     ],
     [
       [
-        0
+        1
       ],
       [
         -1,
@@ -178,7 +182,7 @@
     ],
     [
       [
-        0
+        4
       ],
       [
         -1,
@@ -200,10 +204,10 @@
     [
       true,
       false,
-      true
+      false
     ],
     [
-      true,
+      false,
       false,
       false
     ],
@@ -226,9 +230,9 @@
   ],
   "ChosenWeapons": [
     [
+      true,
       false,
-      false,
-      true
+      false
     ],
     [
       false,
@@ -311,25 +315,25 @@
       [
         false,
         false,
-        true,
         false,
         false,
         false,
         false,
-        false
-      ],
-      [
-        true,
-        true,
         false,
         false
       ],
       [
         true,
+        false,
+        false,
         false
       ],
       [
-        true,
+        false,
+        false
+      ],
+      [
+        false,
         false,
         false
       ]
@@ -343,11 +347,11 @@
         false,
         false,
         false,
-        true
+        false
       ],
       [
         true,
-        true,
+        false,
         false,
         false
       ],
@@ -700,14 +704,14 @@
       -1
     ],
     [
-      2,
-      1,
+      -1,
       0,
-      0
+      -1,
+      -1
     ],
     [
-      7,
-      1,
+      -1,
+      0,
       -1,
       -1
     ],
@@ -791,5 +795,5 @@
   "EffectsVolume": -15.0,
   "StepsVolume": -30.0,
   "ShootingVolume": -30.0,
-  "MusicVolume": -25.0
+  "MusicVolume": -5.0
 }

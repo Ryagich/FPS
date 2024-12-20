@@ -44,7 +44,7 @@ namespace YG
         public float speedRunning = -1f;
         //
 
-        public int Crystals = 3000;
+        public int Crystals = 600;
         public int UpgradesLevel;
 
         public string locale = "";
@@ -464,7 +464,7 @@ namespace YG
         public float EffectsVolume = -15f;
         public float StepsVolume = -30f;
         public float ShootingVolume = -30f;
-        public float MusicVolume = -25f;
+        public float MusicVolume = -5f;
         
         public void SaveMoney(int value)
         {

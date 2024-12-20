@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 public class LevelSpawner : MonoBehaviour
 {
-    private const int count = 1;
+    private const int count = 5;
     [SerializeField] private Levels _levels;
     //Хочу хранить текущую стадию и индексы уровней которые должен пройти игрок
     //После прохождения каждого уровня вычеркивать его индекс и кидать новый уровень из списка индексов
@@ -89,7 +89,6 @@ public class LevelSpawner : MonoBehaviour
     
     public void CreateLevel()
     {
-        Debug.Log($"stageIndex {YandexGame.savesData.Stage}");
         switch (YandexGame.savesData.Stage)
         {
             case 0:

@@ -60,6 +60,7 @@ public class AddSpellController : MonoBehaviour
                 YandexGame.savesData.BootAddSpellBullets = 4;
                 break;
             case 2:
+                sc.TakeArmor(30.0f);
                 break;
         }
 

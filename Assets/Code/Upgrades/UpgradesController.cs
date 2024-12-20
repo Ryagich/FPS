@@ -20,7 +20,10 @@ public class UpgradesController : MonoBehaviour
     [SerializeField] private Button _upgradeButton;
     [SerializeField] private Transform _content;
     [Space] [SerializeField] private string _levelText = "Current level:";
-
+    
+    [Space] [SerializeField] private TMP_Text _costText;
+    [SerializeField] private string _costString = "Cost";
+        
     private Upgrade _upgrade;
     private bool isInit = false;
     
@@ -85,6 +88,20 @@ public class UpgradesController : MonoBehaviour
         _level.text = $"{_levelText} {YandexGame.savesData.UpgradesLevel.ToString()}";
     }
 
+    public void SetDefaultText()
+    {
+        StartCoroutine(Delay());
+    }
+
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.01f);
+        _level.text = $"{_levelText} {YandexGame.savesData.UpgradesLevel.ToString()}";
+        _name.text = "";
+        _description.text = "";
+        _costText.text = "";
+    }
+    
     private void Upgrade(UpgradeInfo info)
     {
         _upgradeButton.onClick.RemoveAllListeners();
@@ -92,17 +109,20 @@ public class UpgradesController : MonoBehaviour
         info.Open();
         UpdateLevel();
         _upgrade.UpdateText();
+        
+        CurrencyController.Instanse.ChangeAmount(CurrencyType.Crystals, -info.Cost);
+        YandexGame.savesData.Upgrades[GetBranchIndex(_upgrade)][_upgrade.Level][_upgrade.Index] = _upgrade.GetCurrentLevelIndex();
+        YandexGame.SaveProgress();
+        
         UpdateInterface();
         UpdateUpgrades();
         
-        CurrencyController.Instanse.ChangeAmount(CurrencyType.Crystals, info.Cost);
-        YandexGame.savesData.Upgrades[GetBranchIndex(_upgrade)][_upgrade.Level][_upgrade.Index] = _upgrade.GetCurrentLevelIndex();
-        YandexGame.SaveProgress();
         //Debug.Log(_upgrade.GetCurrentLevelIndex());
     }
 
     private void UpdateDescription(UpgradeInfo info)
     {
+        _costText.text = info.Cost == 0 ? "" : _costString + ' ' + info.Cost.ToString();
         _name.text = _upgrade.Name == "" ? _upgrade.name : _upgrade.Name;
         _description.text = info.Description == "" ? _upgrade.name : info.Description;
     }

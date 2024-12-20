@@ -71,7 +71,8 @@ public class CurrencyController : MonoBehaviour
 
     public void ChangeAmount(CurrencyType type, int value)
     {
-        value += value * (1 + YandexGame.savesData.Upgrades[0][3][1]);
+        if (value > 0)
+            value += value * (1 + YandexGame.savesData.Upgrades[0][3][1]);
         switch (type)
         {
             case CurrencyType.Money:

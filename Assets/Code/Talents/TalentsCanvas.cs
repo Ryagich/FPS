@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using InfimaGames.LowPolyShooterPack;
 using UnityEngine.Serialization;
 
 public class TalentsCanvas : MonoBehaviour
@@ -57,5 +58,10 @@ public class TalentsCanvas : MonoBehaviour
             Destroy(st.gameObject);
         }
         selectedTalents.Clear();
+    }
+
+    public void CloseMenu()
+    {
+        PlayerSpawner.Instance.Player.GetComponent<Character>().ToggleCursor();
     }
 }

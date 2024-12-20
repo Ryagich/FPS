@@ -437,6 +437,1523 @@ MonoBehaviour:
     m_Localized: Felsen
     m_Metadata:
       m_Items: []
+  - m_Id: 121666483485863936
+    m_Localized: Weitermachen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24865453879033856
+    m_Localized: Neues Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667124396486656
+    m_Localized: "Komplexit\xE4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667408682217472
+    m_Localized: Einfach
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667615054557184
+    m_Localized: Durchschnitt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121668141116747776
+    m_Localized: Schwierig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121795978716966912
+    m_Localized: "Zur\xFCck zum Men\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121796244656812032
+    m_Localized: Talente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121796799319961600
+    m_Localized: Unverwundbarkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121797089213476864
+    m_Localized: "Ausgew\xE4hlte Talente"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121797924446203904
+    m_Localized: "Reisender H\xE4ndler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857076738686976
+    m_Localized: "80 % Chance, M\xFCnzen in Gegenst\xE4nden zu finden"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23861638094618624
+    m_Localized: Handel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865275004977152
+    m_Localized: Schaden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865404445392896
+    m_Localized: Mehr Munition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865537375469568
+    m_Localized: Starke Pistolen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865626542178304
+    m_Localized: "Schnelle H\xE4nde"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23866183554138112
+    m_Localized: "Prim\xE4rwaffe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23868760937168896
+    m_Localized: Starke Schrotflinten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869032442855424
+    m_Localized: Kritischer Zufall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869840404217856
+    m_Localized: Kritischer Schaden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869982083612672
+    m_Localized: Kritischer Zufall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23872589883736064
+    m_Localized: Abklingzeitverringerung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23873905540431872
+    m_Localized: "F\xE4higkeiten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23874069982314496
+    m_Localized: "F\xE4higkeiten st\xE4rken"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23876841481928704
+    m_Localized: "Erh\xF6hte Gesundheit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877027914547200
+    m_Localized: Niveaubehandlung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877123989274624
+    m_Localized: "R\xFCstung auf Niveau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877254654427136
+    m_Localized: Effektive Behandlung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877314087714816
+    m_Localized: "R\xFCstungserh\xF6hung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877368278122496
+    m_Localized: Wiederherstellung der Gesundheit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877462457024512
+    m_Localized: Schadensresistenz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23878100041564160
+    m_Localized: Verbesserungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23878697394339840
+    m_Localized: Verbessern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23879224698044416
+    m_Localized: "Zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488676585340928
+    m_Localized: "Erh\xF6ht den verursachten Schaden um 5 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488681073246208
+    m_Localized: "Erh\xF6ht den verursachten Schaden um 10 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488694549544960
+    m_Localized: "Erh\xF6ht den verursachten Schaden um 15 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488706071298048
+    m_Localized: "Erh\xF6ht den verursachten Schaden um 20 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488738686205952
+    m_Localized: "Erh\xF6ht den verursachten Schaden um 25 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488750207959040
+    m_Localized: "Erh\xF6ht den verursachten Schaden um 30 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488775222788096
+    m_Localized: "Erh\xF6ht den verursachten Schaden um 35 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488804830380032
+    m_Localized: "Erh\xF6ht den verursachten Schaden um 40 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488842499424256
+    m_Localized: "Aumenta el da\xF1o infligido en un 45%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488866163687424
+    m_Localized: "Erh\xF6ht den verursachten Schaden um 50 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492900039753728
+    m_Localized: "Erh\xF6ht den Munitionsvorrat um 5 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492904519270400
+    m_Localized: "Erh\xF6ht den Munitionsvorrat um 10 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492920671535104
+    m_Localized: "Munitionsvorrat um 15 % erh\xF6ht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492929626374144
+    m_Localized: "Erh\xF6ht den Munitionsvorrat um 20 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492938639933440
+    m_Localized: "Munitionsvorrat um 25 % erh\xF6ht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492964862722048
+    m_Localized: "Munitionsvorrat um 30 % erh\xF6ht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492977663737856
+    m_Localized: "Munitionsvorrat um 35 % erh\xF6ht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492994864578560
+    m_Localized: "Munitionsvorrat um 40 % erh\xF6ht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24493009527865344
+    m_Localized: "Munitionsvorrat um 45 % erh\xF6ht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494025690284032
+    m_Localized: "Erh\xF6ht den Pistolenschaden um 10 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494292854865920
+    m_Localized: "Erh\xF6ht den Pistolenschaden um 20 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494306356330496
+    m_Localized: "Erh\xF6ht den Pistolenschaden um 30 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494314266787840
+    m_Localized: "Erh\xF6ht den Pistolenschaden um 40 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494334844043264
+    m_Localized: "Erh\xF6ht den Pistolenschaden um 50 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494839896965120
+    m_Localized: "Erh\xF6ht die Nachladegeschwindigkeit der Waffe um 25 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494844993044480
+    m_Localized: "Erh\xF6ht die Nachladegeschwindigkeit der Waffe um 50 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495259671298048
+    m_Localized: "Erh\xF6ht den Schaden der Prim\xE4rwaffe um 10 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495264847069184
+    m_Localized: "Erh\xF6ht den Schaden der Prim\xE4rwaffe um 20 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495277786497024
+    m_Localized: "Erh\xF6ht den Schaden der Prim\xE4rwaffe um 30 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495289975144448
+    m_Localized: "Erh\xF6ht den Schaden der Prim\xE4rwaffe um 40 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495306706223104
+    m_Localized: "Erh\xF6ht den Schaden der Prim\xE4rwaffe um 50 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496717007388672
+    m_Localized: "Erh\xF6ht den Schaden der Schrotflinte um 10 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496721549819904
+    m_Localized: "Erh\xF6ht den Schaden der Schrotflinte um 20 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496733742661632
+    m_Localized: "Erh\xF6ht den Schaden der Schrotflinte um 30 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496750482128896
+    m_Localized: "Erh\xF6ht den Schaden der Schrotflinte um 40 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496763476082688
+    m_Localized: "Erh\xF6ht den Schaden der Schrotflinte um 50 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24497221166923776
+    m_Localized: "Angriffe haben eine Chance von 10 %, kritischen Schaden in H\xF6he
+      von 150 % zu verursachen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24505797293867008
+    m_Localized: "Kritischer Schaden erh\xF6ht sich auf 175 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24505803627266048
+    m_Localized: "Kritischer Schaden erh\xF6ht sich auf 200 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24505847780704256
+    m_Localized: "Kritischer Schaden erh\xF6ht sich auf 250 %"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24508024876138496
+    m_Localized: "Die Chance, kritischen Schaden zu verursachen, erh\xF6ht sich auf
+      15 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24508028822978560
+    m_Localized: Die Chance, kritischen Schaden zu verursachen, steigt auf 20 %.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512100342923264
+    m_Localized: "Die F\xE4higkeit, die F\xE4higkeiten von Mitarbeitern zu nutzen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512738581774336
+    m_Localized: "Reduziert die Abklingzeit der F\xE4higkeit um 10 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512741769445376
+    m_Localized: "Reduziert die Abklingzeit der F\xE4higkeit um 20 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512748899762176
+    m_Localized: "Reduziert die Abklingzeit der F\xE4higkeit um 30 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512759184195584
+    m_Localized: "Reduziert die Abklingzeit der F\xE4higkeit um 40 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512769414103040
+    m_Localized: "Reduziert die Abklingzeit der F\xE4higkeit um 50 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513049887211520
+    m_Localized: "Erh\xF6ht die St\xE4rke und Wirksamkeit von F\xE4higkeiten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513386111008768
+    m_Localized: "Erh\xF6ht die Gesundheit um 10 Punkte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513393782390784
+    m_Localized: "Erh\xF6ht die Gesundheit um 20 Punkte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513403982938112
+    m_Localized: "Erh\xF6ht die Gesundheit um 30 Punkte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513416150614016
+    m_Localized: "Erh\xF6ht die Gesundheit um 40 Punkte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513435377303552
+    m_Localized: "Erh\xF6ht die Gesundheit um 50 Punkte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513754249265152
+    m_Localized: "In den Leveln k\xF6nnen Sie Gegenst\xE4nde finden, die die Gesundheit
+      wiederherstellen, und es besteht auch die M\xF6glichkeit, dass sie von Gegnern
+      fallen gelassen werden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515032039784448
+    m_Localized: "In den Leveln k\xF6nnen Sie Gegenst\xE4nde finden, die die R\xFCstung
+      wiederherstellen, und es besteht auch die M\xF6glichkeit, dass sie von Feinden
+      fallen gelassen werden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515309799178240
+    m_Localized: "Die aus allen Quellen erhaltene Heilung erh\xF6ht sich um 10 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515314245140480
+    m_Localized: "Die aus allen Quellen erhaltene Heilung erh\xF6ht sich um 20 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515323212562432
+    m_Localized: "Die aus allen Quellen erhaltene Heilung erh\xF6ht sich um 30 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515331685056512
+    m_Localized: "Die aus allen Quellen erhaltene Heilung erh\xF6ht sich um 40 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515341898186752
+    m_Localized: "Die aus allen Quellen erhaltene Heilung erh\xF6ht sich um 50 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515842723250176
+    m_Localized: "Erh\xF6ht die R\xFCstung um 15 Punkte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515855599763456
+    m_Localized: "Erh\xF6ht die R\xFCstung um 30 Punkte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515867746467840
+    m_Localized: "Erh\xF6ht die R\xFCstung um 50 Punkte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517213069475840
+    m_Localized: Stellt jede Sekunde 0,5 Gesundheitseinheiten wieder her.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517222674432000
+    m_Localized: Stellt jede Sekunde 1 Gesundheit wieder her.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517231117565952
+    m_Localized: Stellt jede Sekunde 2 Gesundheitseinheiten wieder her.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517564795420672
+    m_Localized: Erleide 5 % weniger Schaden aus allen Quellen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517568691929088
+    m_Localized: Erleide 10 % weniger Schaden aus allen Quellen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517582210170880
+    m_Localized: Erleide 15 % weniger Schaden aus allen Quellen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517591131455488
+    m_Localized: Erleide 20 % weniger Schaden aus allen Quellen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517605178179584
+    m_Localized: Erleide 25 % weniger Schaden aus allen Quellen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24518482639159296
+    m_Localized: "Auf den Ebenen finden Sie H\xE4ndler, die eine Vielzahl von Waren
+      verkaufen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24558171962179584
+    m_Localized: "Ein erfahrener K\xE4mpfer, der viele Krisenherde auf der ganzen
+      Welt besucht hat. Es w\xFCrde lange dauern, seine Auszeichnungen aufzuz\xE4hlen,
+      aber eines ist sicher: Rambo ist der Beste der Besten, die wahre Elite der
+      Streitkr\xE4fte. Rambo ist geschickt im Umgang mit Nahkampfwaffen wie z\r\n+20
+      % auf Schaden, Einsatzgeschwindigkeit und Schussgeschwindigkeit von SMGs und
+      Schrotflinten.\r\n-10 % Genauigkeit aller Waffen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565575860846592
+    m_Localized: "Booth ist ein erfahrener Agent, der sich auf Spionageoperationen
+      spezialisiert hat. Er ist \xE4u\xDFerst geheimnisvoll, es ist schwer zu sagen,
+      an wie vielen Operationen er teilgenommen hat oder wie alt er ist oder ob er
+      wirklich Booth hei\xDFt. Wir k\xF6nnen nur mit Zuversicht sagen, dass er viele
+      Terrorgruppen eliminiert hat und mehr als eine eliminiert.\r\nPistolenschaden
+      +50 %.\r\nGeschwindigkeit beim Einsatz von Pistolen und Maschinengewehren +10
+      %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565592822611968
+    m_Localized: Booth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565614632992768
+    m_Localized: Rambo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565635059253248
+    m_Localized: Schatten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565712016343040
+    m_Localized: "Shadow ist ein ewig stiller Mensch, der die Einsamkeit jeder Gesellschaft
+      vorzieht. Hinter seiner bescheidenen Natur verbirgt sich ein Meister des Mordens,
+      der seinen Opfern keine Chance l\xE4sst. Es gibt keinen Menschen auf der Welt,
+      der sich vor der Kugel des Schattens verstecken kann.\r\n+20 % Schaden f\xFCr
+      Scharfsch\xFCtzengewehre.\r\n+25 % Geschwindigkeit beim Einsatz von Scharfsch\xFCtzengewehren.\r\n+25
+      % Genauigkeit und -20 % Feuerrate f\xFCr alle Waffen.\r\n+5 % Chance auf kritische
+      Angriffe."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565760913539072
+    m_Localized: Letztes Blut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565942598205440
+    m_Localized: "Bei Aktivierung h\xF6rt Rambo f\xFCr eine Weile auf, Schmerzen
+      zu empfinden und Schaden zu erleiden.\r\nWenn der n\xE4chste erlittene Schaden
+      t\xF6dlich ist und die F\xE4higkeit einsatzbereit ist, wird sie automatisch
+      aktiviert."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565980846063616
+    m_Localized: Reserven
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24566015482626048
+    m_Localized: "Gew\xE4hrt bei Aktivierung 10 % Gesundheit und 5 % R\xFCstung."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24567533216694272
+    m_Localized: "Der Einsatz der F\xE4higkeit verlangsamt die Zeit f\xFCr eine Weile.\r\nGegner
+      werden st\xE4rker verlangsamt als Booth."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24567566334918656
+    m_Localized: Akute Reaktion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590482539773952
+    m_Localized: "Die n\xE4chsten 4 Sch\xFCsse verursachen 20 % mehr Schaden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590508850642944
+    m_Localized: Eine erfahrene Hand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590557903028224
+    m_Localized: 'Aufladen:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590578283151360
+    m_Localized: sek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24591678646222848
+    m_Localized: 'Parameter:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590596167663616
+    m_Localized: 'Maximal:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24591798636871680
+    m_Localized: 'Geschichte:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24591993919471616
+    m_Localized: "F\xE4higkeiten:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24592211066978304
+    m_Localized: Helden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24592246907305984
+    m_Localized: Verbesserungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24592269996949504
+    m_Localized: Waffenkammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24593866193862656
+    m_Localized: 'Aktuelles Niveau:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596365437009920
+    m_Localized: Reise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596766659936256
+    m_Localized: "K\xE4mpfen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596782585708544
+    m_Localized: "F\xE4higkeiten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596806958809088
+    m_Localized: "\xDCberleben"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24600058739785728
+    m_Localized: 'Aktuelles Niveau:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25012986949369856
+    m_Localized: "Erh\xF6ht den Munitionsvorrat um 50 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25534946011742208
+    m_Localized: "Erhalten Sie zu Beginn des Spiels 100 M\xFCnzen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25534970430980096
+    m_Localized: "Erhalten Sie zu Beginn des Spiels 200 M\xFCnzen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535006250336256
+    m_Localized: "Erhalten Sie zu Beginn des Spiels 300 M\xFCnzen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535069496246272
+    m_Localized: "Erhalten Sie zu Beginn des Spiels 400 M\xFCnzen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535090107056128
+    m_Localized: "Erhalten Sie zu Beginn des Spiels 500 M\xFCnzen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535263830933504
+    m_Localized: "20 % Chance, M\xFCnzen in Gegenst\xE4nden zu finden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535270004948992
+    m_Localized: "30 % Chance, M\xFCnzen in Gegenst\xE4nden zu finden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535284198473728
+    m_Localized: "45 % Chance, M\xFCnzen in Gegenst\xE4nden zu finden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535334609813504
+    m_Localized: "60 % Chance, M\xFCnzen in Gegenst\xE4nden zu finden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535432383234048
+    m_Localized: "80 % Chance, M\xFCnzen in Gegenst\xE4nden zu finden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535652072488960
+    m_Localized: "Der H\xE4ndler hat neue Artikel zum Verkauf."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535690815275008
+    m_Localized: "Der H\xE4ndler hat noch mehr neue Artikel zum Verkauf."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25536601260261376
+    m_Localized: "10 % Chance, f\xFCr besiegte Gegner zus\xE4tzliche M\xFCnzen zu
+      erhalten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25536636655992832
+    m_Localized: "15 % Chance, zus\xE4tzliche M\xFCnzen f\xFCr besiegte Gegner zu
+      erhalten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25536670474665984
+    m_Localized: "25 % Chance, f\xFCr besiegte Gegner zus\xE4tzliche M\xFCnzen zu
+      erhalten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25536743816265728
+    m_Localized: "30 % Chance, f\xFCr besiegte Gegner zus\xE4tzliche M\xFCnzen zu
+      erhalten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537119437160448
+    m_Localized: "Die H\xE4ndlerpreise werden um 10 % reduziert."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537154472181760
+    m_Localized: "Die H\xE4ndlerpreise werden um 20 % reduziert."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537176488083456
+    m_Localized: "Die H\xE4ndlerpreise werden um 30 % reduziert."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537199242182656
+    m_Localized: "Die H\xE4ndlerpreise werden um 40 % reduziert."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537226559684608
+    m_Localized: "Die H\xE4ndlerpreise werden um 50 % reduziert."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537335938744320
+    m_Localized: "5 % Chance, die gefundenen M\xFCnzen zu verdoppeln."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537390154317824
+    m_Localized: "10 % Chance, die gefundenen M\xFCnzen zu verdoppeln."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537433770885120
+    m_Localized: "15 % Chance, die gefundenen M\xFCnzen zu verdoppeln."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537467086241792
+    m_Localized: "20 % Chance, die gefundenen M\xFCnzen zu verdoppeln."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537587118833664
+    m_Localized: "25 % Chance, die gefundenen M\xFCnzen zu verdoppeln."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537685563342848
+    m_Localized: "Ihr erster Einkauf bei einem H\xE4ndler ist kostenlos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537721567248384
+    m_Localized: "Die ersten beiden Eink\xE4ufe bei einem H\xE4ndler sind kostenlos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537762885337088
+    m_Localized: "Die ersten drei Eink\xE4ufe bei einem H\xE4ndler sind kostenlos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537800936062976
+    m_Localized: "Die ersten vier Eink\xE4ufe bei einem H\xE4ndler sind kostenlos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537860348379136
+    m_Localized: "Die ersten f\xFCnf Eink\xE4ufe bei einem H\xE4ndler sind kostenlos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539139623682048
+    m_Localized: "Startm\xFCnzen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539197781901312
+    m_Localized: Rundherum Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539240471527424
+    m_Localized: Neue Produkte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539277511426048
+    m_Localized: Produktion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539335518650368
+    m_Localized: Verkauf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539387007926272
+    m_Localized: Versteck
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539447351377920
+    m_Localized: Lieblingskunde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28439663406710784
+    m_Localized: "F\xE4higkeiten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28441243786903552
+    m_Localized: "Zus\xE4tzliche F\xE4higkeit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29992631956373504
+    m_Localized: "Hauptf\xE4higkeit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30630950050430976
+    m_Localized: 'Munitionstyp:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30630996594622464
+    m_Localized: 'Aufnahmeart:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631126605463552
+    m_Localized: 'Bewegungsmultiplikator:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631161195888640
+    m_Localized: 'Schaden:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631231324651520
+    m_Localized: 'Feuerrate:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631276174344192
+    m_Localized: 'Streuen:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631319660888064
+    m_Localized: "Magazinkapazit\xE4t:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631331526574080
+    m_Localized: Auto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631348811300864
+    m_Localized: Einzel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30665899948343296
+    m_Localized: Talente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30669024620937216
+    m_Localized: "H\xE4ndler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30669253587992576
+    m_Localized: "F\xFCr Werbung kaufen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30720282899742720
+    m_Localized: Hinweis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30720330526064640
+    m_Localized: "Klicken Sie auf die Karte, um ein Talent auszuw\xE4hlen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30720506846216192
+    m_Localized: Talente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30734557034807296
+    m_Localized: Eiserne Hand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31043252675379200
+    m_Localized: Eiserne Faust
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045760848199680
+    m_Localized: "Der nicht kritische Schaden erh\xF6ht sich um 20 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045847452188672
+    m_Localized: Beste Nummer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045956340514816
+    m_Localized: Jeder 4. Angriff verursacht 80 % mehr Schaden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046108409200640
+    m_Localized: Flinke Tasche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046166433202176
+    m_Localized: "Beim Aufheben eines Gegenstands erh\xF6ht sich die Bewegungsgeschwindigkeit
+      2 Sekunden lang um 20 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046244162043904
+    m_Localized: Stier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046308167122944
+    m_Localized: "Bei voller Gesundheit ist der verursachte Schaden um 25 % h\xF6her."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046614250651648
+    m_Localized: "Pr\xE4ventivschlag"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046777295831040
+    m_Localized: Die erste Kugel im Magazin verursacht 100 % mehr Schaden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046936218009600
+    m_Localized: Bestimmung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31047283854508032
+    m_Localized: "Wenn kein Schild vorhanden ist, erh\xF6ht sich die Bewegungsgeschwindigkeit
+      um 50 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31047768049156096
+    m_Localized: "Qualit\xE4tsgeschosse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31049837237731328
+    m_Localized: "Beim Aufnehmen von Patronen werden auch 2 R\xFCstungseinheiten
+      wiederhergestellt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31049944809046016
+    m_Localized: Liebe zum Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050041177374720
+    m_Localized: "Beim Aufheben von M\xFCnzen und Kristallen wird au\xDFerdem 1 Gesundheitseinheit
+      wiederhergestellt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050116293165056
+    m_Localized: Doppelte Explosion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050241094680576
+    m_Localized: "Die Kraft der Zusatzf\xE4higkeit verdoppelt sich."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050410372595712
+    m_Localized: Teufelsbund
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050468623089664
+    m_Localized: "Die Gesundheit wird halbiert. Erh\xE4lt doppelt so viele M\xFCnzen
+      und Kristalle aus allen Quellen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050782344445952
+    m_Localized: Phantomkugel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050850044706816
+    m_Localized: Beim Nachladen besteht eine Chance von 30 %, keine Patrone zu verschwenden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050918592217088
+    m_Localized: "H\xE4rte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31051762750423040
+    m_Localized: "Im Stillstand erh\xF6ht sich der Schaden um 50 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052097741094912
+    m_Localized: "Ungew\xF6hnliche Geschwindigkeit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052166770950144
+    m_Localized: +2 % Bewegungsgeschwindigkeit pro 10 % Schild.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052221187850240
+    m_Localized: Bullet-Bank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052269296517120
+    m_Localized: Die gesamte gesammelte Munition wird in Munition umgewandelt, die
+      von der aktuellen Waffe verwendet wird.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052340490633216
+    m_Localized: Ordentlich
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052391908605952
+    m_Localized: Die aus allen Quellen erhaltene Heilung wird verdoppelt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052465099210752
+    m_Localized: "Gl\xFCcksspiel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052550314885120
+    m_Localized: +50 % kritischer Angriffsschaden, aber normale Angriffe verursachen
+      20 % weniger Schaden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053115098890240
+    m_Localized: Eine kurze Atempause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053187169615872
+    m_Localized: "Erhalten Sie nach dem Aufladen 2 Sekunden lang Immunit\xE4t gegen
+      Schaden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053245332029440
+    m_Localized: Berserker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053303653826560
+    m_Localized: +1 % kritische Chance pro 5 % fehlender Gesundheit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053392753426432
+    m_Localized: Brandneu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053466686423040
+    m_Localized: "+75 % verursachter Schaden bei voller R\xFCstung, andernfalls -25
+      % Schaden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053528334303232
+    m_Localized: "Troph\xE4e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053587549487104
+    m_Localized: 25 % Chance, einem besiegten Feind Munition auszuschalten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053654327001088
+    m_Localized: Weitblick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053710518091776
+    m_Localized: "Gegner in einer Entfernung von 10 Metern oder mehr erleiden 50
+      % mehr Schaden, n\xE4her stehende Gegner erleiden 15 % weniger Schaden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056074318774272
+    m_Localized: "Ihr n\xE4chster Einkauf beim H\xE4ndler ist kostenlos. Das Talent
+      verschwindet nach Gebrauch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056131365502976
+    m_Localized: Goldkarte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056224273530880
+    m_Localized: Panzerplatte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056289226522624
+    m_Localized: Beginnen Sie mit der Verwendung von Panzerplatten. Die Panzerplatte
+      blockt jeden weiteren Schaden ab und zerbricht dann. Stellt alle 10 Sekunden
+      1 Panzerplatte wieder her. Maximal 3 Panzerplatten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056511377833984
+    m_Localized: "Qualit\xE4tsschuhe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056553195044864
+    m_Localized: "Die Bewegungsgeschwindigkeit erh\xF6ht sich um 15 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056647457832960
+    m_Localized: "\xDCberraschung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056710494027776
+    m_Localized: "10 % Chance, beim T\xF6ten eines Gegners bewusstlos zu werden,
+      zus\xE4tzliche M\xFCnzen oder eine Ladung f\xFCr eine zus\xE4tzliche Fertigkeit."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056775094697984
+    m_Localized: "Verborgene Sch\xE4tze"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056825413763072
+    m_Localized: "Die Chance, in zerbrechlichen Gegenst\xE4nden M\xFCnzen oder Kristalle
+      zu finden, steigt. Die Chance, alles andere zu finden, ist geringer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056904224735232
+    m_Localized: Erwarte Gutes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056953046433792
+    m_Localized: Der erste Schuss alle 3 Sekunden ist kritisch.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057030422953984
+    m_Localized: Vampir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057081501188096
+    m_Localized: "Angriffe stellen 1 Gesundheitseinheit wieder her. Wenn die Gesundheit
+      voll ist, wird die R\xFCstung wiederhergestellt. Angriffe verursachen 50 %
+      weniger Schaden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057141697839104
+    m_Localized: Boxer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057205505785856
+    m_Localized: "Die Chance, einem Feind, der weniger als 5 Meter entfernt steht,
+      kritischen Schaden zuzuf\xFCgen, verdoppelt sich."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057732822073344
+    m_Localized: Kugellicht
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057780205125632
+    m_Localized: "Das Nachladen verbraucht doppelt so viel Munition (haupts\xE4chlich
+      aufgrund ungenutzter Munitionsarten). Die Chance auf einen kritischen Treffer
+      erh\xF6ht sich um 25 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057878158901248
+    m_Localized: Taktisches Nachladen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057930998743040
+    m_Localized: "Beim Nachladen erh\xF6ht sich die Bewegungsgeschwindigkeit um 25
+      % und der erlittene Schaden wird um 10 % verringert."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058101526560768
+    m_Localized: Liebe zum Leben
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058142538465280
+    m_Localized: Nach erlittenem Schaden werden innerhalb von 5 Sekunden 3 Gesundheitseinheiten
+      wiederhergestellt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058353398710272
+    m_Localized: Schlechte Hand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058410890035200
+    m_Localized: "Wenn Sie \xFCber zus\xE4tzliche Fertigkeitsladungen verf\xFCgen,
+      verursachen Sie 75 % mehr Schaden, und wenn Sie diese nicht haben, verursachen
+      Sie 25 % weniger Schaden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058460814835712
+    m_Localized: Groll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058510748024832
+    m_Localized: "Wenn du Schaden erleidest, erh\xF6ht sich dein eigener Schaden
+      5 Sekunden lang um 15 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058639177613312
+    m_Localized: Zweite Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058694127190016
+    m_Localized: "Wenn Sie t\xF6dlichen Schaden erleiden, stellen Sie 10 % Ihrer
+      maximalen Gesundheit wieder her. Die Fertigkeit verschwindet nach dem Ausl\xF6sen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058773680553984
+    m_Localized: Tote Seele
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058827006935040
+    m_Localized: "Nachdem Sie t\xF6dlichen Schaden erlitten haben, werden Sie 5 Sekunden
+      lang unverwundbar. Wenn Sie in dieser Zeit Ihre Gesundheit nicht wieder auff\xFCllen,
+      sterben Sie. Die Fertigkeit verschwindet nach dem Ausl\xF6sen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058899727777792
+    m_Localized: Paranormal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058952466956288
+    m_Localized: "Die maximale Gesundheit sinkt auf 1 Einheit. Die Menge an R\xFCstung
+      verdreifacht sich."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059004375662592
+    m_Localized: Lebendes Fleisch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059096268668928
+    m_Localized: "Jede Sekunde werden 4 % Ihrer maximalen Gesundheit in fehlende
+      R\xFCstung umgewandelt. Durch den Einsatz der F\xE4higkeit kann die Gesundheit
+      nicht unter 20 % fallen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059159950786560
+    m_Localized: Retter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059214011170816
+    m_Localized: "Nachdem Sie t\xF6dlichen Schaden erlitten haben, stellen Sie 10
+      % Ihrer Gesundheit wieder her. Wenn Sie innerhalb von 5 Sekunden nach Ausl\xF6sen
+      der F\xE4higkeit keinen einzigen Feind t\xF6ten, sterben Sie. Die Fertigkeit
+      verschwindet nach dem Ausl\xF6sen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059289005326336
+    m_Localized: Blutige Munition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059340918226944
+    m_Localized: "Wenn das Magazin leer ist, feuern Sie weiter, verursachen 2 % mehr
+      Schaden pro Schuss und verlieren 1 % Ihrer maximalen Gesundheit pro Schuss.
+      Es ist m\xF6glich, durch den Einsatz einer Fertigkeit zu sterben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059392487194624
+    m_Localized: Aktie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059441489248256
+    m_Localized: "Verliere 50 % deiner maximalen R\xFCstung und 50 % deiner maximalen
+      Gesundheit. Erhalte 2 zus\xE4tzliche Leben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059523341090816
+    m_Localized: "An\xE4mie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059578219364352
+    m_Localized: Die maximale Gesundheit wird verdoppelt. Erleide 10 % mehr Schaden
+      aus allen Quellen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059737359646720
+    m_Localized: Disziplin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059792305029120
+    m_Localized: "Jede Sekunde erh\xF6ht sich die Chance auf einen kritischen Schuss
+      um 5 %. Wird nach einem kritischen Schuss zur\xFCckgesetzt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059851427938304
+    m_Localized: "Riesent\xF6ter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31060503931617280
+    m_Localized: 5 % Chance, dass, wenn ein Feind Schaden erleidet, 5 % seiner maximalen
+      Gesundheit in Bonusschaden umgewandelt werden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061095064240128
+    m_Localized: "Au\xDFerirdische Energie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061156036837376
+    m_Localized: "50 % Chance, beim T\xF6ten eines Gegners 5 R\xFCstung wiederherzustellen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061486338277376
+    m_Localized: Blitz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061579061755904
+    m_Localized: "Je schneller Ihre aktuelle Geschwindigkeit ist, desto h\xF6her
+      ist Ihr Widerstand gegen erlittenen Schaden. Maximal 30 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061787724185600
+    m_Localized: Extravaganz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061871878701056
+    m_Localized: +10 % Schadensresistenz pro 100 ausgegebener Munition.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061950547066880
+    m_Localized: Bergmann
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062009099550720
+    m_Localized: "Die Belohnung f\xFCr das T\xF6ten von Feinden im Umkreis von 7
+      Metern ist doppelt so hoch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062079006015488
+    m_Localized: Veteran
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062158857175040
+    m_Localized: "+1 auf maximale Gesundheit f\xFCr jeden get\xF6teten Feind in einer
+      Entfernung von bis zu 7 Metern."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062225408196608
+    m_Localized: Eierschale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062291074220032
+    m_Localized: "Erhalten Sie beim Tragen einer R\xFCstung zus\xE4tzliche 15 % Schadensresistenz.
+      Werden Sie 15 % anf\xE4llig f\xFCr Schaden, wenn Sie nicht gepanzert sind."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062367293112320
+    m_Localized: Geschwindigkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062452806582272
+    m_Localized: "Die Bewegungsgeschwindigkeit ist 50 % h\xF6her, die Hauptfertigkeit
+      wird 150 % l\xE4nger wiederhergestellt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062536822685696
+    m_Localized: "Die Grenze des M\xF6glichen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062713918783488
+    m_Localized: "Die zus\xE4tzliche Fertigkeit kann auch dann verwendet werden,
+      wenn keine Projektile vorhanden sind. F\xFCr jede solche Verwendung erhalten
+      Sie 25 Schadenspunkte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062784479559680
+    m_Localized: Schlafende Kugel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062850485321728
+    m_Localized: "Je weniger Munition im Magazin verbleibt, desto h\xF6her ist der
+      Schaden der Waffe (maximal +75 %)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062918873448448
+    m_Localized: Zwei Seiten der Medaille
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062984656912384
+    m_Localized: "Wechseln Sie alle 12 Sekunden zwischen Yin- und Yang-Zust\xE4nden.
+      Der Yin-Zustand erh\xF6ht die Schadensresistenz um 20 % und der Yang-Zustand
+      erh\xF6ht den verursachten Schaden um 50 %."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063098184138752
+    m_Localized: Zweischneidiges Schwert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063184452583424
+    m_Localized: "F\xFCr jeden besiegten Feind erh\xE4ltst du +1 % Schaden und -0,5
+      % Schadensresistenz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063278077837312
+    m_Localized: Wut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063336345108480
+    m_Localized: Wenn Sie Schaden erleiden, erhalten Sie 5 Sekunden lang eine Chance
+      von +20 %, kritischen Schaden zu verursachen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063401612673024
+    m_Localized: "Goldene R\xFCstung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063503441985536
+    m_Localized: "Wenn Sie eine zus\xE4tzliche Fertigkeit verwenden, stellen Sie
+      5 % der maximalen R\xFCstung wieder her."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063593569189888
+    m_Localized: Anmut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063675618164736
+    m_Localized: "Reduziert die Schadensresistenz um 100 %, aber der erlittene Schaden
+      darf 10 % der maximalen Gesundheit nicht \xFCberschreiten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063749253365760
+    m_Localized: Alles oder nichts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063838109696000
+    m_Localized: Erhalte 100 % Schaden. Verliere 75 % deiner maximalen Gesundheit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063908662083584
+    m_Localized: Durchdringendes Projektil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064012856983552
+    m_Localized: Kritische Angriffe durchdringen die Panzerung des Gegners.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064089025544192
+    m_Localized: Atlant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064140158304256
+    m_Localized: "+5 % Schaden pro 100 M\xFCnzen im Vorrat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064210505170944
+    m_Localized: "Reserver\xFCstung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064285067313152
+    m_Localized: "Wenn die R\xFCstung kaputt ist, werden sofort 10 % der R\xFCstung
+      wiederhergestellt. Nachladezeit 45 Sekunden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064475794898944
+    m_Localized: "Schwere R\xFCstung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064603607924736
+    m_Localized: Erhalte +50 maximalen Schild und +10 % Schadensresistenz. Verliere
+      20 % Bewegungsgeschwindigkeit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064681911386112
+    m_Localized: "Angemessenes Gl\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064749796196352
+    m_Localized: "+50 % Chance, kritischen Schaden zu verursachen, aber die maximale
+      Chance darf 75 % nicht \xFCberschreiten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31065196049170432
+    m_Localized: "Lebende R\xFCstung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36450387831926784
+    m_Localized: "Musiklautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36495000718389248
+    m_Localized: 'Aktuelles Niveau:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45881654637232128
+    m_Localized: Zwingt Feinde, einen Feind anzugreifen, bis dieser stirbt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45881692562128896
+    m_Localized: Illusion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833317132595200
+    m_Localized: Wiederherstellung der Gesundheit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833452545699840
+    m_Localized: "Stellen Sie s\xE4mtliche Gesundheit vollst\xE4ndig wieder her"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833563111747584
+    m_Localized: "R\xFCstungsrestaurierung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833605985923072
+    m_Localized: "Stellen Sie alle R\xFCstungen vollst\xE4ndig wieder her"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121834196472623104
+    m_Localized: "Wiederherstellung einer zus\xE4tzlichen F\xE4higkeit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121834435917049856
+    m_Localized: "Stellt alle zus\xE4tzlichen F\xE4higkeitsladungen wieder her"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121835587463213056
+    m_Localized: "Stellen Sie die gesamte Munition vollst\xE4ndig wieder her"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121835881005772800
+    m_Localized: Munitionsbergung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121836343016747008
+    m_Localized: Steigern Sie dauerhaft Ihre maximale Gesundheit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121836476638883840
+    m_Localized: Maximale Gesundheitssteigerung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844121009582080
+    m_Localized: "Erh\xF6he deine maximale R\xFCstung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844188810506240
+    m_Localized: "Erh\xF6he dauerhaft deine maximale R\xFCstung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844353659236352
+    m_Localized: "Erh\xF6hen Sie dauerhaft die maximale Menge einer zus\xE4tzlichen
+      F\xE4higkeit."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844388409044992
+    m_Localized: "Erh\xF6hen Sie die maximale Anzahl an Extras. F\xE4higkeiten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844497322536960
+    m_Localized: "Erh\xF6hen Sie Ihre maximale Munitionsmenge"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844950122819584
+    m_Localized: "Erh\xF6hen Sie dauerhaft Ihre maximale Munition und Granatenmenge"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845022231293952
+    m_Localized: "Schadenserh\xF6hung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845104129273856
+    m_Localized: "Erh\xF6he den gesamten von dir verursachten Schaden"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845156855869440
+    m_Localized: Zweites Leben
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845452571078656
+    m_Localized: 'Kaufen Sie ein zweites Leben.
+
+      Nach Gebrauch verschwindet
+      das Leben.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122474811233333248
+    m_Localized: Pflaster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122474845043617792
+    m_Localized: "Stellt 30 R\xFCstungseinheiten wieder her."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122737281864757248
+    m_Localized: Kopfschuss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122806134456119296
+    m_Localized: "\xD6ffne die Truhe und nimm das Talent"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122807583701397504
+    m_Localized: Steig ins Auto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123501049787904000
+    m_Localized: 'Kosten:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125009717381492736
+    m_Localized: "\xD6ffne die Truhe und nimm das Talent"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125016869508673536
+    m_Localized: Steig ins Auto.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

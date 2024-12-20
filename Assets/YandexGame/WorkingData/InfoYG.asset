@@ -21,10 +21,10 @@ MonoBehaviour:
     name: Player this
     uniqueID: 000
     photo: https://justplaygames.ru/public/icon_player.png
-  AdWhenLoadingScene: 1
+  AdWhenLoadingScene: 0
   showFirstAd: 1
   adDisplayCalls: 0
-  fullscreenAdInterval: 60
+  fullscreenAdInterval: 30
   durationOfAdSimulation: 0.5
   testErrorOfRewardedAdsInEditor: 0
   saveCloud: 1
@@ -267,7 +267,7 @@ MonoBehaviour:
     hi: 
   purshasesSimulation: []
   metricaEnable: 1
-  metricaCounterID: 96336316
+  metricaCounterID: 99127952
   debug: 0
   archivingBuild: 1
   logoImageFormat: 1

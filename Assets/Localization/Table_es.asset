@@ -435,6 +435,1507 @@ MonoBehaviour:
     m_Localized: Roca
     m_Metadata:
       m_Items: []
+  - m_Id: 121666483485863936
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24865453879033856
+    m_Localized: Nuevo juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667124396486656
+    m_Localized: Complejidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667408682217472
+    m_Localized: "F\xE1cil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667615054557184
+    m_Localized: Promedio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121668141116747776
+    m_Localized: "Dif\xEDcil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121795978716966912
+    m_Localized: "Salir al Men\xFA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121796244656812032
+    m_Localized: Prendas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121796799319961600
+    m_Localized: Invulnerabilidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121797089213476864
+    m_Localized: Talentos elegidos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121797924446203904
+    m_Localized: Comerciante ambulante
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23857076738686976
+    m_Localized: "80% de posibilidades de encontrar monedas en art\xEDculos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23861638094618624
+    m_Localized: Comercio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865275004977152
+    m_Localized: "Da\xF1o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865404445392896
+    m_Localized: "M\xE1s munici\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865537375469568
+    m_Localized: Pistolas fuertes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23865626542178304
+    m_Localized: manos rapidas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23866183554138112
+    m_Localized: Arma primaria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23868760937168896
+    m_Localized: Escopetas fuertes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869032442855424
+    m_Localized: "Oportunidad cr\xEDtica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869840404217856
+    m_Localized: "Da\xF1o cr\xEDtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23869982083612672
+    m_Localized: "Oportunidad cr\xEDtica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23872589883736064
+    m_Localized: "Reducci\xF3n de tiempo de reutilizaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23873905540431872
+    m_Localized: Capacidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23874069982314496
+    m_Localized: Fortalecimiento de habilidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23876841481928704
+    m_Localized: Mayor salud
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877027914547200
+    m_Localized: Tratamiento de nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877123989274624
+    m_Localized: Armadura a nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877254654427136
+    m_Localized: Tratamiento efectivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877314087714816
+    m_Localized: Aumento de armadura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877368278122496
+    m_Localized: "Restauraci\xF3n de la salud"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23877462457024512
+    m_Localized: "Resistencia al da\xF1o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23878100041564160
+    m_Localized: Mejoras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23878697394339840
+    m_Localized: Mejorar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23879224698044416
+    m_Localized: "Atr\xE1s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488676585340928
+    m_Localized: "Aumenta el da\xF1o infligido en un 5%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488681073246208
+    m_Localized: "Aumenta el da\xF1o infligido en un 10%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488694549544960
+    m_Localized: "Aumenta el da\xF1o infligido en un 15%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488706071298048
+    m_Localized: "Aumenta el da\xF1o infligido en un 20%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488738686205952
+    m_Localized: "Aumenta el da\xF1o infligido en un 25%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488750207959040
+    m_Localized: "Aumenta el da\xF1o infligido en un 30%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488775222788096
+    m_Localized: "Aumenta el da\xF1o infligido en un 35%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488804830380032
+    m_Localized: "Aumenta el da\xF1o infligido en un 40%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488842499424256
+    m_Localized: "Aumenta el da\xF1o infligido en un 45%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24488866163687424
+    m_Localized: "Aumenta el da\xF1o infligido en un 50%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492900039753728
+    m_Localized: "Aumenta el suministro de munici\xF3n en un 5%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492904519270400
+    m_Localized: "Aumenta el suministro de munici\xF3n en un 10%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492920671535104
+    m_Localized: Aumento del suministro de municiones en un 15%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492929626374144
+    m_Localized: "Aumenta el suministro de munici\xF3n en un 20%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492938639933440
+    m_Localized: Aumento del suministro de municiones en un 25%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492964862722048
+    m_Localized: Aumento del suministro de municiones en un 30%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492977663737856
+    m_Localized: Aumento del suministro de municiones en un 35%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24492994864578560
+    m_Localized: Aumento del suministro de municiones en un 40%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24493009527865344
+    m_Localized: Aumento del suministro de municiones en un 45%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494025690284032
+    m_Localized: "Aumenta el da\xF1o de la pistola en un 10%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494292854865920
+    m_Localized: "Aumenta el da\xF1o de la pistola en un 20%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494306356330496
+    m_Localized: "Aumenta el da\xF1o de la pistola en un 30%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494314266787840
+    m_Localized: "Aumenta el da\xF1o de la pistola en un 40%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494334844043264
+    m_Localized: "Aumenta el da\xF1o de la pistola en un 50%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494839896965120
+    m_Localized: Aumenta la velocidad de recarga del arma en un 25%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24494844993044480
+    m_Localized: Aumenta la velocidad de recarga del arma en un 50%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495259671298048
+    m_Localized: "Aumenta el da\xF1o del arma principal en un 10%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495264847069184
+    m_Localized: "Aumenta el da\xF1o del arma principal en un 20%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495277786497024
+    m_Localized: "Aumenta el da\xF1o del arma principal en un 30%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495289975144448
+    m_Localized: "Aumenta el da\xF1o del arma principal en un 40%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24495306706223104
+    m_Localized: "Aumenta el da\xF1o del arma principal en un 50%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496717007388672
+    m_Localized: "Aumenta el da\xF1o de la escopeta en un 10%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496721549819904
+    m_Localized: "Aumenta el da\xF1o de la escopeta en un 20%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496733742661632
+    m_Localized: "Aumenta el da\xF1o de la escopeta en un 30%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496750482128896
+    m_Localized: "Aumenta el da\xF1o de la escopeta en un 40%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24496763476082688
+    m_Localized: "Aumenta el da\xF1o de la escopeta en un 50%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24497221166923776
+    m_Localized: "Los ataques tienen un 10% de probabilidad de causar da\xF1o cr\xEDtico
+      equivalente al 150%"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24505797293867008
+    m_Localized: "El da\xF1o cr\xEDtico aumenta al 175%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24505803627266048
+    m_Localized: "El da\xF1o cr\xEDtico aumenta al 200%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24505847780704256
+    m_Localized: "El da\xF1o cr\xEDtico aumenta al 250%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24508024876138496
+    m_Localized: "La probabilidad de infligir da\xF1o cr\xEDtico aumenta al 15%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24508028822978560
+    m_Localized: "La probabilidad de infligir da\xF1o cr\xEDtico aumenta al 20%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512100342923264
+    m_Localized: La capacidad de utilizar las habilidades de los operativos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512738581774336
+    m_Localized: "Reduce el tiempo de recuperaci\xF3n de la habilidad en un 10%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512741769445376
+    m_Localized: "Reduce el tiempo de recuperaci\xF3n de la habilidad en un 20%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512748899762176
+    m_Localized: "Reduce el tiempo de recuperaci\xF3n de la habilidad en un 30%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512759184195584
+    m_Localized: "Reduce el tiempo de recuperaci\xF3n de la habilidad en un 40%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24512769414103040
+    m_Localized: "Reduce el tiempo de recuperaci\xF3n de la habilidad en un 50%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513049887211520
+    m_Localized: "Aumenta la fuerza y \u200B\u200Befectividad de las habilidades."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513386111008768
+    m_Localized: Aumenta la salud en 10 puntos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513393782390784
+    m_Localized: Aumenta la salud en 20 puntos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513403982938112
+    m_Localized: Aumenta la salud en 30 puntos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513435377303552
+    m_Localized: Aumenta la salud en 50 puntos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513416150614016
+    m_Localized: Aumenta la salud en 40 puntos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24513754249265152
+    m_Localized: "En los niveles puedes encontrar elementos que restauran la salud
+      y tambi\xE9n tienen la posibilidad de que los oponentes los caigan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515032039784448
+    m_Localized: "En los niveles puedes encontrar elementos que restauran la armadura
+      y tambi\xE9n tienen la posibilidad de caer de los enemigos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515309799178240
+    m_Localized: "La curaci\xF3n recibida de todas las fuentes aumenta en un 10%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515323212562432
+    m_Localized: "La curaci\xF3n recibida de todas las fuentes aumenta en un 30%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515314245140480
+    m_Localized: "La curaci\xF3n recibida de todas las fuentes aumenta en un 20%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515331685056512
+    m_Localized: "La curaci\xF3n recibida de todas las fuentes aumenta en un 40%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515341898186752
+    m_Localized: "La curaci\xF3n recibida de todas las fuentes aumenta en un 50%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515842723250176
+    m_Localized: Aumenta la armadura en 15 puntos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515855599763456
+    m_Localized: Aumenta la armadura en 30 puntos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24515867746467840
+    m_Localized: Aumenta la armadura en 50 puntos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517213069475840
+    m_Localized: Restaura 0,5 unidades de salud por segundo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517222674432000
+    m_Localized: Restaura 1 de salud cada segundo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517231117565952
+    m_Localized: Restaura 2 unidades de salud cada segundo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517564795420672
+    m_Localized: "Recibe un 5% menos de da\xF1o de todas las fuentes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517568691929088
+    m_Localized: "Recibe un 10% menos de da\xF1o de todas las fuentes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517582210170880
+    m_Localized: "Recibe un 15% menos de da\xF1o de todas las fuentes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517591131455488
+    m_Localized: "Recibe un 20% menos de da\xF1o de todas las fuentes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24517605178179584
+    m_Localized: "Recibe un 25% menos de da\xF1o de todas las fuentes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24518482639159296
+    m_Localized: En los niveles puedes encontrar comerciantes que venden una variedad
+      de productos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24558171962179584
+    m_Localized: "Un luchador experimentado que ha visitado muchos lugares de inter\xE9s
+      en todo el mundo. Se necesitar\xEDa mucho tiempo para enumerar sus premios,
+      pero una cosa es segura: Rambo es el mejor de los mejores, la verdadera \xE9lite
+      de las fuerzas armadas. Rambo es h\xE1bil con armas cuerpo a cuerpo como\r\n+20%
+      al da\xF1o y velocidad de uso y velocidad de disparo de SMG y escopetas.\r\n-10%
+      de precisi\xF3n de todas las armas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565575860846592
+    m_Localized: "Booth es un operativo experimentado especializado en operaciones
+      de espionaje. Es extremadamente reservado, es dif\xEDcil decir en cu\xE1ntas
+      operaciones ha participado o incluso cu\xE1ntos a\xF1os tiene o si realmente
+      se llama Booth. S\xF3lo podemos decir con confianza que ha eliminado muchos
+      grupos terroristas y est\xE1 eliminando a m\xE1s de uno.\r\nDa\xF1o de pistola
+      +50%.\r\nVelocidad de uso de pistolas y ametralladoras +10%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565592822611968
+    m_Localized: Boot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565614632992768
+    m_Localized: Rambo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565635059253248
+    m_Localized: Sombra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565712016343040
+    m_Localized: "Shadow es una persona eternamente silenciosa que prefiere la soledad
+      a cualquier compa\xF1\xEDa. Detr\xE1s de su naturaleza humilde se esconde un
+      maestro del asesinato que no deja ninguna posibilidad a sus v\xEDctimas. No
+      hay persona en el mundo que pueda esconderse de la bala de la Sombra.\r\n+20%
+      de da\xF1o para rifles de francotirador.\r\n+25% a la velocidad de uso de rifles
+      de francotirador.\r\n+25% de precisi\xF3n y -20% de velocidad de disparo para
+      todas las armas.\r\n+5% de probabilidad de ataques cr\xEDticos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565760913539072
+    m_Localized: "\xFAltima sangre"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565942598205440
+    m_Localized: "Cuando se activa, Rambo deja de sentir dolor y de recibir da\xF1o
+      por un tiempo.\r\nSi el pr\xF3ximo da\xF1o recibido es fatal y la habilidad
+      est\xE1 lista para usarse, se activar\xE1 autom\xE1ticamente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24565980846063616
+    m_Localized: Reservas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24566015482626048
+    m_Localized: Cuando se activa, otorga un 10% de salud y un 5% de armadura.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24567533216694272
+    m_Localized: "Usar la habilidad ralentiza el tiempo por un tiempo.\r\nLos oponentes
+      se ralentizan m\xE1s que Booth."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24567566334918656
+    m_Localized: "reacci\xF3n aguda"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590482539773952
+    m_Localized: "Los siguientes 4 disparos causar\xE1n un 20% m\xE1s de da\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590508850642944
+    m_Localized: Una mano experimentada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590557903028224
+    m_Localized: 'Recargar:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590578283151360
+    m_Localized: sec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24591678646222848
+    m_Localized: "Par\xE1metros:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24590596167663616
+    m_Localized: "M\xE1ximo:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24591798636871680
+    m_Localized: 'Historia:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24591993919471616
+    m_Localized: 'Capacidades:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24592211066978304
+    m_Localized: "H\xE9roes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24592246907305984
+    m_Localized: Mejoras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24592269996949504
+    m_Localized: Arsenal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24593866193862656
+    m_Localized: 'Nivel actual:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596766659936256
+    m_Localized: Luchar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596365437009920
+    m_Localized: Viaje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596782585708544
+    m_Localized: Capacidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24596806958809088
+    m_Localized: Supervivencia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24600058739785728
+    m_Localized: 'Nivel actual:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25012986949369856
+    m_Localized: "Aumenta el suministro de munici\xF3n en un 50%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25534946011742208
+    m_Localized: Consigue 100 monedas al comienzo del juego.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25534970430980096
+    m_Localized: Consigue 200 monedas al comienzo del juego.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535006250336256
+    m_Localized: Consigue 300 monedas al comienzo del juego.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535069496246272
+    m_Localized: Consigue 400 monedas al comienzo del juego.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535090107056128
+    m_Localized: Consigue 500 monedas al comienzo del juego.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535263830933504
+    m_Localized: "20% de probabilidad de encontrar monedas en art\xEDculos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535270004948992
+    m_Localized: "30% de probabilidad de encontrar monedas en art\xEDculos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535284198473728
+    m_Localized: "45% de probabilidad de encontrar monedas en art\xEDculos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535334609813504
+    m_Localized: "60% de probabilidad de encontrar monedas en art\xEDculos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535432383234048
+    m_Localized: "80% de posibilidades de encontrar monedas en los art\xEDculos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535652072488960
+    m_Localized: "El comerciante tiene nuevos art\xEDculos a la venta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25535690815275008
+    m_Localized: "El comerciante tiene a\xFAn m\xE1s art\xEDculos nuevos a la venta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25536601260261376
+    m_Localized: 10% de probabilidad de recibir monedas adicionales por los oponentes
+      derrotados.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25536636655992832
+    m_Localized: 15% de probabilidad de recibir monedas adicionales por los oponentes
+      derrotados.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25536670474665984
+    m_Localized: 25% de probabilidad de recibir monedas adicionales por los oponentes
+      derrotados.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25536743816265728
+    m_Localized: 30% de probabilidad de recibir monedas adicionales por los oponentes
+      derrotados.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537154472181760
+    m_Localized: Los precios comerciales se reducen en un 20%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537119437160448
+    m_Localized: Los precios comerciales se reducen en un 10%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537176488083456
+    m_Localized: Los precios comerciales se reducen en un 30%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537199242182656
+    m_Localized: Los precios comerciales se reducen en un 40%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537226559684608
+    m_Localized: Los precios comerciales se reducen en un 50%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537335938744320
+    m_Localized: 5% de probabilidad de duplicar las monedas encontradas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537390154317824
+    m_Localized: 10% de probabilidad de duplicar las monedas encontradas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537433770885120
+    m_Localized: 15% de probabilidad de duplicar las monedas encontradas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537467086241792
+    m_Localized: 20% de probabilidad de duplicar las monedas encontradas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537587118833664
+    m_Localized: 25% de probabilidad de duplicar las monedas encontradas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537685563342848
+    m_Localized: Su primera compra a un comerciante es gratuita.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537721567248384
+    m_Localized: Las dos primeras compras a un comerciante son gratuitas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537762885337088
+    m_Localized: Las tres primeras compras a un comerciante son gratuitas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537800936062976
+    m_Localized: Las primeras cuatro compras a un comerciante son gratuitas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25537860348379136
+    m_Localized: Las primeras cinco compras a un comerciante son gratuitas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539139623682048
+    m_Localized: monedas iniciales
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539240471527424
+    m_Localized: Nuevos productos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539197781901312
+    m_Localized: Oro por todos lados
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539277511426048
+    m_Localized: "Producci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539335518650368
+    m_Localized: Venta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539387007926272
+    m_Localized: Alijo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25539447351377920
+    m_Localized: Cliente favorito
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28439663406710784
+    m_Localized: Capacidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28441243786903552
+    m_Localized: Habilidad adicional
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29992631956373504
+    m_Localized: Habilidad principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30630950050430976
+    m_Localized: "Tipo de munici\xF3n:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30630996594622464
+    m_Localized: 'Tipo de disparo:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631126605463552
+    m_Localized: 'Multiplicador de movimiento:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631161195888640
+    m_Localized: "Da\xF1o:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631231324651520
+    m_Localized: 'Cadencia de fuego:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631276174344192
+    m_Localized: "Dispersi\xF3n:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631319660888064
+    m_Localized: 'Capacidad del cargador:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631331526574080
+    m_Localized: Auto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30631348811300864
+    m_Localized: Soltero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30665899948343296
+    m_Localized: Prendas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30669024620937216
+    m_Localized: Distribuidor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30669253587992576
+    m_Localized: comprar para publicidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30720282899742720
+    m_Localized: Clave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30720330526064640
+    m_Localized: Haga clic en la tarjeta para seleccionar un talento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30720506846216192
+    m_Localized: Prendas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30734557034807296
+    m_Localized: mano de hierro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31043252675379200
+    m_Localized: "pu\xF1o de hierro"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045760848199680
+    m_Localized: "El da\xF1o no cr\xEDtico aumenta en un 20%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045847452188672
+    m_Localized: mejor numero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31045956340514816
+    m_Localized: "Cada cuarto ataque causa un 80% m\xE1s de da\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046108409200640
+    m_Localized: "Bolsillo \xE1gil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046166433202176
+    m_Localized: Al recoger un objeto, la velocidad de movimiento aumenta un 20%
+      durante 2 segundos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046244162043904
+    m_Localized: Toro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046308167122944
+    m_Localized: "Con plena salud, el da\xF1o infligido es un 25% mayor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046614250651648
+    m_Localized: Ataque preventivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046777295831040
+    m_Localized: "La primera bala del cargador causa un 100% m\xE1s de da\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31046936218009600
+    m_Localized: "Determinaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31047283854508032
+    m_Localized: La velocidad de movimiento aumenta en un 50% cuando no hay escudo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31047768049156096
+    m_Localized: balas de calidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31049837237731328
+    m_Localized: "Al recoger cartuchos, tambi\xE9n se restauran 2 unidades de armadura."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31049944809046016
+    m_Localized: amor por el oro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050041177374720
+    m_Localized: "Al recoger monedas y cristales, tambi\xE9n se recupera 1 unidad
+      de salud."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050116293165056
+    m_Localized: "Doble Explosi\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050241094680576
+    m_Localized: El poder de la habilidad adicional se duplica.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050410372595712
+    m_Localized: Pacto del diablo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050782344445952
+    m_Localized: bala fantasma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050468623089664
+    m_Localized: La salud se reduce a la mitad. Obtiene el doble de monedas y cristales
+      de todas las fuentes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050850044706816
+    m_Localized: Al recargar hay un 30% de posibilidades de no desperdiciar un cartucho.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31050918592217088
+    m_Localized: Dureza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31051762750423040
+    m_Localized: "Cuando est\xE1 parado, el da\xF1o aumenta en un 50%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052097741094912
+    m_Localized: velocidad anormal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052166770950144
+    m_Localized: +2% de velocidad de movimiento por cada 10% de escudo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052221187850240
+    m_Localized: banco de balas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052269296517120
+    m_Localized: "Toda la munici\xF3n recolectada se convierte en munici\xF3n utilizada
+      por el arma actual."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052340490633216
+    m_Localized: Ordenado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052391908605952
+    m_Localized: "La curaci\xF3n recibida de todas las fuentes se duplica."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052465099210752
+    m_Localized: Juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31052550314885120
+    m_Localized: "+50% de da\xF1o de ataque cr\xEDtico, pero los ataques normales
+      causan un 20% menos de da\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053115098890240
+    m_Localized: un breve respiro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053187169615872
+    m_Localized: "Gana inmunidad al da\xF1o durante 2 segundos despu\xE9s de recargar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053245332029440
+    m_Localized: Enloquecido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053303653826560
+    m_Localized: "+1% de probabilidad cr\xEDtica por cada 5% de salud perdida."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053392753426432
+    m_Localized: Para estrenar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053466686423040
+    m_Localized: "+75% de da\xF1o infligido si la armadura est\xE1 llena; de lo contrario,
+      -25% de da\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053528334303232
+    m_Localized: Trofeo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053587549487104
+    m_Localized: "25% de probabilidad de eliminar la munici\xF3n de un enemigo derrotado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053654327001088
+    m_Localized: "Hipermetrop\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31053710518091776
+    m_Localized: "Los oponentes a una distancia de 10 metros o m\xE1s reciben un
+      50% m\xE1s de da\xF1o, los oponentes ubicados m\xE1s cerca reciben un 15% menos
+      de da\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056074318774272
+    m_Localized: "Su pr\xF3xima compra al comerciante ser\xE1 gratuita. El talento
+      desaparece despu\xE9s de su uso."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056131365502976
+    m_Localized: tarjeta dorada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056224273530880
+    m_Localized: Placa de armadura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056289226522624
+    m_Localized: "Empieza a usar placas de armadura. La placa de armadura bloquea
+      cualquier da\xF1o adicional y luego se rompe. Cada 10 segundos, restaura 1
+      placa de armadura. M\xE1ximo 3 placas de armadura."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056511377833984
+    m_Localized: Zapatos de calidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056553195044864
+    m_Localized: La velocidad de movimiento aumenta en un 15%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056647457832960
+    m_Localized: Sorpresa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056710494027776
+    m_Localized: 10% de probabilidad de noquear, al matar a un enemigo, monedas adicionales
+      o una carga por una habilidad adicional.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056775094697984
+    m_Localized: Tesoros escondidos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056825413763072
+    m_Localized: "Aumenta la posibilidad de encontrar monedas o cristales en objetos
+      fr\xE1giles. La posibilidad de encontrar todo lo dem\xE1s es menor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056904224735232
+    m_Localized: espera cosas buenas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31056953046433792
+    m_Localized: "El primer disparo cada 3 segundos ser\xE1 fundamental."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057030422953984
+    m_Localized: Vampiro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057081501188096
+    m_Localized: "Los ataques restauran 1 unidad de salud; si la salud est\xE1 llena,
+      se restaura la armadura. Los ataques causan un 50% menos de da\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057141697839104
+    m_Localized: "B\xF3xer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057205505785856
+    m_Localized: "La posibilidad de infligir da\xF1o cr\xEDtico a un enemigo que
+      se encuentra a menos de 5 metros de distancia se duplica."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057732822073344
+    m_Localized: luz de bala
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057780205125632
+    m_Localized: "La recarga consume el doble de munici\xF3n (principalmente debido
+      a los tipos de munici\xF3n no utilizados). La probabilidad de golpe cr\xEDtico
+      aumenta en un 25%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057878158901248
+    m_Localized: "recarga t\xE1ctica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31057930998743040
+    m_Localized: "Durante la recarga, la velocidad de movimiento aumenta un 25% y
+      el da\xF1o recibido se reduce un 10%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058101526560768
+    m_Localized: amor de la vida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058142538465280
+    m_Localized: "Despu\xE9s de recibir da\xF1o, se restauran 3 unidades de salud
+      en 5 segundos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058353398710272
+    m_Localized: mala mano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058410890035200
+    m_Localized: "Si tienes cargas de habilidad adicionales, inflige un 75% m\xE1s
+      de da\xF1o, y si no las tienes, inflige un 25% menos de da\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058460814835712
+    m_Localized: Escatimar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058510748024832
+    m_Localized: "Al recibir da\xF1o, tu propio da\xF1o aumenta en un 15% durante
+      5 segundos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058639177613312
+    m_Localized: Segunda oportunidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058694127190016
+    m_Localized: "Al recibir da\xF1o letal, restaura el 10% de tu salud m\xE1xima.
+      La habilidad desaparece despu\xE9s de activarse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058773680553984
+    m_Localized: alma muerta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058827006935040
+    m_Localized: "Habiendo recibido da\xF1o letal, vu\xE9lvete invulnerable durante
+      5 segundos, si durante este tiempo no recuperas tu salud, morir\xE1s. La habilidad
+      desaparece despu\xE9s de activarse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058899727777792
+    m_Localized: Paranormal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31058952466956288
+    m_Localized: "La salud m\xE1xima cae a 1 unidad. La cantidad de armadura se triplica."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059004375662592
+    m_Localized: carne viva
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059096268668928
+    m_Localized: "Cada segundo, el 4% de tu salud m\xE1xima se convierte en armadura
+      faltante. Como resultado del uso de la habilidad, la salud no puede caer por
+      debajo del 20%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059159950786560
+    m_Localized: Salvador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059214011170816
+    m_Localized: "Luego de recibir da\xF1o letal, restaura el 10% de tu salud, si
+      dentro de los 5 segundos posteriores a que se active la habilidad no matas
+      a un solo enemigo, morir\xE1s. La habilidad desaparece despu\xE9s de activarse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059289005326336
+    m_Localized: "Munici\xF3n sangrienta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059340918226944
+    m_Localized: "Cuando el cargador est\xE1 vac\xEDo, contin\xFAas disparando, causando
+      un 2% m\xE1s de da\xF1o por disparo y perdiendo un 1% de tu salud m\xE1xima
+      por disparo. Es posible morir como resultado del uso de una habilidad."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059392487194624
+    m_Localized: Existencias
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059441489248256
+    m_Localized: "Pierdes el 50% de tu armadura m\xE1xima y el 50% de tu salud m\xE1xima.
+      Gana 2 vidas extra."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059523341090816
+    m_Localized: Anemia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059578219364352
+    m_Localized: "La salud m\xE1xima se duplica. Recibe un 10% m\xE1s de da\xF1o
+      de todas las fuentes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059737359646720
+    m_Localized: Disciplina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059792305029120
+    m_Localized: "Cada segundo, la probabilidad de un disparo cr\xEDtico aumenta
+      en un 5%. Se reinicia despu\xE9s de realizar un disparo cr\xEDtico."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31059851427938304
+    m_Localized: Asesino de gigantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31060503931617280
+    m_Localized: "5% de probabilidad de que cuando un enemigo reciba da\xF1o, el
+      5% de su salud m\xE1xima se convierta en da\xF1o adicional."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061095064240128
+    m_Localized: "Energ\xEDa alien\xEDgena"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061156036837376
+    m_Localized: 50% de probabilidad de restaurar 5 de armadura al matar a un enemigo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061486338277376
+    m_Localized: "Iluminaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061579061755904
+    m_Localized: "Cuanto m\xE1s r\xE1pida sea tu velocidad actual, mayor ser\xE1
+      tu resistencia al da\xF1o recibido. M\xE1ximo 30%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061787724185600
+    m_Localized: Extravagancia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061871878701056
+    m_Localized: "+10% a la resistencia al da\xF1o por cada 100 municiones gastadas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31061950547066880
+    m_Localized: Minero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062009099550720
+    m_Localized: La recompensa por matar enemigos en un radio de 7 metros es el doble.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062079006015488
+    m_Localized: Veterano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062158857175040
+    m_Localized: "+1 a la salud m\xE1xima por cada enemigo asesinado hasta 7 metros
+      de distancia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062225408196608
+    m_Localized: "C\xE1scara de huevo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062291074220032
+    m_Localized: "Obt\xE9n un 15% adicional de resistencia al da\xF1o mientras usas
+      armadura. Vu\xE9lvete un 15% vulnerable al da\xF1o cuando no est\xE9s blindado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062367293112320
+    m_Localized: Velocidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062452806582272
+    m_Localized: "La velocidad de movimiento es un 50% mayor y la habilidad principal
+      se recupera un 150% m\xE1s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062536822685696
+    m_Localized: "El l\xEDmite de lo posible"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062713918783488
+    m_Localized: "La habilidad adicional se puede usar incluso cuando no hay proyectiles,
+      por cada uso recibir\xE1s 25 puntos de da\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062784479559680
+    m_Localized: bala dormida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062850485321728
+    m_Localized: "Cuanta menos munici\xF3n quede en el cargador, mayor ser\xE1 el
+      da\xF1o del arma (m\xE1ximo +75%)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062918873448448
+    m_Localized: Dos caras de la moneda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31062984656912384
+    m_Localized: "Alterne entre los estados Yin y Yang cada 12 segundos. El estado
+      Yin otorga +20% a la resistencia al da\xF1o y el estado Yang otorga +50% al
+      da\xF1o infligido."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063098184138752
+    m_Localized: Espada de doble filo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063184452583424
+    m_Localized: "Por cada enemigo derrotado, obtienes +1 % de da\xF1o y -0,5 % de
+      resistencia al da\xF1o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063278077837312
+    m_Localized: Furia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063336345108480
+    m_Localized: "Al recibir da\xF1o, recibir\xE1s un +20 % de probabilidad de infligir
+      da\xF1o cr\xEDtico durante 5 segundos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063401612673024
+    m_Localized: armadura dorada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063503441985536
+    m_Localized: "Al usar una habilidad adicional, restaura el 5% de la armadura
+      de su m\xE1ximo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063593569189888
+    m_Localized: Gracia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063675618164736
+    m_Localized: "Reduce la resistencia al da\xF1o en un 100%, pero el da\xF1o recibido
+      no puede exceder el 10% de la salud m\xE1xima."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063749253365760
+    m_Localized: todo o nada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063838109696000
+    m_Localized: "Gana 100% de da\xF1o. Pierdes el 75% de tu salud m\xE1xima."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31063908662083584
+    m_Localized: Proyectil penetrante
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064012856983552
+    m_Localized: "Los ataques cr\xEDticos penetran la armadura enemiga."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064089025544192
+    m_Localized: Atlante
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064140158304256
+    m_Localized: "+5% de da\xF1o por cada 100 monedas en stock."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064210505170944
+    m_Localized: Armadura de reserva
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064285067313152
+    m_Localized: "Cuando la armadura se rompe, restaura instant\xE1neamente el 10%
+      de la armadura. Tiempo de recarga 45 segundos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064475794898944
+    m_Localized: armadura pesada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064603607924736
+    m_Localized: "Gana +50 de escudo m\xE1ximo y +10 % de resistencia al da\xF1o.
+      Pierde un 20% de velocidad de movimiento."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064681911386112
+    m_Localized: Suerte razonable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31064749796196352
+    m_Localized: "+50% de probabilidad de causar da\xF1o cr\xEDtico, pero la probabilidad
+      m\xE1xima no puede exceder el 75%."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31065196049170432
+    m_Localized: armadura viviente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36450387831926784
+    m_Localized: "Volumen de m\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36495000718389248
+    m_Localized: 'Nivel actual:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45881654637232128
+    m_Localized: Obliga a los enemigos a atacar a un enemigo hasta que muera.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45881692562128896
+    m_Localized: Espejismo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833317132595200
+    m_Localized: "Restauraci\xF3n de la salud"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833452545699840
+    m_Localized: Restaura completamente toda la salud.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833563111747584
+    m_Localized: "Restauraci\xF3n de armadura"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833605985923072
+    m_Localized: Restaura completamente todas las armaduras.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121834196472623104
+    m_Localized: Restaurar una habilidad adicional
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121834435917049856
+    m_Localized: Recuperar todos los cargos de habilidad adicionales
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121835881005772800
+    m_Localized: "Recuperaci\xF3n de municiones"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121835587463213056
+    m_Localized: Restaura completamente todas las municiones.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121836343016747008
+    m_Localized: "Aumenta permanentemente tu salud m\xE1xima"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121836476638883840
+    m_Localized: "Aumento m\xE1ximo de salud"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844121009582080
+    m_Localized: "Aumenta tu armadura m\xE1xima"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844188810506240
+    m_Localized: "Aumenta permanentemente tu armadura m\xE1xima"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844353659236352
+    m_Localized: "Aumenta permanentemente la cantidad m\xE1xima de una habilidad
+      adicional."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844388409044992
+    m_Localized: "Aumentar el n\xFAmero m\xE1ximo de extras. capacidades"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844497322536960
+    m_Localized: "Aumenta tu cantidad m\xE1xima de munici\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844950122819584
+    m_Localized: "Aumenta permanentemente tu munici\xF3n y granadas m\xE1ximas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845022231293952
+    m_Localized: "Aumento de da\xF1os"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845104129273856
+    m_Localized: "Aumenta todo el da\xF1o que infliges"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845156855869440
+    m_Localized: Segunda vida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845452571078656
+    m_Localized: "Compra una segunda vida.\r\nDespu\xE9s del uso, la vida desaparece."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122474811233333248
+    m_Localized: Parche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122474845043617792
+    m_Localized: Restaura 30 unidades de armadura.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122737281864757248
+    m_Localized: a la cabeza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122806134456119296
+    m_Localized: Abre el cofre y toma el talento.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122807583701397504
+    m_Localized: Sube al auto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123501049787904000
+    m_Localized: 'Costo:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125009717381492736
+    m_Localized: Abre el cofre y toma el talento.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125016869508673536
+    m_Localized: Sube al auto.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

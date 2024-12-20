@@ -48,13 +48,13 @@ public class WeaponsChecker : MonoBehaviour
         var sections = new bool[_sections.Count];
         for (var i = 0; i < _sections.Count; i++)
         {
-            var section = YandexGame.savesData.OpenedWeapons[_sections[i]._section];
-            for (var j = 0; j < section.Length; j++)
+            var weapons = YandexGame.savesData.OpenedWeapons[_sections[i]._section];
+            for (var j = 0; j < weapons.Length; j++)
             {
                 if (sections[i])
                     continue;
                 //Оружие закрыто. Проверка возможности его покупки.
-                if (!section[j])
+                if (!weapons[j])
                 {
                     sections[i] = _sections[i].Costs[j] <= YandexGame.savesData.Crystals;
                 }

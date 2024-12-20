@@ -448,7 +448,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 8886299865310277497}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayHover
           m_Mode: 1
@@ -464,7 +464,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 8886299865310277497}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayClick
           m_Mode: 1
@@ -974,7 +974,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 8886299865310277497}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayHover
           m_Mode: 1
@@ -990,7 +990,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 8886299865310277497}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayClick
           m_Mode: 1
@@ -1013,6 +1013,7 @@ GameObject:
   - component: {fileID: 7257436750452549009}
   - component: {fileID: 3434847270668864700}
   - component: {fileID: 4169723541055477168}
+  - component: {fileID: 6567077800778244923}
   m_Layer: 5
   m_Name: Name_Text (TMP)
   m_TagString: Untagged
@@ -1036,8 +1037,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 530, y: 50}
-  m_SizeDelta: {x: 1000, y: 130}
+  m_AnchoredPosition: {x: 655, y: 50}
+  m_SizeDelta: {x: 1250, y: 130}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &3434847270668864700
 CanvasRenderer:
@@ -1067,9 +1068,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Traveling Trader
-
-'
+  m_text: "\u0421\u0442\u0440\u0430\u043D\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0439
+    \u0422\u043E\u0440\u0433\u043E\u0432\u0435\u0446"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
@@ -1097,8 +1097,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 128
-  m_fontSizeBase: 128
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1139,6 +1139,46 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6567077800778244923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4846372554225236774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8767699901586341908
+  references:
+    version: 2
+    RefIds:
+    - rid: 8767699901586341908
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
+        asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 4169723541055477168}
+        m_TrackedProperties:
+          items:
+          - rid: 8767699901586341909
+        m_UpdateType: 0
+    - rid: 8767699901586341909
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121797924446203904
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1 &4850721445318165984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,7 +1245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Buy For Ad
+  m_text: "\u041A\u0443\u043F\u0438\u0442\u044C \u0437\u0430 \u0440\u0435\u043A\u043B\u0430\u043C\u0443"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
@@ -1468,6 +1508,7 @@ GameObject:
   - component: {fileID: 5393623835024644608}
   - component: {fileID: -6783613248707826971}
   - component: {fileID: 6184720831905263891}
+  - component: {fileID: 8947791966853274927}
   m_Layer: 5
   m_Name: TradingCanvas
   m_TagString: Untagged
@@ -1573,80 +1614,115 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvas: {fileID: 898511245334201413}
   _info:
-  - <Name>k__BackingField: HealthRestore
-    <Description>k__BackingField: HealthRestore
+  - <Name>k__BackingField: "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435
+      \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F"
+    <Description>k__BackingField: "\u041F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E
+      \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435 \u0432\u0441\u0435
+      \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u0435"
     <Sprite>k__BackingField: {fileID: 21300000, guid: f4bcee6ed11e12c41bd534b0e9b62c7d,
       type: 3}
     <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
     <Cost>k__BackingField: 100
     <Opened>k__BackingField: 0
     <Type>k__BackingField: 0
-  - <Name>k__BackingField: ArmorRestore
-    <Description>k__BackingField: ArmorRestore
+  - <Name>k__BackingField: "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435
+      \u0431\u0440\u043E\u043D\u0438"
+    <Description>k__BackingField: "\u041F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E
+      \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435 \u0432\u0441\u044E
+      \u0431\u0440\u043E\u043D\u044E"
     <Sprite>k__BackingField: {fileID: 21300000, guid: faad892b38ea694439d0609a7cc57619,
       type: 3}
     <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
     <Cost>k__BackingField: 100
     <Opened>k__BackingField: 0
     <Type>k__BackingField: 1
-  - <Name>k__BackingField: AddSpellRestore
-    <Description>k__BackingField: AddSpellRestore
+  - <Name>k__BackingField: "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435
+      \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0439
+      \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0438"
+    <Description>k__BackingField: "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435
+      \u0432\u0441\u0435 \u0437\u0430\u0440\u044F\u0434\u044B \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0439
+      \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0438"
     <Sprite>k__BackingField: {fileID: 21300000, guid: b60a62368b1f6334ba6e9cd62c3c9bd6,
       type: 3}
     <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
     <Cost>k__BackingField: 100
     <Opened>k__BackingField: 0
     <Type>k__BackingField: 2
-  - <Name>k__BackingField: AmmoRestore
-    <Description>k__BackingField: AmmoRestore
+  - <Name>k__BackingField: "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435
+      \u0431\u043E\u0435\u043F\u0440\u0438\u043F\u0430\u0441\u043E\u0432"
+    <Description>k__BackingField: "\u041F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E
+      \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435 \u0432\u0435\u0441\u044C
+      \u0431\u043E\u0435\u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0442"
     <Sprite>k__BackingField: {fileID: 21300000, guid: bff86f77fc9a58c4d8e772ccb77a13c3,
       type: 3}
     <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
     <Cost>k__BackingField: 100
     <Opened>k__BackingField: 0
     <Type>k__BackingField: 3
-  - <Name>k__BackingField: HealthAdd
-    <Description>k__BackingField: HealthAdd
+  - <Name>k__BackingField: "\u0423\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\u0435
+      \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+      \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F"
+    <Description>k__BackingField: "\u041D\u0430\u0432\u0441\u0435\u0433\u0434\u0430
+      \u0443\u0432\u0435\u043B\u0438\u0447\u044C\u0442\u0435 \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435
+      \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F"
     <Sprite>k__BackingField: {fileID: 21300000, guid: 4a047c05b69600e48997e77fcac53585,
       type: 3}
     <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
     <Cost>k__BackingField: 200
     <Opened>k__BackingField: 0
     <Type>k__BackingField: 4
-  - <Name>k__BackingField: ArmorAdd
-    <Description>k__BackingField: ArmorAdd
+  - <Name>k__BackingField: "\u0423\u0432\u0435\u043B\u0438\u0447\u044C\u0442\u0435
+      \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u0443\u044E \u0431\u0440\u043E\u043D\u044E"
+    <Description>k__BackingField: "\u041D\u0430\u0432\u0441\u0435\u0433\u0434\u0430
+      \u0443\u0432\u0435\u043B\u0438\u0447\u044C\u0442\u0435 \u0441\u0432\u043E\u044E
+      \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u0443\u044E \u0431\u0440\u043E\u043D\u044E"
     <Sprite>k__BackingField: {fileID: 21300000, guid: 36a233ce4082cca43852e51fe26c4e73,
       type: 3}
     <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
     <Cost>k__BackingField: 200
     <Opened>k__BackingField: 0
     <Type>k__BackingField: 5
-  - <Name>k__BackingField: AddSpellAdd
-    <Description>k__BackingField: AddSpellAdd
+  - <Name>k__BackingField: "\u0423\u0432\u0435\u043B\u0438\u0447\u044C\u0442\u0435
+      \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
+      \u0434\u043E\u043F. \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0438"
+    <Description>k__BackingField: "\u041D\u0430\u0432\u0441\u0435\u0433\u0434\u0430
+      \u0443\u0432\u0435\u043B\u0438\u0447\u044C\u0442\u0435 \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435
+      \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0439
+      \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0438"
     <Sprite>k__BackingField: {fileID: 21300000, guid: b60a62368b1f6334ba6e9cd62c3c9bd6,
       type: 3}
     <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
     <Cost>k__BackingField: 200
     <Opened>k__BackingField: 0
     <Type>k__BackingField: 6
-  - <Name>k__BackingField: AmmoAdd
-    <Description>k__BackingField: AmmoAdd
+  - <Name>k__BackingField: "\u0423\u0432\u0435\u043B\u0438\u0447\u044C\u0442\u0435
+      \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
+      \u0431\u043E\u0435\u043F\u0440\u0438\u043F\u0430\u0441\u043E\u0432"
+    <Description>k__BackingField: "\u041D\u0430\u0432\u0441\u0435\u0433\u0434\u0430
+      \u0443\u0432\u0435\u043B\u0438\u0447\u044C\u0442\u0435 \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435
+      \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0431\u043E\u0435\u043F\u0440\u0438\u043F\u0430\u0441\u043E\u0432
+      \u0438 \u0433\u0440\u0430\u043D\u0430\u0442"
     <Sprite>k__BackingField: {fileID: 21300000, guid: bff86f77fc9a58c4d8e772ccb77a13c3,
       type: 3}
     <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
     <Cost>k__BackingField: 200
     <Opened>k__BackingField: 0
     <Type>k__BackingField: 7
-  - <Name>k__BackingField: AddDamage
-    <Description>k__BackingField: AddDamage
+  - <Name>k__BackingField: "\u0423\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\u0435
+      \u0443\u0440\u043E\u043D\u0430"
+    <Description>k__BackingField: "\u0423\u0432\u0435\u043B\u0438\u0447\u044C\u0442\u0435
+      \u0432\u0435\u0441\u044C \u043D\u0430\u043D\u043E\u0441\u0438\u043C\u044B\u0439
+      \u0432\u0430\u043C\u0438 \u0443\u0440\u043E\u043D"
     <Sprite>k__BackingField: {fileID: 21300000, guid: 654f1188d88eeeb4ba5934f5755e41a0,
       type: 3}
     <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
     <Cost>k__BackingField: 350
     <Opened>k__BackingField: 0
     <Type>k__BackingField: 8
-  - <Name>k__BackingField: AddLive
-    <Description>k__BackingField: AddLive
+  - <Name>k__BackingField: "\u0412\u0442\u043E\u0440\u0430\u044F \u0436\u0438\u0437\u043D\u044C"
+    <Description>k__BackingField: "\u041A\u0443\u043F\u0438\u0442\u0435 \u0432\u0442\u043E\u0440\u0443\u044E
+      \u0436\u0438\u0437\u043D\u044C.\r\n\u041F\u043E\u0441\u043B\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F
+      \u0436\u0438\u0437\u043D\u044C \u0438\u0441\u0447\u0435\u0437\u0430\u0435\u0442."
     <Sprite>k__BackingField: {fileID: 21300000, guid: ca5f8bde5d6b4ea4dab4b6f0212c924c,
       type: 3}
     <BackgroundColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0}
@@ -1662,6 +1738,334 @@ MonoBehaviour:
   _description: {fileID: 9026209558301003658}
   _buyButton: {fileID: 3414275278150823030}
   _adButton: {fileID: 2222589186085043483}
+--- !u!114 &8947791966853274927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5393623835024644669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 8767699912136851456
+  references:
+    version: 2
+    RefIds:
+    - rid: 8767699912136851456
+      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
+        asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 6184720831905263891}
+        m_TrackedProperties:
+          items:
+          - rid: 8767699912136851457
+          - rid: 8767699912136851458
+          - rid: 8767699912136851459
+          - rid: 8767699912136851460
+          - rid: 8767699912136851462
+          - rid: 8767699912136851463
+          - rid: 8767699912136851464
+          - rid: 8767699912136851465
+          - rid: 8767699912136851466
+          - rid: 8767699912136851468
+          - rid: 8767699912136851469
+          - rid: 8767699912136851470
+          - rid: 8767699912136851471
+          - rid: 8767699912136851472
+          - rid: 8767699912136851473
+          - rid: 8767699912136851474
+          - rid: 8767699912136851475
+          - rid: 8767699912136851476
+          - rid: 8767699912136851477
+          - rid: 8767699912136851478
+        m_UpdateType: 1
+        m_Changed:
+          m_PersistentCalls:
+            m_Calls: []
+    - rid: 8767699912136851457
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121833317132595200
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[0].<Name>k__BackingField
+    - rid: 8767699912136851458
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121833452545699840
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[0].<Description>k__BackingField
+    - rid: 8767699912136851459
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121833563111747584
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[1].<Name>k__BackingField
+    - rid: 8767699912136851460
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121833605985923072
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[1].<Description>k__BackingField
+    - rid: 8767699912136851462
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121834196472623104
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[2].<Name>k__BackingField
+    - rid: 8767699912136851463
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121834435917049856
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[2].<Description>k__BackingField
+    - rid: 8767699912136851464
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121835587463213056
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[3].<Description>k__BackingField
+    - rid: 8767699912136851465
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121835881005772800
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[3].<Name>k__BackingField
+    - rid: 8767699912136851466
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121836343016747008
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[4].<Description>k__BackingField
+    - rid: 8767699912136851468
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121836476638883840
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[4].<Name>k__BackingField
+    - rid: 8767699912136851469
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121844121009582080
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[5].<Name>k__BackingField
+    - rid: 8767699912136851470
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121844188810506240
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[5].<Description>k__BackingField
+    - rid: 8767699912136851471
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121844353659236352
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[6].<Description>k__BackingField
+    - rid: 8767699912136851472
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121844388409044992
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[6].<Name>k__BackingField
+    - rid: 8767699912136851473
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121844497322536960
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[7].<Name>k__BackingField
+    - rid: 8767699912136851474
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121844950122819584
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[7].<Description>k__BackingField
+    - rid: 8767699912136851475
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121845022231293952
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[8].<Name>k__BackingField
+    - rid: 8767699912136851476
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121845104129273856
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[8].<Description>k__BackingField
+    - rid: 8767699912136851477
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121845156855869440
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[9].<Name>k__BackingField
+    - rid: 8767699912136851478
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:af837c3e273b47744a87c87c56c48773
+          m_TableEntryReference:
+            m_KeyId: 121845452571078656
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: _info.Array.data[9].<Description>k__BackingField
 --- !u!1 &6170253038760250930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,7 +2558,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 8886299865310277497}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayHover
           m_Mode: 1
@@ -2170,7 +2574,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 8886299865310277497}
           m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
           m_MethodName: PlayClick
           m_Mode: 1
@@ -2354,7 +2758,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 105, y: -98}
-  m_SizeDelta: {x: -230, y: 48}
+  m_SizeDelta: {x: -230, y: 74}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &5632321995259871322
 CanvasRenderer:
@@ -2384,7 +2788,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Add Hp
+  m_text: "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 258d4780a5173d7478d8bfcb63d213ca, type: 2}
   m_sharedMaterial: {fileID: 453711715144235487, guid: 258d4780a5173d7478d8bfcb63d213ca,
@@ -2412,15 +2816,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2528,3 +2932,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2502700450648346944}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8886299865310277497 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6478738579830963769, guid: 2492a3796f7d4694094abf5962379950,
+    type: 3}
+  m_PrefabInstance: {fileID: 2502700450648346944}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0d3425c18fbce4eb1fd8e78c76c47c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -39,24 +39,26 @@ public class PlayerDeath : MonoBehaviour
     
     public void ShowAd()
     {
-        YandexGame.RewVideoShow(1);
-        YandexGame.RewardVideoEvent += Respawn;
+        YandexGame.CloseVideoEvent += Respawn;
         YandexGame.ErrorVideoEvent += UnLuck;
+        YandexGame.RewVideoShow(1);
     }
 
     private void UnLuck()
     {
+        YandexGame.ErrorVideoEvent -= UnLuck;
         deadScreen.gameObject.SetActive(true);
     }
     
-    private void Respawn(int _)
+    private void Respawn()
     {
+        YandexGame.CloseVideoEvent -= Respawn;
+
         var place = transform;
         transform.position = place.position;
         transform.rotation = place.rotation;
 
         _statsC.Respawn();
-        disabler.Activate();
         character.GetCameraDepth().enabled = true;
         deadScreen.gameObject.SetActive(false);
         stats.Hp.AddValue(stats.Hp.Max);
@@ -67,12 +69,15 @@ public class PlayerDeath : MonoBehaviour
         inventory.SetMaxAmmoInWeapons();
 
         EnemyController.Instance.SetCharacter(gameObject);
+        disabler.Activate();
         //disabler.OnLockCursor(); //??
+        character.ToggleCursor();
         Respawned?.Invoke();
     }
 
     public void Disable()
     {
+        //character.OnLockCursor();
         disabler.Disable();
         character.GetCameraDepth().enabled = false;
         deadScreen.gameObject.SetActive(true);

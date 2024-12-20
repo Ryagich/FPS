@@ -20,7 +20,7 @@ public class GuitarPlayer : MonoBehaviour
     
     private AudioClip GetNewClip()
     {
-        var clips = _clips;
+        var clips = new List<AudioClip>(_clips);
         if (current)
         {
             clips.Remove(current);

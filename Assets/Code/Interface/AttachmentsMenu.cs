@@ -50,9 +50,9 @@ public class AttachmentsMenu : MonoBehaviour
         button.onClick.AddListener(RemoveArrowsListeners);
 
         button.onClick.AddListener(() =>
-            LeftArrow.onClick.AddListener(OnLeftArrow));
+                                       LeftArrow.onClick.AddListener(OnLeftArrow));
         button.onClick.AddListener(() =>
-            RightArrow.onClick.AddListener(OnRightArrow));
+                                       RightArrow.onClick.AddListener(OnRightArrow));
 
         button.onClick.AddListener(() => section = s);
         button.onClick.AddListener(() => weapon.ChosenCurrentAttachments());
@@ -61,11 +61,14 @@ public class AttachmentsMenu : MonoBehaviour
 
     public void UpdateWarnings()
     {
-        for (int i = 0; i < AttachmentsButtons.Count; i++)
+        for (var i = 0; i < AttachmentsButtons.Count; i++)
         {
-            AttachmentsButtons[i].GetComponentInChildren<WarningIcon>()
-                .gameObject
-                .SetActive(CheckPossibilityInSection(i));
+            if (AttachmentsButtons[i])
+            {
+                var icon = AttachmentsButtons[i].GetComponentInChildren<WarningIcon>();
+                if (icon)
+                    icon.gameObject.SetActive(CheckPossibilityInSection(i));
+            }
         }
     }
 
@@ -106,8 +109,8 @@ public class AttachmentsMenu : MonoBehaviour
     {
         var i = GetCurrI();
         var nextIndex = i - 1 < (section == 1 ? 0 : -1)
-            ? weapon.Attachments[section].Length - 1
-            : i - 1;
+                            ? weapon.Attachments[section].Length - 1
+                            : i - 1;
         SetCurrAttachment(nextIndex);
         ShowButton(nextIndex);
     }
@@ -116,8 +119,8 @@ public class AttachmentsMenu : MonoBehaviour
     {
         var i = GetCurrI();
         var nextIndex = weapon.Attachments[section].Length <= i + 1
-            ? (section == 1 ? 0 : -1)
-            : i + 1;
+                            ? (section == 1 ? 0 : -1)
+                            : i + 1;
         SetCurrAttachment(nextIndex);
         ShowButton(nextIndex);
     }
@@ -148,7 +151,7 @@ public class AttachmentsMenu : MonoBehaviour
             showButton.GetComponent<Button>().onClick.AddListener(() => TryBuy(i));
             showButton.GetComponentInChildren<TMP_Text>().text = GetCurrCost(i).ToString(); // + '$';
             showButton.GetComponentInChildren<WarningIcon>().gameObject
-                .SetActive(GetCurrCost(i) >= YandexGame.savesData.Crystals);
+                      .SetActive(GetCurrCost(i) <= YandexGame.savesData.Crystals);
         }
 
         showButton.GetComponentInChildren<ButtonSoundPlayer>()?.SetSource(_source);

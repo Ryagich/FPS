@@ -476,8 +476,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23857076738686976
-    m_Localized: "80% \u0428\u0430\u043D\u0441 \u043D\u0430\u0439\u0442\u0438 \u043C\u043E\u043D\u0435\u0442\u044B
-      \u0432 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u0430\u0445"
+    m_Localized: 80% Chance to find coins in items
     m_Metadata:
       m_Items: []
   - m_Id: 25535652072488960
@@ -1807,6 +1806,166 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 45881692562128896
     m_Localized: Illusion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121666483485863936
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667124396486656
+    m_Localized: Choose difficulty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667408682217472
+    m_Localized: Easy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121667615054557184
+    m_Localized: 'Normal
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121668141116747776
+    m_Localized: 'Hard
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121795978716966912
+    m_Localized: 'Exit to Menu
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121796244656812032
+    m_Localized: Talents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121796799319961600
+    m_Localized: Invulnerability
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121797089213476864
+    m_Localized: Chosen Talents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121797924446203904
+    m_Localized: Traveling Merchant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833317132595200
+    m_Localized: Restoring Health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833452545699840
+    m_Localized: Fully restore all health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833563111747584
+    m_Localized: Restoring Armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121833605985923072
+    m_Localized: Fully restore all armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121834196472623104
+    m_Localized: Restoring Additional Ability
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121834435917049856
+    m_Localized: Restore all charges of an additional ability.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121835587463213056
+    m_Localized: Fully restore all ammunition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121835881005772800
+    m_Localized: Restoring Ammo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121836343016747008
+    m_Localized: Permanently increase your maximum health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121836476638883840
+    m_Localized: Increased maximum Health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844121009582080
+    m_Localized: Increased maximum Armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844188810506240
+    m_Localized: Permanently increase your maximum Armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844353659236352
+    m_Localized: Permanently increase your maximum  Additional Spell count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844388409044992
+    m_Localized: Increased Additional Spell count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844497322536960
+    m_Localized: Increase the maximum amount of ammunition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121844950122819584
+    m_Localized: Permanently increase the maximum amount of all ammo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845022231293952
+    m_Localized: Increase damage dealt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845104129273856
+    m_Localized: Increase the damage you deal from all sources.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845156855869440
+    m_Localized: Second life
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121845452571078656
+    m_Localized: 'Buy an extra life.
+
+      After use - life disappears.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122474811233333248
+    m_Localized: Patch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122474845043617792
+    m_Localized: Restores 30 units of armor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122737281864757248
+    m_Localized: Headshot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122806134456119296
+    m_Localized: Open chest and take talent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 122807583701397504
+    m_Localized: Get in the car
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123501049787904000
+    m_Localized: 'Cost:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125009717381492736
+    m_Localized: Open the chest and take the talent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 125016869508673536
+    m_Localized: Get in the car
     m_Metadata:
       m_Items: []
   references:

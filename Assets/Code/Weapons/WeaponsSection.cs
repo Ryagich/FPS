@@ -53,7 +53,7 @@ public class WeaponsSection : MonoBehaviour
 
             button.GetComponentInChildren<TMP_Text>().text = Costs[i].ToString(); // + '$';
             button.GetComponentInChildren<WarningIcon>().gameObject
-                .SetActive(Costs[i] >= YandexGame.savesData.Crystals);
+                .SetActive(Costs[i] <= YandexGame.savesData.Crystals);
             button.onClick.AddListener(TryBuy);
         }
 
